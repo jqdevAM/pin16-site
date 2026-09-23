@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pin16 — Privacy Policy</title>
+<meta name="description" content="Pin16 privacy policy: the app collects nothing, has no account and no server, and keeps everything on the device.">
+<style>
+  :root {
+    color-scheme: light dark;
+    --ink: #1a1a1a;
+    --quiet: #5a6472;
+    --line: #dfe5ec;
+    --ground: #ffffff;
+    --panel: #eef4fa;
+    --accent: #0277bd;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --ink: #e7ecf2;
+      --quiet: #a8b3c0;
+      --line: #2c3540;
+      --ground: #12171d;
+      --panel: #1a222b;
+      --accent: #5cb8ef;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding: 0 16px 64px;
+    background: var(--ground);
+    color: var(--ink);
+    font: 16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  }
+  main { max-width: 44rem; margin: 0 auto; }
+  header { padding: 40px 0 8px; }
+  h1 { font-size: 1.6rem; margin: 0 0 4px; }
+  h2 {
+    font-size: 1.15rem;
+    margin: 2.2rem 0 .5rem;
+    padding-bottom: .25rem;
+    border-bottom: 1px solid var(--line);
+  }
+  h3 { font-size: 1rem; margin: 1.4rem 0 .35rem; }
+  .when { color: var(--quiet); margin: 0; font-size: .9rem; }
+  .lead {
+    background: var(--panel);
+    border-radius: 12px;
+    padding: 16px 18px;
+    margin: 20px 0 8px;
+  }
+  .lead p { margin: 0; }
+  nav.langs { margin: 18px 0 0; font-size: .95rem; }
+  nav.langs a { color: var(--accent); margin-right: 14px; }
+  table { border-collapse: collapse; width: 100%; margin: .6rem 0 1rem; }
+  th, td {
+    border-bottom: 1px solid var(--line);
+    padding: .5rem .4rem;
+    text-align: left;
+    vertical-align: top;
+    font-size: .95rem;
+  }
+  th { color: var(--quiet); font-weight: 600; }
+  code {
+    font-family: ui-monospace, "JetBrains Mono", Menlo, monospace;
+    font-size: .88em;
+    background: var(--panel);
+    padding: .1em .35em;
+    border-radius: 4px;
+  }
+  a { color: var(--accent); }
+  footer {
+    margin-top: 3rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--line);
+    color: var(--quiet);
+    font-size: .85rem;
+  }
+  hr.sep { border: 0; border-top: 1px solid var(--line); margin: 3.5rem 0 0; }
+</style>
+</head>
+<body>
+<main>
+
+<header>
+  <h1>Pin16 — Privacy Policy</h1>
+  <p class="when">Last updated: 23 September 2026</p>
+  <nav class="langs"><a href="#en">English</a><a href="#ru">Русский</a></nav>
+</header>
+
+<section id="en">
+
+<div class="lead">
+  <p><strong>Pin16 collects nothing.</strong> There is no account, no
+  analytics, no advertising, no tracking and no server of ours. Everything the
+  app reads from your car stays on your phone until you choose to share a file
+  yourself.</p>
+</div>
+
+<p>Pin16 is an OBD-II diagnostics app for Android. It talks to an adapter
+plugged into your car and shows what the car reports. This policy explains
+what the app stores, what it never does, and how to delete everything.</p>
+
+<h2>What the app stores on your device</h2>
+
+<p>All of it stays on the phone. None of it is sent anywhere by the app.</p>
+
+<table>
+  <tr><th>What</th><th>Why</th></tr>
+  <tr><td>Scans: fault codes found, the vehicle check, and code-clearing records</td><td>Your history of what the car reported</td></tr>
+  <tr><td>Recordings of live readings</td><td>So a run can be looked at and shared later</td></tr>
+  <tr><td>What the car reported about itself: VIN, make, engine unit, software version, OBD standard, fuel</td><td>So a report says which car it is about</td></tr>
+  <tr><td>A name you give a car, if you choose to</td><td>Shown instead of the VIN in your reports</td></tr>
+  <tr><td>Adapters you connected to: name, address and how the car answered</td><td>So the next connection is quick, and a car that needs a special way in is reached again</td></tr>
+  <tr><td>What the adapter and the car said while connecting</td><td>A short technical log you can send if a car will not connect</td></tr>
+  <tr><td>Codes the built-in dataset could not explain</td><td>To improve the explanations in later versions. It is never sent automatically; you can export it if you want to</td></tr>
+  <tr><td>Your settings: language, theme, dashboard layout, the disclaimer you accepted</td><td>To keep the app as you left it</td></tr>
+  <tr><td>Your brand: logo, name, website, contacts and signature</td><td>Put on the reports you share, once the one-time purchase is made</td></tr>
+</table>
+
+<p>The databases holding your history are encrypted on the device
+(SQLCipher, with a key derived from a value held in the Android Keystore).</p>
+
+<h2>What leaves your device, and only when you say so</h2>
+
+<p>The app never uploads anything by itself. Files leave only when you tap
+share or save, and you choose where they go:</p>
+
+<ul>
+  <li><strong>Reports</strong> of a scan, a recording or a single fault code, as HTML or PDF.</li>
+  <li><strong>The adapter log</strong>, if you send it for support with a car that will not connect.</li>
+  <li><strong>Backups</strong> you export, which are encrypted with a passphrase you choose.</li>
+</ul>
+
+<p>Once you send a file to someone, what happens to it is between you and
+them; the app is not involved.</p>
+
+<h2>Network use</h2>
+
+<p><strong>The app makes no requests to any server of ours, because there is
+no server.</strong> The fault-code explanations, the parameter names and the
+VIN manufacturer table are all shipped inside the app and looked up on the
+phone, with no connection needed.</p>
+
+<p>The app declares the <code>INTERNET</code> permission for one reason: some
+OBD-II adapters are Wi-Fi adapters, and reaching them means opening a network
+connection to the adapter itself, on the local network in your car.</p>
+
+<h2>Purchases</h2>
+
+<p>Putting your own brand on shared reports is a one-time purchase. It is
+processed entirely by <strong>Google Play</strong>. The app never sees your
+card, your name or your billing address; it receives only whether the unlock
+has been bought, and remembers that on the device. Google's handling of the
+payment is covered by the
+<a href="https://policies.google.com/privacy" rel="noopener">Google Privacy Policy</a>.</p>
+
+<h2>Permissions, and what each is for</h2>
+
+<table>
+  <tr><th>Permission</th><th>What it is for</th></tr>
+  <tr><td>Bluetooth (scan and connect)</td><td>Finding your OBD-II adapter and talking to it. The scan is declared as never used to derive location.</td></tr>
+  <tr><td>Location, on Android 11 and older only</td><td>Those Android versions require it for any Bluetooth LE scan. The app does not read your location, and the permission is not requested on newer Android versions.</td></tr>
+  <tr><td>Internet and network state</td><td>Talking to a Wi-Fi OBD-II adapter, and telling you when a connection is needed.</td></tr>
+  <tr><td>Foreground service (connected device)</td><td>Keeping an open adapter connection alive while the app is in the background, so a recording is not cut short. It runs only while a connection is open, and shows a notification while it does.</td></tr>
+  <tr><td>Notifications</td><td>That notification. Refusing it hides the notice; the connection is kept either way.</td></tr>
+  <tr><td>Billing</td><td>The one-time purchase, through Google Play.</td></tr>
+  <tr><td>Ignore battery optimisations (optional)</td><td>Asked only if you choose it, so the phone does not freeze a recording mid-run.</td></tr>
+</table>
+
+<h2>Deleting your data</h2>
+
+<ul>
+  <li><strong>In the app:</strong> Settings clears the scan and recording history, and the list of unexplained codes.</li>
+  <li><strong>Everything:</strong> uninstalling the app removes all of it from the phone. Nothing is kept anywhere else, because nothing was sent anywhere.</li>
+  <li><strong>Your purchase</strong> is recorded by Google Play against your Google account, not by us. It is restored when you reinstall or sign in on another phone.</li>
+</ul>
+
+<h2>Children</h2>
+
+<p>Pin16 is a tool for working on cars and is not directed at children.</p>
+
+<h2>Changes</h2>
+
+<p>If this policy changes, the new version appears on this page with a new
+date at the top.</p>
+
+<h2>Contact</h2>
+
+<p>Questions about this policy or about your data:
+<a href="mailto:amaldavanau@gmail.com">amaldavanau@gmail.com</a>.</p>
+
+</section>
+
+<hr class="sep">
+
+<section id="ru" lang="ru">
+
+<header>
+  <h1>Pin16 — Политика конфиденциальности</h1>
+  <p class="when">Обновлено: 23 сентября 2026 года</p>
+</header>
+
+<div class="lead">
+  <p><strong>Pin16 ничего не собирает.</strong> Нет учётных записей, аналитики,
+  рекламы, отслеживания и наших серверов. Всё, что приложение читает из
+  автомобиля, остаётся на вашем телефоне, пока вы сами не решите поделиться
+  файлом.</p>
+</div>
+
+<p>Pin16 — приложение для диагностики OBD-II на Android. Оно общается с
+адаптером, вставленным в разъём автомобиля, и показывает то, что сообщает
+машина. Здесь описано, что приложение хранит, чего оно не делает никогда и как
+всё удалить.</p>
+
+<h2>Что хранится на вашем устройстве</h2>
+
+<p>Всё это остаётся на телефоне. Приложение никуда это не отправляет.</p>
+
+<table>
+  <tr><th>Что</th><th>Зачем</th></tr>
+  <tr><td>Сканирования: найденные коды неисправностей, проверка автомобиля и записи о стирании кодов</td><td>Ваша история того, что сообщал автомобиль</td></tr>
+  <tr><td>Записи показаний в реальном времени</td><td>Чтобы потом посмотреть поездку и поделиться ею</td></tr>
+  <tr><td>Что автомобиль сообщил о себе: VIN, марка, блок управления, версия программы, стандарт OBD, топливо</td><td>Чтобы в отчёте было видно, о какой машине речь</td></tr>
+  <tr><td>Название автомобиля, если вы его дали</td><td>Показывается в отчётах вместо VIN</td></tr>
+  <tr><td>Адаптеры, к которым вы подключались: название, адрес и способ, которым ответила машина</td><td>Чтобы следующее подключение было быстрым, а машина, которой нужен особый способ, снова отвечала</td></tr>
+  <tr><td>Что адаптер и автомобиль говорили при подключении</td><td>Короткий технический журнал, который можно отправить, если машина не подключается</td></tr>
+  <tr><td>Коды, которые встроенный справочник не смог объяснить</td><td>Чтобы улучшить объяснения в следующих версиях. Автоматически они никуда не отправляются; выгрузить их можно вручную</td></tr>
+  <tr><td>Ваши настройки: язык, тема, расположение плиток, принятое предупреждение</td><td>Чтобы приложение осталось таким, каким вы его оставили</td></tr>
+  <tr><td>Ваш бренд: логотип, название, сайт, контакты и подпись</td><td>Ставится на отчёты, которыми вы делитесь, после разовой покупки</td></tr>
+</table>
+
+<p>Базы данных с вашей историей зашифрованы на устройстве (SQLCipher, ключ
+получается из значения, которое хранится в Android Keystore).</p>
+
+<h2>Что покидает устройство — и только по вашей команде</h2>
+
+<p>Приложение ничего не выгружает само. Файлы уходят только тогда, когда вы
+нажимаете «Поделиться» или «Сохранить», и вы сами выбираете, куда:</p>
+
+<ul>
+  <li><strong>Отчёты</strong> о сканировании, записи или об отдельном коде — в формате HTML или PDF.</li>
+  <li><strong>Журнал адаптера</strong>, если вы отправляете его в поддержку из-за машины, которая не подключается.</li>
+  <li><strong>Резервные копии</strong>, которые вы выгружаете; они зашифрованы паролем, который вы задаёте.</li>
+</ul>
+
+<p>Когда вы отправили файл кому-то, дальнейшее — между вами и получателем;
+приложение в этом не участвует.</p>
+
+<h2>Работа с сетью</h2>
+
+<p><strong>Приложение не обращается ни к каким нашим серверам, потому что их
+нет.</strong> Объяснения кодов, названия параметров и таблица производителей по
+VIN входят в само приложение, и поиск идёт на телефоне, без подключения.</p>
+
+<p>Разрешение <code>INTERNET</code> объявлено по одной причине: часть
+адаптеров OBD-II — это адаптеры Wi-Fi, и связь с ними означает сетевое
+соединение с самим адаптером в локальной сети вашего автомобиля.</p>
+
+<h2>Покупки</h2>
+
+<p>Свой бренд в отчётах — разовая покупка. Её целиком проводит
+<strong>Google Play</strong>. Приложение не видит ни вашу карту, ни имя, ни
+платёжный адрес; оно получает только сведение о том, куплен ли доступ, и
+запоминает это на устройстве. Обработка платежа со стороны Google описана в
+<a href="https://policies.google.com/privacy" rel="noopener">Политике конфиденциальности Google</a>.</p>
+
+<h2>Разрешения и зачем они</h2>
+
+<table>
+  <tr><th>Разрешение</th><th>Зачем</th></tr>
+  <tr><td>Bluetooth (поиск и подключение)</td><td>Найти адаптер OBD-II и работать с ним. Поиск объявлен как никогда не используемый для определения местоположения.</td></tr>
+  <tr><td>Местоположение, только на Android 11 и старше</td><td>Эти версии Android требуют его для любого поиска Bluetooth LE. Приложение не читает ваше местоположение, и на более новых версиях разрешение не запрашивается.</td></tr>
+  <tr><td>Интернет и состояние сети</td><td>Связь с адаптером OBD-II по Wi-Fi и сообщение о том, что нужно подключение.</td></tr>
+  <tr><td>Служба переднего плана (подключённое устройство)</td><td>Держать связь с адаптером, пока приложение свёрнуто, чтобы запись не прервалась. Работает только при открытом подключении и показывает уведомление.</td></tr>
+  <tr><td>Уведомления</td><td>То самое уведомление. Если отказать, уведомление не показывается, а связь сохраняется.</td></tr>
+  <tr><td>Платежи</td><td>Разовая покупка через Google Play.</td></tr>
+  <tr><td>Отключение энергосбережения (по желанию)</td><td>Запрашивается, только если вы согласны, чтобы телефон не «заморозил» запись на середине.</td></tr>
+</table>
+
+<h2>Удаление данных</h2>
+
+<ul>
+  <li><strong>В приложении:</strong> в настройках очищается история сканирований и записей, а также список необъяснённых кодов.</li>
+  <li><strong>Полностью:</strong> удаление приложения убирает всё с телефона. Больше нигде ничего не хранится, потому что никуда ничего не отправлялось.</li>
+  <li><strong>Покупку</strong> хранит Google Play в вашем аккаунте Google, а не мы. Она восстанавливается при переустановке или на другом телефоне.</li>
+</ul>
+
+<h2>Дети</h2>
+
+<p>Pin16 — инструмент для работы с автомобилем и не предназначен для детей.</p>
+
+<h2>Изменения</h2>
+
+<p>Если политика изменится, новая версия появится на этой странице, а сверху
+будет новая дата.</p>
+
+<h2>Контакт</h2>
+
+<p>Вопросы о политике или о ваших данных:
+<a href="mailto:amaldavanau@gmail.com">amaldavanau@gmail.com</a>.</p>
+
+</section>
+
+<footer>
+  Pin16 · <a href="mailto:amaldavanau@gmail.com">amaldavanau@gmail.com</a>
+</footer>
+
+</main>
+</body>
+</html>
