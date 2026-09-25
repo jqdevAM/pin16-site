@@ -4,25 +4,148 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Pin16</title>
+<meta name="description" content="Pin16 — offline OBD-II car diagnostics for Android. Reads fault codes, explains them without a connection, and keeps everything on your phone.">
+<link rel="icon" href="pin16.png">
 <style>
-  :root { color-scheme: light dark; }
+  :root {
+    color-scheme: light dark;
+    --bg: #f6f8fa;
+    --panel: #ffffff;
+    --ink: #0d1b26;
+    --muted: #4d6577;
+    --line: #dfe6ec;
+    --accent: #0b5586;
+    --accent-ink: #ffffff;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #08131c;
+      --panel: #0f2029;
+      --ink: #e8f1f7;
+      --muted: #9db2c2;
+      --line: #1e3644;
+      --accent: #3fb1e8;
+      --accent-ink: #042e4c;
+    }
+  }
+  * { box-sizing: border-box; }
   body {
     margin: 0;
-    padding: 64px 16px;
-    font: 16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
-    display: flex;
-    justify-content: center;
+    padding: 48px 16px 64px;
+    background: var(--bg);
+    color: var(--ink);
+    font: 16px/1.65 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    -webkit-font-smoothing: antialiased;
   }
-  main { max-width: 32rem; }
-  h1 { font-size: 1.5rem; margin: 0 0 .5rem; }
-  p { margin: 0 0 1rem; }
+  main { max-width: 36rem; margin: 0 auto; }
+  header { display: flex; align-items: center; gap: 16px; margin-bottom: 28px; }
+  header img {
+    width: 64px; height: 64px; border-radius: 14px; display: block;
+    box-shadow: 0 2px 10px rgb(4 46 76 / .18);
+  }
+  h1 { font-size: 1.75rem; line-height: 1.2; margin: 0 0 2px; letter-spacing: -.02em; }
+  .tagline { color: var(--muted); margin: 0; }
+  h2 {
+    font-size: .8rem; text-transform: uppercase; letter-spacing: .08em;
+    color: var(--muted); margin: 32px 0 10px; font-weight: 600;
+  }
+  p { margin: 0 0 14px; }
+  .panel {
+    background: var(--panel); border: 1px solid var(--line);
+    border-radius: 14px; padding: 18px 20px;
+  }
+  ul { margin: 0; padding: 0; list-style: none; }
+  ul li { padding: 9px 0; border-top: 1px solid var(--line); }
+  ul li:first-child { border-top: 0; padding-top: 0; }
+  ul li:last-child { padding-bottom: 0; }
+  ul strong { display: block; font-weight: 600; }
+  ul span { color: var(--muted); font-size: .94rem; }
+  a { color: var(--accent); text-underline-offset: 2px; }
+  .links { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 8px; }
+  .links a {
+    display: inline-block; padding: 9px 16px; border-radius: 999px;
+    border: 1px solid var(--line); background: var(--panel);
+    text-decoration: none; font-weight: 500;
+  }
+  .links a.primary {
+    background: var(--accent); border-color: var(--accent); color: var(--accent-ink);
+  }
+  footer {
+    margin-top: 40px; padding-top: 18px; border-top: 1px solid var(--line);
+    color: var(--muted); font-size: .9rem;
+  }
 </style>
 </head>
 <body>
 <main>
-  <h1>Pin16</h1>
-  <p>Car diagnostics with an OBD-II adapter, for Android.</p>
-  <p><a href="privacy/">Privacy policy</a></p>
+
+  <header>
+    <img src="pin16.png" alt="" width="64" height="64">
+    <div>
+      <h1>Pin16</h1>
+      <p class="tagline">Car diagnostics with an OBD-II adapter, for Android.</p>
+    </div>
+  </header>
+
+  <p>Plug an ELM327-class adapter into the port under your dashboard. Pin16
+  asks the car what is wrong, reads back the fault codes, and explains each
+  one in plain words — what it means, what usually causes it, and what to
+  check first.</p>
+
+  <h2>What it does</h2>
+  <div class="panel">
+    <ul>
+      <li>
+        <strong>Reads every fault code the car will give up</strong>
+        <span>Stored, pending and permanent codes, and the module's own fault
+        memory — where a code like P1000 hides from apps that only ask the
+        usual way.</span>
+      </li>
+      <li>
+        <strong>Explains them without a connection</strong>
+        <span>Nearly two thousand explanations ship inside the app. A car park
+        under a building is where diagnostics usually happen, and that is
+        where it has to work.</span>
+      </li>
+      <li>
+        <strong>Clears codes, and says whether they stayed cleared</strong>
+        <span>A code that comes straight back is the useful answer, and the
+        app tells you which ones did.</span>
+      </li>
+      <li>
+        <strong>Watches live readings and records them</strong>
+        <span>Coolant, revs, fuel trim, sensor voltages — as a dashboard while
+        you drive, and as a recording you can look at afterwards.</span>
+      </li>
+      <li>
+        <strong>Sends a report anyone can read</strong>
+        <span>One document, with or without your workshop's own name and logo
+        on it, as HTML or PDF.</span>
+      </li>
+    </ul>
+  </div>
+
+  <h2>What it does not do</h2>
+  <div class="panel">
+    <p>No account, no analytics of its own, and no server of ours. Everything
+    it reads from your car is stored on the phone, encrypted, and leaves only
+    inside a file you send yourself. The app is free and is paid for by
+    advertising, which appears in two places — the code dictionary and the
+    history list — and never while a car is being read. It asks before using
+    your advertising ID, and you can say no.</p>
+    <div class="links">
+      <a class="primary" href="privacy/">Privacy policy</a>
+      <a href="privacy/#ru">По-русски</a>
+    </div>
+  </div>
+
+  <h2>Languages</h2>
+  <p>English, Deutsch, Français, Italiano, Русский.</p>
+
+  <footer>
+    Contact: <a href="mailto:amaldavanau@gmail.com">amaldavanau@gmail.com</a>
+  </footer>
+
 </main>
 </body>
 </html>
