@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Pin16 — Privacy Policy</title>
-<meta name="description" content="Pin16 privacy policy: the app collects nothing, has no account and no server, and keeps everything on the device.">
+<meta name="description" content="Pin16 privacy policy: everything the app reads from your car stays on the device; there is no account and no server of ours, and the only data collected is what the advertising SDK collects.">
 <style>
   :root {
     color-scheme: light dark;
@@ -92,10 +92,12 @@
 <section id="en">
 
 <div class="lead">
-  <p><strong>Pin16 collects nothing.</strong> There is no account, no
-  analytics, no advertising, no tracking and no server of ours. Everything the
-  app reads from your car stays on your phone until you choose to share a file
-  yourself.</p>
+  <p><strong>Nothing Pin16 reads from your car leaves your phone.</strong>
+  There is no account and no server of ours; the scans, the codes, the
+  recordings and the reports stay on the device until you choose to share a
+  file yourself. The app is free and is paid for by advertising, and the ads
+  are the one part of it that connects to anything — see
+  <a href="#en-ads">Advertising</a>.</p>
 </div>
 
 <p>Pin16 is an OBD-II diagnostics app for Android. It talks to an adapter
@@ -143,9 +145,37 @@ no server.</strong> The fault-code explanations, the parameter names and the
 VIN manufacturer table are all shipped inside the app and looked up on the
 phone, with no connection needed.</p>
 
-<p>The app declares the <code>INTERNET</code> permission for one reason: some
-OBD-II adapters are Wi-Fi adapters, and reaching them means opening a network
-connection to the adapter itself, on the local network in your car.</p>
+<p>The app declares the <code>INTERNET</code> permission for two reasons.
+Some OBD-II adapters are Wi-Fi adapters, and reaching them means opening a
+network connection to the adapter itself, on the local network in your car.
+The other is advertising, below.</p>
+
+<h2 id="en-ads">Advertising</h2>
+
+<p><strong>The app is free, and advertising is how it is paid for.</strong>
+Ads appear in exactly two places — under the fault-code dictionary and under
+the history list — and never anywhere a car is being read: not over live
+readings, not on a report, and never between a fault code and its
+explanation.</p>
+
+<p>The ads are served by the <strong>Yandex Mobile Ads SDK</strong>, which is
+part of the app. To do that it uses your device's <strong>advertising
+ID</strong> and information about the device and its connection, and it sends
+those to its own servers. That collection is Yandex's, made under Yandex's
+terms rather than ours, and it is the reason the app declares the
+<code>AD_ID</code> permission and the Play install-referrer permission. The
+SDK also brings Yandex's analytics libraries with it as dependencies; the app
+itself starts no analytics and reports nothing about how you use it.</p>
+
+<p><strong>What is never sent to an ad network, or anywhere else:</strong>
+your VIN, your fault codes, your live readings, your recordings, your reports
+and your logo. The part of the app that talks to your car has no way of
+reaching the network at all, which is checked automatically every time the
+app is built.</p>
+
+<p>You can reset or delete your advertising ID at any time in Android's own
+settings, under Privacy → Ads. Diagnostics keep working with no network and
+no ads.</p>
 
 <h2>Purchases</h2>
 
@@ -165,13 +195,15 @@ kind.</p>
   <tr><td>Foreground service (connected device)</td><td>Keeping an open adapter connection alive while the app is in the background, so a recording is not cut short. It runs only while a connection is open, and shows a notification while it does.</td></tr>
   <tr><td>Notifications</td><td>That notification. Refusing it hides the notice; the connection is kept either way.</td></tr>
   <tr><td>Ignore battery optimisations (optional)</td><td>Asked only if you choose it, so the phone does not freeze a recording mid-run.</td></tr>
+  <tr><td>Advertising ID (<code>AD_ID</code>)</td><td>Declared by the advertising SDK so ads can be selected and counted. Reset or delete the ID in Android's settings at any time.</td></tr>
+  <tr><td>Play install referrer</td><td>Declared by a library the advertising SDK depends on. It reads which campaign an install came from.</td></tr>
 </table>
 
 <h2>Deleting your data</h2>
 
 <ul>
   <li><strong>In the app:</strong> Settings clears the scan and recording history, and the list of unexplained codes.</li>
-  <li><strong>Everything:</strong> uninstalling the app removes all of it from the phone. Nothing is kept anywhere else, because nothing was sent anywhere.</li>
+  <li><strong>Everything:</strong> uninstalling the app removes all of your diagnostic data from the phone. None of it is kept anywhere else, because none of it was ever sent anywhere; the advertising ID belongs to Android's settings and is reset there.</li>
 </ul>
 
 <h2>Children</h2>
@@ -200,10 +232,11 @@ date at the top.</p>
 </header>
 
 <div class="lead">
-  <p><strong>Pin16 ничего не собирает.</strong> Нет учётных записей, аналитики,
-  рекламы, отслеживания и наших серверов. Всё, что приложение читает из
-  автомобиля, остаётся на вашем телефоне, пока вы сами не решите поделиться
-  файлом.</p>
+  <p><strong>Всё, что Pin16 читает из автомобиля, остаётся на телефоне.</strong>
+  Нет учётных записей и наших серверов: сканирования, коды, записи и отчёты
+  хранятся на устройстве, пока вы сами не решите поделиться файлом.
+  Приложение бесплатное и живёт за счёт рекламы — это единственная его часть,
+  которая куда-то обращается, см. <a href="#ru-ads">Реклама</a>.</p>
 </div>
 
 <p>Pin16 — приложение для диагностики OBD-II на Android. Оно общается с
@@ -251,9 +284,35 @@ date at the top.</p>
 нет.</strong> Объяснения кодов, названия параметров и таблица производителей по
 VIN входят в само приложение, и поиск идёт на телефоне, без подключения.</p>
 
-<p>Разрешение <code>INTERNET</code> объявлено по одной причине: часть
+<p>Разрешение <code>INTERNET</code> объявлено по двум причинам. Часть
 адаптеров OBD-II — это адаптеры Wi-Fi, и связь с ними означает сетевое
-соединение с самим адаптером в локальной сети вашего автомобиля.</p>
+соединение с самим адаптером в локальной сети вашего автомобиля. Вторая
+причина — реклама, о ней ниже.</p>
+
+<h2 id="ru-ads">Реклама</h2>
+
+<p><strong>Приложение бесплатное, и его оплачивает реклама.</strong> Она
+появляется ровно в двух местах — под справочником кодов и под списком
+истории — и никогда там, где идёт работа с автомобилем: ни поверх «живых»
+показаний, ни в отчёте, ни между кодом ошибки и его объяснением.</p>
+
+<p>Рекламу показывает <strong>Yandex Mobile Ads SDK</strong>, входящий в
+приложение. Для этого он использует <strong>рекламный идентификатор</strong>
+вашего устройства и сведения об устройстве и соединении и передаёт их на свои
+серверы. Этот сбор ведёт Яндекс на своих условиях, а не мы; именно поэтому
+приложение объявляет разрешение <code>AD_ID</code> и разрешение Google Play
+на источник установки. Вместе с SDK в приложение попадают и библиотеки
+аналитики Яндекса — само приложение никакую аналитику не запускает и о том,
+как вы им пользуетесь, ничего не сообщает.</p>
+
+<p><strong>Что не уходит ни в рекламную сеть, ни куда-либо ещё:</strong> ваш
+VIN, коды ошибок, «живые» показания, записи, отчёты и ваш логотип. Та часть
+приложения, которая работает с автомобилем, вообще не имеет доступа к сети, и
+это проверяется автоматически при каждой сборке.</p>
+
+<p>Рекламный идентификатор можно в любой момент сбросить или удалить в
+настройках Android: «Конфиденциальность» → «Реклама». Диагностика продолжает
+работать без сети и без рекламы.</p>
 
 <h2>Покупки</h2>
 
@@ -272,13 +331,15 @@ VIN входят в само приложение, и поиск идёт на �
   <tr><td>Служба переднего плана (подключённое устройство)</td><td>Держать связь с адаптером, пока приложение свёрнуто, чтобы запись не прервалась. Работает только при открытом подключении и показывает уведомление.</td></tr>
   <tr><td>Уведомления</td><td>То самое уведомление. Если отказать, уведомление не показывается, а связь сохраняется.</td></tr>
   <tr><td>Отключение энергосбережения (по желанию)</td><td>Запрашивается, только если вы согласны, чтобы телефон не «заморозил» запись на середине.</td></tr>
+  <tr><td>Рекламный идентификатор (<code>AD_ID</code>)</td><td>Объявлен рекламным SDK, чтобы подбирать и учитывать рекламу. Идентификатор можно в любой момент сбросить или удалить в настройках Android.</td></tr>
+  <tr><td>Источник установки Google Play</td><td>Объявлен библиотекой, от которой зависит рекламный SDK. Он сообщает, из какой кампании пришла установка.</td></tr>
 </table>
 
 <h2>Удаление данных</h2>
 
 <ul>
   <li><strong>В приложении:</strong> в настройках очищается история сканирований и записей, а также список необъяснённых кодов.</li>
-  <li><strong>Полностью:</strong> удаление приложения убирает всё с телефона. Больше нигде ничего не хранится, потому что никуда ничего не отправлялось.</li>
+  <li><strong>Полностью:</strong> удаление приложения убирает с телефона все данные о диагностике. Нигде больше они не хранятся, потому что никуда не отправлялись; рекламный идентификатор живёт в настройках Android и сбрасывается там.</li>
 </ul>
 
 <h2>Дети</h2>
