@@ -85,7 +85,7 @@
 
 <header>
   <h1>Pin16 — Privacy Policy</h1>
-  <p class="when">Last updated: 25 September 2026</p>
+  <p class="when">Last updated: 15 October 2026</p>
   <nav class="langs"><a href="#en">English</a><a href="#ru">Русский</a></nav>
 </header>
 
@@ -163,11 +163,18 @@ between a fault code and its explanation.</p>
 <p>The ads are served by the <strong>Yandex Mobile Ads SDK</strong>, which is
 part of the app. To do that it uses your device's <strong>advertising
 ID</strong> and information about the device and its connection, and it sends
-those to its own servers. That collection is Yandex's, made under Yandex's
-terms rather than ours, and it is the reason the app declares the
+those to its own servers. That collection is Yandex's, made under
+<a href="https://yandex.com/legal/confidential/">Yandex's privacy policy</a>
+rather than ours, and it is the reason the app declares the
 <code>AD_ID</code> permission and the Play install-referrer permission. The
 SDK also brings Yandex's analytics libraries with it as dependencies; the app
 itself starts no analytics and reports nothing about how you use it.</p>
+
+<p><strong>A second ad network is in the app and is not used.</strong> The
+build also contains the Start.io SDK, from when Start.io served these slots;
+this release never starts it, so it is handed nothing and sends nothing. If
+that ever changes, this page says so before the build that does it ships —
+the build refuses to be made otherwise.</p>
 
 <p><strong>What is never sent to an ad network, or anywhere else:</strong>
 your VIN, your fault codes, your live readings, your recordings, your reports
@@ -178,9 +185,15 @@ app is built.</p>
 <p><strong>You are asked first.</strong> The first time an ad would appear,
 the app asks whether your advertising ID may be used to choose it, and
 requests nothing from the ad network until you answer. If you decline, the
-app stays free and still shows ads — they are simply not chosen that way.
-You can change the answer at any time in Settings → Advertising, and the
-change takes effect immediately.</p>
+app stays free and still shows ads — they are simply not chosen that way,
+and the ad network is told so before any ad is requested. You can change the
+answer at any time in Settings → Advertising, and the change takes effect
+immediately.</p>
+
+<p>If the app cannot tell the ad network about your refusal — which should
+not happen, but is not something it will guess about — it asks for no ads at
+all rather than asking anyway. The ad slots stay empty and the app stays
+free. The question you are asked says which of the two it will be.</p>
 
 <p>You can also reset or delete your advertising ID at any time in Android's
 own settings, under Privacy → Ads. Diagnostics keep working with no network
@@ -205,7 +218,10 @@ kind.</p>
   <tr><td>Notifications</td><td>That notification. Refusing it hides the notice; the connection is kept either way.</td></tr>
   <tr><td>Ignore battery optimisations (optional)</td><td>Asked only if you choose it, so the phone does not freeze a recording mid-run.</td></tr>
   <tr><td>Advertising ID (<code>AD_ID</code>)</td><td>Declared by the advertising SDK so ads can be selected and counted. Reset or delete the ID in Android's settings at any time.</td></tr>
-  <tr><td>Play install referrer</td><td>Declared by a library the advertising SDK depends on. It reads which campaign an install came from.</td></tr>
+  <tr><td>Play install referrer</td><td>Declared by a library an advertising SDK depends on. It reads which campaign an install came from.</td></tr>
+  <tr><td>Advertising topics (<code>ACCESS_ADSERVICES_TOPICS</code>)</td><td>Declared by the advertising SDK. It lets the SDK read the coarse interest topics Android itself works out from how you use your phone. Nothing in Pin16 reads them.</td></tr>
+  <tr><td>Wi-Fi state</td><td>Declared by the advertising SDK, which reads what kind of connection the phone has. Pin16 reaches a Wi-Fi adapter without it.</td></tr>
+  <tr><td>Start at boot (<code>RECEIVE_BOOT_COMPLETED</code>)</td><td>Declared by the advertising SDK, which refreshes its own settings after the phone restarts. <strong>Pin16 itself does nothing at boot</strong> — it does not scan, connect, record or notify, and it opens no connection you did not ask for.</td></tr>
 </table>
 
 <h2>Deleting your data</h2>
@@ -237,7 +253,7 @@ date at the top.</p>
 
 <header>
   <h1>Pin16 — Политика конфиденциальности</h1>
-  <p class="when">Обновлено: 25 сентября 2026 года</p>
+  <p class="when">Обновлено: 15 октября 2026 года</p>
 </header>
 
 <div class="lead">
@@ -311,11 +327,19 @@ VIN входят в само приложение, и поиск идёт на �
 <p>Рекламу показывает <strong>Yandex Mobile Ads SDK</strong>, входящий в
 приложение. Для этого он использует <strong>рекламный идентификатор</strong>
 вашего устройства и сведения об устройстве и соединении и передаёт их на свои
-серверы. Этот сбор ведёт Яндекс на своих условиях, а не мы; именно поэтому
-приложение объявляет разрешение <code>AD_ID</code> и разрешение Google Play
-на источник установки. Вместе с SDK в приложение попадают и библиотеки
-аналитики Яндекса — само приложение никакую аналитику не запускает и о том,
-как вы им пользуетесь, ничего не сообщает.</p>
+серверы. Этот сбор ведёт Яндекс на своих условиях, изложенных в его
+<a href="https://yandex.ru/legal/confidential/">политике
+конфиденциальности</a>, а не мы; именно поэтому приложение объявляет
+разрешение <code>AD_ID</code> и разрешение Google Play на источник установки.
+Вместе с SDK в приложение попадают и библиотеки аналитики Яндекса — само
+приложение никакую аналитику не запускает и о том, как вы им пользуетесь,
+ничего не сообщает.</p>
+
+<p><strong>Вторая рекламная сеть есть в приложении и не используется.</strong>
+В сборке остался Start.io SDK — с тех пор, когда рекламу показывал Start.io;
+этот выпуск его не запускает, поэтому ему ничего не передаётся и он ничего не
+отправляет. Если это когда-нибудь изменится, эта страница скажет об этом
+раньше, чем выйдет такая сборка: иначе сборку просто не собрать.</p>
 
 <p><strong>Что не уходит ни в рекламную сеть, ни куда-либо ещё:</strong> ваш
 VIN, коды ошибок, «живые» показания, записи, отчёты и ваш логотип. Та часть
@@ -326,8 +350,14 @@ VIN, коды ошибок, «живые» показания, записи, о�
 первый раз, приложение спрашивает, можно ли использовать ваш рекламный
 идентификатор для её подбора, и до ответа не обращается к рекламной сети
 вообще. Если отказать, приложение останется бесплатным и реклама никуда не
-денется — её просто будут подбирать иначе. Ответ можно изменить в любой
+денется — её просто будут подбирать иначе, и рекламная сеть узнаёт об этом
+раньше, чем будет запрошена хоть одна реклама. Ответ можно изменить в любой
 момент: «Настройки» → «Реклама», изменение действует сразу.</p>
+
+<p>Если приложение не сможет сообщить рекламной сети о вашем отказе — так
+быть не должно, но угадывать приложение не станет — оно не будет запрашивать
+рекламу вовсе. Рекламные места останутся пустыми, приложение — бесплатным.
+В самом вопросе написано, что именно произойдёт.</p>
 
 <p>Сам рекламный идентификатор можно в любой момент сбросить или удалить в
 настройках Android: «Конфиденциальность» → «Реклама». Диагностика продолжает
@@ -352,6 +382,9 @@ VIN, коды ошибок, «живые» показания, записи, о�
   <tr><td>Отключение энергосбережения (по желанию)</td><td>Запрашивается, только если вы согласны, чтобы телефон не «заморозил» запись на середине.</td></tr>
   <tr><td>Рекламный идентификатор (<code>AD_ID</code>)</td><td>Объявлен рекламным SDK, чтобы подбирать и учитывать рекламу. Идентификатор можно в любой момент сбросить или удалить в настройках Android.</td></tr>
   <tr><td>Источник установки Google Play</td><td>Объявлен библиотекой, от которой зависит рекламный SDK. Он сообщает, из какой кампании пришла установка.</td></tr>
+  <tr><td>Рекламные тематики (<code>ACCESS_ADSERVICES_TOPICS</code>)</td><td>Объявлено рекламным SDK. Позволяет ему читать приблизительные тематики интересов, которые Android сам выводит из того, как вы пользуетесь телефоном. Приложение их не читает.</td></tr>
+  <tr><td>Состояние Wi-Fi</td><td>Объявлено рекламным SDK, который смотрит, какое у телефона соединение. Самому Pin16 для связи с Wi-Fi-адаптером это не нужно.</td></tr>
+  <tr><td>Запуск после включения телефона (<code>RECEIVE_BOOT_COMPLETED</code>)</td><td>Объявлено рекламным SDK, который после перезагрузки обновляет свои настройки. <strong>Сам Pin16 при включении телефона не делает ничего</strong> — не ищет адаптер, не подключается, не записывает и не показывает уведомлений, и не открывает соединений, о которых вы не просили.</td></tr>
 </table>
 
 <h2>Удаление данных</h2>
