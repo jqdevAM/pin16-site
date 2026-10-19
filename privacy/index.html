@@ -85,7 +85,7 @@
 
 <header>
   <h1>Pin16 — Privacy Policy</h1>
-  <p class="when">Last updated: 15 October 2026</p>
+  <p class="when">Last updated: 19 October 2026</p>
   <nav class="langs"><a href="#en">English</a><a href="#ru">Русский</a></nav>
 </header>
 
@@ -170,11 +170,16 @@ rather than ours, and it is the reason the app declares the
 SDK also brings Yandex's analytics libraries with it as dependencies; the app
 itself starts no analytics and reports nothing about how you use it.</p>
 
-<p><strong>A second ad network is in the app and is not used.</strong> The
-build also contains the Start.io SDK, from when Start.io served these slots;
-this release never starts it, so it is handed nothing and sends nothing. If
-that ever changes, this page says so before the build that does it ships —
-the build refuses to be made otherwise.</p>
+<p><strong>There was a second ad network, and it is out of the app.</strong>
+Start.io served these slots until 15 October 2026 and its SDK stayed in the
+build, unused, until 19 October 2026, when it was removed. With it went three
+Android permissions it had added to this app's entry in Google Play —
+advertising topics, Wi-Fi state and start at boot — and the data its own
+policy listed, which included the names of paired Bluetooth devices, device
+sensors and a check of which apps are installed. None of that was ever read
+by Pin16, and none of it is in the app any more. If a second network is ever
+added again, this page says so before the build that does it ships — the
+build refuses to be made otherwise.</p>
 
 <p><strong>What is never sent to an ad network, or anywhere else:</strong>
 your VIN, your fault codes, your live readings, your recordings, your reports
@@ -219,9 +224,6 @@ kind.</p>
   <tr><td>Ignore battery optimisations (optional)</td><td>Asked only if you choose it, so the phone does not freeze a recording mid-run.</td></tr>
   <tr><td>Advertising ID (<code>AD_ID</code>)</td><td>Declared by the advertising SDK so ads can be selected and counted. Reset or delete the ID in Android's settings at any time.</td></tr>
   <tr><td>Play install referrer</td><td>Declared by a library an advertising SDK depends on. It reads which campaign an install came from.</td></tr>
-  <tr><td>Advertising topics (<code>ACCESS_ADSERVICES_TOPICS</code>)</td><td>Declared by the advertising SDK. It lets the SDK read the coarse interest topics Android itself works out from how you use your phone. Nothing in Pin16 reads them.</td></tr>
-  <tr><td>Wi-Fi state</td><td>Declared by the advertising SDK, which reads what kind of connection the phone has. Pin16 reaches a Wi-Fi adapter without it.</td></tr>
-  <tr><td>Start at boot (<code>RECEIVE_BOOT_COMPLETED</code>)</td><td>Declared by the advertising SDK, which refreshes its own settings after the phone restarts. <strong>Pin16 itself does nothing at boot</strong> — it does not scan, connect, record or notify, and it opens no connection you did not ask for.</td></tr>
 </table>
 
 <h2>Deleting your data</h2>
@@ -253,7 +255,7 @@ date at the top.</p>
 
 <header>
   <h1>Pin16 — Политика конфиденциальности</h1>
-  <p class="when">Обновлено: 15 октября 2026 года</p>
+  <p class="when">Обновлено: 19 октября 2026 года</p>
 </header>
 
 <div class="lead">
@@ -335,11 +337,17 @@ VIN входят в само приложение, и поиск идёт на �
 приложение никакую аналитику не запускает и о том, как вы им пользуетесь,
 ничего не сообщает.</p>
 
-<p><strong>Вторая рекламная сеть есть в приложении и не используется.</strong>
-В сборке остался Start.io SDK — с тех пор, когда рекламу показывал Start.io;
-этот выпуск его не запускает, поэтому ему ничего не передаётся и он ничего не
-отправляет. Если это когда-нибудь изменится, эта страница скажет об этом
-раньше, чем выйдет такая сборка: иначе сборку просто не собрать.</p>
+<p><strong>Вторая рекламная сеть была, и её в приложении больше нет.</strong>
+Start.io показывал рекламу в этих местах до 15 октября 2026 года, а его SDK
+оставался в сборке, ничего не делая, до 19 октября 2026 года, когда был
+удалён. Вместе с ним из карточки приложения в Google Play ушли три
+разрешения, которые он добавлял, — рекламные тематики, состояние Wi-Fi и
+запуск после включения телефона, — и те данные, которые перечисляла его
+собственная политика: имена сопряжённых Bluetooth-устройств, датчики
+устройства и проверка того, какие приложения установлены. Ничего из этого
+Pin16 не читал, и ничего из этого в приложении больше нет. Если вторая сеть
+когда-нибудь появится снова, эта страница скажет об этом раньше, чем выйдет
+такая сборка: иначе сборку просто не собрать.</p>
 
 <p><strong>Что не уходит ни в рекламную сеть, ни куда-либо ещё:</strong> ваш
 VIN, коды ошибок, «живые» показания, записи, отчёты и ваш логотип. Та часть
@@ -382,9 +390,6 @@ VIN, коды ошибок, «живые» показания, записи, о�
   <tr><td>Отключение энергосбережения (по желанию)</td><td>Запрашивается, только если вы согласны, чтобы телефон не «заморозил» запись на середине.</td></tr>
   <tr><td>Рекламный идентификатор (<code>AD_ID</code>)</td><td>Объявлен рекламным SDK, чтобы подбирать и учитывать рекламу. Идентификатор можно в любой момент сбросить или удалить в настройках Android.</td></tr>
   <tr><td>Источник установки Google Play</td><td>Объявлен библиотекой, от которой зависит рекламный SDK. Он сообщает, из какой кампании пришла установка.</td></tr>
-  <tr><td>Рекламные тематики (<code>ACCESS_ADSERVICES_TOPICS</code>)</td><td>Объявлено рекламным SDK. Позволяет ему читать приблизительные тематики интересов, которые Android сам выводит из того, как вы пользуетесь телефоном. Приложение их не читает.</td></tr>
-  <tr><td>Состояние Wi-Fi</td><td>Объявлено рекламным SDK, который смотрит, какое у телефона соединение. Самому Pin16 для связи с Wi-Fi-адаптером это не нужно.</td></tr>
-  <tr><td>Запуск после включения телефона (<code>RECEIVE_BOOT_COMPLETED</code>)</td><td>Объявлено рекламным SDK, который после перезагрузки обновляет свои настройки. <strong>Сам Pin16 при включении телефона не делает ничего</strong> — не ищет адаптер, не подключается, не записывает и не показывает уведомлений, и не открывает соединений, о которых вы не просили.</td></tr>
 </table>
 
 <h2>Удаление данных</h2>
