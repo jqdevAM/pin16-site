@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>P2192 — System Too Rich at Higher Load (Bank 1): causes and what to check</title>
+<meta name="description" content="The mixture on bank 1 is too rich - too much fuel for the air available - and specifically when running under load, with the throttle well open.">
+<link rel="canonical" href="https://jqdevam.github.io/pin16-site/codes/P2192/">
+<link rel="alternate" hreflang="en" href="https://jqdevam.github.io/pin16-site/codes/P2192/">
+<link rel="alternate" hreflang="ru" href="https://jqdevam.github.io/pin16-site/ru/codes/P2192/">
+<link rel="alternate" hreflang="x-default" href="https://jqdevam.github.io/pin16-site/codes/P2192/">
+<link rel="icon" href="../../pin16.png">
+<link rel="stylesheet" href="../../assets/codes.css">
+</head>
+<body>
+<main>
+<nav class="top"><a class="brand" href="../../"><img src="../../pin16.png" alt="" width="28" height="28">Pin16</a><a href="../../codes/">All codes</a><a hreflang="ru" href="../../ru/codes/P2192/">По-русски</a></nav>
+<header class="code-head">
+<p class="code">P2192</p>
+<h1>System Too Rich at Higher Load (Bank 1)</h1>
+<dl class="facts"><div class="sev-medium"><dt>Severity</dt><dd>Medium</dd></div><div><dt>Driving</dt><dd>Drivable — book it in</dd></div><div><dt>System</dt><dd>Powertrain</dd></div><div><dt>Group</dt><dd>Fuel and air metering</dd></div></dl>
+</header>
+<p class="lead">The mixture on bank 1 is too rich - too much fuel for the air available - and specifically when running under load, with the throttle well open. The module has run out of adjustment trying to correct it. The condition named in the code is the useful part: Under load the engine needs its full fuel delivery, so a fault that only appears here points at fuel supply - a weak pump, a blocked filter, a failing regulator - rather than at a leak, because a leak matters least when the throttle is open.</p>
+<h2>Possible causes</h2>
+<ul class="causes">
+<li><span class="lik lik-common">Common</span>Leaking or stuck-open fuel injector</li>
+<li><span class="lik lik-common">Common</span>Fuel pressure regulator letting pressure run high</li>
+<li><span class="lik lik-common">Common</span>Mass airflow sensor over-reporting airflow</li>
+<li><span class="lik lik-common">Common</span>Restricted air filter starving the engine of air</li>
+<li><span class="lik lik-possible">Possible</span>Faulty coolant temperature sensor making the module think the engine is cold</li>
+<li><span class="lik lik-possible">Possible</span>Failing oxygen sensor reporting rich incorrectly</li>
+</ul>
+<h2>What you might notice</h2>
+<ul>
+<li>Black smoke from the exhaust</li>
+<li>Strong fuel smell</li>
+<li>Poor fuel economy</li>
+<li>Rough idle</li>
+<li>Spark plugs fouled with soot</li>
+</ul>
+<h2>What to check, in order</h2>
+<ol class="checks">
+<li>Check the air filter. A heavily restricted filter is the cheapest possible cause and worth eliminating first.</li>
+<li>Watch fuel trim on the live data screen - strongly negative trim confirms the module is cutting fuel to compensate.</li>
+<li>Check the coolant temperature sensor reads plausibly. A sensor stuck reading cold makes the module enrich the mixture permanently.</li>
+<li>Test fuel pressure against specification.</li>
+<li>Inspect the spark plugs - uniform soot across all of them supports a whole-bank rich condition rather than one bad injector.</li>
+</ol>
+<section class="cta">
+<h2>Read this code from your own car</h2>
+<p>Plug an ELM327 adapter into the OBD-II port under the dashboard. Pin16 reads every stored, pending and permanent code, explains each one like this page does — offline, with no account — and shows what the car recorded when the fault was set.</p>
+<a class="button" href="https://play.google.com/store/apps/details?id=com.amaldavanau.pin16&amp;hl=en&amp;referrer=utm_source%3Dpin16_site%26utm_medium%3Dcode_page%26utm_campaign%3Dcode_pages_en%26utm_content%3DP2192">Get Pin16 on Google Play</a>
+</section>
+<nav class="pager"><a rel="prev" href="../P2191/">← P2191</a><a href="../">All codes</a><a rel="next" href="../P2193/">P2193 →</a></nav>
+<footer><p>Written for Pin16 and not yet reviewed by a qualified technician. This is guidance for diagnosis, not repair instructions, and it may be incomplete or wrong for your vehicle. If in doubt, ask a mechanic.</p><p><a href="../../">Pin16</a> · <a href="../../privacy/">Privacy policy</a></p></footer>
+</main>
+</body>
+</html>

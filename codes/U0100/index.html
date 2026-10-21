@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>U0100 — Lost Communication With ECM/PCM &quot;A&quot;: causes and what to check</title>
+<meta name="description" content="The control module has stopped receiving messages from the engine control module (ECM/PCM &quot;A&quot;).">
+<link rel="canonical" href="https://jqdevam.github.io/pin16-site/codes/U0100/">
+<link rel="alternate" hreflang="en" href="https://jqdevam.github.io/pin16-site/codes/U0100/">
+<link rel="alternate" hreflang="ru" href="https://jqdevam.github.io/pin16-site/ru/codes/U0100/">
+<link rel="alternate" hreflang="x-default" href="https://jqdevam.github.io/pin16-site/codes/U0100/">
+<link rel="icon" href="../../pin16.png">
+<link rel="stylesheet" href="../../assets/codes.css">
+</head>
+<body>
+<main>
+<nav class="top"><a class="brand" href="../../"><img src="../../pin16.png" alt="" width="28" height="28">Pin16</a><a href="../../codes/">All codes</a><a hreflang="ru" href="../../ru/codes/U0100/">По-русски</a></nav>
+<header class="code-head">
+<p class="code">U0100</p>
+<h1>Lost Communication With ECM/PCM &quot;A&quot;</h1>
+<dl class="facts"><div class="sev-high"><dt>Severity</dt><dd>High</dd></div><div><dt>Driving</dt><dd>Drive only to a garage</dd></div><div><dt>System</dt><dd>Network and communication</dd></div><div><dt>Group</dt><dd>Network communication</dd></div></dl>
+</header>
+<p class="lead">The control module has stopped receiving messages from the engine control module (ECM/PCM &quot;A&quot;). Whatever that module runs is no longer being coordinated with the rest of the vehicle, so expect a limp-home mode, a fixed gear, a refusal to start, or a loss of the function it controls. The car may drive normally between faults and then not - that intermittency is typical of a wiring or power problem rather than a failed module.</p>
+<h2>Possible causes</h2>
+<ul class="causes">
+<li><span class="lik lik-common">Common</span>Low battery voltage or a discharged battery, dropping modules off the bus</li>
+<li><span class="lik lik-common">Common</span>Blown fuse or corroded earth on the supply to the engine control module (ECM/PCM &quot;A&quot;)</li>
+<li><span class="lik lik-common">Common</span>Damaged, chafed or corroded bus wiring</li>
+<li><span class="lik lik-common">Common</span>Corroded or water-ingressed connector at the module</li>
+<li><span class="lik lik-possible">Possible</span>Failed module</li>
+<li><span class="lik lik-possible">Possible</span>Another module faulting and dragging the whole bus down</li>
+<li><span class="lik lik-possible">Possible</span>Module not coded or configured after a previous repair or replacement</li>
+<li><span class="lik lik-possible">Possible</span>Aftermarket electrical work spliced into the bus - alarms, trackers, tow bar wiring, stereos</li>
+</ul>
+<h2>What you might notice</h2>
+<ul>
+<li>Limp-home mode or reduced power</li>
+<li>Transmission stuck in one gear or refusing to shift</li>
+<li>Engine will not start or cuts out</li>
+<li>Several warning lights at once</li>
+<li>Scan tool cannot see the module at all</li>
+<li>Fault comes and goes</li>
+</ul>
+<h2>What to check, in order</h2>
+<ol class="checks">
+<li>Check battery voltage and state of charge before anything else. A weak or failing battery drops modules off the bus and sets lost-communication codes with no wiring fault at all - this is the single most common false lead in this whole family.</li>
+<li>Check whether this code is current or historic. Lost-communication codes are routinely set by a flat battery, a jump start or a battery disconnection, and a historic code straight after one of those events usually records the event rather than a fault.</li>
+<li>Check the fuses and earth points for the engine control module (ECM/PCM &quot;A&quot;) before anything else electrical. A blown fuse is cheap to find and accounts for a large share of these codes.</li>
+<li>Note how many U-codes are stored. Several at once points at battery, earth or bus wiring, not at several modules failing simultaneously - and a gateway code among them is very likely the root cause.</li>
+<li>Ask what was done to the car recently. Aftermarket alarms, trackers, tow bar wiring and stereos are often spliced straight into the bus and are a frequent cause of communication faults that appear weeks later.</li>
+<li>Inspect the module connector for corrosion and water ingress, and wiggle-test the harness at chafe points with the scan tool connected.</li>
+<li>Do not replace the module until power, earth, bus wiring and battery condition have all been eliminated. A replacement usually needs coding to the vehicle as well, so a wrong guess is expensive twice.</li>
+</ol>
+<section class="cta">
+<h2>Read this code from your own car</h2>
+<p>Plug an ELM327 adapter into the OBD-II port under the dashboard. Pin16 reads every stored, pending and permanent code, explains each one like this page does — offline, with no account — and shows what the car recorded when the fault was set.</p>
+<a class="button" href="https://play.google.com/store/apps/details?id=com.amaldavanau.pin16&amp;hl=en&amp;referrer=utm_source%3Dpin16_site%26utm_medium%3Dcode_page%26utm_campaign%3Dcode_pages_en%26utm_content%3DU0100">Get Pin16 on Google Play</a>
+</section>
+<nav class="pager"><a rel="prev" href="../U0098/">← U0098</a><a href="../">All codes</a><a rel="next" href="../U0101/">U0101 →</a></nav>
+<footer><p>Written for Pin16 and not yet reviewed by a qualified technician. This is guidance for diagnosis, not repair instructions, and it may be incomplete or wrong for your vehicle. If in doubt, ask a mechanic.</p><p><a href="../../">Pin16</a> · <a href="../../privacy/">Privacy policy</a></p></footer>
+</main>
+</body>
+</html>

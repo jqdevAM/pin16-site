@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>U0431 — Invalid Data Received From Body Control Module &quot;A&quot;: causes and what to check</title>
+<meta name="description" content="Body control module &quot;A&quot; is sending data that the module storing this code can tell is wrong.">
+<link rel="canonical" href="https://jqdevam.github.io/pin16-site/codes/U0431/">
+<link rel="alternate" hreflang="en" href="https://jqdevam.github.io/pin16-site/codes/U0431/">
+<link rel="alternate" hreflang="ru" href="https://jqdevam.github.io/pin16-site/ru/codes/U0431/">
+<link rel="alternate" hreflang="x-default" href="https://jqdevam.github.io/pin16-site/codes/U0431/">
+<link rel="icon" href="../../pin16.png">
+<link rel="stylesheet" href="../../assets/codes.css">
+</head>
+<body>
+<main>
+<nav class="top"><a class="brand" href="../../"><img src="../../pin16.png" alt="" width="28" height="28">Pin16</a><a href="../../codes/">All codes</a><a hreflang="ru" href="../../ru/codes/U0431/">По-русски</a></nav>
+<header class="code-head">
+<p class="code">U0431</p>
+<h1>Invalid Data Received From Body Control Module &quot;A&quot;</h1>
+<dl class="facts"><div class="sev-high"><dt>Severity</dt><dd>High</dd></div><div><dt>Driving</dt><dd>Drivable — book it in</dd></div><div><dt>System</dt><dd>Network and communication</dd></div><div><dt>Group</dt><dd>Network data</dd></div></dl>
+</header>
+<aside class="note"><strong>Important.</strong> If exterior lighting is affected, get it fixed before driving at night. A car whose lights switch themselves off is a hazard to everyone, not only to its driver.</aside>
+<p class="lead">Body control module &quot;A&quot; is sending data that the module storing this code can tell is wrong. The message is arriving, so the network and the wiring between them are working - but something in it fails a plausibility check: a value outside the range it could physically take, a failed checksum, or a message counter that stopped advancing. That is what separates this from a lost communication code, where the message stops arriving altogether. This code is stored by the module *receiving* the data and it names the module that *sent* it, so it points away from itself. The fault is usually in body control module &quot;A&quot;, or in a sensor feeding it, rather than in the module that noticed. The body control module is the hub for lighting, wipers, locking, windows and much of the vehicle&#x27;s switching, and it passes that state to other modules. Invalid data from it therefore shows up as a scattering of unrelated electrical faults rather than as one clear symptom.</p>
+<h2>Possible causes</h2>
+<ul class="causes">
+<li><span class="lik lik-common">Common</span>A fault inside body control module &quot;A&quot;, or in a sensor feeding it, so it passes on a reading that is wrong</li>
+<li><span class="lik lik-common">Common</span>Body control module &quot;A&quot; has its own stored fault codes that explain why its data is bad</li>
+<li><span class="lik lik-common">Common</span>Low or unstable system voltage - a module starved of a steady supply produces nonsense values</li>
+<li><span class="lik lik-common">Common</span>Corroded or water-damaged connector at body control module &quot;A&quot;, corrupting the message content</li>
+<li><span class="lik lik-possible">Possible</span>Software or calibration mismatch after body control module &quot;A&quot; was replaced, updated or coded</li>
+<li><span class="lik lik-possible">Possible</span>Damaged wiring, or a repair that disturbed the bus pair</li>
+<li><span class="lik lik-possible">Possible</span>Interference from a badly-fitted aftermarket accessory spliced into the bus</li>
+<li><span class="lik lik-rare">Rare</span>A fault in the receiving module, which is misjudging data that is actually good</li>
+</ul>
+<h2>What you might notice</h2>
+<ul>
+<li>Several unrelated electrical faults at once</li>
+<li>Lights, wipers or locking behaving oddly</li>
+<li>Warning lights that do not match any obvious fault</li>
+<li>The car not going to sleep, flattening the battery overnight</li>
+<li>Warning light on for the system that depends on the data</li>
+<li>The affected function switching itself off</li>
+<li>Fault codes stored in more than one module</li>
+</ul>
+<h2>What to check, in order</h2>
+<ol class="checks">
+<li>Read the codes from every module on the vehicle, not just the engine. This code names body control module &quot;A&quot; as the source, and body control module &quot;A&quot; almost always has its own code saying why its data is wrong. That code, not this one, is the one to fix.</li>
+<li>Check battery voltage and the earth points before suspecting any module. A supply that sags makes modules produce implausible values, and it sets invalid-data codes across several unrelated systems at once.</li>
+<li>If more than one module is reporting invalid data, look at the power supply and the bus rather than at the modules. Modules do not fail in groups; shared feeds, earths and bus wiring do.</li>
+<li>Find out whether anything was recently fitted, replaced, updated or coded. A replacement module carrying the wrong calibration sends data in a range or format the rest of the vehicle does not expect, and this code is often the first sign of it.</li>
+<li>Inspect the connector at body control module &quot;A&quot; for corrosion and water ingress. A partly-corroded pin corrupts the content of a message while the message itself still arrives on time - which is precisely this code rather than a lost communication code.</li>
+<li>Do not replace body control module &quot;A&quot; on the strength of this code alone. It is the accused, not the convicted. Confirm the data it is sending is actually wrong - by reading its own codes and its live data - before spending money on it.</li>
+</ol>
+<section class="cta">
+<h2>Read this code from your own car</h2>
+<p>Plug an ELM327 adapter into the OBD-II port under the dashboard. Pin16 reads every stored, pending and permanent code, explains each one like this page does — offline, with no account — and shows what the car recorded when the fault was set.</p>
+<a class="button" href="https://play.google.com/store/apps/details?id=com.amaldavanau.pin16&amp;hl=en&amp;referrer=utm_source%3Dpin16_site%26utm_medium%3Dcode_page%26utm_campaign%3Dcode_pages_en%26utm_content%3DU0431">Get Pin16 on Google Play</a>
+</section>
+<nav class="pager"><a rel="prev" href="../U0430/">← U0430</a><a href="../">All codes</a></nav>
+<footer><p>Written for Pin16 and not yet reviewed by a qualified technician. This is guidance for diagnosis, not repair instructions, and it may be incomplete or wrong for your vehicle. If in doubt, ask a mechanic.</p><p><a href="../../">Pin16</a> · <a href="../../privacy/">Privacy policy</a></p></footer>
+</main>
+</body>
+</html>

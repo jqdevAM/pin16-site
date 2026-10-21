@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>P0706 — Transmission Range Sensor Circuit Range/Performance: causes and what to check</title>
+<meta name="description" content="The transmission range sensor is answering, but its reading does not agree with what the module expects - the reported selector position does not match the…">
+<link rel="canonical" href="https://jqdevam.github.io/pin16-site/codes/P0706/">
+<link rel="alternate" hreflang="en" href="https://jqdevam.github.io/pin16-site/codes/P0706/">
+<link rel="alternate" hreflang="ru" href="https://jqdevam.github.io/pin16-site/ru/codes/P0706/">
+<link rel="alternate" hreflang="x-default" href="https://jqdevam.github.io/pin16-site/codes/P0706/">
+<link rel="icon" href="../../pin16.png">
+<link rel="stylesheet" href="../../assets/codes.css">
+</head>
+<body>
+<main>
+<nav class="top"><a class="brand" href="../../"><img src="../../pin16.png" alt="" width="28" height="28">Pin16</a><a href="../../codes/">All codes</a><a hreflang="ru" href="../../ru/codes/P0706/">По-русски</a></nav>
+<header class="code-head">
+<p class="code">P0706</p>
+<h1>Transmission Range Sensor Circuit Range/Performance</h1>
+<dl class="facts"><div class="sev-high"><dt>Severity</dt><dd>High</dd></div><div><dt>Driving</dt><dd>Drive only to a garage</dd></div><div><dt>System</dt><dd>Powertrain</dd></div><div><dt>Group</dt><dd>Transmission</dd></div></dl>
+</header>
+<p class="lead">The transmission range sensor is answering, but its reading does not agree with what the module expects - the reported selector position does not match the gear the transmission is actually in, or it changes when the selector has not moved. Usually this is a worn selector linkage or a sensor that has drifted out of adjustment rather than a dead sensor.</p>
+<h2>Possible causes</h2>
+<ul class="causes">
+<li><span class="lik lik-common">Common</span>Range sensor out of adjustment</li>
+<li><span class="lik lik-common">Common</span>Worn selector cable or linkage</li>
+<li><span class="lik lik-common">Common</span>Worn contacts inside the sensor giving an ambiguous position</li>
+<li><span class="lik lik-possible">Possible</span>Corroded connector or wiring</li>
+<li><span class="lik lik-possible">Possible</span>Internal transmission fault, so the actual gear does not match the selected one</li>
+</ul>
+<h2>What you might notice</h2>
+<ul>
+<li>Gear position display flickering or showing the wrong gear</li>
+<li>Harsh or delayed engagement</li>
+<li>Occasional failure to start</li>
+<li>Transmission dropping into limp mode intermittently</li>
+</ul>
+<h2>What to check, in order</h2>
+<ol class="checks">
+<li>Watch the reported gear position on the live data screen through the full selector travel, slowly. Look for a position that is briefly ambiguous between detents - that is the classic signature of worn sensor contacts.</li>
+<li>Check and adjust the sensor to the manufacturer&#x27;s specification before replacing it.</li>
+<li>Check the selector cable for stretch and the linkage bushings for wear.</li>
+<li>Check whether the fault appears only when the transmission is hot. That points at the sensor rather than the linkage.</li>
+<li>Check for gear ratio codes stored alongside. Those would suggest the transmission genuinely is not in the gear it was told to be in.</li>
+</ol>
+<section class="cta">
+<h2>Read this code from your own car</h2>
+<p>Plug an ELM327 adapter into the OBD-II port under the dashboard. Pin16 reads every stored, pending and permanent code, explains each one like this page does — offline, with no account — and shows what the car recorded when the fault was set.</p>
+<a class="button" href="https://play.google.com/store/apps/details?id=com.amaldavanau.pin16&amp;hl=en&amp;referrer=utm_source%3Dpin16_site%26utm_medium%3Dcode_page%26utm_campaign%3Dcode_pages_en%26utm_content%3DP0706">Get Pin16 on Google Play</a>
+</section>
+<nav class="pager"><a rel="prev" href="../P0705/">← P0705</a><a href="../">All codes</a><a rel="next" href="../P0707/">P0707 →</a></nav>
+<footer><p>Written for Pin16 and not yet reviewed by a qualified technician. This is guidance for diagnosis, not repair instructions, and it may be incomplete or wrong for your vehicle. If in doubt, ask a mechanic.</p><p><a href="../../">Pin16</a> · <a href="../../privacy/">Privacy policy</a></p></footer>
+</main>
+</body>
+</html>

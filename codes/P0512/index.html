@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>P0512 — Starter Request Circuit: causes and what to check</title>
+<meta name="description" content="A fault in the starter request circuit - the circuit carrying the request to crank, from the key switch or start button to the module that authorises it.">
+<link rel="canonical" href="https://jqdevam.github.io/pin16-site/codes/P0512/">
+<link rel="alternate" hreflang="en" href="https://jqdevam.github.io/pin16-site/codes/P0512/">
+<link rel="alternate" hreflang="ru" href="https://jqdevam.github.io/pin16-site/ru/codes/P0512/">
+<link rel="alternate" hreflang="x-default" href="https://jqdevam.github.io/pin16-site/codes/P0512/">
+<link rel="icon" href="../../pin16.png">
+<link rel="stylesheet" href="../../assets/codes.css">
+</head>
+<body>
+<main>
+<nav class="top"><a class="brand" href="../../"><img src="../../pin16.png" alt="" width="28" height="28">Pin16</a><a href="../../codes/">All codes</a><a hreflang="ru" href="../../ru/codes/P0512/">По-русски</a></nav>
+<header class="code-head">
+<p class="code">P0512</p>
+<h1>Starter Request Circuit</h1>
+<dl class="facts"><div class="sev-medium"><dt>Severity</dt><dd>Medium</dd></div><div><dt>Driving</dt><dd>Drivable — book it in</dd></div><div><dt>System</dt><dd>Powertrain</dd></div><div><dt>Group</dt><dd>Vehicle speed control, idle control and auxiliary inputs</dd></div></dl>
+</header>
+<p class="lead">A fault in the starter request circuit - the circuit carrying the request to crank, from the key switch or start button to the module that authorises it. Depending on which way the fault goes the engine may refuse to crank, or may crank when it should not.</p>
+<h2>Possible causes</h2>
+<ul class="causes">
+<li><span class="lik lik-common">Common</span>Failed ignition switch or start button</li>
+<li><span class="lik lik-common">Common</span>Wiring or connector fault in the request circuit</li>
+<li><span class="lik lik-common">Common</span>Worn ignition switch contacts</li>
+<li><span class="lik lik-possible">Possible</span>Aftermarket alarm, immobiliser or remote start spliced into the circuit</li>
+<li><span class="lik lik-rare">Rare</span>Failed control module input</li>
+</ul>
+<h2>What you might notice</h2>
+<ul>
+<li>Engine will not crank</li>
+<li>Intermittent no-crank, often when hot</li>
+<li>Starter continuing to crank after release</li>
+<li>Check engine light on</li>
+</ul>
+<h2>What to check, in order</h2>
+<ol class="checks">
+<li>Watch the starter request state on the live data screen while someone turns the key or presses the button.</li>
+<li>Check the ignition switch. Worn contacts are the most common cause and typically fail intermittently before they fail completely.</li>
+<li>Ask whether an aftermarket alarm, immobiliser or remote start has been fitted - these are wired into exactly this circuit.</li>
+<li>Check the wiring between the switch and the module.</li>
+<li>A starter that keeps cranking after the key is released will destroy itself and the ring gear. If that is the symptom, disconnect the battery rather than waiting.</li>
+</ol>
+<section class="cta">
+<h2>Read this code from your own car</h2>
+<p>Plug an ELM327 adapter into the OBD-II port under the dashboard. Pin16 reads every stored, pending and permanent code, explains each one like this page does — offline, with no account — and shows what the car recorded when the fault was set.</p>
+<a class="button" href="https://play.google.com/store/apps/details?id=com.amaldavanau.pin16&amp;hl=en&amp;referrer=utm_source%3Dpin16_site%26utm_medium%3Dcode_page%26utm_campaign%3Dcode_pages_en%26utm_content%3DP0512">Get Pin16 on Google Play</a>
+</section>
+<nav class="pager"><a rel="prev" href="../P0511/">← P0511</a><a href="../">All codes</a><a rel="next" href="../P0513/">P0513 →</a></nav>
+<footer><p>Written for Pin16 and not yet reviewed by a qualified technician. This is guidance for diagnosis, not repair instructions, and it may be incomplete or wrong for your vehicle. If in doubt, ask a mechanic.</p><p><a href="../../">Pin16</a> · <a href="../../privacy/">Privacy policy</a></p></footer>
+</main>
+</body>
+</html>

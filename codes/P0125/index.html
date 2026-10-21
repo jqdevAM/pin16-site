@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>P0125 — Insufficient Coolant Temperature for Closed Loop Fuel Control: causes and what to check</title>
+<meta name="description" content="The engine is not reaching normal operating temperature quickly enough for the module to switch to closed loop fuel control.">
+<link rel="canonical" href="https://jqdevam.github.io/pin16-site/codes/P0125/">
+<link rel="alternate" hreflang="en" href="https://jqdevam.github.io/pin16-site/codes/P0125/">
+<link rel="alternate" hreflang="ru" href="https://jqdevam.github.io/pin16-site/ru/codes/P0125/">
+<link rel="alternate" hreflang="x-default" href="https://jqdevam.github.io/pin16-site/codes/P0125/">
+<link rel="icon" href="../../pin16.png">
+<link rel="stylesheet" href="../../assets/codes.css">
+</head>
+<body>
+<main>
+<nav class="top"><a class="brand" href="../../"><img src="../../pin16.png" alt="" width="28" height="28">Pin16</a><a href="../../codes/">All codes</a><a hreflang="ru" href="../../ru/codes/P0125/">По-русски</a></nav>
+<header class="code-head">
+<p class="code">P0125</p>
+<h1>Insufficient Coolant Temperature for Closed Loop Fuel Control</h1>
+<dl class="facts"><div class="sev-medium"><dt>Severity</dt><dd>Medium</dd></div><div><dt>Driving</dt><dd>Drivable — book it in</dd></div><div><dt>System</dt><dd>Powertrain</dd></div><div><dt>Group</dt><dd>Fuel and air metering</dd></div></dl>
+</header>
+<p class="lead">The engine is not reaching normal operating temperature quickly enough for the module to switch to closed loop fuel control. Until it is warm the module runs a deliberately rich cold-start mixture and ignores the oxygen sensors, so an engine that never warms up properly runs rich permanently. By far the most common cause is a thermostat stuck open, and that is a cheap part.</p>
+<h2>Possible causes</h2>
+<ul class="causes">
+<li><span class="lik lik-common">Common</span>Thermostat stuck open, so the coolant never reaches operating temperature</li>
+<li><span class="lik lik-common">Common</span>Coolant temperature sensor reading lower than the truth</li>
+<li><span class="lik lik-possible">Possible</span>Thermostat missing, or one of the wrong temperature rating fitted</li>
+<li><span class="lik lik-possible">Possible</span>Low coolant level</li>
+<li><span class="lik lik-possible">Possible</span>Wiring or connector fault at the coolant temperature sensor</li>
+<li><span class="lik lik-possible">Possible</span>Genuinely extreme cold combined with a lot of short journeys</li>
+</ul>
+<h2>What you might notice</h2>
+<ul>
+<li>Poor fuel economy - often noticeably worse than usual</li>
+<li>Weak or lukewarm cabin heating</li>
+<li>Temperature gauge slow to rise, or never reaching the middle</li>
+<li>Failed emissions test</li>
+<li>Check engine light on</li>
+</ul>
+<h2>What to check, in order</h2>
+<ol class="checks">
+<li>Notice whether the cabin heater blows properly hot. Weak heat plus slow warm-up is the classic thermostat-stuck-open picture, and it costs nothing to check on the drive in.</li>
+<li>Watch the coolant temperature on live data through a warm-up. It should climb steadily and settle around the thermostat&#x27;s rating; one that creeps up and stalls short of it, or falls again at motorway speed, is a stuck-open thermostat.</li>
+<li>Check the sensor before the thermostat if the gauge and the live data disagree. A sensor reading low makes a healthy engine look cold to the module.</li>
+<li>Check the coolant level. Low coolant can leave the sensor reading air rather than liquid.</li>
+<li>Do not ignore this because the car drives normally. It runs rich the whole time, which costs fuel, dilutes the oil with unburnt petrol and shortens the catalytic converter&#x27;s life.</li>
+</ol>
+<section class="cta">
+<h2>Read this code from your own car</h2>
+<p>Plug an ELM327 adapter into the OBD-II port under the dashboard. Pin16 reads every stored, pending and permanent code, explains each one like this page does — offline, with no account — and shows what the car recorded when the fault was set.</p>
+<a class="button" href="https://play.google.com/store/apps/details?id=com.amaldavanau.pin16&amp;hl=en&amp;referrer=utm_source%3Dpin16_site%26utm_medium%3Dcode_page%26utm_campaign%3Dcode_pages_en%26utm_content%3DP0125">Get Pin16 on Google Play</a>
+</section>
+<nav class="pager"><a rel="prev" href="../P0124/">← P0124</a><a href="../">All codes</a><a rel="next" href="../P0126/">P0126 →</a></nav>
+<footer><p>Written for Pin16 and not yet reviewed by a qualified technician. This is guidance for diagnosis, not repair instructions, and it may be incomplete or wrong for your vehicle. If in doubt, ask a mechanic.</p><p><a href="../../">Pin16</a> · <a href="../../privacy/">Privacy policy</a></p></footer>
+</main>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>P2281 — Air Leak Between MAF and Throttle Body: causes and what to check</title>
+<meta name="description" content="The module has detected an air leak between the mass airflow sensor and the throttle body.">
+<link rel="canonical" href="https://jqdevam.github.io/pin16-site/codes/P2281/">
+<link rel="alternate" hreflang="en" href="https://jqdevam.github.io/pin16-site/codes/P2281/">
+<link rel="alternate" hreflang="ru" href="https://jqdevam.github.io/pin16-site/ru/codes/P2281/">
+<link rel="alternate" hreflang="x-default" href="https://jqdevam.github.io/pin16-site/codes/P2281/">
+<link rel="icon" href="../../pin16.png">
+<link rel="stylesheet" href="../../assets/codes.css">
+</head>
+<body>
+<main>
+<nav class="top"><a class="brand" href="../../"><img src="../../pin16.png" alt="" width="28" height="28">Pin16</a><a href="../../codes/">All codes</a><a hreflang="ru" href="../../ru/codes/P2281/">По-русски</a></nav>
+<header class="code-head">
+<p class="code">P2281</p>
+<h1>Air Leak Between MAF and Throttle Body</h1>
+<dl class="facts"><div class="sev-medium"><dt>Severity</dt><dd>Medium</dd></div><div><dt>Driving</dt><dd>Drivable — book it in</dd></div><div><dt>System</dt><dd>Powertrain</dd></div><div><dt>Group</dt><dd>Fuel and air metering - injector circuits</dd></div></dl>
+</header>
+<p class="lead">The module has detected an air leak between the mass airflow sensor and the throttle body. That location matters: it has narrowed down where to look, which is the hard part of finding a vacuum leak. Air entering the engine that the module has not accounted for makes the mixture lean, and the module adds fuel to compensate until it runs out of adjustment.</p>
+<h2>Possible causes</h2>
+<ul class="causes">
+<li><span class="lik lik-common">Common</span>Split or perished intake duct</li>
+<li><span class="lik lik-common">Common</span>Loose clamp after servicing or intake work</li>
+<li><span class="lik lik-common">Common</span>Leaking or disconnected breather or PCV hose on that section</li>
+<li><span class="lik lik-possible">Possible</span>Cracked resonator or airbox outlet</li>
+<li><span class="lik lik-possible">Possible</span>Boost pipe leak on a turbocharged engine</li>
+</ul>
+<h2>What you might notice</h2>
+<ul>
+<li>Rough or hunting idle</li>
+<li>Hesitation or a flat spot under acceleration</li>
+<li>Fuel trim readings positive - the module adding fuel</li>
+<li>Worse fuel economy</li>
+<li>Whistling or hissing from the engine bay</li>
+<li>Check engine light on</li>
+</ul>
+<h2>What to check, in order</h2>
+<ol class="checks">
+<li>This is the most damaging section for a leak. Air entering here has bypassed the mass airflow sensor entirely, so the module has no idea it exists and fuels for less air than the engine is actually getting - which is why the mixture goes lean.</li>
+<li>Check every joint and clamp between the sensor and the throttle body, flexing the ducting to find splits that close up at rest.</li>
+<li>Watch fuel trim on the live data screen. Strongly positive trim at idle that returns to normal at higher engine speed is the classic signature of a vacuum leak, because the leak matters less when the throttle is open.</li>
+<li>Check the PCV system. A perished or disconnected breather hose is a leak, and it is one of the most commonly overlooked.</li>
+<li>Do not replace the mass airflow sensor on this code. The sensor is measuring correctly - air is getting past it.</li>
+</ol>
+<section class="cta">
+<h2>Read this code from your own car</h2>
+<p>Plug an ELM327 adapter into the OBD-II port under the dashboard. Pin16 reads every stored, pending and permanent code, explains each one like this page does — offline, with no account — and shows what the car recorded when the fault was set.</p>
+<a class="button" href="https://play.google.com/store/apps/details?id=com.amaldavanau.pin16&amp;hl=en&amp;referrer=utm_source%3Dpin16_site%26utm_medium%3Dcode_page%26utm_campaign%3Dcode_pages_en%26utm_content%3DP2281">Get Pin16 on Google Play</a>
+</section>
+<nav class="pager"><a rel="prev" href="../P2280/">← P2280</a><a href="../">All codes</a><a rel="next" href="../P2282/">P2282 →</a></nav>
+<footer><p>Written for Pin16 and not yet reviewed by a qualified technician. This is guidance for diagnosis, not repair instructions, and it may be incomplete or wrong for your vehicle. If in doubt, ask a mechanic.</p><p><a href="../../">Pin16</a> · <a href="../../privacy/">Privacy policy</a></p></footer>
+</main>
+</body>
+</html>

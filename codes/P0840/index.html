@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>P0840 — Transmission Fluid Pressure Sensor/Switch &quot;A&quot; Circuit: causes and what to check</title>
+<meta name="description" content="A fault in the circuit for transmission fluid pressure sensor or switch &quot;A&quot;.">
+<link rel="canonical" href="https://jqdevam.github.io/pin16-site/codes/P0840/">
+<link rel="alternate" hreflang="en" href="https://jqdevam.github.io/pin16-site/codes/P0840/">
+<link rel="alternate" hreflang="ru" href="https://jqdevam.github.io/pin16-site/ru/codes/P0840/">
+<link rel="alternate" hreflang="x-default" href="https://jqdevam.github.io/pin16-site/codes/P0840/">
+<link rel="icon" href="../../pin16.png">
+<link rel="stylesheet" href="../../assets/codes.css">
+</head>
+<body>
+<main>
+<nav class="top"><a class="brand" href="../../"><img src="../../pin16.png" alt="" width="28" height="28">Pin16</a><a href="../../codes/">All codes</a><a hreflang="ru" href="../../ru/codes/P0840/">По-русски</a></nav>
+<header class="code-head">
+<p class="code">P0840</p>
+<h1>Transmission Fluid Pressure Sensor/Switch &quot;A&quot; Circuit</h1>
+<dl class="facts"><div class="sev-high"><dt>Severity</dt><dd>High</dd></div><div><dt>Driving</dt><dd>Drive only to a garage</dd></div><div><dt>System</dt><dd>Powertrain</dd></div><div><dt>Group</dt><dd>Transmission</dd></div></dl>
+</header>
+<p class="lead">A fault in the circuit for transmission fluid pressure sensor or switch &quot;A&quot;. Depending on the vehicle this is either a switch that reports whether pressure is present in one hydraulic circuit, or a sensor that reports how much. Either way, the module uses it to confirm that the clutch it just commanded actually received pressure - so without it, the module cannot verify its own shifts and will fall back to a failsafe.</p>
+<h2>Possible causes</h2>
+<ul class="causes">
+<li><span class="lik lik-common">Common</span>Failed pressure sensor or switch</li>
+<li><span class="lik lik-common">Common</span>Corroded transmission case connector, or fluid wicking into it</li>
+<li><span class="lik lik-common">Common</span>Internal transmission harness failure</li>
+<li><span class="lik lik-possible">Possible</span>Wiring damage between the transmission and the module</li>
+<li><span class="lik lik-possible">Possible</span>Low fluid level or genuinely low pressure</li>
+<li><span class="lik lik-possible">Possible</span>Debris blocking the pressure passage to the sensor</li>
+</ul>
+<h2>What you might notice</h2>
+<ul>
+<li>Transmission stuck in one gear</li>
+<li>Harsh or delayed shifts</li>
+<li>Slipping</li>
+<li>Several transmission codes stored together</li>
+<li>Check engine light on</li>
+</ul>
+<h2>What to check, in order</h2>
+<ol class="checks">
+<li>Check the fluid level and condition first - low fluid produces genuinely low pressure and this code with a perfectly good sensor.</li>
+<li>Read all transmission codes together. Several pressure sensor codes at once point at the case connector, the internal harness or genuinely low line pressure, not at several failed sensors.</li>
+<li>Inspect the case connector for fluid ingress and corroded pins.</li>
+<li>Watch the reported pressures on the live data screen against the specification for each gear.</li>
+<li>Expect these sensors to be inside the transmission on most vehicles. Eliminate the external wiring and the case connector before dropping the pan.</li>
+</ol>
+<section class="cta">
+<h2>Read this code from your own car</h2>
+<p>Plug an ELM327 adapter into the OBD-II port under the dashboard. Pin16 reads every stored, pending and permanent code, explains each one like this page does — offline, with no account — and shows what the car recorded when the fault was set.</p>
+<a class="button" href="https://play.google.com/store/apps/details?id=com.amaldavanau.pin16&amp;hl=en&amp;referrer=utm_source%3Dpin16_site%26utm_medium%3Dcode_page%26utm_campaign%3Dcode_pages_en%26utm_content%3DP0840">Get Pin16 on Google Play</a>
+</section>
+<nav class="pager"><a rel="prev" href="../P0839/">← P0839</a><a href="../">All codes</a><a rel="next" href="../P0841/">P0841 →</a></nav>
+<footer><p>Written for Pin16 and not yet reviewed by a qualified technician. This is guidance for diagnosis, not repair instructions, and it may be incomplete or wrong for your vehicle. If in doubt, ask a mechanic.</p><p><a href="../../">Pin16</a> · <a href="../../privacy/">Privacy policy</a></p></footer>
+</main>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>P0190 — Fuel Rail Pressure Sensor Circuit: causes and what to check</title>
+<meta name="description" content="A fault in the fuel rail pressure sensor circuit.">
+<link rel="canonical" href="https://jqdevam.github.io/pin16-site/codes/P0190/">
+<link rel="alternate" hreflang="en" href="https://jqdevam.github.io/pin16-site/codes/P0190/">
+<link rel="alternate" hreflang="ru" href="https://jqdevam.github.io/pin16-site/ru/codes/P0190/">
+<link rel="alternate" hreflang="x-default" href="https://jqdevam.github.io/pin16-site/codes/P0190/">
+<link rel="icon" href="../../pin16.png">
+<link rel="stylesheet" href="../../assets/codes.css">
+</head>
+<body>
+<main>
+<nav class="top"><a class="brand" href="../../"><img src="../../pin16.png" alt="" width="28" height="28">Pin16</a><a href="../../codes/">All codes</a><a hreflang="ru" href="../../ru/codes/P0190/">По-русски</a></nav>
+<header class="code-head">
+<p class="code">P0190</p>
+<h1>Fuel Rail Pressure Sensor Circuit</h1>
+<dl class="facts"><div class="sev-high"><dt>Severity</dt><dd>High</dd></div><div><dt>Driving</dt><dd>Drive only to a garage</dd></div><div><dt>System</dt><dd>Powertrain</dd></div><div><dt>Group</dt><dd>Fuel and air metering</dd></div></dl>
+</header>
+<aside class="note"><strong>Important.</strong> A high pressure fuel system is dangerous to work on. A common rail diesel runs well over 1,500 bar and a direct injection petrol several hundred, and the rail stays pressurised after the engine is switched off. Fuel escaping from a pinhole at those pressures passes straight through skin and injects into the tissue underneath: it can look like a trivial puncture and it is a surgical emergency. Never run a hand along a high pressure line to feel for a leak, never slacken a union with the engine running, and always follow the manufacturer&#x27;s depressurisation procedure before touching the high pressure side.</aside>
+<p class="lead">A fault in the fuel rail pressure sensor circuit. This sensor tells the module the pressure in the high pressure fuel rail, and the module controls fuelling by that figure - injector opening times are calculated from it, so without it the module cannot know how much fuel an injection actually delivers. Most engines respond by cutting power sharply or refusing to run.</p>
+<h2>Possible causes</h2>
+<ul class="causes">
+<li><span class="lik lik-common">Common</span>Failed fuel rail pressure sensor</li>
+<li><span class="lik lik-common">Common</span>Corroded or damaged connector at the sensor</li>
+<li><span class="lik lik-common">Common</span>Wiring fault between the sensor and the module</li>
+<li><span class="lik lik-common">Common</span>Genuine fuel supply problem - blocked filter, weak pump, air in the system - that the sensor is correctly reporting</li>
+<li><span class="lik lik-possible">Possible</span>Fuel pressure regulator or metering valve fault</li>
+<li><span class="lik lik-possible">Possible</span>Worn high pressure pump</li>
+</ul>
+<h2>What you might notice</h2>
+<ul>
+<li>Hard starting, or refusing to start at all</li>
+<li>Loss of power, or dropping into limp mode</li>
+<li>Rough running, misfiring, or cutting out</li>
+<li>Smoke from the exhaust</li>
+<li>Check engine light on</li>
+</ul>
+<h2>What to check, in order</h2>
+<ol class="checks">
+<li>Read all codes before deciding this is the sensor. Fuel delivery and pressure regulation codes stored alongside usually mean the sensor is telling the truth about a supply problem, and replacing it would fix nothing.</li>
+<li>Compare commanded rail pressure against actual on live data, at idle and under load. A system that holds pressure at idle and loses it under load is worn rather than broken.</li>
+<li>Check the low pressure supply and the filter first. Most rail pressure faults start upstream, and the filter is the cheapest thing in the chain.</li>
+<li>Inspect the sensor connector for corrosion and for damaged pins.</li>
+</ol>
+<section class="cta">
+<h2>Read this code from your own car</h2>
+<p>Plug an ELM327 adapter into the OBD-II port under the dashboard. Pin16 reads every stored, pending and permanent code, explains each one like this page does — offline, with no account — and shows what the car recorded when the fault was set.</p>
+<a class="button" href="https://play.google.com/store/apps/details?id=com.amaldavanau.pin16&amp;hl=en&amp;referrer=utm_source%3Dpin16_site%26utm_medium%3Dcode_page%26utm_campaign%3Dcode_pages_en%26utm_content%3DP0190">Get Pin16 on Google Play</a>
+</section>
+<nav class="pager"><a rel="prev" href="../P0189/">← P0189</a><a href="../">All codes</a><a rel="next" href="../P0191/">P0191 →</a></nav>
+<footer><p>Written for Pin16 and not yet reviewed by a qualified technician. This is guidance for diagnosis, not repair instructions, and it may be incomplete or wrong for your vehicle. If in doubt, ask a mechanic.</p><p><a href="../../">Pin16</a> · <a href="../../privacy/">Privacy policy</a></p></footer>
+</main>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>P0183 — Fuel Temperature Sensor A Circuit High: causes and what to check</title>
+<meta name="description" content="Fuel temperature sensor &quot;A&quot; is reading high - outside the range a working sensor can produce, rather than merely inaccurate.">
+<link rel="canonical" href="https://jqdevam.github.io/pin16-site/codes/P0183/">
+<link rel="alternate" hreflang="en" href="https://jqdevam.github.io/pin16-site/codes/P0183/">
+<link rel="alternate" hreflang="ru" href="https://jqdevam.github.io/pin16-site/ru/codes/P0183/">
+<link rel="alternate" hreflang="x-default" href="https://jqdevam.github.io/pin16-site/codes/P0183/">
+<link rel="icon" href="../../pin16.png">
+<link rel="stylesheet" href="../../assets/codes.css">
+</head>
+<body>
+<main>
+<nav class="top"><a class="brand" href="../../"><img src="../../pin16.png" alt="" width="28" height="28">Pin16</a><a href="../../codes/">All codes</a><a hreflang="ru" href="../../ru/codes/P0183/">По-русски</a></nav>
+<header class="code-head">
+<p class="code">P0183</p>
+<h1>Fuel Temperature Sensor A Circuit High</h1>
+<dl class="facts"><div class="sev-low"><dt>Severity</dt><dd>Low</dd></div><div><dt>Driving</dt><dd>Drivable — book it in</dd></div><div><dt>System</dt><dd>Powertrain</dd></div><div><dt>Group</dt><dd>Fuel and air metering</dd></div></dl>
+</header>
+<p class="lead">Fuel temperature sensor &quot;A&quot; is reading high - outside the range a working sensor can produce, rather than merely inaccurate. Note that on these sensors the electrical direction and the temperature direction are opposite: resistance falls as temperature rises, so a short circuit reports impossibly hot fuel and an open circuit reports impossibly cold.</p>
+<h2>Possible causes</h2>
+<ul class="causes">
+<li><span class="lik lik-common">Common</span>Failed fuel temperature sensor</li>
+<li><span class="lik lik-common">Common</span>Corroded or wet connector</li>
+<li><span class="lik lik-common">Common</span>Wiring fault between the sensor and the module</li>
+<li><span class="lik lik-possible">Possible</span>Poor earth at the sensor</li>
+</ul>
+<h2>What you might notice</h2>
+<ul>
+<li>Slightly rough running or hesitation</li>
+<li>Hard starting in very hot or very cold conditions</li>
+<li>Poor fuel economy</li>
+<li>Check engine light on</li>
+<li>Often nothing noticeable at all</li>
+</ul>
+<h2>What to check, in order</h2>
+<ol class="checks">
+<li>Compare the fuel temperature reading against ambient with the vehicle standing overnight. They should be close; a large difference on a cold vehicle condemns the sensor.</li>
+<li>Inspect the connector for corrosion and water ingress. These sensors are frequently mounted low down or in the tank, where connectors suffer.</li>
+<li>Check the wiring and the earth before replacing the sensor.</li>
+<li>Do not expect dramatic symptoms. This sensor trims fuelling rather than determining it, so the code is often the only sign - which is not a reason to ignore it, because the trim it applies is wrong until it is fixed.</li>
+<li>Unplug the sensor and see which way the reading moves. An open circuit and a short circuit drive it to opposite ends, which tells you whether the fault is in the sensor or the wiring without removing anything.</li>
+</ol>
+<section class="cta">
+<h2>Read this code from your own car</h2>
+<p>Plug an ELM327 adapter into the OBD-II port under the dashboard. Pin16 reads every stored, pending and permanent code, explains each one like this page does — offline, with no account — and shows what the car recorded when the fault was set.</p>
+<a class="button" href="https://play.google.com/store/apps/details?id=com.amaldavanau.pin16&amp;hl=en&amp;referrer=utm_source%3Dpin16_site%26utm_medium%3Dcode_page%26utm_campaign%3Dcode_pages_en%26utm_content%3DP0183">Get Pin16 on Google Play</a>
+</section>
+<nav class="pager"><a rel="prev" href="../P0182/">← P0182</a><a href="../">All codes</a><a rel="next" href="../P0184/">P0184 →</a></nav>
+<footer><p>Written for Pin16 and not yet reviewed by a qualified technician. This is guidance for diagnosis, not repair instructions, and it may be incomplete or wrong for your vehicle. If in doubt, ask a mechanic.</p><p><a href="../../">Pin16</a> · <a href="../../privacy/">Privacy policy</a></p></footer>
+</main>
+</body>
+</html>

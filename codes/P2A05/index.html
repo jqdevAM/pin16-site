@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>P2A05 — O2 Sensor Circuit Range/Performance (Bank 2 Sensor 3): causes and what to check</title>
+<meta name="description" content="The downstream oxygen sensor on bank 2, sensor 3, is answering with a signal in its valid range that does not behave plausibly.">
+<link rel="canonical" href="https://jqdevam.github.io/pin16-site/codes/P2A05/">
+<link rel="alternate" hreflang="en" href="https://jqdevam.github.io/pin16-site/codes/P2A05/">
+<link rel="alternate" hreflang="ru" href="https://jqdevam.github.io/pin16-site/ru/codes/P2A05/">
+<link rel="alternate" hreflang="x-default" href="https://jqdevam.github.io/pin16-site/codes/P2A05/">
+<link rel="icon" href="../../pin16.png">
+<link rel="stylesheet" href="../../assets/codes.css">
+</head>
+<body>
+<main>
+<nav class="top"><a class="brand" href="../../"><img src="../../pin16.png" alt="" width="28" height="28">Pin16</a><a href="../../codes/">All codes</a><a hreflang="ru" href="../../ru/codes/P2A05/">По-русски</a></nav>
+<header class="code-head">
+<p class="code">P2A05</p>
+<h1>O2 Sensor Circuit Range/Performance (Bank 2 Sensor 3)</h1>
+<dl class="facts"><div class="sev-low"><dt>Severity</dt><dd>Low</dd></div><div><dt>Driving</dt><dd>Drivable — book it in</dd></div><div><dt>System</dt><dd>Powertrain</dd></div><div><dt>Group</dt><dd>Hybrid propulsion</dd></div></dl>
+</header>
+<p class="lead">The downstream oxygen sensor on bank 2, sensor 3, is answering with a signal in its valid range that does not behave plausibly. Downstream sensors sit after the catalytic converter and are used to judge how well it is working rather than to control fuelling, so this affects emissions monitoring more than it affects driving. It does need fixing, though: the module cannot assess the converter without it, and a converter it cannot assess is one it may eventually condemn.</p>
+<h2>Possible causes</h2>
+<ul class="causes">
+<li><span class="lik lik-common">Common</span>Sensor aged and slowed by normal service life</li>
+<li><span class="lik lik-common">Common</span>Contamination - silicone from the wrong sealant, coolant, or oil from a worn engine</li>
+<li><span class="lik lik-common">Common</span>Exhaust leak near the sensor upsetting what it samples</li>
+<li><span class="lik lik-common">Common</span>Heater circuit fault leaving the sensor below its working temperature</li>
+<li><span class="lik lik-possible">Possible</span>Corroded connector or chafed wiring in the sensor harness</li>
+<li><span class="lik lik-possible">Possible</span>Genuine fuelling fault the sensor is correctly reporting</li>
+</ul>
+<h2>What you might notice</h2>
+<ul>
+<li>Check engine light on</li>
+<li>Failed emissions test</li>
+<li>Catalyst efficiency codes stored alongside</li>
+<li>Usually no noticeable change in how the car drives</li>
+</ul>
+<h2>What to check, in order</h2>
+<ol class="checks">
+<li>Watch the sensor&#x27;s live signal rather than trusting the code. An upstream sensor should swing briskly and continuously once warm; one that drifts slowly or hovers near the middle is lazy, and that is what this code is describing.</li>
+<li>Compare the two banks on a V engine. One sensor keeping up while its opposite number does not is a much stronger case than either reading on its own.</li>
+<li>Check the heater circuit and its fuse. A sensor that never reaches operating temperature cannot respond quickly, and the fault is then the heater rather than the sensor element.</li>
+<li>Look for an exhaust leak near the sensor before condemning it, with the engine cold.</li>
+<li>Check the fuel trims. Large trims alongside this code suggest the sensor is reporting a real fuelling problem rather than failing.</li>
+<li>Ask what sealant was used if any engine work was recently done. Silicone that is not sensor-safe poisons oxygen sensors, and it kills replacements just as quickly.</li>
+<li>Be sceptical of a catalyst efficiency code stored alongside this one. The converter is judged by what this sensor reports, so an unreliable sensor can condemn a perfectly good converter - and the converter is many times the price of the sensor.</li>
+</ol>
+<section class="cta">
+<h2>Read this code from your own car</h2>
+<p>Plug an ELM327 adapter into the OBD-II port under the dashboard. Pin16 reads every stored, pending and permanent code, explains each one like this page does — offline, with no account — and shows what the car recorded when the fault was set.</p>
+<a class="button" href="https://play.google.com/store/apps/details?id=com.amaldavanau.pin16&amp;hl=en&amp;referrer=utm_source%3Dpin16_site%26utm_medium%3Dcode_page%26utm_campaign%3Dcode_pages_en%26utm_content%3DP2A05">Get Pin16 on Google Play</a>
+</section>
+<nav class="pager"><a rel="prev" href="../P2A04/">← P2A04</a><a href="../">All codes</a><a rel="next" href="../P3400/">P3400 →</a></nav>
+<footer><p>Written for Pin16 and not yet reviewed by a qualified technician. This is guidance for diagnosis, not repair instructions, and it may be incomplete or wrong for your vehicle. If in doubt, ask a mechanic.</p><p><a href="../../">Pin16</a> · <a href="../../privacy/">Privacy policy</a></p></footer>
+</main>
+</body>
+</html>

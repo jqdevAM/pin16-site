@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>U0128 — Lost Communication With Park Brake Control Module: causes and what to check</title>
+<meta name="description" content="The control module has stopped receiving messages from the park brake control module.">
+<link rel="canonical" href="https://jqdevam.github.io/pin16-site/codes/U0128/">
+<link rel="alternate" hreflang="en" href="https://jqdevam.github.io/pin16-site/codes/U0128/">
+<link rel="alternate" hreflang="ru" href="https://jqdevam.github.io/pin16-site/ru/codes/U0128/">
+<link rel="alternate" hreflang="x-default" href="https://jqdevam.github.io/pin16-site/codes/U0128/">
+<link rel="icon" href="../../pin16.png">
+<link rel="stylesheet" href="../../assets/codes.css">
+</head>
+<body>
+<main>
+<nav class="top"><a class="brand" href="../../"><img src="../../pin16.png" alt="" width="28" height="28">Pin16</a><a href="../../codes/">All codes</a><a hreflang="ru" href="../../ru/codes/U0128/">По-русски</a></nav>
+<header class="code-head">
+<p class="code">U0128</p>
+<h1>Lost Communication With Park Brake Control Module</h1>
+<dl class="facts"><div class="sev-critical"><dt>Severity</dt><dd>Critical</dd></div><div><dt>Driving</dt><dd>Drive only to a garage</dd></div><div><dt>System</dt><dd>Network and communication</dd></div><div><dt>Group</dt><dd>Network communication</dd></div></dl>
+</header>
+<aside class="note"><strong>Important.</strong> On vehicles with an electrically assisted or brake-by-wire braking system, losing this module can also make the brake pedal much harder and lengthen stopping distances substantially. If the pedal feels different in any way, treat this as a stop-now fault rather than a drive-carefully one.</aside>
+<p class="lead">The control module has stopped receiving messages from the park brake control module. On most vehicles the ordinary hydraulic brakes are unaffected and the car still stops, but anti-lock braking, stability control and traction control depend on this module and will be switched off. Braking hard on a wet or loose surface can now lock a wheel, and the car will not correct a slide for you.</p>
+<h2>Possible causes</h2>
+<ul class="causes">
+<li><span class="lik lik-common">Common</span>Low battery voltage or a discharged battery, dropping modules off the bus</li>
+<li><span class="lik lik-common">Common</span>Blown fuse or corroded earth on the supply to the park brake control module</li>
+<li><span class="lik lik-common">Common</span>Damaged, chafed or corroded bus wiring</li>
+<li><span class="lik lik-common">Common</span>Corroded or water-ingressed connector at the module</li>
+<li><span class="lik lik-possible">Possible</span>Failed module</li>
+<li><span class="lik lik-possible">Possible</span>Another module faulting and dragging the whole bus down</li>
+<li><span class="lik lik-possible">Possible</span>Module not coded or configured after a previous repair or replacement</li>
+</ul>
+<h2>What you might notice</h2>
+<ul>
+<li>ABS, stability control and traction control warning lights on</li>
+<li>Anti-lock braking inoperative - a wheel can lock under hard braking</li>
+<li>Stability and traction control inoperative</li>
+<li>Electronic park brake may not release or apply on vehicles that use one</li>
+<li>Speedometer occasionally affected, since wheel speed often comes from this module</li>
+</ul>
+<h2>What to check, in order</h2>
+<ol class="checks">
+<li>Drive gently and allow much more stopping distance than usual until this is repaired. Nothing about the pedal will feel different, which is exactly why it catches people out on the first hard stop.</li>
+<li>Check battery voltage and state of charge before anything else. A weak or failing battery drops modules off the bus and sets lost-communication codes with no wiring fault at all - this is the single most common false lead in this whole family.</li>
+<li>Check whether this code is current or historic. Lost-communication codes are routinely set by a flat battery, a jump start or a battery disconnection, and a historic code straight after one of those events usually records the event rather than a fault.</li>
+<li>Check the fuses and earth points for the park brake control module. ABS modules draw heavily and their earths corrode.</li>
+<li>Note how many U-codes are stored. Several at once points at battery, earth or bus wiring, not at several modules failing simultaneously.</li>
+<li>Inspect the module connector for corrosion and water. ABS modules are usually mounted low in the engine bay where water collects.</li>
+<li>Do not condemn the module until power, earth, bus wiring and battery condition have all been eliminated.</li>
+</ol>
+<section class="cta">
+<h2>Read this code from your own car</h2>
+<p>Plug an ELM327 adapter into the OBD-II port under the dashboard. Pin16 reads every stored, pending and permanent code, explains each one like this page does — offline, with no account — and shows what the car recorded when the fault was set.</p>
+<a class="button" href="https://play.google.com/store/apps/details?id=com.amaldavanau.pin16&amp;hl=en&amp;referrer=utm_source%3Dpin16_site%26utm_medium%3Dcode_page%26utm_campaign%3Dcode_pages_en%26utm_content%3DU0128">Get Pin16 on Google Play</a>
+</section>
+<nav class="pager"><a rel="prev" href="../U0127/">← U0127</a><a href="../">All codes</a><a rel="next" href="../U0129/">U0129 →</a></nav>
+<footer><p>Written for Pin16 and not yet reviewed by a qualified technician. This is guidance for diagnosis, not repair instructions, and it may be incomplete or wrong for your vehicle. If in doubt, ask a mechanic.</p><p><a href="../../">Pin16</a> · <a href="../../privacy/">Privacy policy</a></p></footer>
+</main>
+</body>
+</html>

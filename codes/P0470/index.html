@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>P0470 — Exhaust Pressure Sensor: causes and what to check</title>
+<meta name="description" content="A fault in the exhaust pressure sensor circuit.">
+<link rel="canonical" href="https://jqdevam.github.io/pin16-site/codes/P0470/">
+<link rel="alternate" hreflang="en" href="https://jqdevam.github.io/pin16-site/codes/P0470/">
+<link rel="alternate" hreflang="ru" href="https://jqdevam.github.io/pin16-site/ru/codes/P0470/">
+<link rel="alternate" hreflang="x-default" href="https://jqdevam.github.io/pin16-site/codes/P0470/">
+<link rel="icon" href="../../pin16.png">
+<link rel="stylesheet" href="../../assets/codes.css">
+</head>
+<body>
+<main>
+<nav class="top"><a class="brand" href="../../"><img src="../../pin16.png" alt="" width="28" height="28">Pin16</a><a href="../../codes/">All codes</a><a hreflang="ru" href="../../ru/codes/P0470/">По-русски</a></nav>
+<header class="code-head">
+<p class="code">P0470</p>
+<h1>Exhaust Pressure Sensor</h1>
+<dl class="facts"><div class="sev-medium"><dt>Severity</dt><dd>Medium</dd></div><div><dt>Driving</dt><dd>Drive only to a garage</dd></div><div><dt>System</dt><dd>Powertrain</dd></div><div><dt>Group</dt><dd>Auxiliary emission controls</dd></div></dl>
+</header>
+<aside class="note"><strong>Important.</strong> On a diesel this sensor is how the module measures how full the particulate filter is. A blocked sensing hose makes a full filter look empty - so regeneration never runs, and the filter keeps loading until it blocks completely. Clearing the hoses is a cheap job that prevents an expensive one.</aside>
+<p class="lead">A fault in the exhaust pressure sensor circuit. On a diesel this sensor measures the pressure difference across the particulate filter, which is how the module knows how much soot has collected and when to regenerate.</p>
+<h2>Possible causes</h2>
+<ul class="causes">
+<li><span class="lik lik-common">Common</span>Sensing hoses blocked with soot - the most common fault on a diesel</li>
+<li><span class="lik lik-common">Common</span>Split, perished or disconnected sensing hose</li>
+<li><span class="lik lik-common">Common</span>Failed exhaust pressure sensor</li>
+<li><span class="lik lik-common">Common</span>Corroded connector or wiring damaged by exhaust heat</li>
+<li><span class="lik lik-common">Common</span>Blocked particulate filter, so the pressure genuinely is high</li>
+<li><span class="lik lik-possible">Possible</span>Loss of reference voltage or earth</li>
+</ul>
+<h2>What you might notice</h2>
+<ul>
+<li>Reduced power or limp mode</li>
+<li>Particulate filter warning</li>
+<li>Regeneration running too often or not at all</li>
+<li>Excessive smoke</li>
+<li>Worse fuel economy</li>
+<li>Check engine light on</li>
+</ul>
+<h2>What to check, in order</h2>
+<ol class="checks">
+<li>Check the sensing hoses first. On a diesel these run from the exhaust to the sensor and block solid with soot, which is by far the most common cause and costs nothing but time to clear.</li>
+<li>Compare the reported pressure with atmospheric on a stationary engine - they should be close. A reading well away from that with the engine off proves the sensor or its hoses wrong.</li>
+<li>Inspect the connector for corrosion and the wiring for heat damage.</li>
+<li>Read all codes. Particulate filter codes alongside this one mean the pressure may be genuinely high and the filter is the problem.</li>
+<li>Check the reference voltage and earth at the sensor.</li>
+</ol>
+<section class="cta">
+<h2>Read this code from your own car</h2>
+<p>Plug an ELM327 adapter into the OBD-II port under the dashboard. Pin16 reads every stored, pending and permanent code, explains each one like this page does — offline, with no account — and shows what the car recorded when the fault was set.</p>
+<a class="button" href="https://play.google.com/store/apps/details?id=com.amaldavanau.pin16&amp;hl=en&amp;referrer=utm_source%3Dpin16_site%26utm_medium%3Dcode_page%26utm_campaign%3Dcode_pages_en%26utm_content%3DP0470">Get Pin16 on Google Play</a>
+</section>
+<nav class="pager"><a rel="prev" href="../P0469/">← P0469</a><a href="../">All codes</a><a rel="next" href="../P0471/">P0471 →</a></nav>
+<footer><p>Written for Pin16 and not yet reviewed by a qualified technician. This is guidance for diagnosis, not repair instructions, and it may be incomplete or wrong for your vehicle. If in doubt, ask a mechanic.</p><p><a href="../../">Pin16</a> · <a href="../../privacy/">Privacy policy</a></p></footer>
+</main>
+</body>
+</html>

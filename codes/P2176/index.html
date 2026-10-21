@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>P2176 — Throttle Actuator Control System - Idle Position Not Learned: causes and what to check</title>
+<meta name="description" content="The throttle&#x27;s idle position has not been learned.">
+<link rel="canonical" href="https://jqdevam.github.io/pin16-site/codes/P2176/">
+<link rel="alternate" hreflang="en" href="https://jqdevam.github.io/pin16-site/codes/P2176/">
+<link rel="alternate" hreflang="ru" href="https://jqdevam.github.io/pin16-site/ru/codes/P2176/">
+<link rel="alternate" hreflang="x-default" href="https://jqdevam.github.io/pin16-site/codes/P2176/">
+<link rel="icon" href="../../pin16.png">
+<link rel="stylesheet" href="../../assets/codes.css">
+</head>
+<body>
+<main>
+<nav class="top"><a class="brand" href="../../"><img src="../../pin16.png" alt="" width="28" height="28">Pin16</a><a href="../../codes/">All codes</a><a hreflang="ru" href="../../ru/codes/P2176/">По-русски</a></nav>
+<header class="code-head">
+<p class="code">P2176</p>
+<h1>Throttle Actuator Control System - Idle Position Not Learned</h1>
+<dl class="facts"><div class="sev-medium"><dt>Severity</dt><dd>Medium</dd></div><div><dt>Driving</dt><dd>Drivable — book it in</dd></div><div><dt>System</dt><dd>Powertrain</dd></div><div><dt>Group</dt><dd>Fuel and air metering</dd></div></dl>
+</header>
+<aside class="note"><strong>Important.</strong> This is a procedure, not a part. If throttle work was just done, running the relearn is the remaining step rather than evidence that the repair went wrong.</aside>
+<p class="lead">The throttle&#x27;s idle position has not been learned. These systems measure where the throttle plate rests when unpowered and use that as their zero point - and after cleaning, replacement or a battery disconnection, that reference is gone until the relearn procedure is run. Nothing has failed; a calibration is missing.</p>
+<h2>Possible causes</h2>
+<ul class="causes">
+<li><span class="lik lik-common">Common</span>Relearn never run after cleaning or replacing the throttle body</li>
+<li><span class="lik lik-common">Common</span>Battery disconnected, clearing the learned position</li>
+<li><span class="lik lik-common">Common</span>Relearn attempted but its conditions were never met</li>
+<li><span class="lik lik-common">Common</span>Another stored fault preventing the procedure from completing</li>
+<li><span class="lik lik-possible">Possible</span>Carbon preventing the plate reaching its true rest position</li>
+</ul>
+<h2>What you might notice</h2>
+<ul>
+<li>Idle too high, too low or hunting</li>
+<li>Hesitation when pulling away</li>
+<li>Reduced power mode</li>
+<li>Behaviour noticeably worse since throttle body work</li>
+</ul>
+<h2>What to check, in order</h2>
+<ol class="checks">
+<li>Ask what was done. Throttle body cleaning, replacement or a battery disconnection immediately before this appeared is the explanation.</li>
+<li>Run the relearn procedure. It usually requires specific conditions - a warm engine, everything switched off, the accelerator untouched - and must be allowed to finish.</li>
+<li>Clear any other stored faults first. The procedure will not complete while another fault is active.</li>
+<li>If the relearn will not complete, check the plate reaches its true rest position - carbon can hold it slightly open.</li>
+<li>Do not replace parts for this code. It is a procedure, not a component.</li>
+</ol>
+<section class="cta">
+<h2>Read this code from your own car</h2>
+<p>Plug an ELM327 adapter into the OBD-II port under the dashboard. Pin16 reads every stored, pending and permanent code, explains each one like this page does — offline, with no account — and shows what the car recorded when the fault was set.</p>
+<a class="button" href="https://play.google.com/store/apps/details?id=com.amaldavanau.pin16&amp;hl=en&amp;referrer=utm_source%3Dpin16_site%26utm_medium%3Dcode_page%26utm_campaign%3Dcode_pages_en%26utm_content%3DP2176">Get Pin16 on Google Play</a>
+</section>
+<nav class="pager"><a rel="prev" href="../P2175/">← P2175</a><a href="../">All codes</a><a rel="next" href="../P2177/">P2177 →</a></nav>
+<footer><p>Written for Pin16 and not yet reviewed by a qualified technician. This is guidance for diagnosis, not repair instructions, and it may be incomplete or wrong for your vehicle. If in doubt, ask a mechanic.</p><p><a href="../../">Pin16</a> · <a href="../../privacy/">Privacy policy</a></p></footer>
+</main>
+</body>
+</html>

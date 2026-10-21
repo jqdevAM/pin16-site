@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>P0634 — PCM/ECM/TCM Internal Temperature Too High: causes and what to check</title>
+<meta name="description" content="A control module is reporting that it is running too hot inside.">
+<link rel="canonical" href="https://jqdevam.github.io/pin16-site/codes/P0634/">
+<link rel="alternate" hreflang="en" href="https://jqdevam.github.io/pin16-site/codes/P0634/">
+<link rel="alternate" hreflang="ru" href="https://jqdevam.github.io/pin16-site/ru/codes/P0634/">
+<link rel="alternate" hreflang="x-default" href="https://jqdevam.github.io/pin16-site/codes/P0634/">
+<link rel="icon" href="../../pin16.png">
+<link rel="stylesheet" href="../../assets/codes.css">
+</head>
+<body>
+<main>
+<nav class="top"><a class="brand" href="../../"><img src="../../pin16.png" alt="" width="28" height="28">Pin16</a><a href="../../codes/">All codes</a><a hreflang="ru" href="../../ru/codes/P0634/">По-русски</a></nav>
+<header class="code-head">
+<p class="code">P0634</p>
+<h1>PCM/ECM/TCM Internal Temperature Too High</h1>
+<dl class="facts"><div class="sev-high"><dt>Severity</dt><dd>High</dd></div><div><dt>Driving</dt><dd>Drive only to a garage</dd></div><div><dt>System</dt><dd>Powertrain</dd></div><div><dt>Group</dt><dd>Computer output circuits and control module</dd></div></dl>
+</header>
+<p class="lead">A control module is reporting that it is running too hot inside. Modules are designed to operate within a temperature range, and above it they behave unpredictably - so the module will usually reduce what it is doing to protect itself. Something is either heating it or making it work harder than it should.</p>
+<h2>Possible causes</h2>
+<ul class="causes">
+<li><span class="lik lik-common">Common</span>Module mounted where it gets little airflow, or a blocked cooling path</li>
+<li><span class="lik lik-common">Common</span>A shorted output making the module work far harder than it should</li>
+<li><span class="lik lik-common">Common</span>Corroded connector causing high resistance and local heating</li>
+<li><span class="lik lik-common">Common</span>Failed internal temperature sensor</li>
+<li><span class="lik lik-possible">Possible</span>Very high ambient temperature combined with heavy load</li>
+<li><span class="lik lik-possible">Possible</span>Genuine internal module failure</li>
+</ul>
+<h2>What you might notice</h2>
+<ul>
+<li>Limp mode or reduced power</li>
+<li>Fault appearing after a period of driving or in hot weather</li>
+<li>Module resetting</li>
+<li>Several unrelated codes at once</li>
+<li>Check engine light on</li>
+</ul>
+<h2>What to check, in order</h2>
+<ol class="checks">
+<li>Note when it happens. Only in traffic or hot weather points at cooling; at any time points at something making the module work hard.</li>
+<li>Read all codes. A shorted output circuit stored alongside this one is very likely the cause - driving a shorted circuit is what heats the module.</li>
+<li>Check the module&#x27;s mounting and its airflow path. Some are fitted with a small duct or heat sink that can be blocked or missing after previous work.</li>
+<li>Inspect the connector for corrosion and heat discolouration. High resistance in a connector generates heat exactly where the module can feel it.</li>
+<li>Do not fit a replacement module before finding what is heating it - the new one will heat the same way.</li>
+</ol>
+<section class="cta">
+<h2>Read this code from your own car</h2>
+<p>Plug an ELM327 adapter into the OBD-II port under the dashboard. Pin16 reads every stored, pending and permanent code, explains each one like this page does — offline, with no account — and shows what the car recorded when the fault was set.</p>
+<a class="button" href="https://play.google.com/store/apps/details?id=com.amaldavanau.pin16&amp;hl=en&amp;referrer=utm_source%3Dpin16_site%26utm_medium%3Dcode_page%26utm_campaign%3Dcode_pages_en%26utm_content%3DP0634">Get Pin16 on Google Play</a>
+</section>
+<nav class="pager"><a rel="prev" href="../P0633/">← P0633</a><a href="../">All codes</a><a rel="next" href="../P0635/">P0635 →</a></nav>
+<footer><p>Written for Pin16 and not yet reviewed by a qualified technician. This is guidance for diagnosis, not repair instructions, and it may be incomplete or wrong for your vehicle. If in doubt, ask a mechanic.</p><p><a href="../../">Pin16</a> · <a href="../../privacy/">Privacy policy</a></p></footer>
+</main>
+</body>
+</html>

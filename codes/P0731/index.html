@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>P0731 — Gear 1 Incorrect Ratio: causes and what to check</title>
+<meta name="description" content="The module compared input shaft speed with output shaft speed in first gear and found the ratio wrong.">
+<link rel="canonical" href="https://jqdevam.github.io/pin16-site/codes/P0731/">
+<link rel="alternate" hreflang="en" href="https://jqdevam.github.io/pin16-site/codes/P0731/">
+<link rel="alternate" hreflang="ru" href="https://jqdevam.github.io/pin16-site/ru/codes/P0731/">
+<link rel="alternate" hreflang="x-default" href="https://jqdevam.github.io/pin16-site/codes/P0731/">
+<link rel="icon" href="../../pin16.png">
+<link rel="stylesheet" href="../../assets/codes.css">
+</head>
+<body>
+<main>
+<nav class="top"><a class="brand" href="../../"><img src="../../pin16.png" alt="" width="28" height="28">Pin16</a><a href="../../codes/">All codes</a><a hreflang="ru" href="../../ru/codes/P0731/">По-русски</a></nav>
+<header class="code-head">
+<p class="code">P0731</p>
+<h1>Gear 1 Incorrect Ratio</h1>
+<dl class="facts"><div class="sev-high"><dt>Severity</dt><dd>High</dd></div><div><dt>Driving</dt><dd>Drive only to a garage</dd></div><div><dt>System</dt><dd>Powertrain</dd></div><div><dt>Group</dt><dd>Transmission</dd></div></dl>
+</header>
+<aside class="note"><strong>Important.</strong> A transmission that slips can also fail to drive at all with little warning. Avoid journeys where losing drive would be dangerous - pulling out of junctions, motorway slip roads - until it has been assessed.</aside>
+<p class="lead">The module compared input shaft speed with output shaft speed in first gear and found the ratio wrong. In other words the transmission was told to be in first gear and is not - either it did not engage, or it engaged and is slipping. This is one of the few transmission codes that usually indicates a genuine mechanical problem rather than a sensor or wiring fault.</p>
+<h2>Possible causes</h2>
+<ul class="causes">
+<li><span class="lik lik-common">Common</span>Low or badly degraded transmission fluid</li>
+<li><span class="lik lik-common">Common</span>Worn clutch pack or band for first gear</li>
+<li><span class="lik lik-common">Common</span>Failed or stuck shift solenoid for first gear</li>
+<li><span class="lik lik-common">Common</span>Sticking valve in the valve body, so pressure never reaches the clutch</li>
+<li><span class="lik lik-possible">Possible</span>Low line pressure - worn pump or failed pressure control solenoid</li>
+<li><span class="lik lik-possible">Possible</span>Faulty speed sensor making a healthy gear look wrong</li>
+<li><span class="lik lik-possible">Possible</span>Internal seal or drum failure</li>
+</ul>
+<h2>What you might notice</h2>
+<ul>
+<li>Slipping - engine speed rises without matching acceleration</li>
+<li>Transmission not engaging first gear, or flaring on the way into it</li>
+<li>Harsh shifts</li>
+<li>Limp mode, holding one gear</li>
+<li>Burnt smell from the fluid</li>
+</ul>
+<h2>What to check, in order</h2>
+<ol class="checks">
+<li>Check the fluid level and condition first. Low or burnt fluid is the most common cause, and it is the only cause you can address cheaply.</li>
+<li>Drive it and note what actually happens in first gear. Slipping under load points at the clutch pack; failing to engage at all points at a solenoid or valve body.</li>
+<li>Read all stored codes. A solenoid code alongside this one names the likely cause; several ratio codes together point at low line pressure or fluid affecting the whole transmission.</li>
+<li>Compare input and output speed on the live data screen and work out the actual ratio in first gear against the specification.</li>
+<li>Look at the fluid on the dipstick or drain plug for clutch material - a dark grey, gritty film means internal wear.</li>
+<li>Be realistic about cost before spending on parts. A single ratio code on an otherwise healthy transmission can be a solenoid; several of them with burnt fluid usually means a rebuild.</li>
+</ol>
+<section class="cta">
+<h2>Read this code from your own car</h2>
+<p>Plug an ELM327 adapter into the OBD-II port under the dashboard. Pin16 reads every stored, pending and permanent code, explains each one like this page does — offline, with no account — and shows what the car recorded when the fault was set.</p>
+<a class="button" href="https://play.google.com/store/apps/details?id=com.amaldavanau.pin16&amp;hl=en&amp;referrer=utm_source%3Dpin16_site%26utm_medium%3Dcode_page%26utm_campaign%3Dcode_pages_en%26utm_content%3DP0731">Get Pin16 on Google Play</a>
+</section>
+<nav class="pager"><a rel="prev" href="../P0730/">← P0730</a><a href="../">All codes</a><a rel="next" href="../P0732/">P0732 →</a></nav>
+<footer><p>Written for Pin16 and not yet reviewed by a qualified technician. This is guidance for diagnosis, not repair instructions, and it may be incomplete or wrong for your vehicle. If in doubt, ask a mechanic.</p><p><a href="../../">Pin16</a> · <a href="../../privacy/">Privacy policy</a></p></footer>
+</main>
+</body>
+</html>

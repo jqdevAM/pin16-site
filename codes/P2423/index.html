@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>P2423 — HC Adsorption Catalyst Efficiency Below Threshold (Bank 1): causes and what to check</title>
+<meta name="description" content="The hydrocarbon adsorption catalyst on bank 1 is no longer working well enough.">
+<link rel="canonical" href="https://jqdevam.github.io/pin16-site/codes/P2423/">
+<link rel="alternate" hreflang="en" href="https://jqdevam.github.io/pin16-site/codes/P2423/">
+<link rel="alternate" hreflang="ru" href="https://jqdevam.github.io/pin16-site/ru/codes/P2423/">
+<link rel="alternate" hreflang="x-default" href="https://jqdevam.github.io/pin16-site/codes/P2423/">
+<link rel="icon" href="../../pin16.png">
+<link rel="stylesheet" href="../../assets/codes.css">
+</head>
+<body>
+<main>
+<nav class="top"><a class="brand" href="../../"><img src="../../pin16.png" alt="" width="28" height="28">Pin16</a><a href="../../codes/">All codes</a><a hreflang="ru" href="../../ru/codes/P2423/">По-русски</a></nav>
+<header class="code-head">
+<p class="code">P2423</p>
+<h1>HC Adsorption Catalyst Efficiency Below Threshold (Bank 1)</h1>
+<dl class="facts"><div class="sev-medium"><dt>Severity</dt><dd>Medium</dd></div><div><dt>Driving</dt><dd>Drivable — book it in</dd></div><div><dt>System</dt><dd>Powertrain</dd></div><div><dt>Group</dt><dd>Auxiliary emission controls</dd></div></dl>
+</header>
+<p class="lead">The hydrocarbon adsorption catalyst on bank 1 is no longer working well enough. This is a trap that holds unburnt fuel during the first minute or so after a cold start - the period when the main catalytic converter is still too cold to do anything - and releases it back into the exhaust to be burnt once everything is hot. Almost all of a modern engine&#x27;s emissions come from that first minute, which is why the trap exists.</p>
+<h2>Possible causes</h2>
+<ul class="causes">
+<li><span class="lik lik-common">Common</span>Trap aged out through normal service life</li>
+<li><span class="lik lik-common">Common</span>Contamination from an engine burning oil or coolant</li>
+<li><span class="lik lik-common">Common</span>Exhaust leak upstream, letting air in and confusing the measurement</li>
+<li><span class="lik lik-common">Common</span>Rich running from an unrelated fault, overwhelming the trap</li>
+<li><span class="lik lik-possible">Possible</span>Oxygen sensor fault making the efficiency calculation wrong</li>
+<li><span class="lik lik-possible">Possible</span>Physical damage to the trap from an impact or from overheating</li>
+</ul>
+<h2>What you might notice</h2>
+<ul>
+<li>Check engine light on</li>
+<li>Failed emissions test</li>
+<li>Sometimes a smell of fuel in the first minute after a cold start</li>
+<li>Usually no difference in how the car drives</li>
+</ul>
+<h2>What to check, in order</h2>
+<ol class="checks">
+<li>Fix every other stored code before touching this component. Rich running, misfires and oxygen sensor faults all produce this code with a perfectly good trap, and the trap is expensive.</li>
+<li>Check for exhaust leaks upstream of the sensors. Air drawn in through a leak makes the measurement wrong and the trap innocent.</li>
+<li>Check the fuel trims. A engine running rich sends more hydrocarbons through than the trap was designed to hold.</li>
+<li>Confirm the oxygen sensors are working properly, since the efficiency figure is calculated from what they report rather than measured directly.</li>
+<li>Replace this last, not first. It is one of the more expensive parts in the exhaust and it is frequently condemned for someone else&#x27;s fault.</li>
+</ol>
+<section class="cta">
+<h2>Read this code from your own car</h2>
+<p>Plug an ELM327 adapter into the OBD-II port under the dashboard. Pin16 reads every stored, pending and permanent code, explains each one like this page does — offline, with no account — and shows what the car recorded when the fault was set.</p>
+<a class="button" href="https://play.google.com/store/apps/details?id=com.amaldavanau.pin16&amp;hl=en&amp;referrer=utm_source%3Dpin16_site%26utm_medium%3Dcode_page%26utm_campaign%3Dcode_pages_en%26utm_content%3DP2423">Get Pin16 on Google Play</a>
+</section>
+<nav class="pager"><a rel="prev" href="../P2422/">← P2422</a><a href="../">All codes</a><a rel="next" href="../P2424/">P2424 →</a></nav>
+<footer><p>Written for Pin16 and not yet reviewed by a qualified technician. This is guidance for diagnosis, not repair instructions, and it may be incomplete or wrong for your vehicle. If in doubt, ask a mechanic.</p><p><a href="../../">Pin16</a> · <a href="../../privacy/">Privacy policy</a></p></footer>
+</main>
+</body>
+</html>

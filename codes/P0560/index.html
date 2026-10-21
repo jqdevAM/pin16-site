@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>P0560 — System Voltage: causes and what to check</title>
+<meta name="description" content="There is a problem with the system voltage the control module sees at its own supply, without the module committing to whether it is too high or too low.">
+<link rel="canonical" href="https://jqdevam.github.io/pin16-site/codes/P0560/">
+<link rel="alternate" hreflang="en" href="https://jqdevam.github.io/pin16-site/codes/P0560/">
+<link rel="alternate" hreflang="ru" href="https://jqdevam.github.io/pin16-site/ru/codes/P0560/">
+<link rel="alternate" hreflang="x-default" href="https://jqdevam.github.io/pin16-site/codes/P0560/">
+<link rel="icon" href="../../pin16.png">
+<link rel="stylesheet" href="../../assets/codes.css">
+</head>
+<body>
+<main>
+<nav class="top"><a class="brand" href="../../"><img src="../../pin16.png" alt="" width="28" height="28">Pin16</a><a href="../../codes/">All codes</a><a hreflang="ru" href="../../ru/codes/P0560/">По-русски</a></nav>
+<header class="code-head">
+<p class="code">P0560</p>
+<h1>System Voltage</h1>
+<dl class="facts"><div class="sev-high"><dt>Severity</dt><dd>High</dd></div><div><dt>Driving</dt><dd>Drivable — book it in</dd></div><div><dt>System</dt><dd>Powertrain</dd></div><div><dt>Group</dt><dd>Vehicle speed control, idle control and auxiliary inputs</dd></div></dl>
+</header>
+<p class="lead">There is a problem with the system voltage the control module sees at its own supply, without the module committing to whether it is too high or too low. Every electronic system on the vehicle depends on a stable supply, so a fault here tends to produce a scatter of unrelated codes elsewhere - modules misbehaving because of their power, not because anything is wrong with them.</p>
+<h2>Possible causes</h2>
+<ul class="causes">
+<li><span class="lik lik-common">Common</span>Weak or failing battery</li>
+<li><span class="lik lik-common">Common</span>Failing alternator or voltage regulator</li>
+<li><span class="lik lik-common">Common</span>Corroded or loose battery terminals</li>
+<li><span class="lik lik-common">Common</span>Corroded earth strap between engine, body and battery</li>
+<li><span class="lik lik-possible">Possible</span>Slipping or worn drive belt</li>
+<li><span class="lik lik-possible">Possible</span>Damaged charging cable between alternator and battery</li>
+<li><span class="lik lik-possible">Possible</span>Heavy aftermarket electrical load</li>
+</ul>
+<h2>What you might notice</h2>
+<ul>
+<li>Battery or charging warning light</li>
+<li>Lights dimming, flickering or unusually bright</li>
+<li>Several unrelated warning lights and codes at once</li>
+<li>Slow cranking</li>
+<li>Electrical items behaving oddly</li>
+</ul>
+<h2>What to check, in order</h2>
+<ol class="checks">
+<li>Measure battery voltage with the engine off and again with it running. Roughly 12.4 to 12.7 volts at rest and a steady charging voltage running is what you are looking for; anything well outside that has found the fault.</li>
+<li>Fix this before diagnosing anything else the car is doing. A supply problem sets codes across unrelated systems, and chasing those individually wastes a great deal of time.</li>
+<li>Clean and tighten the battery terminals and every earth strap you can reach. Corroded earths cause voltage problems that look exactly like failed components.</li>
+<li>Perform a voltage drop test on the main charging cable and the earth path.</li>
+<li>Check the drive belt tension and condition.</li>
+<li>Have the battery load tested rather than judging it on voltage alone.</li>
+</ol>
+<section class="cta">
+<h2>Read this code from your own car</h2>
+<p>Plug an ELM327 adapter into the OBD-II port under the dashboard. Pin16 reads every stored, pending and permanent code, explains each one like this page does — offline, with no account — and shows what the car recorded when the fault was set.</p>
+<a class="button" href="https://play.google.com/store/apps/details?id=com.amaldavanau.pin16&amp;hl=en&amp;referrer=utm_source%3Dpin16_site%26utm_medium%3Dcode_page%26utm_campaign%3Dcode_pages_en%26utm_content%3DP0560">Get Pin16 on Google Play</a>
+</section>
+<nav class="pager"><a rel="prev" href="../P0559/">← P0559</a><a href="../">All codes</a><a rel="next" href="../P0561/">P0561 →</a></nav>
+<footer><p>Written for Pin16 and not yet reviewed by a qualified technician. This is guidance for diagnosis, not repair instructions, and it may be incomplete or wrong for your vehicle. If in doubt, ask a mechanic.</p><p><a href="../../">Pin16</a> · <a href="../../privacy/">Privacy policy</a></p></footer>
+</main>
+</body>
+</html>

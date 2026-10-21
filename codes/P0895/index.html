@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>P0895 — Shift Time Too Short: causes and what to check</title>
+<meta name="description" content="Shifts are completing faster than the module expects.">
+<link rel="canonical" href="https://jqdevam.github.io/pin16-site/codes/P0895/">
+<link rel="alternate" hreflang="en" href="https://jqdevam.github.io/pin16-site/codes/P0895/">
+<link rel="alternate" hreflang="ru" href="https://jqdevam.github.io/pin16-site/ru/codes/P0895/">
+<link rel="alternate" hreflang="x-default" href="https://jqdevam.github.io/pin16-site/codes/P0895/">
+<link rel="icon" href="../../pin16.png">
+<link rel="stylesheet" href="../../assets/codes.css">
+</head>
+<body>
+<main>
+<nav class="top"><a class="brand" href="../../"><img src="../../pin16.png" alt="" width="28" height="28">Pin16</a><a href="../../codes/">All codes</a><a hreflang="ru" href="../../ru/codes/P0895/">По-русски</a></nav>
+<header class="code-head">
+<p class="code">P0895</p>
+<h1>Shift Time Too Short</h1>
+<dl class="facts"><div class="sev-medium"><dt>Severity</dt><dd>Medium</dd></div><div><dt>Driving</dt><dd>Drivable — book it in</dd></div><div><dt>System</dt><dd>Powertrain</dd></div><div><dt>Group</dt><dd>Transmission</dd></div></dl>
+</header>
+<p class="lead">Shifts are completing faster than the module expects. A shift that happens too quickly means the clutch is being clamped abruptly rather than being brought in smoothly, which is felt as a bang and puts a shock load through the driveline. Usually pressure is too high, or the module is compensating for something.</p>
+<h2>Possible causes</h2>
+<ul class="causes">
+<li><span class="lik lik-common">Common</span>Line pressure too high</li>
+<li><span class="lik lik-common">Common</span>Pressure control solenoid stuck or failed</li>
+<li><span class="lik lik-common">Common</span>Module defaulting to maximum pressure because of another stored fault</li>
+<li><span class="lik lik-common">Common</span>Adaptation values wrong after a repair, or never reset</li>
+<li><span class="lik lik-possible">Possible</span>Sticking valve in the valve body</li>
+<li><span class="lik lik-possible">Possible</span>Wrong fluid specification</li>
+</ul>
+<h2>What you might notice</h2>
+<ul>
+<li>Harsh, banging shifts</li>
+<li>A jolt through the car on every gear change</li>
+<li>Harsh engagement into drive or reverse</li>
+<li>Check engine light on</li>
+</ul>
+<h2>What to check, in order</h2>
+<ol class="checks">
+<li>Read all codes first. A module that has raised pressure to protect itself does so because of another fault, so this code is often a consequence rather than a cause.</li>
+<li>Check whether an adaptation reset is specified. Adaptation values left over from a previous state are a common cause of harsh shifts after a repair.</li>
+<li>Check the fluid level, condition and specification.</li>
+<li>Watch commanded against actual line pressure on the live data screen if available.</li>
+<li>Drive gently until it is fixed - harsh shifts load mountings and driveshafts.</li>
+</ol>
+<section class="cta">
+<h2>Read this code from your own car</h2>
+<p>Plug an ELM327 adapter into the OBD-II port under the dashboard. Pin16 reads every stored, pending and permanent code, explains each one like this page does — offline, with no account — and shows what the car recorded when the fault was set.</p>
+<a class="button" href="https://play.google.com/store/apps/details?id=com.amaldavanau.pin16&amp;hl=en&amp;referrer=utm_source%3Dpin16_site%26utm_medium%3Dcode_page%26utm_campaign%3Dcode_pages_en%26utm_content%3DP0895">Get Pin16 on Google Play</a>
+</section>
+<nav class="pager"><a rel="prev" href="../P0894/">← P0894</a><a href="../">All codes</a><a rel="next" href="../P0896/">P0896 →</a></nav>
+<footer><p>Written for Pin16 and not yet reviewed by a qualified technician. This is guidance for diagnosis, not repair instructions, and it may be incomplete or wrong for your vehicle. If in doubt, ask a mechanic.</p><p><a href="../../">Pin16</a> · <a href="../../privacy/">Privacy policy</a></p></footer>
+</main>
+</body>
+</html>

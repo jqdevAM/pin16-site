@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>P0A08 — DC/DC Converter Status Circuit: causes and what to check</title>
+<meta name="description" content="A fault in the DC/DC converter status circuit.">
+<link rel="canonical" href="https://jqdevam.github.io/pin16-site/codes/P0A08/">
+<link rel="alternate" hreflang="en" href="https://jqdevam.github.io/pin16-site/codes/P0A08/">
+<link rel="alternate" hreflang="ru" href="https://jqdevam.github.io/pin16-site/ru/codes/P0A08/">
+<link rel="alternate" hreflang="x-default" href="https://jqdevam.github.io/pin16-site/codes/P0A08/">
+<link rel="icon" href="../../pin16.png">
+<link rel="stylesheet" href="../../assets/codes.css">
+</head>
+<body>
+<main>
+<nav class="top"><a class="brand" href="../../"><img src="../../pin16.png" alt="" width="28" height="28">Pin16</a><a href="../../codes/">All codes</a><a hreflang="ru" href="../../ru/codes/P0A08/">По-русски</a></nav>
+<header class="code-head">
+<p class="code">P0A08</p>
+<h1>DC/DC Converter Status Circuit</h1>
+<dl class="facts"><div class="sev-high"><dt>Severity</dt><dd>High</dd></div><div><dt>Driving</dt><dd>Drive only to a garage</dd></div><div><dt>System</dt><dd>Powertrain</dd></div><div><dt>Group</dt><dd>Hybrid propulsion</dd></div></dl>
+</header>
+<aside class="note"><strong>Important.</strong> A vehicle whose DC/DC converter has failed is running everything from the 12 volt battery alone. It will keep going until that battery is exhausted and then stop - possibly in traffic, and with power steering and brake assistance going at the same moment. Do not set off on a journey with this stored.</aside>
+<p class="lead">A fault in the DC/DC converter status circuit. The DC/DC converter is what a hybrid or electric vehicle has instead of an alternator: it steps the traction battery&#x27;s high voltage down to around 14 volts to run the lights, the computers and everything else on the ordinary 12 volt system, and to keep the 12 volt battery charged. This circuit is how the module knows whether the converter is working. Note the direction of cause and effect here - on most hybrid faults a flat 12 volt battery is the cause, but when the converter fails the flat 12 volt battery is the consequence.</p>
+<h2>Possible causes</h2>
+<ul class="causes">
+<li><span class="lik lik-common">Common</span>Failed DC/DC converter</li>
+<li><span class="lik lik-common">Common</span>Corroded or damaged connector on the status circuit</li>
+<li><span class="lik lik-common">Common</span>Wiring fault between the converter and the module</li>
+<li><span class="lik lik-common">Common</span>Blown fuse in the converter&#x27;s supply or output</li>
+<li><span class="lik lik-possible">Possible</span>12 volt battery already exhausted, so nothing behaves predictably</li>
+<li><span class="lik lik-rare">Rare</span>Failed control module input</li>
+</ul>
+<h2>What you might notice</h2>
+<ul>
+<li>12 volt battery going flat, especially overnight</li>
+<li>Warning lights across several unrelated systems</li>
+<li>Vehicle refusing to power up, or powering down while driving</li>
+<li>Dim lights, or a battery warning lamp</li>
+<li>Hybrid or electric drive system warning message</li>
+</ul>
+<h2>What to check, in order</h2>
+<ol class="checks">
+<li>Measure the 12 volt system voltage with the vehicle powered up and ready. A healthy DC/DC converter holds it at roughly 14 volts; anything near 12 and falling means the converter is not supplying, and the battery is running the car on its own.</li>
+<li>Do not simply replace the 12 volt battery and hand the vehicle back. A new battery on a vehicle whose converter has failed will be flat again within days, and the owner will reasonably think the new battery was faulty.</li>
+<li>Check the converter&#x27;s fuses, on both the input and the output side.</li>
+<li>Read all codes. Converter faults usually appear alongside other high-voltage system codes, and those narrow it down.</li>
+<li>Stop at the 12 volt system and the fuse box. Anything further needs the manufacturer&#x27;s high-voltage procedure.</li>
+</ol>
+<section class="cta">
+<h2>Read this code from your own car</h2>
+<p>Plug an ELM327 adapter into the OBD-II port under the dashboard. Pin16 reads every stored, pending and permanent code, explains each one like this page does — offline, with no account — and shows what the car recorded when the fault was set.</p>
+<a class="button" href="https://play.google.com/store/apps/details?id=com.amaldavanau.pin16&amp;hl=en&amp;referrer=utm_source%3Dpin16_site%26utm_medium%3Dcode_page%26utm_campaign%3Dcode_pages_en%26utm_content%3DP0A08">Get Pin16 on Google Play</a>
+</section>
+<nav class="pager"><a rel="prev" href="../P0A07/">← P0A07</a><a href="../">All codes</a><a rel="next" href="../P0A09/">P0A09 →</a></nav>
+<footer><p>Written for Pin16 and not yet reviewed by a qualified technician. This is guidance for diagnosis, not repair instructions, and it may be incomplete or wrong for your vehicle. If in doubt, ask a mechanic.</p><p><a href="../../">Pin16</a> · <a href="../../privacy/">Privacy policy</a></p></footer>
+</main>
+</body>
+</html>

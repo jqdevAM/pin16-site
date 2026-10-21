@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>P0433 — Heated Catalyst Efficiency Below Threshold (Bank 2): causes and what to check</title>
+<meta name="description" content="The heated catalyst on bank 2 is not converting as well as it should.">
+<link rel="canonical" href="https://jqdevam.github.io/pin16-site/codes/P0433/">
+<link rel="alternate" hreflang="en" href="https://jqdevam.github.io/pin16-site/codes/P0433/">
+<link rel="alternate" hreflang="ru" href="https://jqdevam.github.io/pin16-site/ru/codes/P0433/">
+<link rel="alternate" hreflang="x-default" href="https://jqdevam.github.io/pin16-site/codes/P0433/">
+<link rel="icon" href="../../pin16.png">
+<link rel="stylesheet" href="../../assets/codes.css">
+</head>
+<body>
+<main>
+<nav class="top"><a class="brand" href="../../"><img src="../../pin16.png" alt="" width="28" height="28">Pin16</a><a href="../../codes/">All codes</a><a hreflang="ru" href="../../ru/codes/P0433/">По-русски</a></nav>
+<header class="code-head">
+<p class="code">P0433</p>
+<h1>Heated Catalyst Efficiency Below Threshold (Bank 2)</h1>
+<dl class="facts"><div class="sev-medium"><dt>Severity</dt><dd>Medium</dd></div><div><dt>Driving</dt><dd>Drivable — book it in</dd></div><div><dt>System</dt><dd>Powertrain</dd></div><div><dt>Group</dt><dd>Auxiliary emission controls</dd></div></dl>
+</header>
+<aside class="note"><strong>Important.</strong> A failed converter is usually a symptom rather than a root cause. Something upstream normally killed it - a misfire, a rich mixture or an engine burning oil - and replacing the converter without finding that fault repeats the expense.</aside>
+<p class="lead">The heated catalyst on bank 2 is not converting as well as it should. This one carries an electric heater so it can reach working temperature before the exhaust alone would warm it - so a heater fault and a converter fault produce similar readings, and it is worth establishing which before spending anything.</p>
+<h2>Possible causes</h2>
+<ul class="causes">
+<li><span class="lik lik-common">Common</span>Failing or aged downstream oxygen sensor</li>
+<li><span class="lik lik-common">Common</span>Exhaust leak before or between the oxygen sensors</li>
+<li><span class="lik lik-common">Common</span>Engine fault upstream that has damaged the converter - misfire, rich mixture, oil burning</li>
+<li><span class="lik lik-common">Common</span>Converter genuinely worn out</li>
+<li><span class="lik lik-possible">Possible</span>Oxygen sensor contaminated by oil, coolant or silicone sealant</li>
+<li><span class="lik lik-possible">Possible</span>Aftermarket converter that does not meet the original specification</li>
+<li><span class="lik lik-common">Common</span>Catalyst heater not working, so the converter never reaches temperature</li>
+</ul>
+<h2>What you might notice</h2>
+<ul>
+<li>Check engine light on</li>
+<li>Failed emissions test</li>
+<li>Slight loss of power</li>
+<li>Sulphurous or rotten-egg smell from the exhaust</li>
+<li>Rattling from the converter if its internals have broken up</li>
+<li>Often no symptom the driver notices</li>
+</ul>
+<h2>What to check, in order</h2>
+<ol class="checks">
+<li>Read all codes. A catalyst heater circuit code alongside this one means the converter is probably fine and simply never gets hot enough.</li>
+<li>Do not replace the converter first. It is the most expensive item in the exhaust and the oxygen sensors around it fail far more often.</li>
+<li>Check for exhaust leaks before and between the sensors. Air drawn in through a leak makes a working converter measure badly.</li>
+<li>Watch the upstream and downstream oxygen sensors together on the live data screen. A downstream sensor that mirrors the upstream one suggests the converter really has stopped working; one that sits still suggests the sensor has.</li>
+<li>Read all codes. Misfire or fuel trim codes alongside this one identify what damaged the converter, and replacing it without fixing them repeats the expense.</li>
+<li>Ask whether an aftermarket converter has been fitted. Cheap replacements frequently fail this test within months even when new.</li>
+</ol>
+<section class="cta">
+<h2>Read this code from your own car</h2>
+<p>Plug an ELM327 adapter into the OBD-II port under the dashboard. Pin16 reads every stored, pending and permanent code, explains each one like this page does — offline, with no account — and shows what the car recorded when the fault was set.</p>
+<a class="button" href="https://play.google.com/store/apps/details?id=com.amaldavanau.pin16&amp;hl=en&amp;referrer=utm_source%3Dpin16_site%26utm_medium%3Dcode_page%26utm_campaign%3Dcode_pages_en%26utm_content%3DP0433">Get Pin16 on Google Play</a>
+</section>
+<nav class="pager"><a rel="prev" href="../P0432/">← P0432</a><a href="../">All codes</a><a rel="next" href="../P0434/">P0434 →</a></nav>
+<footer><p>Written for Pin16 and not yet reviewed by a qualified technician. This is guidance for diagnosis, not repair instructions, and it may be incomplete or wrong for your vehicle. If in doubt, ask a mechanic.</p><p><a href="../../">Pin16</a> · <a href="../../privacy/">Privacy policy</a></p></footer>
+</main>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>P0194 — Fuel Rail Pressure Sensor Circuit Intermittent: causes and what to check</title>
+<meta name="description" content="The fuel rail pressure signal drops out and returns.">
+<link rel="canonical" href="https://jqdevam.github.io/pin16-site/codes/P0194/">
+<link rel="alternate" hreflang="en" href="https://jqdevam.github.io/pin16-site/codes/P0194/">
+<link rel="alternate" hreflang="ru" href="https://jqdevam.github.io/pin16-site/ru/codes/P0194/">
+<link rel="alternate" hreflang="x-default" href="https://jqdevam.github.io/pin16-site/codes/P0194/">
+<link rel="icon" href="../../pin16.png">
+<link rel="stylesheet" href="../../assets/codes.css">
+</head>
+<body>
+<main>
+<nav class="top"><a class="brand" href="../../"><img src="../../pin16.png" alt="" width="28" height="28">Pin16</a><a href="../../codes/">All codes</a><a hreflang="ru" href="../../ru/codes/P0194/">По-русски</a></nav>
+<header class="code-head">
+<p class="code">P0194</p>
+<h1>Fuel Rail Pressure Sensor Circuit Intermittent</h1>
+<dl class="facts"><div class="sev-high"><dt>Severity</dt><dd>High</dd></div><div><dt>Driving</dt><dd>Drive only to a garage</dd></div><div><dt>System</dt><dd>Powertrain</dd></div><div><dt>Group</dt><dd>Fuel and air metering</dd></div></dl>
+</header>
+<aside class="note"><strong>Important.</strong> An engine that cuts out while the car is moving loses steering and brake assistance at the same moment. Do not keep driving it to see whether it happens again. A high pressure fuel system is dangerous to work on. A common rail diesel runs well over 1,500 bar and a direct injection petrol several hundred, and the rail stays pressurised after the engine is switched off. Fuel escaping from a pinhole at those pressures passes straight through skin and injects into the tissue underneath: it can look like a trivial puncture and it is a surgical emergency. Never run a hand along a high pressure line to feel for a leak, never slacken a union with the engine running, and always follow the manufacturer&#x27;s depressurisation procedure before touching the high pressure side.</aside>
+<p class="lead">The fuel rail pressure signal drops out and returns. Because the module calculates injector opening times from this figure, an intermittent signal makes the engine cut and recover - and an engine that can cut out is a different problem from one that runs badly.</p>
+<h2>Possible causes</h2>
+<ul class="causes">
+<li><span class="lik lik-common">Common</span>Loose, corroded or backed-out pin in the sensor connector</li>
+<li><span class="lik lik-common">Common</span>Chafed wiring that shorts or opens only when the engine moves on its mounts</li>
+<li><span class="lik lik-common">Common</span>Water or oil that has crept into the connector</li>
+<li><span class="lik lik-possible">Possible</span>Poor earth connection</li>
+<li><span class="lik lik-possible">Possible</span>Failing sensor breaking down when hot</li>
+</ul>
+<h2>What you might notice</h2>
+<ul>
+<li>Hard starting, or refusing to start at all</li>
+<li>Loss of power, or dropping into limp mode</li>
+<li>Rough running, misfiring, or cutting out</li>
+<li>Smoke from the exhaust</li>
+<li>Check engine light on</li>
+</ul>
+<h2>What to check, in order</h2>
+<ol class="checks">
+<li>Wiggle the connector and flex the harness with live data on screen. An intermittent fault that can be reproduced by hand is nearly solved; one that cannot will not be found by guessing.</li>
+<li>Open the connector and look for green corrosion, spread terminals or a pin pushed back out of its housing. Spread terminals are common and easy to miss.</li>
+<li>Check the sensor&#x27;s earth. A poor earth produces exactly this pattern and replacing the sensor changes nothing.</li>
+<li>Replace the sensor last. Intermittent faults are connections far more often than components, because a component that has failed usually stays failed.</li>
+<li>Log rail pressure while driving rather than testing at idle. A fault that only appears under vibration or load will not show itself on a stationary engine.</li>
+</ol>
+<section class="cta">
+<h2>Read this code from your own car</h2>
+<p>Plug an ELM327 adapter into the OBD-II port under the dashboard. Pin16 reads every stored, pending and permanent code, explains each one like this page does — offline, with no account — and shows what the car recorded when the fault was set.</p>
+<a class="button" href="https://play.google.com/store/apps/details?id=com.amaldavanau.pin16&amp;hl=en&amp;referrer=utm_source%3Dpin16_site%26utm_medium%3Dcode_page%26utm_campaign%3Dcode_pages_en%26utm_content%3DP0194">Get Pin16 on Google Play</a>
+</section>
+<nav class="pager"><a rel="prev" href="../P0193/">← P0193</a><a href="../">All codes</a><a rel="next" href="../P0195/">P0195 →</a></nav>
+<footer><p>Written for Pin16 and not yet reviewed by a qualified technician. This is guidance for diagnosis, not repair instructions, and it may be incomplete or wrong for your vehicle. If in doubt, ask a mechanic.</p><p><a href="../../">Pin16</a> · <a href="../../privacy/">Privacy policy</a></p></footer>
+</main>
+</body>
+</html>

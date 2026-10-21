@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>P0197 — Engine Oil Temperature Sensor Low: causes and what to check</title>
+<meta name="description" content="The oil temperature signal is reading low - outside the range a working sensor produces.">
+<link rel="canonical" href="https://jqdevam.github.io/pin16-site/codes/P0197/">
+<link rel="alternate" hreflang="en" href="https://jqdevam.github.io/pin16-site/codes/P0197/">
+<link rel="alternate" hreflang="ru" href="https://jqdevam.github.io/pin16-site/ru/codes/P0197/">
+<link rel="alternate" hreflang="x-default" href="https://jqdevam.github.io/pin16-site/codes/P0197/">
+<link rel="icon" href="../../pin16.png">
+<link rel="stylesheet" href="../../assets/codes.css">
+</head>
+<body>
+<main>
+<nav class="top"><a class="brand" href="../../"><img src="../../pin16.png" alt="" width="28" height="28">Pin16</a><a href="../../codes/">All codes</a><a hreflang="ru" href="../../ru/codes/P0197/">По-русски</a></nav>
+<header class="code-head">
+<p class="code">P0197</p>
+<h1>Engine Oil Temperature Sensor Low</h1>
+<dl class="facts"><div class="sev-low"><dt>Severity</dt><dd>Low</dd></div><div><dt>Driving</dt><dd>Drivable — book it in</dd></div><div><dt>System</dt><dd>Powertrain</dd></div><div><dt>Group</dt><dd>Fuel and air metering</dd></div></dl>
+</header>
+<p class="lead">The oil temperature signal is reading low - outside the range a working sensor produces. As with the other temperature sensors, the electrical direction and the temperature direction are opposite: a short reports impossibly hot oil and an open circuit reports impossibly cold.</p>
+<h2>Possible causes</h2>
+<ul class="causes">
+<li><span class="lik lik-common">Common</span>Failed engine oil temperature sensor</li>
+<li><span class="lik lik-common">Common</span>Corroded or oil-contaminated connector</li>
+<li><span class="lik lik-common">Common</span>Wiring fault between the sensor and the module</li>
+<li><span class="lik lik-possible">Possible</span>Poor earth at the sensor</li>
+<li><span class="lik lik-possible">Possible</span>Very low oil level, leaving the sensor reading air</li>
+</ul>
+<h2>What you might notice</h2>
+<ul>
+<li>Oil life or service interval indication behaving oddly</li>
+<li>Cooling fans running more or less than expected</li>
+<li>Variable valve timing not operating smoothly</li>
+<li>Check engine light on</li>
+<li>Often nothing noticeable while driving</li>
+</ul>
+<h2>What to check, in order</h2>
+<ol class="checks">
+<li>Check the oil level before anything else. It costs nothing, and a level low enough to uncover the sensor is a far more serious problem than the sensor itself.</li>
+<li>Compare oil temperature against coolant temperature after a cold soak. They should agree closely on a cold engine, and oil should then warm more slowly than coolant once running.</li>
+<li>Inspect the connector. These sensors sit in oil and heat, and their connectors harden and crack.</li>
+<li>Check the earth and the wiring before replacing the sensor.</li>
+<li>Unplug the sensor and watch which way the reading jumps. Open and short drive it to opposite extremes, which separates a wiring fault from a sensor fault immediately.</li>
+</ol>
+<section class="cta">
+<h2>Read this code from your own car</h2>
+<p>Plug an ELM327 adapter into the OBD-II port under the dashboard. Pin16 reads every stored, pending and permanent code, explains each one like this page does — offline, with no account — and shows what the car recorded when the fault was set.</p>
+<a class="button" href="https://play.google.com/store/apps/details?id=com.amaldavanau.pin16&amp;hl=en&amp;referrer=utm_source%3Dpin16_site%26utm_medium%3Dcode_page%26utm_campaign%3Dcode_pages_en%26utm_content%3DP0197">Get Pin16 on Google Play</a>
+</section>
+<nav class="pager"><a rel="prev" href="../P0196/">← P0196</a><a href="../">All codes</a><a rel="next" href="../P0198/">P0198 →</a></nav>
+<footer><p>Written for Pin16 and not yet reviewed by a qualified technician. This is guidance for diagnosis, not repair instructions, and it may be incomplete or wrong for your vehicle. If in doubt, ask a mechanic.</p><p><a href="../../">Pin16</a> · <a href="../../privacy/">Privacy policy</a></p></footer>
+</main>
+</body>
+</html>

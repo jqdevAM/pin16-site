@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>P0969 — Управление соленоидом регулировки давления &quot;C&quot;: показания цепи вне рабочего диапазона: причины и что проверить</title>
+<meta name="description" content="Цепь управления электромагнитным клапаном регулировки давления &quot;C&quot; электрически подключена, но ведёт себя не так, как ожидается: потребляемый ток не совпадает…">
+<link rel="canonical" href="https://jqdevam.github.io/pin16-site/ru/codes/P0969/">
+<link rel="alternate" hreflang="en" href="https://jqdevam.github.io/pin16-site/codes/P0969/">
+<link rel="alternate" hreflang="ru" href="https://jqdevam.github.io/pin16-site/ru/codes/P0969/">
+<link rel="alternate" hreflang="x-default" href="https://jqdevam.github.io/pin16-site/codes/P0969/">
+<link rel="icon" href="../../../pin16.png">
+<link rel="stylesheet" href="../../../assets/codes.css">
+</head>
+<body>
+<main>
+<nav class="top"><a class="brand" href="../../../"><img src="../../../pin16.png" alt="" width="28" height="28">Pin16</a><a href="../../../ru/codes/">Все коды</a><a hreflang="en" href="../../../codes/P0969/">In English</a></nav>
+<header class="code-head">
+<p class="code">P0969</p>
+<h1>Управление соленоидом регулировки давления &quot;C&quot;: показания цепи вне рабочего диапазона</h1>
+<dl class="facts"><div class="sev-high"><dt>Серьёзность</dt><dd>Высокая</dd></div><div><dt>Можно ли ехать</dt><dd>Только до автосервиса</dd></div><div><dt>Система</dt><dd>Двигатель и трансмиссия</dd></div><div><dt>Группа</dt><dd>Коробка передач и блоки управления</dd></div></dl>
+</header>
+<p class="lead">Цепь управления электромагнитным клапаном регулировки давления &quot;C&quot; электрически подключена, но ведёт себя не так, как ожидается: потребляемый ток не совпадает с тем, что скомандовал блок. Это взгляд блока на ту же проблему, которую код P0796 описывает со стороны гидравлики: клапан не делает того, что ему велено.</p>
+<h2>Возможные причины</h2>
+<ul class="causes">
+<li><span class="lik lik-common">Часто</span>Соленоид изношен или подклинивает, потребляя неверный ток</li>
+<li><span class="lik lik-common">Часто</span>Высокое сопротивление в проводке или окисленный разъём</li>
+<li><span class="lik lik-common">Часто</span>Грязь в жидкости ограничивает ход соленоида</li>
+<li><span class="lik lik-possible">Возможно</span>Внутренний жгут коробки передач деградирует</li>
+<li><span class="lik lik-possible">Возможно</span>Низкий уровень или деградировавшая жидкость</li>
+<li><span class="lik lik-rare">Редко</span>Отказ выходного драйвера в блоке управления</li>
+</ul>
+<h2>Что вы можете заметить</h2>
+<ul>
+<li>Жёсткие или непредсказуемые переключения</li>
+<li>Пробуксовка под нагрузкой</li>
+<li>Аварийный режим</li>
+<li>Задержка включения</li>
+<li>Горит лампа Check Engine</li>
+</ul>
+<h2>Что проверить, по порядку</h2>
+<ol class="checks">
+<li>Сначала проверьте уровень и состояние жидкости и поищите в ней грязь.</li>
+<li>Измерьте сопротивление соленоида на разъёме корпуса и сравните с допуском: этот код даёт именно небольшой выход за допуск, а не явная электрическая неисправность.</li>
+<li>Сделайте замер падения напряжения на цепи соленоида, чтобы найти повышенное сопротивление в проводке.</li>
+<li>Считайте все коды. Парный код соленоида называет тот же узел со стороны гидравлики.</li>
+<li>Проверьте, не предписан ли сброс адаптаций после ремонта.</li>
+</ol>
+<section class="cta">
+<h2>Прочитайте этот код со своей машины</h2>
+<p>Подключите адаптер ELM327 к разъёму OBD-II под приборной панелью. Pin16 прочитает подтверждённые, разовые и постоянные коды, объяснит каждый так же, как эта страница, — без интернета и без учётной записи — и покажет, что машина записала в момент ошибки.</p>
+<a class="button" href="https://play.google.com/store/apps/details?id=com.amaldavanau.pin16&amp;hl=ru&amp;referrer=utm_source%3Dpin16_site%26utm_medium%3Dcode_page%26utm_campaign%3Dcode_pages_ru%26utm_content%3DP0969">Скачать Pin16 в Google Play</a>
+</section>
+<nav class="pager"><a rel="prev" href="../P0968/">← P0968</a><a href="../">Все коды</a><a rel="next" href="../P0970/">P0970 →</a></nav>
+<footer><p>Текст написан для Pin16 и ещё не проверен квалифицированным механиком. Это помощь в диагностике, а не инструкция по ремонту; для вашего автомобиля она может быть неполной или неточной. Если сомневаетесь, обратитесь в автосервис.</p><p><a href="../../../">Pin16</a> · <a href="../../../privacy/#ru">Политика конфиденциальности</a></p></footer>
+</main>
+</body>
+</html>

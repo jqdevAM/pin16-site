@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>P0578 — Cruise Control Multi-Function Input &quot;A&quot; Circuit Stuck: causes and what to check</title>
+<meta name="description" content="The cruise control multi-function input &quot;A&quot; is stuck - the module sees a command being held continuously.">
+<link rel="canonical" href="https://jqdevam.github.io/pin16-site/codes/P0578/">
+<link rel="alternate" hreflang="en" href="https://jqdevam.github.io/pin16-site/codes/P0578/">
+<link rel="alternate" hreflang="ru" href="https://jqdevam.github.io/pin16-site/ru/codes/P0578/">
+<link rel="alternate" hreflang="x-default" href="https://jqdevam.github.io/pin16-site/codes/P0578/">
+<link rel="icon" href="../../pin16.png">
+<link rel="stylesheet" href="../../assets/codes.css">
+</head>
+<body>
+<main>
+<nav class="top"><a class="brand" href="../../"><img src="../../pin16.png" alt="" width="28" height="28">Pin16</a><a href="../../codes/">All codes</a><a hreflang="ru" href="../../ru/codes/P0578/">По-русски</a></nav>
+<header class="code-head">
+<p class="code">P0578</p>
+<h1>Cruise Control Multi-Function Input &quot;A&quot; Circuit Stuck</h1>
+<dl class="facts"><div class="sev-high"><dt>Severity</dt><dd>High</dd></div><div><dt>Driving</dt><dd>Drivable — book it in</dd></div><div><dt>System</dt><dd>Powertrain</dd></div><div><dt>Group</dt><dd>Vehicle speed control, idle control and auxiliary inputs</dd></div></dl>
+</header>
+<aside class="note"><strong>Important.</strong> Cruise control can always be cancelled by pressing the brake pedal. If it ever fails to disengage, brake firmly, select neutral, and bring the car to a stop - do not switch the ignition fully off while moving, because that can lock the steering.</aside>
+<p class="lead">The cruise control multi-function input &quot;A&quot; is stuck - the module sees a command being held continuously. Depending on which command is stuck, cruise control may refuse to engage, may engage on its own, or may not respond to the cancel command.</p>
+<h2>Possible causes</h2>
+<ul class="causes">
+<li><span class="lik lik-common">Common</span>Failed cruise control switch or stalk</li>
+<li><span class="lik lik-common">Common</span>Wiring fault in the steering column or console</li>
+<li><span class="lik lik-common">Common</span>Damaged clock spring, on steering-wheel-mounted controls</li>
+<li><span class="lik lik-common">Common</span>Corroded or disturbed connector</li>
+<li><span class="lik lik-possible">Possible</span>Brake or clutch switch fault preventing cruise from engaging</li>
+<li><span class="lik lik-rare">Rare</span>Failed control module input</li>
+</ul>
+<h2>What you might notice</h2>
+<ul>
+<li>Cruise control will not engage</li>
+<li>Cruise control cancelling on its own</li>
+<li>Set, resume or cancel not responding</li>
+<li>Cruise warning message</li>
+<li>Check engine light on</li>
+</ul>
+<h2>What to check, in order</h2>
+<ol class="checks">
+<li>Know how to cancel cruise control by other means before driving: pressing the brake pedal, pressing the clutch, selecting neutral, or switching the ignition to accessory will all disengage it. Several independent ways exist precisely for this situation.</li>
+<li>Watch the input state with nothing being pressed. A reading that already shows a command active identifies a stuck switch immediately.</li>
+<li>Watch the cruise control switch states on the live data screen while operating each control.</li>
+<li>Check the brake and clutch switches. Cruise control will not engage while the module thinks the brake is pressed, so a brake switch fault presents as a cruise control fault.</li>
+<li>On steering-wheel controls, suspect the clock spring - horn or airbag faults alongside confirm it.</li>
+<li>Inspect the connector if the column or console has been worked on.</li>
+<li>Confirm ordinary driving is unaffected, in which case this can wait.</li>
+</ol>
+<section class="cta">
+<h2>Read this code from your own car</h2>
+<p>Plug an ELM327 adapter into the OBD-II port under the dashboard. Pin16 reads every stored, pending and permanent code, explains each one like this page does — offline, with no account — and shows what the car recorded when the fault was set.</p>
+<a class="button" href="https://play.google.com/store/apps/details?id=com.amaldavanau.pin16&amp;hl=en&amp;referrer=utm_source%3Dpin16_site%26utm_medium%3Dcode_page%26utm_campaign%3Dcode_pages_en%26utm_content%3DP0578">Get Pin16 on Google Play</a>
+</section>
+<nav class="pager"><a rel="prev" href="../P0577/">← P0577</a><a href="../">All codes</a><a rel="next" href="../P0579/">P0579 →</a></nav>
+<footer><p>Written for Pin16 and not yet reviewed by a qualified technician. This is guidance for diagnosis, not repair instructions, and it may be incomplete or wrong for your vehicle. If in doubt, ask a mechanic.</p><p><a href="../../">Pin16</a> · <a href="../../privacy/">Privacy policy</a></p></footer>
+</main>
+</body>
+</html>

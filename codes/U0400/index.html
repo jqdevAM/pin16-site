@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>U0400 — Invalid Data Received: causes and what to check</title>
+<meta name="description" content="A module is receiving data over the vehicle&#x27;s data bus that it can tell is wrong, without naming which module sent it.">
+<link rel="canonical" href="https://jqdevam.github.io/pin16-site/codes/U0400/">
+<link rel="alternate" hreflang="en" href="https://jqdevam.github.io/pin16-site/codes/U0400/">
+<link rel="alternate" hreflang="ru" href="https://jqdevam.github.io/pin16-site/ru/codes/U0400/">
+<link rel="alternate" hreflang="x-default" href="https://jqdevam.github.io/pin16-site/codes/U0400/">
+<link rel="icon" href="../../pin16.png">
+<link rel="stylesheet" href="../../assets/codes.css">
+</head>
+<body>
+<main>
+<nav class="top"><a class="brand" href="../../"><img src="../../pin16.png" alt="" width="28" height="28">Pin16</a><a href="../../codes/">All codes</a><a hreflang="ru" href="../../ru/codes/U0400/">По-русски</a></nav>
+<header class="code-head">
+<p class="code">U0400</p>
+<h1>Invalid Data Received</h1>
+<dl class="facts"><div class="sev-high"><dt>Severity</dt><dd>High</dd></div><div><dt>Driving</dt><dd>Drive only to a garage</dd></div><div><dt>System</dt><dd>Network and communication</dd></div><div><dt>Group</dt><dd>Network data</dd></div></dl>
+</header>
+<p class="lead">A module is receiving data over the vehicle&#x27;s data bus that it can tell is wrong, without naming which module sent it. The message is arriving intact but the values in it fail a plausibility check - out of range, a bad checksum, or a counter that stopped advancing. Because the source is not named, this code is a starting point rather than an answer: the module that is actually at fault will usually have stored its own code saying so.</p>
+<h2>Possible causes</h2>
+<ul class="causes">
+<li><span class="lik lik-common">Common</span>A module somewhere on the bus sending values that cannot be true</li>
+<li><span class="lik lik-common">Common</span>Low or unstable system voltage</li>
+<li><span class="lik lik-common">Common</span>Corroded connector or damaged wiring corrupting messages</li>
+<li><span class="lik lik-possible">Possible</span>A module recently replaced or updated with the wrong calibration</li>
+<li><span class="lik lik-possible">Possible</span>Aftermarket accessory spliced into the bus</li>
+</ul>
+<h2>What you might notice</h2>
+<ul>
+<li>Warning light on for the system that depends on the data</li>
+<li>The affected function switching itself off</li>
+<li>Fault codes stored in more than one module</li>
+<li>Several unrelated systems behaving oddly at once</li>
+</ul>
+<h2>What to check, in order</h2>
+<ol class="checks">
+<li>Read the codes from every module on the vehicle. This code does not name the sender, so the module that does name a fault is where to start - and there is almost always one.</li>
+<li>Check battery voltage and the earth points. An unstable supply is the most common reason several modules start producing values that fail plausibility checks.</li>
+<li>Find out what was worked on recently. This code appearing after a repair, a battery change or a module replacement usually points straight back at that work.</li>
+<li>Look for aftermarket wiring spliced into the bus - alarms, trackers, dash cameras, tow bar electrics. A badly-made splice corrupts messages without breaking the network.</li>
+</ol>
+<section class="cta">
+<h2>Read this code from your own car</h2>
+<p>Plug an ELM327 adapter into the OBD-II port under the dashboard. Pin16 reads every stored, pending and permanent code, explains each one like this page does — offline, with no account — and shows what the car recorded when the fault was set.</p>
+<a class="button" href="https://play.google.com/store/apps/details?id=com.amaldavanau.pin16&amp;hl=en&amp;referrer=utm_source%3Dpin16_site%26utm_medium%3Dcode_page%26utm_campaign%3Dcode_pages_en%26utm_content%3DU0400">Get Pin16 on Google Play</a>
+</section>
+<nav class="pager"><a rel="prev" href="../U0331/">← U0331</a><a href="../">All codes</a><a rel="next" href="../U0401/">U0401 →</a></nav>
+<footer><p>Written for Pin16 and not yet reviewed by a qualified technician. This is guidance for diagnosis, not repair instructions, and it may be incomplete or wrong for your vehicle. If in doubt, ask a mechanic.</p><p><a href="../../">Pin16</a> · <a href="../../privacy/">Privacy policy</a></p></footer>
+</main>
+</body>
+</html>

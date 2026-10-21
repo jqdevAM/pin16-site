@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>P0860 — Gear Shift Module Communication Circuit: causes and what to check</title>
+<meta name="description" content="A fault in the communication circuit to the gear shift module.">
+<link rel="canonical" href="https://jqdevam.github.io/pin16-site/codes/P0860/">
+<link rel="alternate" hreflang="en" href="https://jqdevam.github.io/pin16-site/codes/P0860/">
+<link rel="alternate" hreflang="ru" href="https://jqdevam.github.io/pin16-site/ru/codes/P0860/">
+<link rel="alternate" hreflang="x-default" href="https://jqdevam.github.io/pin16-site/codes/P0860/">
+<link rel="icon" href="../../pin16.png">
+<link rel="stylesheet" href="../../assets/codes.css">
+</head>
+<body>
+<main>
+<nav class="top"><a class="brand" href="../../"><img src="../../pin16.png" alt="" width="28" height="28">Pin16</a><a href="../../codes/">All codes</a><a hreflang="ru" href="../../ru/codes/P0860/">По-русски</a></nav>
+<header class="code-head">
+<p class="code">P0860</p>
+<h1>Gear Shift Module Communication Circuit</h1>
+<dl class="facts"><div class="sev-high"><dt>Severity</dt><dd>High</dd></div><div><dt>Driving</dt><dd>Drive only to a garage</dd></div><div><dt>System</dt><dd>Powertrain</dd></div><div><dt>Group</dt><dd>Transmission</dd></div></dl>
+</header>
+<p class="lead">A fault in the communication circuit to the gear shift module. This is not the same as the transmission being broken - the module may be perfectly healthy but unable to talk. Because the rest of the vehicle cannot coordinate with it, the transmission will usually fall back to a failsafe and hold one gear.</p>
+<h2>Possible causes</h2>
+<ul class="causes">
+<li><span class="lik lik-common">Common</span>Low battery voltage or a discharged battery, dropping modules off the bus</li>
+<li><span class="lik lik-common">Common</span>Damaged, chafed or corroded bus wiring</li>
+<li><span class="lik lik-common">Common</span>Corroded or water-ingressed connector at the module</li>
+<li><span class="lik lik-common">Common</span>Blown fuse or corroded earth on the module supply</li>
+<li><span class="lik lik-possible">Possible</span>Failed module</li>
+<li><span class="lik lik-possible">Possible</span>Module not coded to the vehicle after replacement</li>
+<li><span class="lik lik-possible">Possible</span>Aftermarket electrical work spliced into the bus</li>
+</ul>
+<h2>What you might notice</h2>
+<ul>
+<li>Transmission stuck in one gear</li>
+<li>Gear display blank or wrong</li>
+<li>Several warning lights at once</li>
+<li>Scan tool cannot see the module</li>
+<li>Check engine light on</li>
+</ul>
+<h2>What to check, in order</h2>
+<ol class="checks">
+<li>Check battery voltage and state of charge before anything else. A weak battery drops modules off the bus and sets communication codes with no wiring fault at all - the same false lead that dominates the U-code family.</li>
+<li>Check the fuses and earths for the gear shift module.</li>
+<li>Note how many communication codes are stored. Several at once points at battery, earth or bus wiring rather than at a failed module.</li>
+<li>Inspect the module connector for corrosion and water.</li>
+<li>Ask what was done to the car recently. Aftermarket alarms, trackers and stereos spliced into the bus are a frequent cause.</li>
+<li>Do not order a module until power, earth, bus wiring and battery condition are all eliminated. A replacement usually needs coding as well.</li>
+</ol>
+<section class="cta">
+<h2>Read this code from your own car</h2>
+<p>Plug an ELM327 adapter into the OBD-II port under the dashboard. Pin16 reads every stored, pending and permanent code, explains each one like this page does — offline, with no account — and shows what the car recorded when the fault was set.</p>
+<a class="button" href="https://play.google.com/store/apps/details?id=com.amaldavanau.pin16&amp;hl=en&amp;referrer=utm_source%3Dpin16_site%26utm_medium%3Dcode_page%26utm_campaign%3Dcode_pages_en%26utm_content%3DP0860">Get Pin16 on Google Play</a>
+</section>
+<nav class="pager"><a rel="prev" href="../P0859/">← P0859</a><a href="../">All codes</a><a rel="next" href="../P0861/">P0861 →</a></nav>
+<footer><p>Written for Pin16 and not yet reviewed by a qualified technician. This is guidance for diagnosis, not repair instructions, and it may be incomplete or wrong for your vehicle. If in doubt, ask a mechanic.</p><p><a href="../../">Pin16</a> · <a href="../../privacy/">Privacy policy</a></p></footer>
+</main>
+</body>
+</html>

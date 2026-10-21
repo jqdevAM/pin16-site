@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>U0127 — Lost Communication With Tire Pressure Monitor Module: causes and what to check</title>
+<meta name="description" content="The control module has stopped receiving messages from the tyre pressure monitor module.">
+<link rel="canonical" href="https://jqdevam.github.io/pin16-site/codes/U0127/">
+<link rel="alternate" hreflang="en" href="https://jqdevam.github.io/pin16-site/codes/U0127/">
+<link rel="alternate" hreflang="ru" href="https://jqdevam.github.io/pin16-site/ru/codes/U0127/">
+<link rel="alternate" hreflang="x-default" href="https://jqdevam.github.io/pin16-site/codes/U0127/">
+<link rel="icon" href="../../pin16.png">
+<link rel="stylesheet" href="../../assets/codes.css">
+</head>
+<body>
+<main>
+<nav class="top"><a class="brand" href="../../"><img src="../../pin16.png" alt="" width="28" height="28">Pin16</a><a href="../../codes/">All codes</a><a hreflang="ru" href="../../ru/codes/U0127/">По-русски</a></nav>
+<header class="code-head">
+<p class="code">U0127</p>
+<h1>Lost Communication With Tire Pressure Monitor Module</h1>
+<dl class="facts"><div class="sev-medium"><dt>Severity</dt><dd>Medium</dd></div><div><dt>Driving</dt><dd>Drivable — book it in</dd></div><div><dt>System</dt><dd>Network and communication</dd></div><div><dt>Group</dt><dd>Network communication</dd></div></dl>
+</header>
+<aside class="note"><strong>Important.</strong> A tyre pressure warning light is an inspection failure in many jurisdictions regardless of whether the tyres are correctly inflated.</aside>
+<p class="lead">The control module has stopped receiving messages from the tyre pressure monitor module. Tyre pressure monitoring is not working, so you will get no warning of a slow puncture or an under-inflated tyre. The tyres themselves are unaffected - what you have lost is the warning, not the pressure.</p>
+<h2>Possible causes</h2>
+<ul class="causes">
+<li><span class="lik lik-common">Common</span>Low battery voltage or a discharged battery, dropping modules off the bus</li>
+<li><span class="lik lik-common">Common</span>Blown fuse or corroded earth on the supply to the tyre pressure monitor module</li>
+<li><span class="lik lik-common">Common</span>Corroded or water-ingressed connector at the module</li>
+<li><span class="lik lik-common">Common</span>Damaged, chafed or corroded bus wiring</li>
+<li><span class="lik lik-possible">Possible</span>Failed module</li>
+<li><span class="lik lik-possible">Possible</span>Module not configured after wheel, sensor or tyre work</li>
+</ul>
+<h2>What you might notice</h2>
+<ul>
+<li>Tyre pressure warning light on or flashing</li>
+<li>Tyre pressure display blank or showing dashes</li>
+<li>System reports no sensors found</li>
+<li>No effect on how the car drives</li>
+</ul>
+<h2>What to check, in order</h2>
+<ol class="checks">
+<li>Check all four tyre pressures with a gauge, including the spare, and keep checking them by hand until this is repaired. That restores the thing you have actually lost.</li>
+<li>Check battery voltage and state of charge before anything else. A weak or failing battery drops modules off the bus and sets lost-communication codes with no wiring fault at all - this is the single most common false lead in this whole family.</li>
+<li>Ask whether tyres, wheels or sensors were changed recently. The system usually needs relearning to the new sensors, and an unconfigured system is far more common than a failed module.</li>
+<li>Check the fuses, earths and connector for the tyre pressure monitor module.</li>
+<li>Distinguish this from a low sensor battery. Individual sensor batteries last a handful of years and their failure sets a different code - this one says the module itself is not answering.</li>
+</ol>
+<section class="cta">
+<h2>Read this code from your own car</h2>
+<p>Plug an ELM327 adapter into the OBD-II port under the dashboard. Pin16 reads every stored, pending and permanent code, explains each one like this page does — offline, with no account — and shows what the car recorded when the fault was set.</p>
+<a class="button" href="https://play.google.com/store/apps/details?id=com.amaldavanau.pin16&amp;hl=en&amp;referrer=utm_source%3Dpin16_site%26utm_medium%3Dcode_page%26utm_campaign%3Dcode_pages_en%26utm_content%3DU0127">Get Pin16 on Google Play</a>
+</section>
+<nav class="pager"><a rel="prev" href="../U0126/">← U0126</a><a href="../">All codes</a><a rel="next" href="../U0128/">U0128 →</a></nav>
+<footer><p>Written for Pin16 and not yet reviewed by a qualified technician. This is guidance for diagnosis, not repair instructions, and it may be incomplete or wrong for your vehicle. If in doubt, ask a mechanic.</p><p><a href="../../">Pin16</a> · <a href="../../privacy/">Privacy policy</a></p></footer>
+</main>
+</body>
+</html>

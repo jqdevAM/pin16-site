@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>P0889 — TCM Power Relay Sense Circuit Range/Performance: causes and what to check</title>
+<meta name="description" content="The power relay sense circuit is reporting something implausible - the relay&#x27;s actual state does not match what the module commanded, or the timing is wrong.">
+<link rel="canonical" href="https://jqdevam.github.io/pin16-site/codes/P0889/">
+<link rel="alternate" hreflang="en" href="https://jqdevam.github.io/pin16-site/codes/P0889/">
+<link rel="alternate" hreflang="ru" href="https://jqdevam.github.io/pin16-site/ru/codes/P0889/">
+<link rel="alternate" hreflang="x-default" href="https://jqdevam.github.io/pin16-site/codes/P0889/">
+<link rel="icon" href="../../pin16.png">
+<link rel="stylesheet" href="../../assets/codes.css">
+</head>
+<body>
+<main>
+<nav class="top"><a class="brand" href="../../"><img src="../../pin16.png" alt="" width="28" height="28">Pin16</a><a href="../../codes/">All codes</a><a hreflang="ru" href="../../ru/codes/P0889/">По-русски</a></nav>
+<header class="code-head">
+<p class="code">P0889</p>
+<h1>TCM Power Relay Sense Circuit Range/Performance</h1>
+<dl class="facts"><div class="sev-high"><dt>Severity</dt><dd>High</dd></div><div><dt>Driving</dt><dd>Drive only to a garage</dd></div><div><dt>System</dt><dd>Powertrain</dd></div><div><dt>Group</dt><dd>Transmission</dd></div></dl>
+</header>
+<p class="lead">The power relay sense circuit is reporting something implausible - the relay&#x27;s actual state does not match what the module commanded, or the timing is wrong. Usually the relay contacts are sticking or slow, which is a mechanical failure inside the relay rather than a wiring problem.</p>
+<h2>Possible causes</h2>
+<ul class="causes">
+<li><span class="lik lik-common">Common</span>Relay contacts sticking or welded</li>
+<li><span class="lik lik-common">Common</span>Worn relay slow to switch</li>
+<li><span class="lik lik-common">Common</span>Corroded relay socket adding resistance</li>
+<li><span class="lik lik-possible">Possible</span>High resistance in the sense wiring</li>
+<li><span class="lik lik-rare">Rare</span>Failed module input</li>
+</ul>
+<h2>What you might notice</h2>
+<ul>
+<li>Intermittent limp mode</li>
+<li>Transmission occasionally dead at start-up</li>
+<li>Battery draining after standing</li>
+<li>Check engine light on</li>
+</ul>
+<h2>What to check, in order</h2>
+<ol class="checks">
+<li>Swap the relay first. Sticking contacts are the most common cause and swapping is the fastest way to confirm it.</li>
+<li>Inspect the socket for corrosion and heat damage - a discoloured socket means the relay has been running hot.</li>
+<li>Check for high resistance on the sense wire.</li>
+<li>Check the fuse box for water ingress.</li>
+<li>If the battery drains overnight, this circuit is worth investigating as the cause.</li>
+</ol>
+<section class="cta">
+<h2>Read this code from your own car</h2>
+<p>Plug an ELM327 adapter into the OBD-II port under the dashboard. Pin16 reads every stored, pending and permanent code, explains each one like this page does — offline, with no account — and shows what the car recorded when the fault was set.</p>
+<a class="button" href="https://play.google.com/store/apps/details?id=com.amaldavanau.pin16&amp;hl=en&amp;referrer=utm_source%3Dpin16_site%26utm_medium%3Dcode_page%26utm_campaign%3Dcode_pages_en%26utm_content%3DP0889">Get Pin16 on Google Play</a>
+</section>
+<nav class="pager"><a rel="prev" href="../P0888/">← P0888</a><a href="../">All codes</a><a rel="next" href="../P0890/">P0890 →</a></nav>
+<footer><p>Written for Pin16 and not yet reviewed by a qualified technician. This is guidance for diagnosis, not repair instructions, and it may be incomplete or wrong for your vehicle. If in doubt, ask a mechanic.</p><p><a href="../../">Pin16</a> · <a href="../../privacy/">Privacy policy</a></p></footer>
+</main>
+</body>
+</html>

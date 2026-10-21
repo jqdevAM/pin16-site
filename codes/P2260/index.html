@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>P2260 — Secondary Air Injection System Control &quot;B&quot; Circuit High: causes and what to check</title>
+<meta name="description" content="Secondary air injection control circuit &quot;B&quot; is reading high - typically shorted to voltage, or a relay that will not release.">
+<link rel="canonical" href="https://jqdevam.github.io/pin16-site/codes/P2260/">
+<link rel="alternate" hreflang="en" href="https://jqdevam.github.io/pin16-site/codes/P2260/">
+<link rel="alternate" hreflang="ru" href="https://jqdevam.github.io/pin16-site/ru/codes/P2260/">
+<link rel="alternate" hreflang="x-default" href="https://jqdevam.github.io/pin16-site/codes/P2260/">
+<link rel="icon" href="../../pin16.png">
+<link rel="stylesheet" href="../../assets/codes.css">
+</head>
+<body>
+<main>
+<nav class="top"><a class="brand" href="../../"><img src="../../pin16.png" alt="" width="28" height="28">Pin16</a><a href="../../codes/">All codes</a><a hreflang="ru" href="../../ru/codes/P2260/">По-русски</a></nav>
+<header class="code-head">
+<p class="code">P2260</p>
+<h1>Secondary Air Injection System Control &quot;B&quot; Circuit High</h1>
+<dl class="facts"><div class="sev-medium"><dt>Severity</dt><dd>Medium</dd></div><div><dt>Driving</dt><dd>Drivable — book it in</dd></div><div><dt>System</dt><dd>Powertrain</dd></div><div><dt>Group</dt><dd>Fuel and air metering - injector circuits</dd></div></dl>
+</header>
+<aside class="note"><strong>Important.</strong> A pump that will not stop is worth attending to promptly. It is not designed for continuous duty, it flattens the battery, and the constant air into the exhaust makes the engine run richer than it should - which over time is hard on the catalytic converter.</aside>
+<p class="lead">Secondary air injection control circuit &quot;B&quot; is reading high - typically shorted to voltage, or a relay that will not release. This one matters more than the low variant, because a circuit stuck high can leave the pump running when it should have stopped. A pump designed to run for a minute at a time does not tolerate running continuously.</p>
+<h2>Possible causes</h2>
+<ul class="causes">
+<li><span class="lik lik-common">Common</span>Relay contacts welded closed</li>
+<li><span class="lik lik-common">Common</span>Wiring shorted to voltage</li>
+<li><span class="lik lik-common">Common</span>Corroded connector bridging pins</li>
+<li><span class="lik lik-possible">Possible</span>Chafed harness against a supply wire</li>
+<li><span class="lik lik-rare">Rare</span>Failed control module driver</li>
+</ul>
+<h2>What you might notice</h2>
+<ul>
+<li>Pump running continuously, or long after a cold start</li>
+<li>Loud buzzing from the engine bay that does not stop</li>
+<li>Check engine light on</li>
+<li>Battery draining</li>
+<li>Worse fuel economy</li>
+</ul>
+<h2>What to check, in order</h2>
+<ol class="checks">
+<li>Listen for the pump. If it is still running once the engine is warm, remove the relay to stop it while you diagnose - a pump running continuously overheats and destroys itself.</li>
+<li>Check whether the high reading persists with the relay removed.</li>
+<li>Swap the relay. Welded contacts are the most common cause.</li>
+<li>Inspect the connector for corrosion bridging pins, and the harness for a chafe point against a supply wire.</li>
+<li>Check whether the fuel trims have shifted. Air pumped into the exhaust continuously makes the oxygen sensors read lean, so the module adds fuel it does not need.</li>
+</ol>
+<section class="cta">
+<h2>Read this code from your own car</h2>
+<p>Plug an ELM327 adapter into the OBD-II port under the dashboard. Pin16 reads every stored, pending and permanent code, explains each one like this page does — offline, with no account — and shows what the car recorded when the fault was set.</p>
+<a class="button" href="https://play.google.com/store/apps/details?id=com.amaldavanau.pin16&amp;hl=en&amp;referrer=utm_source%3Dpin16_site%26utm_medium%3Dcode_page%26utm_campaign%3Dcode_pages_en%26utm_content%3DP2260">Get Pin16 on Google Play</a>
+</section>
+<nav class="pager"><a rel="prev" href="../P2259/">← P2259</a><a href="../">All codes</a><a rel="next" href="../P2261/">P2261 →</a></nav>
+<footer><p>Written for Pin16 and not yet reviewed by a qualified technician. This is guidance for diagnosis, not repair instructions, and it may be incomplete or wrong for your vehicle. If in doubt, ask a mechanic.</p><p><a href="../../">Pin16</a> · <a href="../../privacy/">Privacy policy</a></p></footer>
+</main>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>P2314 — Ignition Coil &quot;E&quot; Secondary Circuit: causes and what to check</title>
+<meta name="description" content="A fault on the secondary - high voltage - side of ignition coil &quot;E&quot;.">
+<link rel="canonical" href="https://jqdevam.github.io/pin16-site/codes/P2314/">
+<link rel="alternate" hreflang="en" href="https://jqdevam.github.io/pin16-site/codes/P2314/">
+<link rel="alternate" hreflang="ru" href="https://jqdevam.github.io/pin16-site/ru/codes/P2314/">
+<link rel="alternate" hreflang="x-default" href="https://jqdevam.github.io/pin16-site/codes/P2314/">
+<link rel="icon" href="../../pin16.png">
+<link rel="stylesheet" href="../../assets/codes.css">
+</head>
+<body>
+<main>
+<nav class="top"><a class="brand" href="../../"><img src="../../pin16.png" alt="" width="28" height="28">Pin16</a><a href="../../codes/">All codes</a><a hreflang="ru" href="../../ru/codes/P2314/">По-русски</a></nav>
+<header class="code-head">
+<p class="code">P2314</p>
+<h1>Ignition Coil &quot;E&quot; Secondary Circuit</h1>
+<dl class="facts"><div class="sev-high"><dt>Severity</dt><dd>High</dd></div><div><dt>Driving</dt><dd>Short journeys only</dd></div><div><dt>System</dt><dd>Powertrain</dd></div><div><dt>Group</dt><dd>Ignition system or misfire</dd></div></dl>
+</header>
+<aside class="note"><strong>Important.</strong> A flashing check engine light means the misfire is severe enough that unburnt fuel is reaching the catalytic converter. Stop driving - a converter costs far more than a coil.</aside>
+<p class="lead">A fault on the secondary - high voltage - side of ignition coil &quot;E&quot;. The secondary is everything after the coil steps the voltage up: the coil&#x27;s secondary winding, the boot, the spark plug and the gap the spark has to jump. The module cannot measure tens of thousands of volts directly, so it infers a problem from how the primary behaves as the spark fires. That means a worn plug or a cracked boot sets a coil code even when the coil itself is in good order, and this code is more often a plug problem than a coil problem. The coil letter is the manufacturer&#x27;s designation and does not necessarily correspond to the cylinder number - the vehicle&#x27;s own documentation says which is which, and a misfire code stored alongside will usually name the cylinder directly.</p>
+<h2>Possible causes</h2>
+<ul class="causes">
+<li><span class="lik lik-common">Common</span>Worn spark plug, or one gapped wider than specification</li>
+<li><span class="lik lik-common">Common</span>Spark plug well past its service interval</li>
+<li><span class="lik lik-common">Common</span>Cracked coil boot, or carbon tracking down the outside of it</li>
+<li><span class="lik lik-common">Common</span>Oil in the plug well from a leaking cam cover gasket, letting the spark track to earth</li>
+<li><span class="lik lik-common">Common</span>Failed coil with a breakdown in the secondary winding</li>
+<li><span class="lik lik-possible">Possible</span>Wrong heat range or wrong type of plug fitted</li>
+<li><span class="lik lik-possible">Possible</span>Water sitting in the plug wells after washing the engine</li>
+</ul>
+<h2>What you might notice</h2>
+<ul>
+<li>Misfire - the engine shaking, especially at idle</li>
+<li>Loss of power and hesitation</li>
+<li>Check engine light on, or flashing</li>
+<li>Poor fuel economy</li>
+<li>Smell of unburnt fuel from the exhaust</li>
+</ul>
+<h2>What to check, in order</h2>
+<ol class="checks">
+<li>Pull the spark plug for that cylinder and look at it before touching the coil. A worn or wrongly gapped plug is the most common cause of this code, and it is the cheapest thing on the list.</li>
+<li>Check the plug well for oil. A leaking cam cover gasket fills the well and the spark tracks to earth through the oil rather than jumping the plug gap - replacing the coil without fixing the leak just ruins the new one.</li>
+<li>Inspect the boot for cracks and for carbon tracking, which shows as a thin dark line running down the outside.</li>
+<li>Compare the plug gap against specification rather than assuming. Gaps open up as the electrode wears, and the coil has to produce more voltage to bridge them until it cannot.</li>
+<li>Swap the suspect coil with one from a neighbouring cylinder and see whether the fault follows it. This is the single most effective test available and it costs nothing - but only do it on engines where the coils are genuinely interchangeable.</li>
+<li>Do not fit a new coil onto a worn plug. The plug is what made the coil work hard enough to fail, and the new coil will go the same way.</li>
+</ol>
+<section class="cta">
+<h2>Read this code from your own car</h2>
+<p>Plug an ELM327 adapter into the OBD-II port under the dashboard. Pin16 reads every stored, pending and permanent code, explains each one like this page does — offline, with no account — and shows what the car recorded when the fault was set.</p>
+<a class="button" href="https://play.google.com/store/apps/details?id=com.amaldavanau.pin16&amp;hl=en&amp;referrer=utm_source%3Dpin16_site%26utm_medium%3Dcode_page%26utm_campaign%3Dcode_pages_en%26utm_content%3DP2314">Get Pin16 on Google Play</a>
+</section>
+<nav class="pager"><a rel="prev" href="../P2313/">← P2313</a><a href="../">All codes</a><a rel="next" href="../P2315/">P2315 →</a></nav>
+<footer><p>Written for Pin16 and not yet reviewed by a qualified technician. This is guidance for diagnosis, not repair instructions, and it may be incomplete or wrong for your vehicle. If in doubt, ask a mechanic.</p><p><a href="../../">Pin16</a> · <a href="../../privacy/">Privacy policy</a></p></footer>
+</main>
+</body>
+</html>

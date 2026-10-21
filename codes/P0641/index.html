@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>P0641 — Sensor Reference Voltage &quot;A&quot; Circuit/Open: causes and what to check</title>
+<meta name="description" content="An open circuit or general fault in sensor reference voltage &quot;A&quot;.">
+<link rel="canonical" href="https://jqdevam.github.io/pin16-site/codes/P0641/">
+<link rel="alternate" hreflang="en" href="https://jqdevam.github.io/pin16-site/codes/P0641/">
+<link rel="alternate" hreflang="ru" href="https://jqdevam.github.io/pin16-site/ru/codes/P0641/">
+<link rel="alternate" hreflang="x-default" href="https://jqdevam.github.io/pin16-site/codes/P0641/">
+<link rel="icon" href="../../pin16.png">
+<link rel="stylesheet" href="../../assets/codes.css">
+</head>
+<body>
+<main>
+<nav class="top"><a class="brand" href="../../"><img src="../../pin16.png" alt="" width="28" height="28">Pin16</a><a href="../../codes/">All codes</a><a hreflang="ru" href="../../ru/codes/P0641/">По-русски</a></nav>
+<header class="code-head">
+<p class="code">P0641</p>
+<h1>Sensor Reference Voltage &quot;A&quot; Circuit/Open</h1>
+<dl class="facts"><div class="sev-high"><dt>Severity</dt><dd>High</dd></div><div><dt>Driving</dt><dd>Drive only to a garage</dd></div><div><dt>System</dt><dd>Powertrain</dd></div><div><dt>Group</dt><dd>Computer output circuits and control module</dd></div></dl>
+</header>
+<aside class="note"><strong>Important.</strong> This is the single most useful thing to recognise about a car with a dozen sensor codes at once: one shared reference voltage explains all of them. Do not start buying sensors.</aside>
+<p class="lead">An open circuit or general fault in sensor reference voltage &quot;A&quot;. The module supplies a regulated reference - typically 5 volts - to a whole group of sensors, and each of them reports by returning a fraction of it. When that reference is lost, every sensor sharing it goes silent at once. Expect a long list of unrelated-looking codes: throttle position, pedal position, pressure sensors, temperature sensors, all faulting together.</p>
+<h2>Possible causes</h2>
+<ul class="causes">
+<li><span class="lik lik-common">Common</span>One sensor on the shared reference circuit failed internally and pulled the whole reference down</li>
+<li><span class="lik lik-common">Common</span>Wiring shorted or chafed on the reference circuit</li>
+<li><span class="lik lik-common">Common</span>Corroded or water-ingressed connector on a sensor sharing the reference</li>
+<li><span class="lik lik-possible">Possible</span>Reference circuit shorted to earth or to another voltage</li>
+<li><span class="lik lik-possible">Possible</span>Failed control module reference supply</li>
+</ul>
+<h2>What you might notice</h2>
+<ul>
+<li>A long list of sensor codes at once</li>
+<li>Reduced power or limp mode</li>
+<li>Engine running badly or not starting</li>
+<li>Several gauges reading wrongly</li>
+<li>Check engine light on</li>
+</ul>
+<h2>What to check, in order</h2>
+<ol class="checks">
+<li>Fix this before diagnosing any of the sensors. Every sensor code stored alongside it is a consequence, and replacing those sensors will change nothing.</li>
+<li>List which sensors have faulted. They all share reference &quot;A&quot;, and that list is a wiring diagram of where to look.</li>
+<li>Unplug the sensors on that reference circuit one at a time with the reference voltage on a meter. When the reference recovers, the sensor you have just unplugged is the fault.</li>
+<li>Inspect connectors for water and corrosion, which is the most common way a reference gets pulled down.</li>
+<li>Check the harness for chafe damage where the reference circuit runs.</li>
+<li>Suspect the control module only after every sensor on the circuit has been eliminated.</li>
+</ol>
+<section class="cta">
+<h2>Read this code from your own car</h2>
+<p>Plug an ELM327 adapter into the OBD-II port under the dashboard. Pin16 reads every stored, pending and permanent code, explains each one like this page does — offline, with no account — and shows what the car recorded when the fault was set.</p>
+<a class="button" href="https://play.google.com/store/apps/details?id=com.amaldavanau.pin16&amp;hl=en&amp;referrer=utm_source%3Dpin16_site%26utm_medium%3Dcode_page%26utm_campaign%3Dcode_pages_en%26utm_content%3DP0641">Get Pin16 on Google Play</a>
+</section>
+<nav class="pager"><a rel="prev" href="../P0640/">← P0640</a><a href="../">All codes</a><a rel="next" href="../P0642/">P0642 →</a></nav>
+<footer><p>Written for Pin16 and not yet reviewed by a qualified technician. This is guidance for diagnosis, not repair instructions, and it may be incomplete or wrong for your vehicle. If in doubt, ask a mechanic.</p><p><a href="../../">Pin16</a> · <a href="../../privacy/">Privacy policy</a></p></footer>
+</main>
+</body>
+</html>

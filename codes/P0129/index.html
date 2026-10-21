@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>P0129 — Barometric Pressure Too Low: causes and what to check</title>
+<meta name="description" content="The barometric pressure reading is below what the module considers possible.">
+<link rel="canonical" href="https://jqdevam.github.io/pin16-site/codes/P0129/">
+<link rel="alternate" hreflang="en" href="https://jqdevam.github.io/pin16-site/codes/P0129/">
+<link rel="alternate" hreflang="ru" href="https://jqdevam.github.io/pin16-site/ru/codes/P0129/">
+<link rel="alternate" hreflang="x-default" href="https://jqdevam.github.io/pin16-site/codes/P0129/">
+<link rel="icon" href="../../pin16.png">
+<link rel="stylesheet" href="../../assets/codes.css">
+</head>
+<body>
+<main>
+<nav class="top"><a class="brand" href="../../"><img src="../../pin16.png" alt="" width="28" height="28">Pin16</a><a href="../../codes/">All codes</a><a hreflang="ru" href="../../ru/codes/P0129/">По-русски</a></nav>
+<header class="code-head">
+<p class="code">P0129</p>
+<h1>Barometric Pressure Too Low</h1>
+<dl class="facts"><div class="sev-low"><dt>Severity</dt><dd>Low</dd></div><div><dt>Driving</dt><dd>Drivable — book it in</dd></div><div><dt>System</dt><dd>Powertrain</dd></div><div><dt>Group</dt><dd>Fuel and air metering</dd></div></dl>
+</header>
+<p class="lead">The barometric pressure reading is below what the module considers possible. Barometric pressure tells the module how dense the air is, which is how it compensates fuelling for altitude and weather. On most vehicles this reading comes from the manifold pressure sensor, measured with the engine stopped, so a manifold pressure fault and a barometric fault are usually the same fault.</p>
+<h2>Possible causes</h2>
+<ul class="causes">
+<li><span class="lik lik-common">Common</span>Failed manifold or barometric pressure sensor</li>
+<li><span class="lik lik-common">Common</span>Vacuum reaching the sensor when it should be reading atmospheric pressure - a hose routed or connected wrongly after other work</li>
+<li><span class="lik lik-possible">Possible</span>Wiring or connector fault at the sensor</li>
+<li><span class="lik lik-rare">Rare</span>Genuinely very high altitude, beyond the range the module was calibrated for</li>
+</ul>
+<h2>What you might notice</h2>
+<ul>
+<li>Reduced power</li>
+<li>Rich or lean running, especially noticeable at altitude</li>
+<li>Poor fuel economy</li>
+<li>Check engine light on</li>
+</ul>
+<h2>What to check, in order</h2>
+<ol class="checks">
+<li>Read the barometric value at key-on with the engine off and compare it against the local weather report. At sea level expect roughly 100 kPa, falling with altitude; a reading well below what the weather says is the sensor, not the weather.</li>
+<li>Check for a manifold pressure code stored alongside. The two normally share one sensor, so fixing that fixes this.</li>
+<li>Check the vacuum hose routing if anything was recently worked on. A sensor that should read atmospheric pressure but has been plumbed into manifold vacuum reads low all the time.</li>
+<li>Note the altitude the vehicle actually lives at before condemning anything. This code is occasionally correct.</li>
+</ol>
+<section class="cta">
+<h2>Read this code from your own car</h2>
+<p>Plug an ELM327 adapter into the OBD-II port under the dashboard. Pin16 reads every stored, pending and permanent code, explains each one like this page does — offline, with no account — and shows what the car recorded when the fault was set.</p>
+<a class="button" href="https://play.google.com/store/apps/details?id=com.amaldavanau.pin16&amp;hl=en&amp;referrer=utm_source%3Dpin16_site%26utm_medium%3Dcode_page%26utm_campaign%3Dcode_pages_en%26utm_content%3DP0129">Get Pin16 on Google Play</a>
+</section>
+<nav class="pager"><a rel="prev" href="../P0128/">← P0128</a><a href="../">All codes</a><a rel="next" href="../P0130/">P0130 →</a></nav>
+<footer><p>Written for Pin16 and not yet reviewed by a qualified technician. This is guidance for diagnosis, not repair instructions, and it may be incomplete or wrong for your vehicle. If in doubt, ask a mechanic.</p><p><a href="../../">Pin16</a> · <a href="../../privacy/">Privacy policy</a></p></footer>
+</main>
+</body>
+</html>

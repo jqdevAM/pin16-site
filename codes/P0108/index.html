@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>P0108 — Manifold Absolute Pressure/Barometric Pressure Circuit High Input: causes and what to check</title>
+<meta name="description" content="The manifold pressure signal is too high - outside the valid range rather than merely inaccurate.">
+<link rel="canonical" href="https://jqdevam.github.io/pin16-site/codes/P0108/">
+<link rel="alternate" hreflang="en" href="https://jqdevam.github.io/pin16-site/codes/P0108/">
+<link rel="alternate" hreflang="ru" href="https://jqdevam.github.io/pin16-site/ru/codes/P0108/">
+<link rel="alternate" hreflang="x-default" href="https://jqdevam.github.io/pin16-site/codes/P0108/">
+<link rel="icon" href="../../pin16.png">
+<link rel="stylesheet" href="../../assets/codes.css">
+</head>
+<body>
+<main>
+<nav class="top"><a class="brand" href="../../"><img src="../../pin16.png" alt="" width="28" height="28">Pin16</a><a href="../../codes/">All codes</a><a hreflang="ru" href="../../ru/codes/P0108/">По-русски</a></nav>
+<header class="code-head">
+<p class="code">P0108</p>
+<h1>Manifold Absolute Pressure/Barometric Pressure Circuit High Input</h1>
+<dl class="facts"><div class="sev-medium"><dt>Severity</dt><dd>Medium</dd></div><div><dt>Driving</dt><dd>Drivable — book it in</dd></div><div><dt>System</dt><dd>Powertrain</dd></div><div><dt>Group</dt><dd>Fuel and air metering</dd></div></dl>
+</header>
+<p class="lead">The manifold pressure signal is too high - outside the valid range rather than merely inaccurate. A sensor that is working cannot report a value outside the range it is built to produce, so this normally means a wiring fault, a lost supply or earth, or a failed sensor. On a hose-fed sensor, a hose that has come off entirely will do it too.</p>
+<h2>Possible causes</h2>
+<ul class="causes">
+<li><span class="lik lik-common">Common</span>Cracked, split or disconnected vacuum hose to the sensor</li>
+<li><span class="lik lik-common">Common</span>Carbon blocking the manifold port the sensor reads through</li>
+<li><span class="lik lik-common">Common</span>Failed sensor</li>
+<li><span class="lik lik-common">Common</span>Corroded or wet sensor connector</li>
+<li><span class="lik lik-possible">Possible</span>Vacuum leak elsewhere on the manifold, making the reading genuinely wrong</li>
+<li><span class="lik lik-possible">Possible</span>Wiring fault between sensor and module</li>
+</ul>
+<h2>What you might notice</h2>
+<ul>
+<li>Rough running, hesitation or surging</li>
+<li>Poor fuel economy</li>
+<li>Black smoke, or a smell of unburnt fuel</li>
+<li>Hard starting</li>
+<li>Check engine light on</li>
+</ul>
+<h2>What to check, in order</h2>
+<ol class="checks">
+<li>Check the vacuum hose to the sensor before touching the sensor. A cracked or perished hose produces every one of these codes and costs almost nothing to replace - and on a sensor mounted directly to the manifold, check the port instead, because carbon blocks it.</li>
+<li>Compare the sensor&#x27;s reading at key-on, engine off, against the barometric reading. With the engine stopped the manifold is at atmospheric pressure, so the two should agree - this is the quickest test there is and it needs no tools beyond the scan tool.</li>
+<li>Watch the live reading while the engine idles and then snaps to open throttle. It should drop to a strong vacuum at idle and rise sharply when the throttle opens.</li>
+<li>Look for vacuum leaks before condemning the sensor. A large leak makes a healthy sensor report a pressure that is genuinely wrong, and the module blames the sensor.</li>
+<li>Check the sensor&#x27;s 5 volt supply and its earth before replacing it. Losing either sends the signal hard to one end of its range, and that is a wiring fault wearing a sensor&#x27;s name.</li>
+</ol>
+<section class="cta">
+<h2>Read this code from your own car</h2>
+<p>Plug an ELM327 adapter into the OBD-II port under the dashboard. Pin16 reads every stored, pending and permanent code, explains each one like this page does — offline, with no account — and shows what the car recorded when the fault was set.</p>
+<a class="button" href="https://play.google.com/store/apps/details?id=com.amaldavanau.pin16&amp;hl=en&amp;referrer=utm_source%3Dpin16_site%26utm_medium%3Dcode_page%26utm_campaign%3Dcode_pages_en%26utm_content%3DP0108">Get Pin16 on Google Play</a>
+</section>
+<nav class="pager"><a rel="prev" href="../P0107/">← P0107</a><a href="../">All codes</a><a rel="next" href="../P0109/">P0109 →</a></nav>
+<footer><p>Written for Pin16 and not yet reviewed by a qualified technician. This is guidance for diagnosis, not repair instructions, and it may be incomplete or wrong for your vehicle. If in doubt, ask a mechanic.</p><p><a href="../../">Pin16</a> · <a href="../../privacy/">Privacy policy</a></p></footer>
+</main>
+</body>
+</html>

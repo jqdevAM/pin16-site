@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>P0919 — Gear Shift Position Control Error: causes and what to check</title>
+<meta name="description" content="The module commanded the selector shaft into a gear and it did not get there.">
+<link rel="canonical" href="https://jqdevam.github.io/pin16-site/codes/P0919/">
+<link rel="alternate" hreflang="en" href="https://jqdevam.github.io/pin16-site/codes/P0919/">
+<link rel="alternate" hreflang="ru" href="https://jqdevam.github.io/pin16-site/ru/codes/P0919/">
+<link rel="alternate" hreflang="x-default" href="https://jqdevam.github.io/pin16-site/codes/P0919/">
+<link rel="icon" href="../../pin16.png">
+<link rel="stylesheet" href="../../assets/codes.css">
+</head>
+<body>
+<main>
+<nav class="top"><a class="brand" href="../../"><img src="../../pin16.png" alt="" width="28" height="28">Pin16</a><a href="../../codes/">All codes</a><a hreflang="ru" href="../../ru/codes/P0919/">По-русски</a></nav>
+<header class="code-head">
+<p class="code">P0919</p>
+<h1>Gear Shift Position Control Error</h1>
+<dl class="facts"><div class="sev-high"><dt>Severity</dt><dd>High</dd></div><div><dt>Driving</dt><dd>Drive only to a garage</dd></div><div><dt>System</dt><dd>Powertrain</dd></div><div><dt>Group</dt><dd>Transmission and control modules</dd></div></dl>
+</header>
+<p class="lead">The module commanded the selector shaft into a gear and it did not get there. The circuits are not being blamed - this is the mechanism physically failing to engage. Because the shaft can end up between positions, the car may be left unable to select any gear at all.</p>
+<h2>Possible causes</h2>
+<ul class="causes">
+<li><span class="lik lik-common">Common</span>Low hydraulic pressure - leak, failed pump or accumulator</li>
+<li><span class="lik lik-common">Common</span>Failing gear shift actuator</li>
+<li><span class="lik lik-common">Common</span>Calibration lost or never performed after a repair</li>
+<li><span class="lik lik-common">Common</span>Worn synchromesh or selector forks inside the gearbox</li>
+<li><span class="lik lik-possible">Possible</span>Faulty position sensor misreporting the shaft position</li>
+<li><span class="lik lik-possible">Possible</span>Clutch not fully releasing, so the gear cannot be engaged</li>
+</ul>
+<h2>What you might notice</h2>
+<ul>
+<li>Transmission will not engage a gear</li>
+<li>Car stuck in neutral or stuck in one gear</li>
+<li>Grinding during a gear change</li>
+<li>Gear changes taking a long time</li>
+<li>Car will not move</li>
+</ul>
+<h2>What to check, in order</h2>
+<ol class="checks">
+<li>Read all codes first. Hydraulic pressure or clutch codes alongside this one usually explain it.</li>
+<li>Check whether the clutch is releasing fully. A gear cannot be engaged against a clutch that is still driving, and that presents as a shift failure rather than a clutch fault.</li>
+<li>Run the calibration procedure. If the code returns immediately, the fault is mechanical or hydraulic.</li>
+<li>Check hydraulic pressure and look for leaks.</li>
+<li>Grinding during engagement points at gearbox wear rather than at the control system.</li>
+<li>A gearbox that cannot select a gear may leave you stranded. Do not rely on it for a journey until it is fixed.</li>
+</ol>
+<section class="cta">
+<h2>Read this code from your own car</h2>
+<p>Plug an ELM327 adapter into the OBD-II port under the dashboard. Pin16 reads every stored, pending and permanent code, explains each one like this page does — offline, with no account — and shows what the car recorded when the fault was set.</p>
+<a class="button" href="https://play.google.com/store/apps/details?id=com.amaldavanau.pin16&amp;hl=en&amp;referrer=utm_source%3Dpin16_site%26utm_medium%3Dcode_page%26utm_campaign%3Dcode_pages_en%26utm_content%3DP0919">Get Pin16 on Google Play</a>
+</section>
+<nav class="pager"><a rel="prev" href="../P0918/">← P0918</a><a href="../">All codes</a><a rel="next" href="../P0920/">P0920 →</a></nav>
+<footer><p>Written for Pin16 and not yet reviewed by a qualified technician. This is guidance for diagnosis, not repair instructions, and it may be incomplete or wrong for your vehicle. If in doubt, ask a mechanic.</p><p><a href="../../">Pin16</a> · <a href="../../privacy/">Privacy policy</a></p></footer>
+</main>
+</body>
+</html>

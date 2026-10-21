@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>P0173 — Fuel Trim (Bank 2): causes and what to check</title>
+<meta name="description" content="The fuel trim on bank 2 is outside its normal working range, without the module committing to whether the mixture is too lean or too rich.">
+<link rel="canonical" href="https://jqdevam.github.io/pin16-site/codes/P0173/">
+<link rel="alternate" hreflang="en" href="https://jqdevam.github.io/pin16-site/codes/P0173/">
+<link rel="alternate" hreflang="ru" href="https://jqdevam.github.io/pin16-site/ru/codes/P0173/">
+<link rel="alternate" hreflang="x-default" href="https://jqdevam.github.io/pin16-site/codes/P0173/">
+<link rel="icon" href="../../pin16.png">
+<link rel="stylesheet" href="../../assets/codes.css">
+</head>
+<body>
+<main>
+<nav class="top"><a class="brand" href="../../"><img src="../../pin16.png" alt="" width="28" height="28">Pin16</a><a href="../../codes/">All codes</a><a hreflang="ru" href="../../ru/codes/P0173/">По-русски</a></nav>
+<header class="code-head">
+<p class="code">P0173</p>
+<h1>Fuel Trim (Bank 2)</h1>
+<dl class="facts"><div class="sev-medium"><dt>Severity</dt><dd>Medium</dd></div><div><dt>Driving</dt><dd>Drivable — book it in</dd></div><div><dt>System</dt><dd>Powertrain</dd></div><div><dt>Group</dt><dd>Fuel and air metering</dd></div></dl>
+</header>
+<p class="lead">The fuel trim on bank 2 is outside its normal working range, without the module committing to whether the mixture is too lean or too rich. Fuel trim is the correction the module applies to its base fuel calculation; when that correction has to become large, something upstream is wrong.</p>
+<h2>Possible causes</h2>
+<ul class="causes">
+<li><span class="lik lik-common">Common</span>Vacuum leak in the intake system</li>
+<li><span class="lik lik-common">Common</span>Faulty mass airflow sensor</li>
+<li><span class="lik lik-possible">Possible</span>Fuel delivery problem - pump, filter or regulator</li>
+<li><span class="lik lik-possible">Possible</span>Failing oxygen sensor</li>
+<li><span class="lik lik-possible">Possible</span>Exhaust leak ahead of the oxygen sensor</li>
+</ul>
+<h2>What you might notice</h2>
+<ul>
+<li>Rough idle</li>
+<li>Hesitation under load</li>
+<li>Check engine light on</li>
+<li>Fuel economy worse than usual</li>
+</ul>
+<h2>What to check, in order</h2>
+<ol class="checks">
+<li>Read the actual fuel trim values on the live data screen. The direction and size of the correction tells you far more than the code alone.</li>
+<li>Positive trim means the module is adding fuel - look for vacuum leaks or weak fuel delivery.</li>
+<li>Negative trim means the module is cutting fuel - look for high fuel pressure or a leaking injector.</li>
+<li>Check whether trim changes between idle and higher engine speed. A leak that matters only at idle points at a vacuum leak.</li>
+<li>Check for other stored codes. A MAF or oxygen sensor code alongside this one usually names the real cause.</li>
+</ol>
+<section class="cta">
+<h2>Read this code from your own car</h2>
+<p>Plug an ELM327 adapter into the OBD-II port under the dashboard. Pin16 reads every stored, pending and permanent code, explains each one like this page does — offline, with no account — and shows what the car recorded when the fault was set.</p>
+<a class="button" href="https://play.google.com/store/apps/details?id=com.amaldavanau.pin16&amp;hl=en&amp;referrer=utm_source%3Dpin16_site%26utm_medium%3Dcode_page%26utm_campaign%3Dcode_pages_en%26utm_content%3DP0173">Get Pin16 on Google Play</a>
+</section>
+<nav class="pager"><a rel="prev" href="../P0172/">← P0172</a><a href="../">All codes</a><a rel="next" href="../P0174/">P0174 →</a></nav>
+<footer><p>Written for Pin16 and not yet reviewed by a qualified technician. This is guidance for diagnosis, not repair instructions, and it may be incomplete or wrong for your vehicle. If in doubt, ask a mechanic.</p><p><a href="../../">Pin16</a> · <a href="../../privacy/">Privacy policy</a></p></footer>
+</main>
+</body>
+</html>

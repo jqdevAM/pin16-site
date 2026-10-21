@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>P2510 — ECM/PCM Power Relay Sense Circuit Range/Performance: causes and what to check</title>
+<meta name="description" content="The engine module&#x27;s power relay sense circuit is reporting something implausible - the relay&#x27;s actual state does not match what was commanded, or the timing…">
+<link rel="canonical" href="https://jqdevam.github.io/pin16-site/codes/P2510/">
+<link rel="alternate" hreflang="en" href="https://jqdevam.github.io/pin16-site/codes/P2510/">
+<link rel="alternate" hreflang="ru" href="https://jqdevam.github.io/pin16-site/ru/codes/P2510/">
+<link rel="alternate" hreflang="x-default" href="https://jqdevam.github.io/pin16-site/codes/P2510/">
+<link rel="icon" href="../../pin16.png">
+<link rel="stylesheet" href="../../assets/codes.css">
+</head>
+<body>
+<main>
+<nav class="top"><a class="brand" href="../../"><img src="../../pin16.png" alt="" width="28" height="28">Pin16</a><a href="../../codes/">All codes</a><a hreflang="ru" href="../../ru/codes/P2510/">По-русски</a></nav>
+<header class="code-head">
+<p class="code">P2510</p>
+<h1>ECM/PCM Power Relay Sense Circuit Range/Performance</h1>
+<dl class="facts"><div class="sev-high"><dt>Severity</dt><dd>High</dd></div><div><dt>Driving</dt><dd>Drive only to a garage</dd></div><div><dt>System</dt><dd>Powertrain</dd></div><div><dt>Group</dt><dd>Vehicle speed control, idle control and auxiliary inputs</dd></div></dl>
+</header>
+<p class="lead">The engine module&#x27;s power relay sense circuit is reporting something implausible - the relay&#x27;s actual state does not match what was commanded, or the timing is wrong. Usually the relay contacts are sticking or slow, which is a mechanical failure inside the relay rather than a wiring problem.</p>
+<h2>Possible causes</h2>
+<ul class="causes">
+<li><span class="lik lik-common">Common</span>Failed power relay with worn or sticking contacts</li>
+<li><span class="lik lik-common">Common</span>Corroded relay socket or fuse box connections</li>
+<li><span class="lik lik-common">Common</span>Water ingress into the fuse box</li>
+<li><span class="lik lik-possible">Possible</span>Wiring fault on the sense circuit</li>
+<li><span class="lik lik-possible">Possible</span>Weak battery making relay operation marginal</li>
+<li><span class="lik lik-rare">Rare</span>Failed module input</li>
+</ul>
+<h2>What you might notice</h2>
+<ul>
+<li>Intermittent limp mode</li>
+<li>Engine occasionally dead at start-up</li>
+<li>Battery draining after standing</li>
+<li>Check engine light on</li>
+</ul>
+<h2>What to check, in order</h2>
+<ol class="checks">
+<li>Swap the relay with an identical one from elsewhere in the box and see whether the fault follows it. It costs nothing and is the fastest test available.</li>
+<li>Inspect the relay socket for corrosion and heat damage - a discoloured socket means the relay has been running hot.</li>
+<li>Check the fuse box for water ingress, particularly if it is mounted low or in the engine bay.</li>
+<li>Check battery voltage - a weak battery makes a marginal relay behave like a failing one.</li>
+<li>If the battery goes flat overnight, investigate this rather than replacing the battery. A relay that will not release keeps the module powered all night.</li>
+</ol>
+<section class="cta">
+<h2>Read this code from your own car</h2>
+<p>Plug an ELM327 adapter into the OBD-II port under the dashboard. Pin16 reads every stored, pending and permanent code, explains each one like this page does — offline, with no account — and shows what the car recorded when the fault was set.</p>
+<a class="button" href="https://play.google.com/store/apps/details?id=com.amaldavanau.pin16&amp;hl=en&amp;referrer=utm_source%3Dpin16_site%26utm_medium%3Dcode_page%26utm_campaign%3Dcode_pages_en%26utm_content%3DP2510">Get Pin16 on Google Play</a>
+</section>
+<nav class="pager"><a rel="prev" href="../P2509/">← P2509</a><a href="../">All codes</a><a rel="next" href="../P2511/">P2511 →</a></nav>
+<footer><p>Written for Pin16 and not yet reviewed by a qualified technician. This is guidance for diagnosis, not repair instructions, and it may be incomplete or wrong for your vehicle. If in doubt, ask a mechanic.</p><p><a href="../../">Pin16</a> · <a href="../../privacy/">Privacy policy</a></p></footer>
+</main>
+</body>
+</html>

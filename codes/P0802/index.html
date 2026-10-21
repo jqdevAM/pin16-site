@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>P0802 — Transmission Control System MIL Request Circuit/Open: causes and what to check</title>
+<meta name="description" content="A fault in the circuit the transmission module uses to request the check engine light - an open circuit or a general fault, usually a broken wire or a bad…">
+<link rel="canonical" href="https://jqdevam.github.io/pin16-site/codes/P0802/">
+<link rel="alternate" hreflang="en" href="https://jqdevam.github.io/pin16-site/codes/P0802/">
+<link rel="alternate" hreflang="ru" href="https://jqdevam.github.io/pin16-site/ru/codes/P0802/">
+<link rel="alternate" hreflang="x-default" href="https://jqdevam.github.io/pin16-site/codes/P0802/">
+<link rel="icon" href="../../pin16.png">
+<link rel="stylesheet" href="../../assets/codes.css">
+</head>
+<body>
+<main>
+<nav class="top"><a class="brand" href="../../"><img src="../../pin16.png" alt="" width="28" height="28">Pin16</a><a href="../../codes/">All codes</a><a hreflang="ru" href="../../ru/codes/P0802/">По-русски</a></nav>
+<header class="code-head">
+<p class="code">P0802</p>
+<h1>Transmission Control System MIL Request Circuit/Open</h1>
+<dl class="facts"><div class="sev-low"><dt>Severity</dt><dd>Low</dd></div><div><dt>Driving</dt><dd>Drivable — book it in</dd></div><div><dt>System</dt><dd>Powertrain</dd></div><div><dt>Group</dt><dd>Transmission</dd></div></dl>
+</header>
+<p class="lead">A fault in the circuit the transmission module uses to request the check engine light - an open circuit or a general fault, usually a broken wire or a bad connection. This is about the request wire itself, not about the transmission. The practical consequence is that the transmission module may not be able to warn you: a genuine transmission fault could be stored without the light ever coming on.</p>
+<h2>Possible causes</h2>
+<ul class="causes">
+<li><span class="lik lik-common">Common</span>Wiring fault between the transmission module and the module that drives the lamp</li>
+<li><span class="lik lik-common">Common</span>Corroded or damaged connector at either module</li>
+<li><span class="lik lik-possible">Possible</span>Chafed harness shorting against the body or engine</li>
+<li><span class="lik lik-possible">Possible</span>Failed instrument cluster lamp driver on vehicles wired that way</li>
+<li><span class="lik lik-rare">Rare</span>Failed transmission control module output</li>
+</ul>
+<h2>What you might notice</h2>
+<ul>
+<li>Check engine light on, or conversely never coming on when it should</li>
+<li>Warning lamp behaving inconsistently</li>
+<li>Usually no effect on how the car drives</li>
+</ul>
+<h2>What to check, in order</h2>
+<ol class="checks">
+<li>Read the transmission module for its own stored codes. The point of this circuit is to warn you about those, so check what it was trying to report.</li>
+<li>Inspect the connectors at both ends of the circuit.</li>
+<li>Follow the wire looking for chafe damage.</li>
+<li>Confirm the warning lamp itself works at ignition-on bulb check.</li>
+<li>Treat this as a warning system fault rather than a transmission fault - but do not ignore it, because it means the car&#x27;s ability to tell you about transmission problems is compromised.</li>
+</ol>
+<section class="cta">
+<h2>Read this code from your own car</h2>
+<p>Plug an ELM327 adapter into the OBD-II port under the dashboard. Pin16 reads every stored, pending and permanent code, explains each one like this page does — offline, with no account — and shows what the car recorded when the fault was set.</p>
+<a class="button" href="https://play.google.com/store/apps/details?id=com.amaldavanau.pin16&amp;hl=en&amp;referrer=utm_source%3Dpin16_site%26utm_medium%3Dcode_page%26utm_campaign%3Dcode_pages_en%26utm_content%3DP0802">Get Pin16 on Google Play</a>
+</section>
+<nav class="pager"><a rel="prev" href="../P0801/">← P0801</a><a href="../">All codes</a><a rel="next" href="../P0803/">P0803 →</a></nav>
+<footer><p>Written for Pin16 and not yet reviewed by a qualified technician. This is guidance for diagnosis, not repair instructions, and it may be incomplete or wrong for your vehicle. If in doubt, ask a mechanic.</p><p><a href="../../">Pin16</a> · <a href="../../privacy/">Privacy policy</a></p></footer>
+</main>
+</body>
+</html>

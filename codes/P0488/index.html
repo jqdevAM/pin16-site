@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>P0488 — Exhaust Gas Recirculation Throttle Position Control Range/Performance: causes and what to check</title>
+<meta name="description" content="The EGR throttle circuit is electrically sound but the throttle is not reaching or holding the position the module commands.">
+<link rel="canonical" href="https://jqdevam.github.io/pin16-site/codes/P0488/">
+<link rel="alternate" hreflang="en" href="https://jqdevam.github.io/pin16-site/codes/P0488/">
+<link rel="alternate" hreflang="ru" href="https://jqdevam.github.io/pin16-site/ru/codes/P0488/">
+<link rel="alternate" hreflang="x-default" href="https://jqdevam.github.io/pin16-site/codes/P0488/">
+<link rel="icon" href="../../pin16.png">
+<link rel="stylesheet" href="../../assets/codes.css">
+</head>
+<body>
+<main>
+<nav class="top"><a class="brand" href="../../"><img src="../../pin16.png" alt="" width="28" height="28">Pin16</a><a href="../../codes/">All codes</a><a hreflang="ru" href="../../ru/codes/P0488/">По-русски</a></nav>
+<header class="code-head">
+<p class="code">P0488</p>
+<h1>Exhaust Gas Recirculation Throttle Position Control Range/Performance</h1>
+<dl class="facts"><div class="sev-medium"><dt>Severity</dt><dd>Medium</dd></div><div><dt>Driving</dt><dd>Drivable — book it in</dd></div><div><dt>System</dt><dd>Powertrain</dd></div><div><dt>Group</dt><dd>Auxiliary emission controls</dd></div></dl>
+</header>
+<p class="lead">The EGR throttle circuit is electrically sound but the throttle is not reaching or holding the position the module commands. On a diesel this is usually soot: the plate builds up deposits around its edge, becomes stiff, and no longer moves through its full travel.</p>
+<h2>Possible causes</h2>
+<ul class="causes">
+<li><span class="lik lik-common">Common</span>Soot build-up around the EGR throttle plate making it stiff</li>
+<li><span class="lik lik-common">Common</span>Worn or failing actuator motor</li>
+<li><span class="lik lik-possible">Possible</span>Faulty position feedback sensor in the actuator</li>
+<li><span class="lik lik-possible">Possible</span>High resistance in the actuator wiring</li>
+<li><span class="lik lik-rare">Rare</span>Mechanical damage to the throttle body or linkage</li>
+</ul>
+<h2>What you might notice</h2>
+<ul>
+<li>Check engine light on</li>
+<li>Reduced power</li>
+<li>Rough running on a diesel</li>
+<li>Increased exhaust smoke</li>
+<li>Failed emissions test</li>
+</ul>
+<h2>What to check, in order</h2>
+<ol class="checks">
+<li>Remove the EGR throttle body and check the plate for soot. Cleaning is often the whole repair on a high-mileage diesel.</li>
+<li>Compare commanded position against actual position on the live data screen through a full sweep.</li>
+<li>Check whether the manufacturer specifies an adaptation reset after cleaning. Many modules learn the stiff, dirty travel limits and keep using them until reset.</li>
+<li>Measure the wiring for high resistance if the plate is clean and moves freely.</li>
+<li>Replace the actuator only after cleaning and adaptation reset have both been tried.</li>
+</ol>
+<section class="cta">
+<h2>Read this code from your own car</h2>
+<p>Plug an ELM327 adapter into the OBD-II port under the dashboard. Pin16 reads every stored, pending and permanent code, explains each one like this page does — offline, with no account — and shows what the car recorded when the fault was set.</p>
+<a class="button" href="https://play.google.com/store/apps/details?id=com.amaldavanau.pin16&amp;hl=en&amp;referrer=utm_source%3Dpin16_site%26utm_medium%3Dcode_page%26utm_campaign%3Dcode_pages_en%26utm_content%3DP0488">Get Pin16 on Google Play</a>
+</section>
+<nav class="pager"><a rel="prev" href="../P0487/">← P0487</a><a href="../">All codes</a><a rel="next" href="../P0489/">P0489 →</a></nav>
+<footer><p>Written for Pin16 and not yet reviewed by a qualified technician. This is guidance for diagnosis, not repair instructions, and it may be incomplete or wrong for your vehicle. If in doubt, ask a mechanic.</p><p><a href="../../">Pin16</a> · <a href="../../privacy/">Privacy policy</a></p></footer>
+</main>
+</body>
+</html>

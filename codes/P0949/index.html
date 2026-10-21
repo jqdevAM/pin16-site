@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>P0949 — Auto Shift Manual Adaptive Learning Not Complete: causes and what to check</title>
+<meta name="description" content="The transmission&#x27;s adaptive learning has not finished.">
+<link rel="canonical" href="https://jqdevam.github.io/pin16-site/codes/P0949/">
+<link rel="alternate" hreflang="en" href="https://jqdevam.github.io/pin16-site/codes/P0949/">
+<link rel="alternate" hreflang="ru" href="https://jqdevam.github.io/pin16-site/ru/codes/P0949/">
+<link rel="alternate" hreflang="x-default" href="https://jqdevam.github.io/pin16-site/codes/P0949/">
+<link rel="icon" href="../../pin16.png">
+<link rel="stylesheet" href="../../assets/codes.css">
+</head>
+<body>
+<main>
+<nav class="top"><a class="brand" href="../../"><img src="../../pin16.png" alt="" width="28" height="28">Pin16</a><a href="../../codes/">All codes</a><a hreflang="ru" href="../../ru/codes/P0949/">По-русски</a></nav>
+<header class="code-head">
+<p class="code">P0949</p>
+<h1>Auto Shift Manual Adaptive Learning Not Complete</h1>
+<dl class="facts"><div class="sev-medium"><dt>Severity</dt><dd>Medium</dd></div><div><dt>Driving</dt><dd>Drivable — book it in</dd></div><div><dt>System</dt><dd>Powertrain</dd></div><div><dt>Group</dt><dd>Transmission and control modules</dd></div></dl>
+</header>
+<aside class="note"><strong>Important.</strong> This is a procedure, not a part. If you have just replaced a clutch or disconnected the battery on one of these transmissions, running the adaptation is a required step rather than an optional refinement - skipping it is one of the most common reasons a correctly done repair still drives badly.</aside>
+<p class="lead">The transmission&#x27;s adaptive learning has not finished. These transmissions learn where the clutch bites and where each gear engages, and they need that learned data to shift smoothly. This code means the learning procedure has not completed - usually because it was never run after a repair, or because the battery was disconnected and the learned values were lost.</p>
+<h2>Possible causes</h2>
+<ul class="causes">
+<li><span class="lik lik-common">Common</span>Adaptation procedure never run after a clutch or actuator repair</li>
+<li><span class="lik lik-common">Common</span>Battery disconnected or replaced, clearing the learned values</li>
+<li><span class="lik lik-common">Common</span>Adaptation started but interrupted before it completed</li>
+<li><span class="lik lik-common">Common</span>Another stored fault preventing adaptation from running</li>
+<li><span class="lik lik-possible">Possible</span>Clutch worn beyond the range the module can adapt to</li>
+<li><span class="lik lik-possible">Possible</span>Low hydraulic pressure preventing the procedure completing</li>
+</ul>
+<h2>What you might notice</h2>
+<ul>
+<li>Jerky or harsh take-up when moving off</li>
+<li>Slow or clumsy gear changes</li>
+<li>Judder at low speed</li>
+<li>Transmission warning message</li>
+<li>Behaviour noticeably worse since a repair or a battery change</li>
+</ul>
+<h2>What to check, in order</h2>
+<ol class="checks">
+<li>Ask what happened just before the symptoms started. A repair, a clutch replacement or a battery disconnection immediately before it appeared is the answer in most cases.</li>
+<li>Read all codes first. Adaptation will not complete while another fault is stored, so clear the underlying fault before attempting it.</li>
+<li>Run the adaptation procedure with the vehicle in the conditions the manufacturer specifies - usually a particular fluid temperature, engine idling, and the vehicle stationary and level.</li>
+<li>Let the procedure finish. Interrupting it leaves the transmission in exactly the state this code describes.</li>
+<li>If adaptation completes but the transmission still shifts badly, assess clutch wear - a worn clutch may be outside the range the module can adapt to.</li>
+</ol>
+<section class="cta">
+<h2>Read this code from your own car</h2>
+<p>Plug an ELM327 adapter into the OBD-II port under the dashboard. Pin16 reads every stored, pending and permanent code, explains each one like this page does — offline, with no account — and shows what the car recorded when the fault was set.</p>
+<a class="button" href="https://play.google.com/store/apps/details?id=com.amaldavanau.pin16&amp;hl=en&amp;referrer=utm_source%3Dpin16_site%26utm_medium%3Dcode_page%26utm_campaign%3Dcode_pages_en%26utm_content%3DP0949">Get Pin16 on Google Play</a>
+</section>
+<nav class="pager"><a rel="prev" href="../P0948/">← P0948</a><a href="../">All codes</a><a rel="next" href="../P0950/">P0950 →</a></nav>
+<footer><p>Written for Pin16 and not yet reviewed by a qualified technician. This is guidance for diagnosis, not repair instructions, and it may be incomplete or wrong for your vehicle. If in doubt, ask a mechanic.</p><p><a href="../../">Pin16</a> · <a href="../../privacy/">Privacy policy</a></p></footer>
+</main>
+</body>
+</html>

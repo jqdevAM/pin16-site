@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>P2415 — O2 Sensor Exhaust Sample Error (Bank 2 Sensor 1): causes and what to check</title>
+<meta name="description" content="The upstream oxygen sensor on bank 2 is not sampling the exhaust properly.">
+<link rel="canonical" href="https://jqdevam.github.io/pin16-site/codes/P2415/">
+<link rel="alternate" hreflang="en" href="https://jqdevam.github.io/pin16-site/codes/P2415/">
+<link rel="alternate" hreflang="ru" href="https://jqdevam.github.io/pin16-site/ru/codes/P2415/">
+<link rel="alternate" hreflang="x-default" href="https://jqdevam.github.io/pin16-site/codes/P2415/">
+<link rel="icon" href="../../pin16.png">
+<link rel="stylesheet" href="../../assets/codes.css">
+</head>
+<body>
+<main>
+<nav class="top"><a class="brand" href="../../"><img src="../../pin16.png" alt="" width="28" height="28">Pin16</a><a href="../../codes/">All codes</a><a hreflang="ru" href="../../ru/codes/P2415/">По-русски</a></nav>
+<header class="code-head">
+<p class="code">P2415</p>
+<h1>O2 Sensor Exhaust Sample Error (Bank 2 Sensor 1)</h1>
+<dl class="facts"><div class="sev-medium"><dt>Severity</dt><dd>Medium</dd></div><div><dt>Driving</dt><dd>Drivable — book it in</dd></div><div><dt>System</dt><dd>Powertrain</dd></div><div><dt>Group</dt><dd>Auxiliary emission controls</dd></div></dl>
+</header>
+<p class="lead">The upstream oxygen sensor on bank 2 is not sampling the exhaust properly. The sensor is electrically healthy and answering; what it is measuring is simply not a fair sample of what left the engine. Almost always that means air is getting in where it should not - an exhaust leak ahead of the sensor draws fresh air into the stream, and the sensor honestly reports the diluted mixture it is given. The module then adds fuel to correct an oxygen reading that was never a fuelling problem in the first place.</p>
+<h2>Possible causes</h2>
+<ul class="causes">
+<li><span class="lik lik-common">Common</span>Exhaust leak upstream of the sensor, drawing fresh air into the stream</li>
+<li><span class="lik lik-common">Common</span>Sensor not seated or sealed properly in its boss</li>
+<li><span class="lik lik-common">Common</span>Cracked exhaust manifold, which can seal as it expands and leak when cold</li>
+<li><span class="lik lik-common">Common</span>Failed sensor</li>
+<li><span class="lik lik-possible">Possible</span>Crushed or damaged sensor tip after an impact or careless fitting</li>
+<li><span class="lik lik-possible">Possible</span>Soot or silicone contamination coating the sensing element</li>
+</ul>
+<h2>What you might notice</h2>
+<ul>
+<li>Rough running or hesitation</li>
+<li>Poor fuel economy</li>
+<li>Ticking or blowing from the exhaust, loudest when cold</li>
+<li>Fuel trims running well positive on the affected bank</li>
+<li>Check engine light on</li>
+</ul>
+<h2>What to check, in order</h2>
+<ol class="checks">
+<li>Listen for an exhaust leak with the engine cold, before the joints expand and seal themselves. A leak that is obvious at cold idle can be silent once warm, which is why this check has to be done first thing rather than after the car has been driven in.</li>
+<li>Check the fuel trims. A large positive trim on the affected bank alongside this code is the signature of an air leak rather than a genuinely lean engine.</li>
+<li>Inspect the sensor&#x27;s seat and threads. One that was cross-threaded or left under-tightened leaks around itself and produces exactly this.</li>
+<li>Compare the two banks on a V engine. One bank behaving and the other not points at that bank&#x27;s exhaust rather than at anything the engine is doing as a whole.</li>
+<li>Replace the sensor last. This code is about what reaches the sensor, so a new sensor in the same leaking exhaust will report the same thing.</li>
+</ol>
+<section class="cta">
+<h2>Read this code from your own car</h2>
+<p>Plug an ELM327 adapter into the OBD-II port under the dashboard. Pin16 reads every stored, pending and permanent code, explains each one like this page does — offline, with no account — and shows what the car recorded when the fault was set.</p>
+<a class="button" href="https://play.google.com/store/apps/details?id=com.amaldavanau.pin16&amp;hl=en&amp;referrer=utm_source%3Dpin16_site%26utm_medium%3Dcode_page%26utm_campaign%3Dcode_pages_en%26utm_content%3DP2415">Get Pin16 on Google Play</a>
+</section>
+<nav class="pager"><a rel="prev" href="../P2414/">← P2414</a><a href="../">All codes</a><a rel="next" href="../P2416/">P2416 →</a></nav>
+<footer><p>Written for Pin16 and not yet reviewed by a qualified technician. This is guidance for diagnosis, not repair instructions, and it may be incomplete or wrong for your vehicle. If in doubt, ask a mechanic.</p><p><a href="../../">Pin16</a> · <a href="../../privacy/">Privacy policy</a></p></footer>
+</main>
+</body>
+</html>

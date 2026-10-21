@@ -1,0 +1,135 @@
+/* The fault-code pages. Same tokens as the site's own index.html, so the
+   dictionary reads as part of the same site. */
+:root {
+  color-scheme: light dark;
+  --bg: #f6f8fa;
+  --panel: #ffffff;
+  --ink: #0d1b26;
+  --muted: #4d6577;
+  --line: #dfe6ec;
+  --accent: #0b5586;
+  --accent-ink: #ffffff;
+  --warn-bg: #fff6e0;
+  --warn-line: #e9c46a;
+  --critical: #b3261e;
+  --high: #b45309;
+  --medium: #0b5586;
+  --low: #3f6f3a;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #08131c;
+    --panel: #0f2029;
+    --ink: #e8f1f7;
+    --muted: #9db2c2;
+    --line: #1e3644;
+    --accent: #3fb1e8;
+    --accent-ink: #042e4c;
+    --warn-bg: #2b2210;
+    --warn-line: #7a5d1c;
+    --critical: #ff8a80;
+    --high: #f5b86b;
+    --medium: #3fb1e8;
+    --low: #9fd39a;
+  }
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  padding: 20px 16px 64px;
+  background: var(--bg);
+  color: var(--ink);
+  font: 16px/1.65 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+main { max-width: 42rem; margin: 0 auto; }
+a { color: var(--accent); text-underline-offset: 2px; }
+
+nav.top {
+  display: flex; flex-wrap: wrap; align-items: center; gap: 6px 18px;
+  margin-bottom: 28px; font-size: .95rem;
+}
+nav.top a { text-decoration: none; }
+nav.top .brand {
+  display: inline-flex; align-items: center; gap: 8px;
+  font-weight: 600; color: var(--ink); margin-right: auto;
+}
+nav.top .brand img { border-radius: 7px; }
+
+h1 { font-size: 1.6rem; line-height: 1.25; margin: 0 0 14px; letter-spacing: -.015em; }
+h2 { font-size: 1.1rem; margin: 30px 0 10px; }
+p { margin: 0 0 14px; }
+.lead { font-size: 1.05rem; }
+
+.code-head .code {
+  display: inline-block; margin: 0 0 6px; padding: 2px 10px;
+  border-radius: 8px; background: var(--panel); border: 1px solid var(--line);
+  font: 600 1.1rem/1.5 ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+}
+.facts {
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(9.5rem, 1fr));
+  gap: 8px; margin: 0 0 20px;
+}
+.facts div {
+  background: var(--panel); border: 1px solid var(--line);
+  border-radius: 12px; padding: 8px 12px;
+}
+.facts dt { font-size: .78rem; color: var(--muted); text-transform: uppercase; letter-spacing: .05em; }
+.facts dd { margin: 0; font-weight: 600; line-height: 1.35; }
+.sev-critical dd { color: var(--critical); }
+.sev-high dd { color: var(--high); }
+.sev-medium dd { color: var(--medium); }
+.sev-low dd { color: var(--low); }
+
+.note {
+  background: var(--warn-bg); border: 1px solid var(--warn-line);
+  border-radius: 12px; padding: 12px 14px; margin: 0 0 18px;
+}
+
+ul, ol { margin: 0; padding-left: 1.3rem; }
+li { margin: 0 0 8px; }
+ul.causes { list-style: none; padding: 0; }
+ul.causes li { display: flex; gap: 10px; align-items: baseline; }
+.lik {
+  flex: none; width: 6.5rem; font-size: .78rem; font-weight: 600;
+  text-transform: uppercase; letter-spacing: .04em; color: var(--muted);
+}
+.lik-common { color: var(--accent); }
+ol.checks li::marker { font-weight: 600; color: var(--accent); }
+
+.cta {
+  margin: 36px 0 24px; padding: 20px; border-radius: 16px;
+  background: var(--panel); border: 1px solid var(--line);
+}
+.cta h2 { margin-top: 0; }
+.button {
+  display: inline-block; padding: 10px 18px; border-radius: 999px;
+  background: var(--accent); color: var(--accent-ink);
+  text-decoration: none; font-weight: 600;
+}
+
+.pager { display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
+.pager a { text-decoration: none; }
+
+.filter { display: block; font-weight: 600; margin: 8px 0 18px; }
+.filter input {
+  display: block; width: 100%; margin-top: 6px; padding: 10px 12px;
+  font: inherit; font-weight: 400; color: var(--ink);
+  background: var(--panel); border: 1px solid var(--line); border-radius: 10px;
+}
+.index h2 { font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace; }
+.index ul { list-style: none; padding: 0; }
+.index li { margin: 0; border-top: 1px solid var(--line); }
+.index li a {
+  display: grid; grid-template-columns: 4.6rem 1fr; padding: 7px 0;
+  text-decoration: none; color: var(--ink);
+}
+.index li b {
+  color: var(--accent);
+  font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+}
+
+footer {
+  margin-top: 40px; padding-top: 18px; border-top: 1px solid var(--line);
+  color: var(--muted); font-size: .9rem;
+}

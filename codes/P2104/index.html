@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>P2104 — Throttle Actuator Control System - Forced Idle: causes and what to check</title>
+<meta name="description" content="The module has forced the engine to idle.">
+<link rel="canonical" href="https://jqdevam.github.io/pin16-site/codes/P2104/">
+<link rel="alternate" hreflang="en" href="https://jqdevam.github.io/pin16-site/codes/P2104/">
+<link rel="alternate" hreflang="ru" href="https://jqdevam.github.io/pin16-site/ru/codes/P2104/">
+<link rel="alternate" hreflang="x-default" href="https://jqdevam.github.io/pin16-site/codes/P2104/">
+<link rel="icon" href="../../pin16.png">
+<link rel="stylesheet" href="../../assets/codes.css">
+</head>
+<body>
+<main>
+<nav class="top"><a class="brand" href="../../"><img src="../../pin16.png" alt="" width="28" height="28">Pin16</a><a href="../../codes/">All codes</a><a hreflang="ru" href="../../ru/codes/P2104/">По-русски</a></nav>
+<header class="code-head">
+<p class="code">P2104</p>
+<h1>Throttle Actuator Control System - Forced Idle</h1>
+<dl class="facts"><div class="sev-critical"><dt>Severity</dt><dd>Critical</dd></div><div><dt>Driving</dt><dd>Drive only to a garage</dd></div><div><dt>System</dt><dd>Powertrain</dd></div><div><dt>Group</dt><dd>Fuel and air metering</dd></div></dl>
+</header>
+<aside class="note"><strong>Important.</strong> Forced idle means the vehicle cannot accelerate. Do not attempt to join fast-moving traffic or cross a junction - it will not respond.</aside>
+<p class="lead">The module has forced the engine to idle. It found a fault it considers serious enough that it will not let the throttle open beyond idle, so the car will move barely or not at all. This is the protection working, not the fault itself.</p>
+<h2>Possible causes</h2>
+<ul class="causes">
+<li><span class="lik lik-common">Common</span>Another throttle or pedal fault already stored - this code is the module&#x27;s response to it</li>
+<li><span class="lik lik-common">Common</span>Throttle or pedal position sensor disagreement</li>
+<li><span class="lik lik-common">Common</span>Carbon making the throttle plate stiff</li>
+<li><span class="lik lik-common">Common</span>Wiring or connector fault on a throttle or pedal circuit</li>
+<li><span class="lik lik-possible">Possible</span>Low or unstable supply voltage</li>
+<li><span class="lik lik-possible">Possible</span>Failed throttle actuator control module</li>
+</ul>
+<h2>What you might notice</h2>
+<ul>
+<li>Sudden loss of power - reduced-power mode</li>
+<li>Engine will not rev beyond a low limit</li>
+<li>Rough or unstable idle</li>
+<li>Warning light for reduced engine power</li>
+<li>Engine may not start</li>
+</ul>
+<h2>What to check, in order</h2>
+<ol class="checks">
+<li>The car may be unable to move under its own power. Arrange recovery rather than trying to coax it along in traffic.</li>
+<li>Read all codes. This one records what the module did, not what went wrong - the fault that triggered it is stored alongside, and that is the one to diagnose.</li>
+<li>Check battery voltage and the earth connections. An unstable supply produces sensor disagreements that look like component failures.</li>
+<li>Inspect the throttle body for carbon and the connectors for corrosion.</li>
+<li>Compare commanded against actual throttle position on the live data screen.</li>
+</ol>
+<section class="cta">
+<h2>Read this code from your own car</h2>
+<p>Plug an ELM327 adapter into the OBD-II port under the dashboard. Pin16 reads every stored, pending and permanent code, explains each one like this page does — offline, with no account — and shows what the car recorded when the fault was set.</p>
+<a class="button" href="https://play.google.com/store/apps/details?id=com.amaldavanau.pin16&amp;hl=en&amp;referrer=utm_source%3Dpin16_site%26utm_medium%3Dcode_page%26utm_campaign%3Dcode_pages_en%26utm_content%3DP2104">Get Pin16 on Google Play</a>
+</section>
+<nav class="pager"><a rel="prev" href="../P2103/">← P2103</a><a href="../">All codes</a><a rel="next" href="../P2105/">P2105 →</a></nav>
+<footer><p>Written for Pin16 and not yet reviewed by a qualified technician. This is guidance for diagnosis, not repair instructions, and it may be incomplete or wrong for your vehicle. If in doubt, ask a mechanic.</p><p><a href="../../">Pin16</a> · <a href="../../privacy/">Privacy policy</a></p></footer>
+</main>
+</body>
+</html>

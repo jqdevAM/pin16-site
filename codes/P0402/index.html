@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>P0402 — Exhaust Gas Recirculation Flow Excessive Detected: causes and what to check</title>
+<meta name="description" content="The module measured more exhaust gas recirculation than it commanded.">
+<link rel="canonical" href="https://jqdevam.github.io/pin16-site/codes/P0402/">
+<link rel="alternate" hreflang="en" href="https://jqdevam.github.io/pin16-site/codes/P0402/">
+<link rel="alternate" hreflang="ru" href="https://jqdevam.github.io/pin16-site/ru/codes/P0402/">
+<link rel="alternate" hreflang="x-default" href="https://jqdevam.github.io/pin16-site/codes/P0402/">
+<link rel="icon" href="../../pin16.png">
+<link rel="stylesheet" href="../../assets/codes.css">
+</head>
+<body>
+<main>
+<nav class="top"><a class="brand" href="../../"><img src="../../pin16.png" alt="" width="28" height="28">Pin16</a><a href="../../codes/">All codes</a><a hreflang="ru" href="../../ru/codes/P0402/">По-русски</a></nav>
+<header class="code-head">
+<p class="code">P0402</p>
+<h1>Exhaust Gas Recirculation Flow Excessive Detected</h1>
+<dl class="facts"><div class="sev-medium"><dt>Severity</dt><dd>Medium</dd></div><div><dt>Driving</dt><dd>Drivable — book it in</dd></div><div><dt>System</dt><dd>Powertrain</dd></div><div><dt>Group</dt><dd>Auxiliary emission controls</dd></div></dl>
+</header>
+<p class="lead">The module measured more exhaust gas recirculation than it commanded. Usually the valve is being held open when it should be closed - often by a flake of carbon on the seat. Exhaust gas in the intake at idle displaces the air the engine needs, which is why this fault tends to show itself as a rough idle or a stall when you come to a stop rather than as a problem at speed.</p>
+<h2>Possible causes</h2>
+<ul class="causes">
+<li><span class="lik lik-common">Common</span>EGR valve held off its seat by carbon and unable to close fully</li>
+<li><span class="lik lik-common">Common</span>EGR valve stuck open mechanically</li>
+<li><span class="lik lik-possible">Possible</span>Faulty EGR position sensor reporting flow that is not happening</li>
+<li><span class="lik lik-possible">Possible</span>Control solenoid stuck energised, holding the valve open</li>
+<li><span class="lik lik-possible">Possible</span>Failed diaphragm in a vacuum-operated valve</li>
+<li><span class="lik lik-possible">Possible</span>Faulty differential pressure sensor</li>
+</ul>
+<h2>What you might notice</h2>
+<ul>
+<li>Rough or unstable idle</li>
+<li>Stalling when coming to a stop</li>
+<li>Hesitation when pulling away</li>
+<li>Poor running until the engine is fully warm</li>
+<li>Check engine light on</li>
+</ul>
+<h2>What to check, in order</h2>
+<ol class="checks">
+<li>Remove the valve and check it seats fully closed. Hold it up to the light - if daylight shows past the seat with the valve shut, that is the fault.</li>
+<li>Clean the seat and the valve face. A single flake of carbon is enough to hold the valve open by the fraction needed to set this code.</li>
+<li>On a vacuum-operated valve, check the valve is not receiving vacuum at idle when it should have none. A stuck solenoid or a mis-routed hose does this.</li>
+<li>Watch the EGR position reading with the engine at idle. It should read closed. A reading showing the valve part-open at idle confirms the fault mechanically rather than electrically.</li>
+<li>If the valve seats correctly and reads closed at idle, suspect the sensor reporting the flow rather than the valve itself.</li>
+</ol>
+<section class="cta">
+<h2>Read this code from your own car</h2>
+<p>Plug an ELM327 adapter into the OBD-II port under the dashboard. Pin16 reads every stored, pending and permanent code, explains each one like this page does — offline, with no account — and shows what the car recorded when the fault was set.</p>
+<a class="button" href="https://play.google.com/store/apps/details?id=com.amaldavanau.pin16&amp;hl=en&amp;referrer=utm_source%3Dpin16_site%26utm_medium%3Dcode_page%26utm_campaign%3Dcode_pages_en%26utm_content%3DP0402">Get Pin16 on Google Play</a>
+</section>
+<nav class="pager"><a rel="prev" href="../P0401/">← P0401</a><a href="../">All codes</a><a rel="next" href="../P0403/">P0403 →</a></nav>
+<footer><p>Written for Pin16 and not yet reviewed by a qualified technician. This is guidance for diagnosis, not repair instructions, and it may be incomplete or wrong for your vehicle. If in doubt, ask a mechanic.</p><p><a href="../../">Pin16</a> · <a href="../../privacy/">Privacy policy</a></p></footer>
+</main>
+</body>
+</html>

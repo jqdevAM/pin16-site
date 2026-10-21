@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>P2035 — Exhaust Gas Temperature Sensor Circuit Low (Bank 2 Sensor 2): causes and what to check</title>
+<meta name="description" content="The exhaust gas temperature signal on bank 2, sensor 2 is reading low - typically shorted to earth or an open circuit.">
+<link rel="canonical" href="https://jqdevam.github.io/pin16-site/codes/P2035/">
+<link rel="alternate" hreflang="en" href="https://jqdevam.github.io/pin16-site/codes/P2035/">
+<link rel="alternate" hreflang="ru" href="https://jqdevam.github.io/pin16-site/ru/codes/P2035/">
+<link rel="alternate" hreflang="x-default" href="https://jqdevam.github.io/pin16-site/codes/P2035/">
+<link rel="icon" href="../../pin16.png">
+<link rel="stylesheet" href="../../assets/codes.css">
+</head>
+<body>
+<main>
+<nav class="top"><a class="brand" href="../../"><img src="../../pin16.png" alt="" width="28" height="28">Pin16</a><a href="../../codes/">All codes</a><a hreflang="ru" href="../../ru/codes/P2035/">По-русски</a></nav>
+<header class="code-head">
+<p class="code">P2035</p>
+<h1>Exhaust Gas Temperature Sensor Circuit Low (Bank 2 Sensor 2)</h1>
+<dl class="facts"><div class="sev-medium"><dt>Severity</dt><dd>Medium</dd></div><div><dt>Driving</dt><dd>Drive only to a garage</dd></div><div><dt>System</dt><dd>Powertrain</dd></div><div><dt>Group</dt><dd>Fuel, air metering and auxiliary emission controls</dd></div></dl>
+</header>
+<aside class="note"><strong>Important.</strong> On a diesel these sensors are what let the particulate filter regenerate safely. While one is faulty, regeneration will not run and the filter keeps loading - so a cheap sensor left unfixed becomes an expensive filter.</aside>
+<p class="lead">The exhaust gas temperature signal on bank 2, sensor 2 is reading low - typically shorted to earth or an open circuit. The module cannot trust the reading, so particulate filter regeneration will not be attempted.</p>
+<h2>Possible causes</h2>
+<ul class="causes">
+<li><span class="lik lik-common">Common</span>Failed exhaust gas temperature sensor</li>
+<li><span class="lik lik-common">Common</span>Corroded connector - these sit in the hottest, dirtiest part of the vehicle</li>
+<li><span class="lik lik-common">Common</span>Wiring damaged by exhaust heat</li>
+<li><span class="lik lik-possible">Possible</span>Sensor tip damaged or coated with soot</li>
+<li><span class="lik lik-possible">Possible</span>Sensor seized in the exhaust and damaged during a previous removal</li>
+<li><span class="lik lik-possible">Possible</span>Loss of reference voltage or earth</li>
+</ul>
+<h2>What you might notice</h2>
+<ul>
+<li>Reduced power or limp mode</li>
+<li>Particulate filter warning</li>
+<li>Regeneration not happening, so the filter gradually blocks</li>
+<li>Excessive smoke</li>
+<li>Check engine light on</li>
+</ul>
+<h2>What to check, in order</h2>
+<ol class="checks">
+<li>Compare the reported temperature with ambient on an engine that has stood overnight - they should be close.</li>
+<li>Inspect the connector for corrosion and heat damage. These connectors live in the worst environment on the vehicle.</li>
+<li>Check the wiring where it runs along the exhaust.</li>
+<li>Read all codes. Particulate filter codes alongside this one matter more, because a filter that cannot regenerate will eventually block completely.</li>
+<li>Expect the sensor to be seized in the exhaust. Penetrating oil and patience are worth more than force - a snapped sensor turns a small job into a large one.</li>
+</ol>
+<section class="cta">
+<h2>Read this code from your own car</h2>
+<p>Plug an ELM327 adapter into the OBD-II port under the dashboard. Pin16 reads every stored, pending and permanent code, explains each one like this page does — offline, with no account — and shows what the car recorded when the fault was set.</p>
+<a class="button" href="https://play.google.com/store/apps/details?id=com.amaldavanau.pin16&amp;hl=en&amp;referrer=utm_source%3Dpin16_site%26utm_medium%3Dcode_page%26utm_campaign%3Dcode_pages_en%26utm_content%3DP2035">Get Pin16 on Google Play</a>
+</section>
+<nav class="pager"><a rel="prev" href="../P2034/">← P2034</a><a href="../">All codes</a><a rel="next" href="../P2036/">P2036 →</a></nav>
+<footer><p>Written for Pin16 and not yet reviewed by a qualified technician. This is guidance for diagnosis, not repair instructions, and it may be incomplete or wrong for your vehicle. If in doubt, ask a mechanic.</p><p><a href="../../">Pin16</a> · <a href="../../privacy/">Privacy policy</a></p></footer>
+</main>
+</body>
+</html>

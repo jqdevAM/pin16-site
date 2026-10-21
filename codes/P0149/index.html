@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>P0149 — Fuel Timing Error: causes and what to check</title>
+<meta name="description" content="Injection is not happening when the module intended.">
+<link rel="canonical" href="https://jqdevam.github.io/pin16-site/codes/P0149/">
+<link rel="alternate" hreflang="en" href="https://jqdevam.github.io/pin16-site/codes/P0149/">
+<link rel="alternate" hreflang="ru" href="https://jqdevam.github.io/pin16-site/ru/codes/P0149/">
+<link rel="alternate" hreflang="x-default" href="https://jqdevam.github.io/pin16-site/codes/P0149/">
+<link rel="icon" href="../../pin16.png">
+<link rel="stylesheet" href="../../assets/codes.css">
+</head>
+<body>
+<main>
+<nav class="top"><a class="brand" href="../../"><img src="../../pin16.png" alt="" width="28" height="28">Pin16</a><a href="../../codes/">All codes</a><a hreflang="ru" href="../../ru/codes/P0149/">По-русски</a></nav>
+<header class="code-head">
+<p class="code">P0149</p>
+<h1>Fuel Timing Error</h1>
+<dl class="facts"><div class="sev-high"><dt>Severity</dt><dd>High</dd></div><div><dt>Driving</dt><dd>Drive only to a garage</dd></div><div><dt>System</dt><dd>Powertrain</dd></div><div><dt>Group</dt><dd>Fuel and air metering</dd></div></dl>
+</header>
+<aside class="note"><strong>Important.</strong> On a common rail engine, do not slacken any union on the high pressure side to look for a problem. That side stays pressurised after the engine stops, and fuel escaping at those pressures will pass through skin. Follow the manufacturer&#x27;s depressurisation procedure.</aside>
+<p class="lead">Injection is not happening when the module intended. On a diesel, when fuel is injected relative to piston position determines how it burns - too early and combustion is harsh and noisy, too late and it is smoky and inefficient. The module compares what it commanded against what it observes and sets this when they diverge.</p>
+<h2>Possible causes</h2>
+<ul class="causes">
+<li><span class="lik lik-common">Common</span>Low fuel pressure making injection slower than the module allowed for</li>
+<li><span class="lik lik-common">Common</span>Fault in the timing control or metering valve</li>
+<li><span class="lik lik-common">Common</span>Worn injectors responding sluggishly to their commands</li>
+<li><span class="lik lik-possible">Possible</span>Crankshaft and camshaft position signals out of correlation</li>
+<li><span class="lik lik-possible">Possible</span>Timing belt or chain that has jumped a tooth</li>
+<li><span class="lik lik-possible">Possible</span>Injection pump timing incorrect after previous work</li>
+</ul>
+<h2>What you might notice</h2>
+<ul>
+<li>Harsh diesel knock, or unusually noisy running</li>
+<li>Loss of power and limp mode</li>
+<li>White, black or blue smoke</li>
+<li>Hard starting</li>
+<li>Poor fuel economy</li>
+</ul>
+<h2>What to check, in order</h2>
+<ol class="checks">
+<li>Read all codes first. Crankshaft or camshaft position codes stored alongside change the answer completely - fix those before looking at anything in the fuel system.</li>
+<li>Check fuel pressure against the commanded value. Timing errors are frequently pressure problems in disguise, because injection duration depends on pressure.</li>
+<li>Check the cam and crank correlation. A timing belt or chain that has jumped will produce this and is worth ruling out early, because continuing to run the engine makes it worse.</li>
+<li>Confirm injection pump timing if the pump or belt has recently been disturbed. This code appearing shortly after belt work usually points straight back at it.</li>
+</ol>
+<section class="cta">
+<h2>Read this code from your own car</h2>
+<p>Plug an ELM327 adapter into the OBD-II port under the dashboard. Pin16 reads every stored, pending and permanent code, explains each one like this page does — offline, with no account — and shows what the car recorded when the fault was set.</p>
+<a class="button" href="https://play.google.com/store/apps/details?id=com.amaldavanau.pin16&amp;hl=en&amp;referrer=utm_source%3Dpin16_site%26utm_medium%3Dcode_page%26utm_campaign%3Dcode_pages_en%26utm_content%3DP0149">Get Pin16 on Google Play</a>
+</section>
+<nav class="pager"><a rel="prev" href="../P0148/">← P0148</a><a href="../">All codes</a><a rel="next" href="../P0150/">P0150 →</a></nav>
+<footer><p>Written for Pin16 and not yet reviewed by a qualified technician. This is guidance for diagnosis, not repair instructions, and it may be incomplete or wrong for your vehicle. If in doubt, ask a mechanic.</p><p><a href="../../">Pin16</a> · <a href="../../privacy/">Privacy policy</a></p></footer>
+</main>
+</body>
+</html>

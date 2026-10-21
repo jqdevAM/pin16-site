@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>P0519 — Idle Air Control System Performance: causes and what to check</title>
+<meta name="description" content="The idle air control system is electrically sound but the idle speed is not what the module commanded.">
+<link rel="canonical" href="https://jqdevam.github.io/pin16-site/codes/P0519/">
+<link rel="alternate" hreflang="en" href="https://jqdevam.github.io/pin16-site/codes/P0519/">
+<link rel="alternate" hreflang="ru" href="https://jqdevam.github.io/pin16-site/ru/codes/P0519/">
+<link rel="alternate" hreflang="x-default" href="https://jqdevam.github.io/pin16-site/codes/P0519/">
+<link rel="icon" href="../../pin16.png">
+<link rel="stylesheet" href="../../assets/codes.css">
+</head>
+<body>
+<main>
+<nav class="top"><a class="brand" href="../../"><img src="../../pin16.png" alt="" width="28" height="28">Pin16</a><a href="../../codes/">All codes</a><a hreflang="ru" href="../../ru/codes/P0519/">По-русски</a></nav>
+<header class="code-head">
+<p class="code">P0519</p>
+<h1>Idle Air Control System Performance</h1>
+<dl class="facts"><div class="sev-medium"><dt>Severity</dt><dd>Medium</dd></div><div><dt>Driving</dt><dd>Drivable — book it in</dd></div><div><dt>System</dt><dd>Powertrain</dd></div><div><dt>Group</dt><dd>Vehicle speed control, idle control and auxiliary inputs</dd></div></dl>
+</header>
+<p class="lead">The idle air control system is electrically sound but the idle speed is not what the module commanded. Since the circuit checks out, the cause is air: either the valve is not moving the amount it should, or air is getting in somewhere the module cannot account for.</p>
+<h2>Possible causes</h2>
+<ul class="causes">
+<li><span class="lik lik-common">Common</span>Idle air control valve clogged with carbon</li>
+<li><span class="lik lik-common">Common</span>Failed idle air control valve or motor</li>
+<li><span class="lik lik-common">Common</span>Vacuum leak in the intake system</li>
+<li><span class="lik lik-common">Common</span>Dirty throttle body</li>
+<li><span class="lik lik-possible">Possible</span>Corroded connector or damaged wiring</li>
+<li><span class="lik lik-rare">Rare</span>Failed control module driver</li>
+</ul>
+<h2>What you might notice</h2>
+<ul>
+<li>Idle too high, too low, or hunting up and down</li>
+<li>Stalling when coming to a stop</li>
+<li>Stalling when the air conditioning switches on</li>
+<li>Hard starting</li>
+<li>Check engine light on</li>
+</ul>
+<h2>What to check, in order</h2>
+<ol class="checks">
+<li>Look for vacuum leaks before anything else - a split hose, a failed PCV, a leaking intake gasket. A performance complaint with a healthy circuit is usually unmetered air.</li>
+<li>Compare commanded against actual idle speed on the live data screen.</li>
+<li>Check for vacuum leaks first. A leak lets in air the module did not account for, and it produces every idle complaint that a failed valve does - at a fraction of the cost.</li>
+<li>Remove and inspect the idle air control valve for carbon. On a high-mileage engine this is the usual cause and cleaning is often the whole repair.</li>
+<li>Clean the throttle body while you are there.</li>
+<li>Check the connector and wiring at the valve.</li>
+<li>Check whether an idle relearn is specified after cleaning. Some modules keep using the values they learned around the dirty valve until they are reset.</li>
+</ol>
+<section class="cta">
+<h2>Read this code from your own car</h2>
+<p>Plug an ELM327 adapter into the OBD-II port under the dashboard. Pin16 reads every stored, pending and permanent code, explains each one like this page does — offline, with no account — and shows what the car recorded when the fault was set.</p>
+<a class="button" href="https://play.google.com/store/apps/details?id=com.amaldavanau.pin16&amp;hl=en&amp;referrer=utm_source%3Dpin16_site%26utm_medium%3Dcode_page%26utm_campaign%3Dcode_pages_en%26utm_content%3DP0519">Get Pin16 on Google Play</a>
+</section>
+<nav class="pager"><a rel="prev" href="../P0518/">← P0518</a><a href="../">All codes</a><a rel="next" href="../P0520/">P0520 →</a></nav>
+<footer><p>Written for Pin16 and not yet reviewed by a qualified technician. This is guidance for diagnosis, not repair instructions, and it may be incomplete or wrong for your vehicle. If in doubt, ask a mechanic.</p><p><a href="../../">Pin16</a> · <a href="../../privacy/">Privacy policy</a></p></footer>
+</main>
+</body>
+</html>

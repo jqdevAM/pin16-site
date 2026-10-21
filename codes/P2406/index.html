@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>P2406 — Evaporative Emission System Leak Detection Pump Sense Circuit High: causes and what to check</title>
+<meta name="description" content="The circuit that tells the module what the leak detection pump is doing is reading high, typically shorted to voltage or with a lost earth.">
+<link rel="canonical" href="https://jqdevam.github.io/pin16-site/codes/P2406/">
+<link rel="alternate" hreflang="en" href="https://jqdevam.github.io/pin16-site/codes/P2406/">
+<link rel="alternate" hreflang="ru" href="https://jqdevam.github.io/pin16-site/ru/codes/P2406/">
+<link rel="alternate" hreflang="x-default" href="https://jqdevam.github.io/pin16-site/codes/P2406/">
+<link rel="icon" href="../../pin16.png">
+<link rel="stylesheet" href="../../assets/codes.css">
+</head>
+<body>
+<main>
+<nav class="top"><a class="brand" href="../../"><img src="../../pin16.png" alt="" width="28" height="28">Pin16</a><a href="../../codes/">All codes</a><a hreflang="ru" href="../../ru/codes/P2406/">По-русски</a></nav>
+<header class="code-head">
+<p class="code">P2406</p>
+<h1>Evaporative Emission System Leak Detection Pump Sense Circuit High</h1>
+<dl class="facts"><div class="sev-low"><dt>Severity</dt><dd>Low</dd></div><div><dt>Driving</dt><dd>No driving restriction</dd></div><div><dt>System</dt><dd>Powertrain</dd></div><div><dt>Group</dt><dd>Auxiliary emission controls</dd></div></dl>
+</header>
+<p class="lead">The circuit that tells the module what the leak detection pump is doing is reading high, typically shorted to voltage or with a lost earth. This is the feedback half of the pump: the module drives the pump on one circuit and watches the result on this one. Without it the module can run the pump but cannot interpret the test, so the leak check never completes.</p>
+<h2>Possible causes</h2>
+<ul class="causes">
+<li><span class="lik lik-common">Common</span>Corroded or water-damaged connector at the pump</li>
+<li><span class="lik lik-common">Common</span>Failed sense switch or sensor inside the pump assembly</li>
+<li><span class="lik lik-common">Common</span>Damaged wiring on the underbody run</li>
+<li><span class="lik lik-possible">Possible</span>Poor earth at the pump</li>
+<li><span class="lik lik-possible">Possible</span>Blocked or kinked vapour line preventing the pump from building pressure</li>
+</ul>
+<h2>What you might notice</h2>
+<ul>
+<li>Check engine light on</li>
+<li>Failed emissions test</li>
+<li>Occasionally a smell of fuel</li>
+<li>Usually nothing else - EVAP faults rarely affect how the car drives</li>
+</ul>
+<h2>What to check, in order</h2>
+<ol class="checks">
+<li>Inspect the connector and its wiring before condemning the component. Everything in this system lives under the vehicle in the path of road salt and spray, and a corroded connector produces these codes far more often than a failed part does.</li>
+<li>Watch the sense signal on live data while commanding the pump. It should change state as the pump runs; one that never moves is the sense circuit, one that moves erratically is usually a connection.</li>
+<li>Check the vapour lines for kinks and blockages. A pump that cannot build pressure because the line is blocked reports the same thing as a failed sensor.</li>
+<li>Check the earth before replacing the pump assembly. These are usually sold as a complete unit and are not cheap.</li>
+</ol>
+<section class="cta">
+<h2>Read this code from your own car</h2>
+<p>Plug an ELM327 adapter into the OBD-II port under the dashboard. Pin16 reads every stored, pending and permanent code, explains each one like this page does — offline, with no account — and shows what the car recorded when the fault was set.</p>
+<a class="button" href="https://play.google.com/store/apps/details?id=com.amaldavanau.pin16&amp;hl=en&amp;referrer=utm_source%3Dpin16_site%26utm_medium%3Dcode_page%26utm_campaign%3Dcode_pages_en%26utm_content%3DP2406">Get Pin16 on Google Play</a>
+</section>
+<nav class="pager"><a rel="prev" href="../P2405/">← P2405</a><a href="../">All codes</a><a rel="next" href="../P2407/">P2407 →</a></nav>
+<footer><p>Written for Pin16 and not yet reviewed by a qualified technician. This is guidance for diagnosis, not repair instructions, and it may be incomplete or wrong for your vehicle. If in doubt, ask a mechanic.</p><p><a href="../../">Pin16</a> · <a href="../../privacy/">Privacy policy</a></p></footer>
+</main>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>P0600 — Serial Communication Link: causes and what to check</title>
+<meta name="description" content="A fault on the serial communication link between control modules.">
+<link rel="canonical" href="https://jqdevam.github.io/pin16-site/codes/P0600/">
+<link rel="alternate" hreflang="en" href="https://jqdevam.github.io/pin16-site/codes/P0600/">
+<link rel="alternate" hreflang="ru" href="https://jqdevam.github.io/pin16-site/ru/codes/P0600/">
+<link rel="alternate" hreflang="x-default" href="https://jqdevam.github.io/pin16-site/codes/P0600/">
+<link rel="icon" href="../../pin16.png">
+<link rel="stylesheet" href="../../assets/codes.css">
+</head>
+<body>
+<main>
+<nav class="top"><a class="brand" href="../../"><img src="../../pin16.png" alt="" width="28" height="28">Pin16</a><a href="../../codes/">All codes</a><a hreflang="ru" href="../../ru/codes/P0600/">По-русски</a></nav>
+<header class="code-head">
+<p class="code">P0600</p>
+<h1>Serial Communication Link</h1>
+<dl class="facts"><div class="sev-high"><dt>Severity</dt><dd>High</dd></div><div><dt>Driving</dt><dd>Drive only to a garage</dd></div><div><dt>System</dt><dd>Powertrain</dd></div><div><dt>Group</dt><dd>Computer output circuits and control module</dd></div></dl>
+</header>
+<p class="lead">A fault on the serial communication link between control modules. Where a bus code describes the wiring, this describes the module&#x27;s ability to use it - it cannot exchange data with the modules it depends on, so expect a scatter of other codes that are consequences of this one.</p>
+<h2>Possible causes</h2>
+<ul class="causes">
+<li><span class="lik lik-common">Common</span>Damaged, chafed or corroded bus wiring</li>
+<li><span class="lik lik-common">Common</span>Low battery voltage, which drops modules off the link</li>
+<li><span class="lik lik-common">Common</span>Corroded or water-ingressed connector</li>
+<li><span class="lik lik-common">Common</span>Another module faulting and disrupting the link</li>
+<li><span class="lik lik-possible">Possible</span>Aftermarket electrical work spliced into the bus</li>
+<li><span class="lik lik-possible">Possible</span>Failed control module</li>
+</ul>
+<h2>What you might notice</h2>
+<ul>
+<li>Several warning lights at once</li>
+<li>Scan tool cannot reach some modules</li>
+<li>Limp mode</li>
+<li>Vehicle will not start</li>
+<li>A long list of communication codes</li>
+</ul>
+<h2>What to check, in order</h2>
+<ol class="checks">
+<li>Check battery voltage and state of charge first - a weak battery causes communication faults with no wiring problem at all.</li>
+<li>Read every code and look at how many there are. Most will be consequences of this one.</li>
+<li>Inspect connectors for water and corrosion.</li>
+<li>Ask what was recently fitted, and what is plugged into the diagnostic socket. Aftermarket trackers, alarms and dongles left permanently connected are a frequent cause.</li>
+<li>See the U0001-series bus codes for the resistance measurement that identifies a wiring fault on a twin-wire CAN bus.</li>
+</ol>
+<section class="cta">
+<h2>Read this code from your own car</h2>
+<p>Plug an ELM327 adapter into the OBD-II port under the dashboard. Pin16 reads every stored, pending and permanent code, explains each one like this page does — offline, with no account — and shows what the car recorded when the fault was set.</p>
+<a class="button" href="https://play.google.com/store/apps/details?id=com.amaldavanau.pin16&amp;hl=en&amp;referrer=utm_source%3Dpin16_site%26utm_medium%3Dcode_page%26utm_campaign%3Dcode_pages_en%26utm_content%3DP0600">Get Pin16 on Google Play</a>
+</section>
+<nav class="pager"><a rel="prev" href="../P0599/">← P0599</a><a href="../">All codes</a><a rel="next" href="../P0601/">P0601 →</a></nav>
+<footer><p>Written for Pin16 and not yet reviewed by a qualified technician. This is guidance for diagnosis, not repair instructions, and it may be incomplete or wrong for your vehicle. If in doubt, ask a mechanic.</p><p><a href="../../">Pin16</a> · <a href="../../privacy/">Privacy policy</a></p></footer>
+</main>
+</body>
+</html>

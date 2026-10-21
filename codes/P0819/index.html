@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>P0819 — Up and Down Shift Switch to Transmission Range Correlation: causes and what to check</title>
+<meta name="description" content="The up and down shift switches and the transmission range sensor do not agree.">
+<link rel="canonical" href="https://jqdevam.github.io/pin16-site/codes/P0819/">
+<link rel="alternate" hreflang="en" href="https://jqdevam.github.io/pin16-site/codes/P0819/">
+<link rel="alternate" hreflang="ru" href="https://jqdevam.github.io/pin16-site/ru/codes/P0819/">
+<link rel="alternate" hreflang="x-default" href="https://jqdevam.github.io/pin16-site/codes/P0819/">
+<link rel="icon" href="../../pin16.png">
+<link rel="stylesheet" href="../../assets/codes.css">
+</head>
+<body>
+<main>
+<nav class="top"><a class="brand" href="../../"><img src="../../pin16.png" alt="" width="28" height="28">Pin16</a><a href="../../codes/">All codes</a><a hreflang="ru" href="../../ru/codes/P0819/">По-русски</a></nav>
+<header class="code-head">
+<p class="code">P0819</p>
+<h1>Up and Down Shift Switch to Transmission Range Correlation</h1>
+<dl class="facts"><div class="sev-medium"><dt>Severity</dt><dd>Medium</dd></div><div><dt>Driving</dt><dd>Drivable — book it in</dd></div><div><dt>System</dt><dd>Powertrain</dd></div><div><dt>Group</dt><dd>Transmission</dd></div></dl>
+</header>
+<p class="lead">The up and down shift switches and the transmission range sensor do not agree. The module is being told the driver is in manual mode and requesting shifts, while the selector position says something different - or the other way round. Two sources that should match do not, and the module cannot tell which one is lying.</p>
+<h2>Possible causes</h2>
+<ul class="causes">
+<li><span class="lik lik-common">Common</span>Transmission range sensor out of adjustment</li>
+<li><span class="lik lik-common">Common</span>Worn selector linkage, so the lever position and the sensor disagree</li>
+<li><span class="lik lik-common">Common</span>Failed shift switch stuck in one state</li>
+<li><span class="lik lik-possible">Possible</span>Wiring fault on either circuit</li>
+<li><span class="lik lik-possible">Possible</span>Selector assembly worn or damaged</li>
+</ul>
+<h2>What you might notice</h2>
+<ul>
+<li>Manual mode engaging or disengaging on its own</li>
+<li>Gear position display disagreeing with the lever</li>
+<li>Shifts ignored or unexpected</li>
+<li>Check engine light on</li>
+</ul>
+<h2>What to check, in order</h2>
+<ol class="checks">
+<li>Watch both the selector position and the switch states on the live data screen while moving the lever through its full travel. The one that does not match reality is the fault.</li>
+<li>Check the range sensor adjustment before replacing anything - adjustment is often the whole repair.</li>
+<li>Check the selector cable and linkage for wear and free play.</li>
+<li>Inspect the selector assembly for a worn detent or a broken return spring.</li>
+<li>Check for range sensor codes stored alongside, which would point the diagnosis at the sensor rather than the switches.</li>
+</ol>
+<section class="cta">
+<h2>Read this code from your own car</h2>
+<p>Plug an ELM327 adapter into the OBD-II port under the dashboard. Pin16 reads every stored, pending and permanent code, explains each one like this page does — offline, with no account — and shows what the car recorded when the fault was set.</p>
+<a class="button" href="https://play.google.com/store/apps/details?id=com.amaldavanau.pin16&amp;hl=en&amp;referrer=utm_source%3Dpin16_site%26utm_medium%3Dcode_page%26utm_campaign%3Dcode_pages_en%26utm_content%3DP0819">Get Pin16 on Google Play</a>
+</section>
+<nav class="pager"><a rel="prev" href="../P0818/">← P0818</a><a href="../">All codes</a><a rel="next" href="../P0820/">P0820 →</a></nav>
+<footer><p>Written for Pin16 and not yet reviewed by a qualified technician. This is guidance for diagnosis, not repair instructions, and it may be incomplete or wrong for your vehicle. If in doubt, ask a mechanic.</p><p><a href="../../">Pin16</a> · <a href="../../privacy/">Privacy policy</a></p></footer>
+</main>
+</body>
+</html>

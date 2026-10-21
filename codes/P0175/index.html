@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>P0175 — System Too Rich (Bank 2): causes and what to check</title>
+<meta name="description" content="The engine is running rich on bank 2 - too much fuel for the amount of air.">
+<link rel="canonical" href="https://jqdevam.github.io/pin16-site/codes/P0175/">
+<link rel="alternate" hreflang="en" href="https://jqdevam.github.io/pin16-site/codes/P0175/">
+<link rel="alternate" hreflang="ru" href="https://jqdevam.github.io/pin16-site/ru/codes/P0175/">
+<link rel="alternate" hreflang="x-default" href="https://jqdevam.github.io/pin16-site/codes/P0175/">
+<link rel="icon" href="../../pin16.png">
+<link rel="stylesheet" href="../../assets/codes.css">
+</head>
+<body>
+<main>
+<nav class="top"><a class="brand" href="../../"><img src="../../pin16.png" alt="" width="28" height="28">Pin16</a><a href="../../codes/">All codes</a><a hreflang="ru" href="../../ru/codes/P0175/">По-русски</a></nav>
+<header class="code-head">
+<p class="code">P0175</p>
+<h1>System Too Rich (Bank 2)</h1>
+<dl class="facts"><div class="sev-medium"><dt>Severity</dt><dd>Medium</dd></div><div><dt>Driving</dt><dd>Drivable — book it in</dd></div><div><dt>System</dt><dd>Powertrain</dd></div><div><dt>Group</dt><dd>Fuel and air metering</dd></div></dl>
+</header>
+<p class="lead">The engine is running rich on bank 2 - too much fuel for the amount of air. The control module has already cut fuel as far as it is permitted to and the mixture is still too rich. Left alone, a rich mixture wastes fuel and can foul spark plugs and damage the catalytic converter over time.</p>
+<h2>Possible causes</h2>
+<ul class="causes">
+<li><span class="lik lik-common">Common</span>Leaking or stuck-open fuel injector</li>
+<li><span class="lik lik-common">Common</span>Faulty fuel pressure regulator letting pressure run high</li>
+<li><span class="lik lik-possible">Possible</span>Mass airflow sensor over-reporting airflow</li>
+<li><span class="lik lik-possible">Possible</span>Failing oxygen sensor reporting rich incorrectly</li>
+<li><span class="lik lik-possible">Possible</span>Restricted air filter starving the engine of air</li>
+<li><span class="lik lik-possible">Possible</span>Faulty coolant temperature sensor making the module think the engine is cold</li>
+<li><span class="lik lik-rare">Rare</span>Leaking fuel pressure regulator diaphragm drawing fuel into the intake</li>
+</ul>
+<h2>What you might notice</h2>
+<ul>
+<li>Black smoke from the exhaust</li>
+<li>Strong fuel smell</li>
+<li>Poor fuel economy</li>
+<li>Rough idle</li>
+<li>Spark plugs fouled with soot</li>
+<li>Check engine light on</li>
+</ul>
+<h2>What to check, in order</h2>
+<ol class="checks">
+<li>Check the air filter. A heavily restricted filter is the cheapest possible cause and worth eliminating first.</li>
+<li>Watch fuel trim on the live data screen - strongly negative trim confirms the module is cutting fuel to compensate.</li>
+<li>Check the coolant temperature sensor reading against actual engine temperature. A sensor stuck reading cold makes the module enrich the mixture permanently.</li>
+<li>Test fuel pressure. Higher than specification points at the pressure regulator.</li>
+<li>Inspect spark plugs - uniform soot across all of them supports a whole-bank rich condition rather than one bad injector.</li>
+<li>If plugs on one cylinder are much sootier than the rest, suspect that cylinder&#x27;s injector leaking.</li>
+</ol>
+<section class="cta">
+<h2>Read this code from your own car</h2>
+<p>Plug an ELM327 adapter into the OBD-II port under the dashboard. Pin16 reads every stored, pending and permanent code, explains each one like this page does — offline, with no account — and shows what the car recorded when the fault was set.</p>
+<a class="button" href="https://play.google.com/store/apps/details?id=com.amaldavanau.pin16&amp;hl=en&amp;referrer=utm_source%3Dpin16_site%26utm_medium%3Dcode_page%26utm_campaign%3Dcode_pages_en%26utm_content%3DP0175">Get Pin16 on Google Play</a>
+</section>
+<nav class="pager"><a rel="prev" href="../P0174/">← P0174</a><a href="../">All codes</a><a rel="next" href="../P0176/">P0176 →</a></nav>
+<footer><p>Written for Pin16 and not yet reviewed by a qualified technician. This is guidance for diagnosis, not repair instructions, and it may be incomplete or wrong for your vehicle. If in doubt, ask a mechanic.</p><p><a href="../../">Pin16</a> · <a href="../../privacy/">Privacy policy</a></p></footer>
+</main>
+</body>
+</html>

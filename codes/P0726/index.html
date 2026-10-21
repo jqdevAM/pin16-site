@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>P0726 — Engine Speed Input Circuit Range/Performance: causes and what to check</title>
+<meta name="description" content="The engine speed input circuit is producing a signal, but the engine speed it reports does not make sense against everything else the module knows.">
+<link rel="canonical" href="https://jqdevam.github.io/pin16-site/codes/P0726/">
+<link rel="alternate" hreflang="en" href="https://jqdevam.github.io/pin16-site/codes/P0726/">
+<link rel="alternate" hreflang="ru" href="https://jqdevam.github.io/pin16-site/ru/codes/P0726/">
+<link rel="alternate" hreflang="x-default" href="https://jqdevam.github.io/pin16-site/codes/P0726/">
+<link rel="icon" href="../../pin16.png">
+<link rel="stylesheet" href="../../assets/codes.css">
+</head>
+<body>
+<main>
+<nav class="top"><a class="brand" href="../../"><img src="../../pin16.png" alt="" width="28" height="28">Pin16</a><a href="../../codes/">All codes</a><a hreflang="ru" href="../../ru/codes/P0726/">По-русски</a></nav>
+<header class="code-head">
+<p class="code">P0726</p>
+<h1>Engine Speed Input Circuit Range/Performance</h1>
+<dl class="facts"><div class="sev-high"><dt>Severity</dt><dd>High</dd></div><div><dt>Driving</dt><dd>Drive only to a garage</dd></div><div><dt>System</dt><dd>Powertrain</dd></div><div><dt>Group</dt><dd>Transmission</dd></div></dl>
+</header>
+<p class="lead">The engine speed input circuit is producing a signal, but the engine speed it reports does not make sense against everything else the module knows. The sensor is working; either it is inaccurate, or it is reporting accurately and the transmission genuinely is not doing what it was told - which is a much more serious matter.</p>
+<h2>Possible causes</h2>
+<ul class="causes">
+<li><span class="lik lik-common">Common</span>Slipping clutch or band inside the transmission, so the speeds really are wrong</li>
+<li><span class="lik lik-common">Common</span>Failing or inaccurate speed sensor</li>
+<li><span class="lik lik-common">Common</span>Metal debris or damage on the reluctor ring the sensor reads</li>
+<li><span class="lik lik-common">Common</span>Low or degraded fluid causing a genuine slip</li>
+<li><span class="lik lik-possible">Possible</span>Wrong sensor or wrong tyre size affecting the calculation</li>
+<li><span class="lik lik-possible">Possible</span>Wiring interference or a poor earth corrupting the signal</li>
+</ul>
+<h2>What you might notice</h2>
+<ul>
+<li>Slipping - engine speed rises without the car accelerating</li>
+<li>Harsh, flaring or delayed shifts</li>
+<li>Transmission dropping into limp mode</li>
+<li>Speedometer reading wrong</li>
+<li>Check engine light on</li>
+</ul>
+<h2>What to check, in order</h2>
+<ol class="checks">
+<li>Establish first whether the transmission is actually slipping. If engine speed rises without the car speeding up, the sensors are telling the truth and the fault is mechanical.</li>
+<li>Check the fluid level and condition before anything else. Low or burnt fluid causes real slip, and real slip sets this code with perfectly good sensors.</li>
+<li>Watch input and output speed together on the live data screen. Work out the ratio in each gear and compare it with the specification.</li>
+<li>Check for gear ratio codes stored alongside. Those confirm a mechanical problem rather than a sensor one.</li>
+<li>Ask whether non-standard tyre or wheel sizes have been fitted, which shifts every speed-derived calculation.</li>
+<li>Replace the sensor only after mechanical slip has been ruled out. A new sensor will not fix a worn clutch pack.</li>
+</ol>
+<section class="cta">
+<h2>Read this code from your own car</h2>
+<p>Plug an ELM327 adapter into the OBD-II port under the dashboard. Pin16 reads every stored, pending and permanent code, explains each one like this page does — offline, with no account — and shows what the car recorded when the fault was set.</p>
+<a class="button" href="https://play.google.com/store/apps/details?id=com.amaldavanau.pin16&amp;hl=en&amp;referrer=utm_source%3Dpin16_site%26utm_medium%3Dcode_page%26utm_campaign%3Dcode_pages_en%26utm_content%3DP0726">Get Pin16 on Google Play</a>
+</section>
+<nav class="pager"><a rel="prev" href="../P0725/">← P0725</a><a href="../">All codes</a><a rel="next" href="../P0727/">P0727 →</a></nav>
+<footer><p>Written for Pin16 and not yet reviewed by a qualified technician. This is guidance for diagnosis, not repair instructions, and it may be incomplete or wrong for your vehicle. If in doubt, ask a mechanic.</p><p><a href="../../">Pin16</a> · <a href="../../privacy/">Privacy policy</a></p></footer>
+</main>
+</body>
+</html>

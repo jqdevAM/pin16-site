@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>P0118 — Engine Coolant Temperature Circuit High: causes and what to check</title>
+<meta name="description" content="The coolant temperature sensor circuit is reading high - outside its valid range.">
+<link rel="canonical" href="https://jqdevam.github.io/pin16-site/codes/P0118/">
+<link rel="alternate" hreflang="en" href="https://jqdevam.github.io/pin16-site/codes/P0118/">
+<link rel="alternate" hreflang="ru" href="https://jqdevam.github.io/pin16-site/ru/codes/P0118/">
+<link rel="alternate" hreflang="x-default" href="https://jqdevam.github.io/pin16-site/codes/P0118/">
+<link rel="icon" href="../../pin16.png">
+<link rel="stylesheet" href="../../assets/codes.css">
+</head>
+<body>
+<main>
+<nav class="top"><a class="brand" href="../../"><img src="../../pin16.png" alt="" width="28" height="28">Pin16</a><a href="../../codes/">All codes</a><a hreflang="ru" href="../../ru/codes/P0118/">По-русски</a></nav>
+<header class="code-head">
+<p class="code">P0118</p>
+<h1>Engine Coolant Temperature Circuit High</h1>
+<dl class="facts"><div class="sev-medium"><dt>Severity</dt><dd>Medium</dd></div><div><dt>Driving</dt><dd>Drivable — book it in</dd></div><div><dt>System</dt><dd>Powertrain</dd></div><div><dt>Group</dt><dd>Fuel and air metering</dd></div></dl>
+</header>
+<aside class="note"><strong>Important.</strong> Do not dismiss a high-temperature indication as necessarily electrical. Confirm the actual coolant temperature before continuing to drive.</aside>
+<p class="lead">The coolant temperature sensor circuit is reading high - outside its valid range. Note that the electrical direction and the temperature direction are opposite on these sensors: resistance falls as temperature rises, so a low circuit reading corresponds to the module seeing an implausibly hot engine, and a high reading to an implausibly cold one. Either way the module falls back to a substitute value.</p>
+<h2>Possible causes</h2>
+<ul class="causes">
+<li><span class="lik lik-common">Common</span>Short or open circuit in the sensor wiring</li>
+<li><span class="lik lik-common">Common</span>Failed coolant temperature sensor</li>
+<li><span class="lik lik-possible">Possible</span>Disconnected or corroded connector</li>
+<li><span class="lik lik-rare">Rare</span>Genuine overheating, if the reading really is that hot</li>
+</ul>
+<h2>What you might notice</h2>
+<ul>
+<li>Check engine light on</li>
+<li>Cooling fans running constantly or never</li>
+<li>Poor fuel economy</li>
+<li>Harder cold starting</li>
+<li>Temperature gauge at an extreme</li>
+</ul>
+<h2>What to check, in order</h2>
+<ol class="checks">
+<li>Read the actual temperature value on the live data screen rather than relying on the code. An implausible extreme confirms an electrical fault; a genuinely high reading needs treating as possible overheating.</li>
+<li>If the reading really does indicate overheating, stop and check coolant level and for leaks before driving further.</li>
+<li>Check the connector is seated and free of corrosion.</li>
+<li>Check the wiring for a short to ground or an open circuit.</li>
+<li>Replace the sensor once wiring is confirmed good.</li>
+</ol>
+<section class="cta">
+<h2>Read this code from your own car</h2>
+<p>Plug an ELM327 adapter into the OBD-II port under the dashboard. Pin16 reads every stored, pending and permanent code, explains each one like this page does — offline, with no account — and shows what the car recorded when the fault was set.</p>
+<a class="button" href="https://play.google.com/store/apps/details?id=com.amaldavanau.pin16&amp;hl=en&amp;referrer=utm_source%3Dpin16_site%26utm_medium%3Dcode_page%26utm_campaign%3Dcode_pages_en%26utm_content%3DP0118">Get Pin16 on Google Play</a>
+</section>
+<nav class="pager"><a rel="prev" href="../P0117/">← P0117</a><a href="../">All codes</a><a rel="next" href="../P0119/">P0119 →</a></nav>
+<footer><p>Written for Pin16 and not yet reviewed by a qualified technician. This is guidance for diagnosis, not repair instructions, and it may be incomplete or wrong for your vehicle. If in doubt, ask a mechanic.</p><p><a href="../../">Pin16</a> · <a href="../../privacy/">Privacy policy</a></p></footer>
+</main>
+</body>
+</html>

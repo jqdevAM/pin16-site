@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>U0007 — High Speed CAN Communication Bus (-) Low: causes and what to check</title>
+<meta name="description" content="The negative line of the high-speed CAN bus is being held low - usually shorted to earth, or dragged down by a failed module.">
+<link rel="canonical" href="https://jqdevam.github.io/pin16-site/codes/U0007/">
+<link rel="alternate" hreflang="en" href="https://jqdevam.github.io/pin16-site/codes/U0007/">
+<link rel="alternate" hreflang="ru" href="https://jqdevam.github.io/pin16-site/ru/codes/U0007/">
+<link rel="alternate" hreflang="x-default" href="https://jqdevam.github.io/pin16-site/codes/U0007/">
+<link rel="icon" href="../../pin16.png">
+<link rel="stylesheet" href="../../assets/codes.css">
+</head>
+<body>
+<main>
+<nav class="top"><a class="brand" href="../../"><img src="../../pin16.png" alt="" width="28" height="28">Pin16</a><a href="../../codes/">All codes</a><a hreflang="ru" href="../../ru/codes/U0007/">По-русски</a></nav>
+<header class="code-head">
+<p class="code">U0007</p>
+<h1>High Speed CAN Communication Bus (-) Low</h1>
+<dl class="facts"><div class="sev-high"><dt>Severity</dt><dd>High</dd></div><div><dt>Driving</dt><dd>Drive only to a garage</dd></div><div><dt>System</dt><dd>Network and communication</dd></div><div><dt>Group</dt><dd>Network electrical</dd></div></dl>
+</header>
+<p class="lead">The negative line of the high-speed CAN bus is being held low - usually shorted to earth, or dragged down by a failed module. With one line pinned, the difference the modules read is meaningless and communication stops. The engine, transmission, braking and stability modules all talk on it, so a fault here affects how the car drives.</p>
+<h2>Possible causes</h2>
+<ul class="causes">
+<li><span class="lik lik-common">Common</span>Damaged, chafed or crushed bus wiring</li>
+<li><span class="lik lik-common">Common</span>Corroded or water-ingressed connector</li>
+<li><span class="lik lik-common">Common</span>One failed module dragging the whole bus down</li>
+<li><span class="lik lik-common">Common</span>Low battery voltage, which makes modules drop off the bus</li>
+<li><span class="lik lik-common">Common</span>Aftermarket electrical work spliced into the bus - alarms, trackers, tow bar wiring, stereos, diagnostic dongles left plugged in</li>
+<li><span class="lik lik-possible">Possible</span>Corroded earth point shared by modules on the bus</li>
+<li><span class="lik lik-possible">Possible</span>Damaged terminating resistor or a module that contains one</li>
+</ul>
+<h2>What you might notice</h2>
+<ul>
+<li>A long list of lost-communication codes at once</li>
+<li>Several warning lights on together</li>
+<li>Scan tool cannot reach whole groups of modules, or cannot connect at all</li>
+<li>Limp mode, or the vehicle refusing to start</li>
+<li>Instruments, lighting or central locking behaving strangely</li>
+<li>Battery draining overnight, if a module cannot go to sleep</li>
+</ul>
+<h2>What to check, in order</h2>
+<ol class="checks">
+<li>Disconnect modules one at a time while watching the bus. Recovery identifies the module responsible.</li>
+<li>Look for a chafe point where the harness could be touching earth.</li>
+<li>Check battery voltage and state of charge first. A weak battery drops modules off the bus and produces a scatter of communication codes with no wiring fault at all - the single most common false lead on any U-code.</li>
+<li>Ask what was done to the car recently, and what is plugged into the diagnostic socket. Aftermarket alarms, trackers, tow bar wiring and dongles left permanently connected are a frequent cause of bus faults that appear weeks after the work.</li>
+<li>Measure the resistance across the two bus lines at the diagnostic socket with the ignition off. On a twin-wire CAN bus with a terminating resistor at each end this is normally around 60 ohms; roughly 120 suggests a break or a missing terminator, and a much lower reading suggests the lines are shorted.</li>
+<li>Inspect connectors for water and corrosion, particularly any mounted low in the vehicle.</li>
+<li>Disconnect modules one at a time and re-check. This is slow but it is how a bus fault caused by one failed module is actually found.</li>
+</ol>
+<section class="cta">
+<h2>Read this code from your own car</h2>
+<p>Plug an ELM327 adapter into the OBD-II port under the dashboard. Pin16 reads every stored, pending and permanent code, explains each one like this page does — offline, with no account — and shows what the car recorded when the fault was set.</p>
+<a class="button" href="https://play.google.com/store/apps/details?id=com.amaldavanau.pin16&amp;hl=en&amp;referrer=utm_source%3Dpin16_site%26utm_medium%3Dcode_page%26utm_campaign%3Dcode_pages_en%26utm_content%3DU0007">Get Pin16 on Google Play</a>
+</section>
+<nav class="pager"><a rel="prev" href="../U0006/">← U0006</a><a href="../">All codes</a><a rel="next" href="../U0008/">U0008 →</a></nav>
+<footer><p>Written for Pin16 and not yet reviewed by a qualified technician. This is guidance for diagnosis, not repair instructions, and it may be incomplete or wrong for your vehicle. If in doubt, ask a mechanic.</p><p><a href="../../">Pin16</a> · <a href="../../privacy/">Privacy policy</a></p></footer>
+</main>
+</body>
+</html>

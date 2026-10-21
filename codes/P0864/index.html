@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>P0864 — TCM Communication Circuit Range/Performance: causes and what to check</title>
+<meta name="description" content="The transmission module is communicating, but the messages are not what the receiving module expects - corrupted, incomplete, or carrying implausible values.">
+<link rel="canonical" href="https://jqdevam.github.io/pin16-site/codes/P0864/">
+<link rel="alternate" hreflang="en" href="https://jqdevam.github.io/pin16-site/codes/P0864/">
+<link rel="alternate" hreflang="ru" href="https://jqdevam.github.io/pin16-site/ru/codes/P0864/">
+<link rel="alternate" hreflang="x-default" href="https://jqdevam.github.io/pin16-site/codes/P0864/">
+<link rel="icon" href="../../pin16.png">
+<link rel="stylesheet" href="../../assets/codes.css">
+</head>
+<body>
+<main>
+<nav class="top"><a class="brand" href="../../"><img src="../../pin16.png" alt="" width="28" height="28">Pin16</a><a href="../../codes/">All codes</a><a hreflang="ru" href="../../ru/codes/P0864/">По-русски</a></nav>
+<header class="code-head">
+<p class="code">P0864</p>
+<h1>TCM Communication Circuit Range/Performance</h1>
+<dl class="facts"><div class="sev-high"><dt>Severity</dt><dd>High</dd></div><div><dt>Driving</dt><dd>Drive only to a garage</dd></div><div><dt>System</dt><dd>Powertrain</dd></div><div><dt>Group</dt><dd>Transmission</dd></div></dl>
+</header>
+<p class="lead">The transmission module is communicating, but the messages are not what the receiving module expects - corrupted, incomplete, or carrying implausible values. The link works; what travels over it is wrong. This often follows a module replacement that was never coded to the vehicle, or a software mismatch between modules.</p>
+<h2>Possible causes</h2>
+<ul class="causes">
+<li><span class="lik lik-common">Common</span>Module replaced but not coded or configured to the vehicle</li>
+<li><span class="lik lik-common">Common</span>Software version mismatch between modules after a partial update</li>
+<li><span class="lik lik-common">Common</span>Bus wiring damage corrupting messages</li>
+<li><span class="lik lik-common">Common</span>Low battery voltage causing erratic behaviour</li>
+<li><span class="lik lik-possible">Possible</span>Failed module</li>
+<li><span class="lik lik-possible">Possible</span>Aftermarket device injecting traffic onto the bus</li>
+</ul>
+<h2>What you might notice</h2>
+<ul>
+<li>Transmission stuck in one gear</li>
+<li>Erratic shifting</li>
+<li>Warning lights across several systems</li>
+<li>Gear display wrong</li>
+<li>Check engine light on</li>
+</ul>
+<h2>What to check, in order</h2>
+<ol class="checks">
+<li>Ask whether any module has been replaced or updated recently. Coding and software mismatches are the leading cause of this code, and no amount of wiring diagnosis will find them.</li>
+<li>Check battery voltage and state of charge.</li>
+<li>Check the software versions of the modules involved if the tool can read them.</li>
+<li>Inspect the bus wiring and connectors for damage.</li>
+<li>Ask whether an aftermarket tracker, dashcam or performance device has been connected to the diagnostic socket or the bus.</li>
+</ol>
+<section class="cta">
+<h2>Read this code from your own car</h2>
+<p>Plug an ELM327 adapter into the OBD-II port under the dashboard. Pin16 reads every stored, pending and permanent code, explains each one like this page does — offline, with no account — and shows what the car recorded when the fault was set.</p>
+<a class="button" href="https://play.google.com/store/apps/details?id=com.amaldavanau.pin16&amp;hl=en&amp;referrer=utm_source%3Dpin16_site%26utm_medium%3Dcode_page%26utm_campaign%3Dcode_pages_en%26utm_content%3DP0864">Get Pin16 on Google Play</a>
+</section>
+<nav class="pager"><a rel="prev" href="../P0863/">← P0863</a><a href="../">All codes</a><a rel="next" href="../P0865/">P0865 →</a></nav>
+<footer><p>Written for Pin16 and not yet reviewed by a qualified technician. This is guidance for diagnosis, not repair instructions, and it may be incomplete or wrong for your vehicle. If in doubt, ask a mechanic.</p><p><a href="../../">Pin16</a> · <a href="../../privacy/">Privacy policy</a></p></footer>
+</main>
+</body>
+</html>

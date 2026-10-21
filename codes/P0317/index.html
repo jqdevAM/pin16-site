@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>P0317 — Rough Road Hardware Not Present: causes and what to check</title>
+<meta name="description" content="The module expects a rough road sensor and cannot find one.">
+<link rel="canonical" href="https://jqdevam.github.io/pin16-site/codes/P0317/">
+<link rel="alternate" hreflang="en" href="https://jqdevam.github.io/pin16-site/codes/P0317/">
+<link rel="alternate" hreflang="ru" href="https://jqdevam.github.io/pin16-site/ru/codes/P0317/">
+<link rel="alternate" hreflang="x-default" href="https://jqdevam.github.io/pin16-site/codes/P0317/">
+<link rel="icon" href="../../pin16.png">
+<link rel="stylesheet" href="../../assets/codes.css">
+</head>
+<body>
+<main>
+<nav class="top"><a class="brand" href="../../"><img src="../../pin16.png" alt="" width="28" height="28">Pin16</a><a href="../../codes/">All codes</a><a hreflang="ru" href="../../ru/codes/P0317/">По-русски</a></nav>
+<header class="code-head">
+<p class="code">P0317</p>
+<h1>Rough Road Hardware Not Present</h1>
+<dl class="facts"><div class="sev-low"><dt>Severity</dt><dd>Low</dd></div><div><dt>Driving</dt><dd>Drivable — book it in</dd></div><div><dt>System</dt><dd>Powertrain</dd></div><div><dt>Group</dt><dd>Ignition system or misfire</dd></div></dl>
+</header>
+<p class="lead">The module expects a rough road sensor and cannot find one. Rough road detection exists so that the bumps of a poor road surface are not mistaken for engine misfires - the crankshaft speed fluctuates in both cases. Without it, misfire detection is either disabled or prone to false alarms.</p>
+<h2>Possible causes</h2>
+<ul class="causes">
+<li><span class="lik lik-common">Common</span>Rough road sensor or its wiring faulty</li>
+<li><span class="lik lik-common">Common</span>Sensor not fitted, or removed during previous work</li>
+<li><span class="lik lik-common">Common</span>Module expecting the option because it is coded for a different specification</li>
+<li><span class="lik lik-possible">Possible</span>ABS or wheel speed fault, where the rough road signal comes from that module</li>
+<li><span class="lik lik-possible">Possible</span>Corroded connector</li>
+</ul>
+<h2>What you might notice</h2>
+<ul>
+<li>Check engine light on</li>
+<li>Misfire codes on rough roads that do not match how the engine feels</li>
+<li>Misfire detection disabled</li>
+<li>Often no symptom the driver notices</li>
+</ul>
+<h2>What to check, in order</h2>
+<ol class="checks">
+<li>Ask whether a module has been replaced or recoded. A module coded for a specification the car does not have will look for hardware that was never fitted.</li>
+<li>Check whether the vehicle is supposed to have this sensor at all.</li>
+<li>Check for ABS or wheel speed codes - on many vehicles the rough road signal comes from that module rather than from a dedicated sensor.</li>
+<li>Treat misfire codes with suspicion until this is resolved, particularly ones that only appear on poor road surfaces.</li>
+</ol>
+<section class="cta">
+<h2>Read this code from your own car</h2>
+<p>Plug an ELM327 adapter into the OBD-II port under the dashboard. Pin16 reads every stored, pending and permanent code, explains each one like this page does — offline, with no account — and shows what the car recorded when the fault was set.</p>
+<a class="button" href="https://play.google.com/store/apps/details?id=com.amaldavanau.pin16&amp;hl=en&amp;referrer=utm_source%3Dpin16_site%26utm_medium%3Dcode_page%26utm_campaign%3Dcode_pages_en%26utm_content%3DP0317">Get Pin16 on Google Play</a>
+</section>
+<nav class="pager"><a rel="prev" href="../P0316/">← P0316</a><a href="../">All codes</a><a rel="next" href="../P0318/">P0318 →</a></nav>
+<footer><p>Written for Pin16 and not yet reviewed by a qualified technician. This is guidance for diagnosis, not repair instructions, and it may be incomplete or wrong for your vehicle. If in doubt, ask a mechanic.</p><p><a href="../../">Pin16</a> · <a href="../../privacy/">Privacy policy</a></p></footer>
+</main>
+</body>
+</html>

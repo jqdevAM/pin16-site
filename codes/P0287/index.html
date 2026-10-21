@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>P0287 — Cylinder 9 Contribution/Balance: causes and what to check</title>
+<meta name="description" content="Cylinder 9 is not contributing as much power as the others.">
+<link rel="canonical" href="https://jqdevam.github.io/pin16-site/codes/P0287/">
+<link rel="alternate" hreflang="en" href="https://jqdevam.github.io/pin16-site/codes/P0287/">
+<link rel="alternate" hreflang="ru" href="https://jqdevam.github.io/pin16-site/ru/codes/P0287/">
+<link rel="alternate" hreflang="x-default" href="https://jqdevam.github.io/pin16-site/codes/P0287/">
+<link rel="icon" href="../../pin16.png">
+<link rel="stylesheet" href="../../assets/codes.css">
+</head>
+<body>
+<main>
+<nav class="top"><a class="brand" href="../../"><img src="../../pin16.png" alt="" width="28" height="28">Pin16</a><a href="../../codes/">All codes</a><a hreflang="ru" href="../../ru/codes/P0287/">По-русски</a></nav>
+<header class="code-head">
+<p class="code">P0287</p>
+<h1>Cylinder 9 Contribution/Balance</h1>
+<dl class="facts"><div class="sev-high"><dt>Severity</dt><dd>High</dd></div><div><dt>Driving</dt><dd>Drivable — book it in</dd></div><div><dt>System</dt><dd>Powertrain</dd></div><div><dt>Group</dt><dd>Fuel and air metering - injector circuits</dd></div></dl>
+</header>
+<aside class="note"><strong>Important.</strong> On a common-rail diesel this code very often follows injector replacement rather than injector failure. If injectors were fitted without their calibration codes being entered, entering them is the repair.</aside>
+<p class="lead">Cylinder 9 is not contributing as much power as the others. The module works this out from tiny variations in crankshaft speed as each cylinder fires, so this is a measurement of the cylinder&#x27;s actual output rather than a circuit test. The circuit may be perfect and the cylinder still weak.</p>
+<h2>Possible causes</h2>
+<ul class="causes">
+<li><span class="lik lik-common">Common</span>Worn, leaking or partially blocked injector on cylinder 9</li>
+<li><span class="lik lik-common">Common</span>Loss of compression on cylinder 9 - worn rings, a burnt valve, a head gasket</li>
+<li><span class="lik lik-common">Common</span>Worn spark plug or failing coil on cylinder 9, on a petrol engine</li>
+<li><span class="lik lik-common">Common</span>Injector correction values not written after replacement, on a common-rail diesel</li>
+<li><span class="lik lik-possible">Possible</span>Vacuum or intake leak affecting that cylinder</li>
+<li><span class="lik lik-possible">Possible</span>Camshaft lobe wear on cylinder 9</li>
+</ul>
+<h2>What you might notice</h2>
+<ul>
+<li>Rough running, worse under load</li>
+<li>Loss of power</li>
+<li>Poor fuel economy</li>
+<li>Smoke from the exhaust on a diesel</li>
+<li>Vibration at idle</li>
+<li>Check engine light on</li>
+</ul>
+<h2>What to check, in order</h2>
+<ol class="checks">
+<li>Read all codes. A misfire code for cylinder 9 alongside this one narrows it down; this code without one usually means a weak cylinder rather than a dead one.</li>
+<li>On a common-rail diesel, ask whether injectors have been replaced and whether their correction codes were written to the module. Each injector is supplied with calibration values, and fitting one without entering them produces exactly this - it is one of the most commonly missed steps in a diesel injector job.</li>
+<li>Compare fuel return flow across the injectors on a diesel. A leaking injector returns far more than its neighbours and shows itself immediately.</li>
+<li>Test compression on cylinder 9 if fuel and ignition both check out. A mechanically weak cylinder is the remaining explanation and no amount of injector work will fix it.</li>
+<li>On a petrol engine, check the spark plug and coil for cylinder 9 first - they are far cheaper to eliminate than an injector.</li>
+</ol>
+<section class="cta">
+<h2>Read this code from your own car</h2>
+<p>Plug an ELM327 adapter into the OBD-II port under the dashboard. Pin16 reads every stored, pending and permanent code, explains each one like this page does — offline, with no account — and shows what the car recorded when the fault was set.</p>
+<a class="button" href="https://play.google.com/store/apps/details?id=com.amaldavanau.pin16&amp;hl=en&amp;referrer=utm_source%3Dpin16_site%26utm_medium%3Dcode_page%26utm_campaign%3Dcode_pages_en%26utm_content%3DP0287">Get Pin16 on Google Play</a>
+</section>
+<nav class="pager"><a rel="prev" href="../P0286/">← P0286</a><a href="../">All codes</a><a rel="next" href="../P0288/">P0288 →</a></nav>
+<footer><p>Written for Pin16 and not yet reviewed by a qualified technician. This is guidance for diagnosis, not repair instructions, and it may be incomplete or wrong for your vehicle. If in doubt, ask a mechanic.</p><p><a href="../../">Pin16</a> · <a href="../../privacy/">Privacy policy</a></p></footer>
+</main>
+</body>
+</html>

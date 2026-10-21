@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>P0563 — System Voltage High: causes and what to check</title>
+<meta name="description" content="System voltage is too high, measured at the control module&#x27;s supply. The charging system is pushing more voltage into the vehicle than it should.">
+<link rel="canonical" href="https://jqdevam.github.io/pin16-site/codes/P0563/">
+<link rel="alternate" hreflang="en" href="https://jqdevam.github.io/pin16-site/codes/P0563/">
+<link rel="alternate" hreflang="ru" href="https://jqdevam.github.io/pin16-site/ru/codes/P0563/">
+<link rel="alternate" hreflang="x-default" href="https://jqdevam.github.io/pin16-site/codes/P0563/">
+<link rel="icon" href="../../pin16.png">
+<link rel="stylesheet" href="../../assets/codes.css">
+</head>
+<body>
+<main>
+<nav class="top"><a class="brand" href="../../"><img src="../../pin16.png" alt="" width="28" height="28">Pin16</a><a href="../../codes/">All codes</a><a hreflang="ru" href="../../ru/codes/P0563/">По-русски</a></nav>
+<header class="code-head">
+<p class="code">P0563</p>
+<h1>System Voltage High</h1>
+<dl class="facts"><div class="sev-high"><dt>Severity</dt><dd>High</dd></div><div><dt>Driving</dt><dd>Drive only to a garage</dd></div><div><dt>System</dt><dd>Powertrain</dd></div><div><dt>Group</dt><dd>Vehicle speed control, idle control and auxiliary inputs</dd></div></dl>
+</header>
+<aside class="note"><strong>Important.</strong> A battery being overcharged vents hydrogen, which is explosive, and can become hot enough to distort its case. Do not smoke or work with anything that sparks near it, and do not leave the vehicle running while you investigate. Sealed AGM and lithium batteries tolerate overcharging even less well than a conventional one.</aside>
+<p class="lead">System voltage is too high, measured at the control module&#x27;s supply. The charging system is pushing more voltage into the vehicle than it should. This is more damaging than it sounds: sustained overcharging boils the battery electrolyte, and the excess voltage stresses every electronic module in the vehicle - which can turn one cheap fault into several expensive ones.</p>
+<h2>Possible causes</h2>
+<ul class="causes">
+<li><span class="lik lik-common">Common</span>Failed voltage regulator, usually inside the alternator</li>
+<li><span class="lik lik-common">Common</span>Failed alternator</li>
+<li><span class="lik lik-possible">Possible</span>Faulty battery temperature sensor, so charging is compensated wrongly</li>
+<li><span class="lik lik-possible">Possible</span>Poor earth between the alternator and the battery, confusing the regulation</li>
+<li><span class="lik lik-possible">Possible</span>Control module commanding the wrong charging voltage</li>
+<li><span class="lik lik-possible">Possible</span>Aftermarket or incorrectly specified alternator fitted</li>
+</ul>
+<h2>What you might notice</h2>
+<ul>
+<li>Headlights unusually bright, and brighter as revs rise</li>
+<li>Bulbs failing repeatedly</li>
+<li>Battery warning light on</li>
+<li>Smell of rotten eggs or acid from the battery</li>
+<li>Battery case swollen or hot</li>
+<li>Several unrelated electrical faults appearing at once</li>
+</ul>
+<h2>What to check, in order</h2>
+<ol class="checks">
+<li>Measure charging voltage at the battery with the engine running and compare it with the manufacturer&#x27;s specification. A reading well above it confirms overcharging.</li>
+<li>Check the alternator earth and the main charging cable connections. A poor earth can make the regulator over-compensate, and that is far cheaper to fix than an alternator.</li>
+<li>Check the battery temperature sensor if the vehicle has one - charging voltage is temperature-compensated on most modern vehicles, and a sensor reading wrongly cold makes the system overcharge.</li>
+<li>Look at the battery. A swollen case, a hot battery or an acid smell means it is being cooked and should be treated as urgent.</li>
+<li>Do not keep driving with a confirmed overcharge. Every mile risks another module.</li>
+</ol>
+<section class="cta">
+<h2>Read this code from your own car</h2>
+<p>Plug an ELM327 adapter into the OBD-II port under the dashboard. Pin16 reads every stored, pending and permanent code, explains each one like this page does — offline, with no account — and shows what the car recorded when the fault was set.</p>
+<a class="button" href="https://play.google.com/store/apps/details?id=com.amaldavanau.pin16&amp;hl=en&amp;referrer=utm_source%3Dpin16_site%26utm_medium%3Dcode_page%26utm_campaign%3Dcode_pages_en%26utm_content%3DP0563">Get Pin16 on Google Play</a>
+</section>
+<nav class="pager"><a rel="prev" href="../P0562/">← P0562</a><a href="../">All codes</a><a rel="next" href="../P0564/">P0564 →</a></nav>
+<footer><p>Written for Pin16 and not yet reviewed by a qualified technician. This is guidance for diagnosis, not repair instructions, and it may be incomplete or wrong for your vehicle. If in doubt, ask a mechanic.</p><p><a href="../../">Pin16</a> · <a href="../../privacy/">Privacy policy</a></p></footer>
+</main>
+</body>
+</html>
