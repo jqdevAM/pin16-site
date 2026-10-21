@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>P28xx — Transmission: OBD-II fault codes</title>
+<meta name="description" content="A continuation of the transmission group: further shift control, clutch and range-sensing faults.">
+<meta name="robots" content="noindex,follow">
+<link rel="canonical" href="https://jqdevam.github.io/pin16-site/codes/P28xx/">
+<link rel="alternate" hreflang="en" href="https://jqdevam.github.io/pin16-site/codes/P28xx/">
+<link rel="alternate" hreflang="ru" href="https://jqdevam.github.io/pin16-site/ru/codes/P28xx/">
+<link rel="alternate" hreflang="x-default" href="https://jqdevam.github.io/pin16-site/codes/P28xx/">
+<link rel="icon" href="../../pin16.png">
+<link rel="stylesheet" href="../../assets/codes.css?v=220cb5ea6d">
+</head>
+<body>
+<header class="site"><div class="bar"><a class="brand" href="../../"><img src="../../pin16.png" alt="" width="30" height="30"><span>Pin16</span></a><nav><a href="../../codes/">All codes</a><a href="../../codes/tree/">Code tree</a><a class="lang" hreflang="ru" href="../../ru/codes/P28xx/">По-русски</a></nav></div></header>
+<main>
+<nav class="crumbs" aria-label="breadcrumb"><ol><li><a href="../../codes/">All systems</a></li><li><a href="../../codes/P/">P · Powertrain</a></li></ol></nav>
+<header class="hero"><p class="code-pill">P28xx</p><h1>Transmission</h1></header>
+<p class="lead">A continuation of the transmission group: further shift control, clutch and range-sensing faults.</p>
+<p class="note info">No open-source descriptions exist for this system, so its codes are read from their structure.</p>
+<p class="scope-note"><b>Standardised (SAE/ISO), extended range.</b> Standardised, but defined after the 2002 reference edition this app ships, so a specific explanation may not be available offline.</p>
+<div class="chips mono wide">
+<a class="chip" href="../?q=P2800" title="Fault index 00">P2800</a>
+<a class="chip" href="../?q=P2801" title="Fault index 01">P2801</a>
+<a class="chip" href="../?q=P2802" title="Fault index 02">P2802</a>
+<a class="chip" href="../?q=P2803" title="Fault index 03">P2803</a>
+<a class="chip" href="../?q=P2804" title="Fault index 04">P2804</a>
+<a class="chip" href="../?q=P2805" title="Fault index 05">P2805</a>
+<a class="chip" href="../?q=P2806" title="Fault index 06">P2806</a>
+<a class="chip" href="../?q=P2807" title="Fault index 07">P2807</a>
+<a class="chip" href="../?q=P2808" title="Fault index 08">P2808</a>
+<a class="chip" href="../?q=P2809" title="Fault index 09">P2809</a>
+<a class="chip" href="../?q=P280A" title="Fault index 0A">P280A</a>
+<a class="chip" href="../?q=P280B" title="Fault index 0B">P280B</a>
+<a class="chip" href="../?q=P280C" title="Fault index 0C">P280C</a>
+<a class="chip" href="../?q=P280D" title="Fault index 0D">P280D</a>
+<a class="chip" href="../?q=P280E" title="Fault index 0E">P280E</a>
+<a class="chip" href="../?q=P280F" title="Fault index 0F">P280F</a>
+<a class="chip" href="../?q=P2810" title="Fault index 10">P2810</a>
+<a class="chip" href="../?q=P2811" title="Fault index 11">P2811</a>
+<a class="chip" href="../?q=P2812" title="Fault index 12">P2812</a>
+<a class="chip" href="../?q=P2813" title="Fault index 13">P2813</a>
+<a class="chip" href="../?q=P2814" title="Fault index 14">P2814</a>
+<a class="chip" href="../?q=P2815" title="Fault index 15">P2815</a>
+<a class="chip" href="../?q=P2816" title="Fault index 16">P2816</a>
+<a class="chip" href="../?q=P2817" title="Fault index 17">P2817</a>
+<a class="chip" href="../?q=P2818" title="Fault index 18">P2818</a>
+<a class="chip" href="../?q=P2819" title="Fault index 19">P2819</a>
+<a class="chip" href="../?q=P281A" title="Fault index 1A">P281A</a>
+<a class="chip" href="../?q=P281B" title="Fault index 1B">P281B</a>
+<a class="chip" href="../?q=P281C" title="Fault index 1C">P281C</a>
+<a class="chip" href="../?q=P281D" title="Fault index 1D">P281D</a>
+<a class="chip" href="../?q=P281E" title="Fault index 1E">P281E</a>
+<a class="chip" href="../?q=P281F" title="Fault index 1F">P281F</a>
+<a class="chip" href="../?q=P2820" title="Fault index 20">P2820</a>
+<a class="chip" href="../?q=P2821" title="Fault index 21">P2821</a>
+<a class="chip" href="../?q=P2822" title="Fault index 22">P2822</a>
+<a class="chip" href="../?q=P2823" title="Fault index 23">P2823</a>
+<a class="chip" href="../?q=P2824" title="Fault index 24">P2824</a>
+<a class="chip" href="../?q=P2825" title="Fault index 25">P2825</a>
+<a class="chip" href="../?q=P2826" title="Fault index 26">P2826</a>
+<a class="chip" href="../?q=P2827" title="Fault index 27">P2827</a>
+<a class="chip" href="../?q=P2828" title="Fault index 28">P2828</a>
+<a class="chip" href="../?q=P2829" title="Fault index 29">P2829</a>
+<a class="chip" href="../?q=P282A" title="Fault index 2A">P282A</a>
+<a class="chip" href="../?q=P282B" title="Fault index 2B">P282B</a>
+<a class="chip" href="../?q=P282C" title="Fault index 2C">P282C</a>
+<a class="chip" href="../?q=P282D" title="Fault index 2D">P282D</a>
+<a class="chip" href="../?q=P282E" title="Fault index 2E">P282E</a>
+<a class="chip" href="../?q=P282F" title="Fault index 2F">P282F</a>
+<a class="chip" href="../?q=P2830" title="Fault index 30">P2830</a>
+<a class="chip" href="../?q=P2831" title="Fault index 31">P2831</a>
+<a class="chip" href="../?q=P2832" title="Fault index 32">P2832</a>
+<a class="chip" href="../?q=P2833" title="Fault index 33">P2833</a>
+<a class="chip" href="../?q=P2834" title="Fault index 34">P2834</a>
+<a class="chip" href="../?q=P2835" title="Fault index 35">P2835</a>
+<a class="chip" href="../?q=P2836" title="Fault index 36">P2836</a>
+<a class="chip" href="../?q=P2837" title="Fault index 37">P2837</a>
+<a class="chip" href="../?q=P2838" title="Fault index 38">P2838</a>
+<a class="chip" href="../?q=P2839" title="Fault index 39">P2839</a>
+<a class="chip" href="../?q=P283A" title="Fault index 3A">P283A</a>
+<a class="chip" href="../?q=P283B" title="Fault index 3B">P283B</a>
+<a class="chip" href="../?q=P283C" title="Fault index 3C">P283C</a>
+<a class="chip" href="../?q=P283D" title="Fault index 3D">P283D</a>
+<a class="chip" href="../?q=P283E" title="Fault index 3E">P283E</a>
+<a class="chip" href="../?q=P283F" title="Fault index 3F">P283F</a>
+<a class="chip" href="../?q=P2840" title="Fault index 40">P2840</a>
+<a class="chip" href="../?q=P2841" title="Fault index 41">P2841</a>
+<a class="chip" href="../?q=P2842" title="Fault index 42">P2842</a>
+<a class="chip" href="../?q=P2843" title="Fault index 43">P2843</a>
+<a class="chip" href="../?q=P2844" title="Fault index 44">P2844</a>
+<a class="chip" href="../?q=P2845" title="Fault index 45">P2845</a>
+<a class="chip" href="../?q=P2846" title="Fault index 46">P2846</a>
+<a class="chip" href="../?q=P2847" title="Fault index 47">P2847</a>
+<a class="chip" href="../?q=P2848" title="Fault index 48">P2848</a>
+<a class="chip" href="../?q=P2849" title="Fault index 49">P2849</a>
+<a class="chip" href="../?q=P284A" title="Fault index 4A">P284A</a>
+<a class="chip" href="../?q=P284B" title="Fault index 4B">P284B</a>
+<a class="chip" href="../?q=P284C" title="Fault index 4C">P284C</a>
+<a class="chip" href="../?q=P284D" title="Fault index 4D">P284D</a>
+<a class="chip" href="../?q=P284E" title="Fault index 4E">P284E</a>
+<a class="chip" href="../?q=P284F" title="Fault index 4F">P284F</a>
+<a class="chip" href="../?q=P2850" title="Fault index 50">P2850</a>
+<a class="chip" href="../?q=P2851" title="Fault index 51">P2851</a>
+<a class="chip" href="../?q=P2852" title="Fault index 52">P2852</a>
+<a class="chip" href="../?q=P2853" title="Fault index 53">P2853</a>
+<a class="chip" href="../?q=P2854" title="Fault index 54">P2854</a>
+<a class="chip" href="../?q=P2855" title="Fault index 55">P2855</a>
+<a class="chip" href="../?q=P2856" title="Fault index 56">P2856</a>
+<a class="chip" href="../?q=P2857" title="Fault index 57">P2857</a>
+<a class="chip" href="../?q=P2858" title="Fault index 58">P2858</a>
+<a class="chip" href="../?q=P2859" title="Fault index 59">P2859</a>
+<a class="chip" href="../?q=P285A" title="Fault index 5A">P285A</a>
+<a class="chip" href="../?q=P285B" title="Fault index 5B">P285B</a>
+<a class="chip" href="../?q=P285C" title="Fault index 5C">P285C</a>
+<a class="chip" href="../?q=P285D" title="Fault index 5D">P285D</a>
+<a class="chip" href="../?q=P285E" title="Fault index 5E">P285E</a>
+<a class="chip" href="../?q=P285F" title="Fault index 5F">P285F</a>
+<a class="chip" href="../?q=P2860" title="Fault index 60">P2860</a>
+<a class="chip" href="../?q=P2861" title="Fault index 61">P2861</a>
+<a class="chip" href="../?q=P2862" title="Fault index 62">P2862</a>
+<a class="chip" href="../?q=P2863" title="Fault index 63">P2863</a>
+<a class="chip" href="../?q=P2864" title="Fault index 64">P2864</a>
+<a class="chip" href="../?q=P2865" title="Fault index 65">P2865</a>
+<a class="chip" href="../?q=P2866" title="Fault index 66">P2866</a>
+<a class="chip" href="../?q=P2867" title="Fault index 67">P2867</a>
+<a class="chip" href="../?q=P2868" title="Fault index 68">P2868</a>
+<a class="chip" href="../?q=P2869" title="Fault index 69">P2869</a>
+<a class="chip" href="../?q=P286A" title="Fault index 6A">P286A</a>
+<a class="chip" href="../?q=P286B" title="Fault index 6B">P286B</a>
+<a class="chip" href="../?q=P286C" title="Fault index 6C">P286C</a>
+<a class="chip" href="../?q=P286D" title="Fault index 6D">P286D</a>
+<a class="chip" href="../?q=P286E" title="Fault index 6E">P286E</a>
+<a class="chip" href="../?q=P286F" title="Fault index 6F">P286F</a>
+<a class="chip" href="../?q=P2870" title="Fault index 70">P2870</a>
+<a class="chip" href="../?q=P2871" title="Fault index 71">P2871</a>
+<a class="chip" href="../?q=P2872" title="Fault index 72">P2872</a>
+<a class="chip" href="../?q=P2873" title="Fault index 73">P2873</a>
+<a class="chip" href="../?q=P2874" title="Fault index 74">P2874</a>
+<a class="chip" href="../?q=P2875" title="Fault index 75">P2875</a>
+<a class="chip" href="../?q=P2876" title="Fault index 76">P2876</a>
+<a class="chip" href="../?q=P2877" title="Fault index 77">P2877</a>
+<a class="chip" href="../?q=P2878" title="Fault index 78">P2878</a>
+<a class="chip" href="../?q=P2879" title="Fault index 79">P2879</a>
+<a class="chip" href="../?q=P287A" title="Fault index 7A">P287A</a>
+<a class="chip" href="../?q=P287B" title="Fault index 7B">P287B</a>
+<a class="chip" href="../?q=P287C" title="Fault index 7C">P287C</a>
+<a class="chip" href="../?q=P287D" title="Fault index 7D">P287D</a>
+<a class="chip" href="../?q=P287E" title="Fault index 7E">P287E</a>
+<a class="chip" href="../?q=P287F" title="Fault index 7F">P287F</a>
+<a class="chip" href="../?q=P2880" title="Fault index 80">P2880</a>
+<a class="chip" href="../?q=P2881" title="Fault index 81">P2881</a>
+<a class="chip" href="../?q=P2882" title="Fault index 82">P2882</a>
+<a class="chip" href="../?q=P2883" title="Fault index 83">P2883</a>
+<a class="chip" href="../?q=P2884" title="Fault index 84">P2884</a>
+<a class="chip" href="../?q=P2885" title="Fault index 85">P2885</a>
+<a class="chip" href="../?q=P2886" title="Fault index 86">P2886</a>
+<a class="chip" href="../?q=P2887" title="Fault index 87">P2887</a>
+<a class="chip" href="../?q=P2888" title="Fault index 88">P2888</a>
+<a class="chip" href="../?q=P2889" title="Fault index 89">P2889</a>
+<a class="chip" href="../?q=P288A" title="Fault index 8A">P288A</a>
+<a class="chip" href="../?q=P288B" title="Fault index 8B">P288B</a>
+<a class="chip" href="../?q=P288C" title="Fault index 8C">P288C</a>
+<a class="chip" href="../?q=P288D" title="Fault index 8D">P288D</a>
+<a class="chip" href="../?q=P288E" title="Fault index 8E">P288E</a>
+<a class="chip" href="../?q=P288F" title="Fault index 8F">P288F</a>
+<a class="chip" href="../?q=P2890" title="Fault index 90">P2890</a>
+<a class="chip" href="../?q=P2891" title="Fault index 91">P2891</a>
+<a class="chip" href="../?q=P2892" title="Fault index 92">P2892</a>
+<a class="chip" href="../?q=P2893" title="Fault index 93">P2893</a>
+<a class="chip" href="../?q=P2894" title="Fault index 94">P2894</a>
+<a class="chip" href="../?q=P2895" title="Fault index 95">P2895</a>
+<a class="chip" href="../?q=P2896" title="Fault index 96">P2896</a>
+<a class="chip" href="../?q=P2897" title="Fault index 97">P2897</a>
+<a class="chip" href="../?q=P2898" title="Fault index 98">P2898</a>
+<a class="chip" href="../?q=P2899" title="Fault index 99">P2899</a>
+<a class="chip" href="../?q=P289A" title="Fault index 9A">P289A</a>
+<a class="chip" href="../?q=P289B" title="Fault index 9B">P289B</a>
+<a class="chip" href="../?q=P289C" title="Fault index 9C">P289C</a>
+<a class="chip" href="../?q=P289D" title="Fault index 9D">P289D</a>
+<a class="chip" href="../?q=P289E" title="Fault index 9E">P289E</a>
+<a class="chip" href="../?q=P289F" title="Fault index 9F">P289F</a>
+<a class="chip" href="../?q=P28A0" title="Fault index A0">P28A0</a>
+<a class="chip" href="../?q=P28A1" title="Fault index A1">P28A1</a>
+<a class="chip" href="../?q=P28A2" title="Fault index A2">P28A2</a>
+<a class="chip" href="../?q=P28A3" title="Fault index A3">P28A3</a>
+<a class="chip" href="../?q=P28A4" title="Fault index A4">P28A4</a>
+<a class="chip" href="../?q=P28A5" title="Fault index A5">P28A5</a>
+<a class="chip" href="../?q=P28A6" title="Fault index A6">P28A6</a>
+<a class="chip" href="../?q=P28A7" title="Fault index A7">P28A7</a>
+<a class="chip" href="../?q=P28A8" title="Fault index A8">P28A8</a>
+<a class="chip" href="../?q=P28A9" title="Fault index A9">P28A9</a>
+<a class="chip" href="../?q=P28AA" title="Fault index AA">P28AA</a>
+<a class="chip" href="../?q=P28AB" title="Fault index AB">P28AB</a>
+<a class="chip" href="../?q=P28AC" title="Fault index AC">P28AC</a>
+<a class="chip" href="../?q=P28AD" title="Fault index AD">P28AD</a>
+<a class="chip" href="../?q=P28AE" title="Fault index AE">P28AE</a>
+<a class="chip" href="../?q=P28AF" title="Fault index AF">P28AF</a>
+<a class="chip" href="../?q=P28B0" title="Fault index B0">P28B0</a>
+<a class="chip" href="../?q=P28B1" title="Fault index B1">P28B1</a>
+<a class="chip" href="../?q=P28B2" title="Fault index B2">P28B2</a>
+<a class="chip" href="../?q=P28B3" title="Fault index B3">P28B3</a>
+<a class="chip" href="../?q=P28B4" title="Fault index B4">P28B4</a>
+<a class="chip" href="../?q=P28B5" title="Fault index B5">P28B5</a>
+<a class="chip" href="../?q=P28B6" title="Fault index B6">P28B6</a>
+<a class="chip" href="../?q=P28B7" title="Fault index B7">P28B7</a>
+<a class="chip" href="../?q=P28B8" title="Fault index B8">P28B8</a>
+<a class="chip" href="../?q=P28B9" title="Fault index B9">P28B9</a>
+<a class="chip" href="../?q=P28BA" title="Fault index BA">P28BA</a>
+<a class="chip" href="../?q=P28BB" title="Fault index BB">P28BB</a>
+<a class="chip" href="../?q=P28BC" title="Fault index BC">P28BC</a>
+<a class="chip" href="../?q=P28BD" title="Fault index BD">P28BD</a>
+<a class="chip" href="../?q=P28BE" title="Fault index BE">P28BE</a>
+<a class="chip" href="../?q=P28BF" title="Fault index BF">P28BF</a>
+<a class="chip" href="../?q=P28C0" title="Fault index C0">P28C0</a>
+<a class="chip" href="../?q=P28C1" title="Fault index C1">P28C1</a>
+<a class="chip" href="../?q=P28C2" title="Fault index C2">P28C2</a>
+<a class="chip" href="../?q=P28C3" title="Fault index C3">P28C3</a>
+<a class="chip" href="../?q=P28C4" title="Fault index C4">P28C4</a>
+<a class="chip" href="../?q=P28C5" title="Fault index C5">P28C5</a>
+<a class="chip" href="../?q=P28C6" title="Fault index C6">P28C6</a>
+<a class="chip" href="../?q=P28C7" title="Fault index C7">P28C7</a>
+<a class="chip" href="../?q=P28C8" title="Fault index C8">P28C8</a>
+<a class="chip" href="../?q=P28C9" title="Fault index C9">P28C9</a>
+<a class="chip" href="../?q=P28CA" title="Fault index CA">P28CA</a>
+<a class="chip" href="../?q=P28CB" title="Fault index CB">P28CB</a>
+<a class="chip" href="../?q=P28CC" title="Fault index CC">P28CC</a>
+<a class="chip" href="../?q=P28CD" title="Fault index CD">P28CD</a>
+<a class="chip" href="../?q=P28CE" title="Fault index CE">P28CE</a>
+<a class="chip" href="../?q=P28CF" title="Fault index CF">P28CF</a>
+<a class="chip" href="../?q=P28D0" title="Fault index D0">P28D0</a>
+<a class="chip" href="../?q=P28D1" title="Fault index D1">P28D1</a>
+<a class="chip" href="../?q=P28D2" title="Fault index D2">P28D2</a>
+<a class="chip" href="../?q=P28D3" title="Fault index D3">P28D3</a>
+<a class="chip" href="../?q=P28D4" title="Fault index D4">P28D4</a>
+<a class="chip" href="../?q=P28D5" title="Fault index D5">P28D5</a>
+<a class="chip" href="../?q=P28D6" title="Fault index D6">P28D6</a>
+<a class="chip" href="../?q=P28D7" title="Fault index D7">P28D7</a>
+<a class="chip" href="../?q=P28D8" title="Fault index D8">P28D8</a>
+<a class="chip" href="../?q=P28D9" title="Fault index D9">P28D9</a>
+<a class="chip" href="../?q=P28DA" title="Fault index DA">P28DA</a>
+<a class="chip" href="../?q=P28DB" title="Fault index DB">P28DB</a>
+<a class="chip" href="../?q=P28DC" title="Fault index DC">P28DC</a>
+<a class="chip" href="../?q=P28DD" title="Fault index DD">P28DD</a>
+<a class="chip" href="../?q=P28DE" title="Fault index DE">P28DE</a>
+<a class="chip" href="../?q=P28DF" title="Fault index DF">P28DF</a>
+<a class="chip" href="../?q=P28E0" title="Fault index E0">P28E0</a>
+<a class="chip" href="../?q=P28E1" title="Fault index E1">P28E1</a>
+<a class="chip" href="../?q=P28E2" title="Fault index E2">P28E2</a>
+<a class="chip" href="../?q=P28E3" title="Fault index E3">P28E3</a>
+<a class="chip" href="../?q=P28E4" title="Fault index E4">P28E4</a>
+<a class="chip" href="../?q=P28E5" title="Fault index E5">P28E5</a>
+<a class="chip" href="../?q=P28E6" title="Fault index E6">P28E6</a>
+<a class="chip" href="../?q=P28E7" title="Fault index E7">P28E7</a>
+<a class="chip" href="../?q=P28E8" title="Fault index E8">P28E8</a>
+<a class="chip" href="../?q=P28E9" title="Fault index E9">P28E9</a>
+<a class="chip" href="../?q=P28EA" title="Fault index EA">P28EA</a>
+<a class="chip" href="../?q=P28EB" title="Fault index EB">P28EB</a>
+<a class="chip" href="../?q=P28EC" title="Fault index EC">P28EC</a>
+<a class="chip" href="../?q=P28ED" title="Fault index ED">P28ED</a>
+<a class="chip" href="../?q=P28EE" title="Fault index EE">P28EE</a>
+<a class="chip" href="../?q=P28EF" title="Fault index EF">P28EF</a>
+<a class="chip" href="../?q=P28F0" title="Fault index F0">P28F0</a>
+<a class="chip" href="../?q=P28F1" title="Fault index F1">P28F1</a>
+<a class="chip" href="../?q=P28F2" title="Fault index F2">P28F2</a>
+<a class="chip" href="../?q=P28F3" title="Fault index F3">P28F3</a>
+<a class="chip" href="../?q=P28F4" title="Fault index F4">P28F4</a>
+<a class="chip" href="../?q=P28F5" title="Fault index F5">P28F5</a>
+<a class="chip" href="../?q=P28F6" title="Fault index F6">P28F6</a>
+<a class="chip" href="../?q=P28F7" title="Fault index F7">P28F7</a>
+<a class="chip" href="../?q=P28F8" title="Fault index F8">P28F8</a>
+<a class="chip" href="../?q=P28F9" title="Fault index F9">P28F9</a>
+<a class="chip" href="../?q=P28FA" title="Fault index FA">P28FA</a>
+<a class="chip" href="../?q=P28FB" title="Fault index FB">P28FB</a>
+<a class="chip" href="../?q=P28FC" title="Fault index FC">P28FC</a>
+<a class="chip" href="../?q=P28FD" title="Fault index FD">P28FD</a>
+<a class="chip" href="../?q=P28FE" title="Fault index FE">P28FE</a>
+<a class="chip" href="../?q=P28FF" title="Fault index FF">P28FF</a>
+</div>
+<section class="cta">
+<div><h2>Read this code from your own car</h2>
+<p>Plug an ELM327 adapter into the OBD-II port under the dashboard. Pin16 reads every stored, pending and permanent code, explains each one like this page does — offline, with no account — and shows what the car recorded when the fault was set.</p></div>
+<a class="button" href="https://play.google.com/store/apps/details?id=com.amaldavanau.pin16&amp;hl=en&amp;referrer=utm_source%3Dpin16_site%26utm_medium%3Dcode_page%26utm_campaign%3Dcode_pages_en%26utm_content%3Dblock_P28xx">Get Pin16 on Google Play</a>
+</section>
+</main>
+<footer class="site"><div><p>Written for Pin16 and not yet reviewed by a qualified technician. This is guidance for diagnosis, not repair instructions, and it may be incomplete or wrong for your vehicle. If in doubt, ask a mechanic.</p><p><a href="../../">Pin16</a> · <a href="../../privacy/">Privacy policy</a></p></div></footer>
+</body>
+</html>

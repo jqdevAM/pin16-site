@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>P11xx — Подача топлива и воздуха: коды ошибок OBD-II</title>
+<meta name="description" content="Сколько воздуха и топлива получает двигатель и датчики, которые это измеряют: массовый расход воздуха, давление во впускном коллекторе, температура впускного…">
+<meta name="robots" content="noindex,follow">
+<link rel="canonical" href="https://jqdevam.github.io/pin16-site/ru/codes/P11xx/">
+<link rel="alternate" hreflang="en" href="https://jqdevam.github.io/pin16-site/codes/P11xx/">
+<link rel="alternate" hreflang="ru" href="https://jqdevam.github.io/pin16-site/ru/codes/P11xx/">
+<link rel="alternate" hreflang="x-default" href="https://jqdevam.github.io/pin16-site/codes/P11xx/">
+<link rel="icon" href="../../../pin16.png">
+<link rel="stylesheet" href="../../../assets/codes.css?v=220cb5ea6d">
+</head>
+<body>
+<header class="site"><div class="bar"><a class="brand" href="../../../"><img src="../../../pin16.png" alt="" width="30" height="30"><span>Pin16</span></a><nav><a href="../../../ru/codes/">Все коды</a><a href="../../../ru/codes/tree/">Дерево кодов</a><a class="lang" hreflang="en" href="../../../codes/P11xx/">In English</a></nav></div></header>
+<main>
+<nav class="crumbs" aria-label="breadcrumb"><ol><li><a href="../../../ru/codes/">Все системы</a></li><li><a href="../../../ru/codes/P/">P · Двигатель и трансмиссия</a></li></ol></nav>
+<header class="hero"><p class="code-pill">P11xx</p><h1>Подача топлива и воздуха</h1></header>
+<p class="lead">Сколько воздуха и топлива получает двигатель и датчики, которые это измеряют: массовый расход воздуха, давление во впускном коллекторе, температура впускного воздуха, лямбда-зонды и топливная коррекция.</p>
+<p class="note info">Для этой системы нет описаний из открытых источников, поэтому коды разобраны по их структуре.</p>
+<p class="scope-note"><b>Специфичный для производителя.</b> Обратитесь к источнику для вашей марки и года выпуска. Цифра подсистемы при этом остаётся надёжной подсказкой.</p>
+<div class="chips mono wide">
+<a class="chip" href="../?q=P1100" title="Индекс неисправности 00">P1100</a>
+<a class="chip" href="../?q=P1101" title="Индекс неисправности 01">P1101</a>
+<a class="chip" href="../?q=P1102" title="Индекс неисправности 02">P1102</a>
+<a class="chip" href="../?q=P1103" title="Индекс неисправности 03">P1103</a>
+<a class="chip" href="../?q=P1104" title="Индекс неисправности 04">P1104</a>
+<a class="chip" href="../?q=P1105" title="Индекс неисправности 05">P1105</a>
+<a class="chip" href="../?q=P1106" title="Индекс неисправности 06">P1106</a>
+<a class="chip" href="../?q=P1107" title="Индекс неисправности 07">P1107</a>
+<a class="chip" href="../?q=P1108" title="Индекс неисправности 08">P1108</a>
+<a class="chip" href="../?q=P1109" title="Индекс неисправности 09">P1109</a>
+<a class="chip" href="../?q=P110A" title="Индекс неисправности 0A">P110A</a>
+<a class="chip" href="../?q=P110B" title="Индекс неисправности 0B">P110B</a>
+<a class="chip" href="../?q=P110C" title="Индекс неисправности 0C">P110C</a>
+<a class="chip" href="../?q=P110D" title="Индекс неисправности 0D">P110D</a>
+<a class="chip" href="../?q=P110E" title="Индекс неисправности 0E">P110E</a>
+<a class="chip" href="../?q=P110F" title="Индекс неисправности 0F">P110F</a>
+<a class="chip" href="../?q=P1110" title="Индекс неисправности 10">P1110</a>
+<a class="chip" href="../?q=P1111" title="Индекс неисправности 11">P1111</a>
+<a class="chip" href="../?q=P1112" title="Индекс неисправности 12">P1112</a>
+<a class="chip" href="../?q=P1113" title="Индекс неисправности 13">P1113</a>
+<a class="chip" href="../?q=P1114" title="Индекс неисправности 14">P1114</a>
+<a class="chip" href="../?q=P1115" title="Индекс неисправности 15">P1115</a>
+<a class="chip" href="../?q=P1116" title="Индекс неисправности 16">P1116</a>
+<a class="chip" href="../?q=P1117" title="Индекс неисправности 17">P1117</a>
+<a class="chip" href="../?q=P1118" title="Индекс неисправности 18">P1118</a>
+<a class="chip" href="../?q=P1119" title="Индекс неисправности 19">P1119</a>
+<a class="chip" href="../?q=P111A" title="Индекс неисправности 1A">P111A</a>
+<a class="chip" href="../?q=P111B" title="Индекс неисправности 1B">P111B</a>
+<a class="chip" href="../?q=P111C" title="Индекс неисправности 1C">P111C</a>
+<a class="chip" href="../?q=P111D" title="Индекс неисправности 1D">P111D</a>
+<a class="chip" href="../?q=P111E" title="Индекс неисправности 1E">P111E</a>
+<a class="chip" href="../?q=P111F" title="Индекс неисправности 1F">P111F</a>
+<a class="chip" href="../?q=P1120" title="Индекс неисправности 20">P1120</a>
+<a class="chip" href="../?q=P1121" title="Индекс неисправности 21">P1121</a>
+<a class="chip" href="../?q=P1122" title="Индекс неисправности 22">P1122</a>
+<a class="chip" href="../?q=P1123" title="Индекс неисправности 23">P1123</a>
+<a class="chip" href="../?q=P1124" title="Индекс неисправности 24">P1124</a>
+<a class="chip" href="../?q=P1125" title="Индекс неисправности 25">P1125</a>
+<a class="chip" href="../?q=P1126" title="Индекс неисправности 26">P1126</a>
+<a class="chip" href="../?q=P1127" title="Индекс неисправности 27">P1127</a>
+<a class="chip" href="../?q=P1128" title="Индекс неисправности 28">P1128</a>
+<a class="chip" href="../?q=P1129" title="Индекс неисправности 29">P1129</a>
+<a class="chip" href="../?q=P112A" title="Индекс неисправности 2A">P112A</a>
+<a class="chip" href="../?q=P112B" title="Индекс неисправности 2B">P112B</a>
+<a class="chip" href="../?q=P112C" title="Индекс неисправности 2C">P112C</a>
+<a class="chip" href="../?q=P112D" title="Индекс неисправности 2D">P112D</a>
+<a class="chip" href="../?q=P112E" title="Индекс неисправности 2E">P112E</a>
+<a class="chip" href="../?q=P112F" title="Индекс неисправности 2F">P112F</a>
+<a class="chip" href="../?q=P1130" title="Индекс неисправности 30">P1130</a>
+<a class="chip" href="../?q=P1131" title="Индекс неисправности 31">P1131</a>
+<a class="chip" href="../?q=P1132" title="Индекс неисправности 32">P1132</a>
+<a class="chip" href="../?q=P1133" title="Индекс неисправности 33">P1133</a>
+<a class="chip" href="../?q=P1134" title="Индекс неисправности 34">P1134</a>
+<a class="chip" href="../?q=P1135" title="Индекс неисправности 35">P1135</a>
+<a class="chip" href="../?q=P1136" title="Индекс неисправности 36">P1136</a>
+<a class="chip" href="../?q=P1137" title="Индекс неисправности 37">P1137</a>
+<a class="chip" href="../?q=P1138" title="Индекс неисправности 38">P1138</a>
+<a class="chip" href="../?q=P1139" title="Индекс неисправности 39">P1139</a>
+<a class="chip" href="../?q=P113A" title="Индекс неисправности 3A">P113A</a>
+<a class="chip" href="../?q=P113B" title="Индекс неисправности 3B">P113B</a>
+<a class="chip" href="../?q=P113C" title="Индекс неисправности 3C">P113C</a>
+<a class="chip" href="../?q=P113D" title="Индекс неисправности 3D">P113D</a>
+<a class="chip" href="../?q=P113E" title="Индекс неисправности 3E">P113E</a>
+<a class="chip" href="../?q=P113F" title="Индекс неисправности 3F">P113F</a>
+<a class="chip" href="../?q=P1140" title="Индекс неисправности 40">P1140</a>
+<a class="chip" href="../?q=P1141" title="Индекс неисправности 41">P1141</a>
+<a class="chip" href="../?q=P1142" title="Индекс неисправности 42">P1142</a>
+<a class="chip" href="../?q=P1143" title="Индекс неисправности 43">P1143</a>
+<a class="chip" href="../?q=P1144" title="Индекс неисправности 44">P1144</a>
+<a class="chip" href="../?q=P1145" title="Индекс неисправности 45">P1145</a>
+<a class="chip" href="../?q=P1146" title="Индекс неисправности 46">P1146</a>
+<a class="chip" href="../?q=P1147" title="Индекс неисправности 47">P1147</a>
+<a class="chip" href="../?q=P1148" title="Индекс неисправности 48">P1148</a>
+<a class="chip" href="../?q=P1149" title="Индекс неисправности 49">P1149</a>
+<a class="chip" href="../?q=P114A" title="Индекс неисправности 4A">P114A</a>
+<a class="chip" href="../?q=P114B" title="Индекс неисправности 4B">P114B</a>
+<a class="chip" href="../?q=P114C" title="Индекс неисправности 4C">P114C</a>
+<a class="chip" href="../?q=P114D" title="Индекс неисправности 4D">P114D</a>
+<a class="chip" href="../?q=P114E" title="Индекс неисправности 4E">P114E</a>
+<a class="chip" href="../?q=P114F" title="Индекс неисправности 4F">P114F</a>
+<a class="chip" href="../?q=P1150" title="Индекс неисправности 50">P1150</a>
+<a class="chip" href="../?q=P1151" title="Индекс неисправности 51">P1151</a>
+<a class="chip" href="../?q=P1152" title="Индекс неисправности 52">P1152</a>
+<a class="chip" href="../?q=P1153" title="Индекс неисправности 53">P1153</a>
+<a class="chip" href="../?q=P1154" title="Индекс неисправности 54">P1154</a>
+<a class="chip" href="../?q=P1155" title="Индекс неисправности 55">P1155</a>
+<a class="chip" href="../?q=P1156" title="Индекс неисправности 56">P1156</a>
+<a class="chip" href="../?q=P1157" title="Индекс неисправности 57">P1157</a>
+<a class="chip" href="../?q=P1158" title="Индекс неисправности 58">P1158</a>
+<a class="chip" href="../?q=P1159" title="Индекс неисправности 59">P1159</a>
+<a class="chip" href="../?q=P115A" title="Индекс неисправности 5A">P115A</a>
+<a class="chip" href="../?q=P115B" title="Индекс неисправности 5B">P115B</a>
+<a class="chip" href="../?q=P115C" title="Индекс неисправности 5C">P115C</a>
+<a class="chip" href="../?q=P115D" title="Индекс неисправности 5D">P115D</a>
+<a class="chip" href="../?q=P115E" title="Индекс неисправности 5E">P115E</a>
+<a class="chip" href="../?q=P115F" title="Индекс неисправности 5F">P115F</a>
+<a class="chip" href="../?q=P1160" title="Индекс неисправности 60">P1160</a>
+<a class="chip" href="../?q=P1161" title="Индекс неисправности 61">P1161</a>
+<a class="chip" href="../?q=P1162" title="Индекс неисправности 62">P1162</a>
+<a class="chip" href="../?q=P1163" title="Индекс неисправности 63">P1163</a>
+<a class="chip" href="../?q=P1164" title="Индекс неисправности 64">P1164</a>
+<a class="chip" href="../?q=P1165" title="Индекс неисправности 65">P1165</a>
+<a class="chip" href="../?q=P1166" title="Индекс неисправности 66">P1166</a>
+<a class="chip" href="../?q=P1167" title="Индекс неисправности 67">P1167</a>
+<a class="chip" href="../?q=P1168" title="Индекс неисправности 68">P1168</a>
+<a class="chip" href="../?q=P1169" title="Индекс неисправности 69">P1169</a>
+<a class="chip" href="../?q=P116A" title="Индекс неисправности 6A">P116A</a>
+<a class="chip" href="../?q=P116B" title="Индекс неисправности 6B">P116B</a>
+<a class="chip" href="../?q=P116C" title="Индекс неисправности 6C">P116C</a>
+<a class="chip" href="../?q=P116D" title="Индекс неисправности 6D">P116D</a>
+<a class="chip" href="../?q=P116E" title="Индекс неисправности 6E">P116E</a>
+<a class="chip" href="../?q=P116F" title="Индекс неисправности 6F">P116F</a>
+<a class="chip" href="../?q=P1170" title="Индекс неисправности 70">P1170</a>
+<a class="chip" href="../?q=P1171" title="Индекс неисправности 71">P1171</a>
+<a class="chip" href="../?q=P1172" title="Индекс неисправности 72">P1172</a>
+<a class="chip" href="../?q=P1173" title="Индекс неисправности 73">P1173</a>
+<a class="chip" href="../?q=P1174" title="Индекс неисправности 74">P1174</a>
+<a class="chip" href="../?q=P1175" title="Индекс неисправности 75">P1175</a>
+<a class="chip" href="../?q=P1176" title="Индекс неисправности 76">P1176</a>
+<a class="chip" href="../?q=P1177" title="Индекс неисправности 77">P1177</a>
+<a class="chip" href="../?q=P1178" title="Индекс неисправности 78">P1178</a>
+<a class="chip" href="../?q=P1179" title="Индекс неисправности 79">P1179</a>
+<a class="chip" href="../?q=P117A" title="Индекс неисправности 7A">P117A</a>
+<a class="chip" href="../?q=P117B" title="Индекс неисправности 7B">P117B</a>
+<a class="chip" href="../?q=P117C" title="Индекс неисправности 7C">P117C</a>
+<a class="chip" href="../?q=P117D" title="Индекс неисправности 7D">P117D</a>
+<a class="chip" href="../?q=P117E" title="Индекс неисправности 7E">P117E</a>
+<a class="chip" href="../?q=P117F" title="Индекс неисправности 7F">P117F</a>
+<a class="chip" href="../?q=P1180" title="Индекс неисправности 80">P1180</a>
+<a class="chip" href="../?q=P1181" title="Индекс неисправности 81">P1181</a>
+<a class="chip" href="../?q=P1182" title="Индекс неисправности 82">P1182</a>
+<a class="chip" href="../?q=P1183" title="Индекс неисправности 83">P1183</a>
+<a class="chip" href="../?q=P1184" title="Индекс неисправности 84">P1184</a>
+<a class="chip" href="../?q=P1185" title="Индекс неисправности 85">P1185</a>
+<a class="chip" href="../?q=P1186" title="Индекс неисправности 86">P1186</a>
+<a class="chip" href="../?q=P1187" title="Индекс неисправности 87">P1187</a>
+<a class="chip" href="../?q=P1188" title="Индекс неисправности 88">P1188</a>
+<a class="chip" href="../?q=P1189" title="Индекс неисправности 89">P1189</a>
+<a class="chip" href="../?q=P118A" title="Индекс неисправности 8A">P118A</a>
+<a class="chip" href="../?q=P118B" title="Индекс неисправности 8B">P118B</a>
+<a class="chip" href="../?q=P118C" title="Индекс неисправности 8C">P118C</a>
+<a class="chip" href="../?q=P118D" title="Индекс неисправности 8D">P118D</a>
+<a class="chip" href="../?q=P118E" title="Индекс неисправности 8E">P118E</a>
+<a class="chip" href="../?q=P118F" title="Индекс неисправности 8F">P118F</a>
+<a class="chip" href="../?q=P1190" title="Индекс неисправности 90">P1190</a>
+<a class="chip" href="../?q=P1191" title="Индекс неисправности 91">P1191</a>
+<a class="chip" href="../?q=P1192" title="Индекс неисправности 92">P1192</a>
+<a class="chip" href="../?q=P1193" title="Индекс неисправности 93">P1193</a>
+<a class="chip" href="../?q=P1194" title="Индекс неисправности 94">P1194</a>
+<a class="chip" href="../?q=P1195" title="Индекс неисправности 95">P1195</a>
+<a class="chip" href="../?q=P1196" title="Индекс неисправности 96">P1196</a>
+<a class="chip" href="../?q=P1197" title="Индекс неисправности 97">P1197</a>
+<a class="chip" href="../?q=P1198" title="Индекс неисправности 98">P1198</a>
+<a class="chip" href="../?q=P1199" title="Индекс неисправности 99">P1199</a>
+<a class="chip" href="../?q=P119A" title="Индекс неисправности 9A">P119A</a>
+<a class="chip" href="../?q=P119B" title="Индекс неисправности 9B">P119B</a>
+<a class="chip" href="../?q=P119C" title="Индекс неисправности 9C">P119C</a>
+<a class="chip" href="../?q=P119D" title="Индекс неисправности 9D">P119D</a>
+<a class="chip" href="../?q=P119E" title="Индекс неисправности 9E">P119E</a>
+<a class="chip" href="../?q=P119F" title="Индекс неисправности 9F">P119F</a>
+<a class="chip" href="../?q=P11A0" title="Индекс неисправности A0">P11A0</a>
+<a class="chip" href="../?q=P11A1" title="Индекс неисправности A1">P11A1</a>
+<a class="chip" href="../?q=P11A2" title="Индекс неисправности A2">P11A2</a>
+<a class="chip" href="../?q=P11A3" title="Индекс неисправности A3">P11A3</a>
+<a class="chip" href="../?q=P11A4" title="Индекс неисправности A4">P11A4</a>
+<a class="chip" href="../?q=P11A5" title="Индекс неисправности A5">P11A5</a>
+<a class="chip" href="../?q=P11A6" title="Индекс неисправности A6">P11A6</a>
+<a class="chip" href="../?q=P11A7" title="Индекс неисправности A7">P11A7</a>
+<a class="chip" href="../?q=P11A8" title="Индекс неисправности A8">P11A8</a>
+<a class="chip" href="../?q=P11A9" title="Индекс неисправности A9">P11A9</a>
+<a class="chip" href="../?q=P11AA" title="Индекс неисправности AA">P11AA</a>
+<a class="chip" href="../?q=P11AB" title="Индекс неисправности AB">P11AB</a>
+<a class="chip" href="../?q=P11AC" title="Индекс неисправности AC">P11AC</a>
+<a class="chip" href="../?q=P11AD" title="Индекс неисправности AD">P11AD</a>
+<a class="chip" href="../?q=P11AE" title="Индекс неисправности AE">P11AE</a>
+<a class="chip" href="../?q=P11AF" title="Индекс неисправности AF">P11AF</a>
+<a class="chip" href="../?q=P11B0" title="Индекс неисправности B0">P11B0</a>
+<a class="chip" href="../?q=P11B1" title="Индекс неисправности B1">P11B1</a>
+<a class="chip" href="../?q=P11B2" title="Индекс неисправности B2">P11B2</a>
+<a class="chip" href="../?q=P11B3" title="Индекс неисправности B3">P11B3</a>
+<a class="chip" href="../?q=P11B4" title="Индекс неисправности B4">P11B4</a>
+<a class="chip" href="../?q=P11B5" title="Индекс неисправности B5">P11B5</a>
+<a class="chip" href="../?q=P11B6" title="Индекс неисправности B6">P11B6</a>
+<a class="chip" href="../?q=P11B7" title="Индекс неисправности B7">P11B7</a>
+<a class="chip" href="../?q=P11B8" title="Индекс неисправности B8">P11B8</a>
+<a class="chip" href="../?q=P11B9" title="Индекс неисправности B9">P11B9</a>
+<a class="chip" href="../?q=P11BA" title="Индекс неисправности BA">P11BA</a>
+<a class="chip" href="../?q=P11BB" title="Индекс неисправности BB">P11BB</a>
+<a class="chip" href="../?q=P11BC" title="Индекс неисправности BC">P11BC</a>
+<a class="chip" href="../?q=P11BD" title="Индекс неисправности BD">P11BD</a>
+<a class="chip" href="../?q=P11BE" title="Индекс неисправности BE">P11BE</a>
+<a class="chip" href="../?q=P11BF" title="Индекс неисправности BF">P11BF</a>
+<a class="chip" href="../?q=P11C0" title="Индекс неисправности C0">P11C0</a>
+<a class="chip" href="../?q=P11C1" title="Индекс неисправности C1">P11C1</a>
+<a class="chip" href="../?q=P11C2" title="Индекс неисправности C2">P11C2</a>
+<a class="chip" href="../?q=P11C3" title="Индекс неисправности C3">P11C3</a>
+<a class="chip" href="../?q=P11C4" title="Индекс неисправности C4">P11C4</a>
+<a class="chip" href="../?q=P11C5" title="Индекс неисправности C5">P11C5</a>
+<a class="chip" href="../?q=P11C6" title="Индекс неисправности C6">P11C6</a>
+<a class="chip" href="../?q=P11C7" title="Индекс неисправности C7">P11C7</a>
+<a class="chip" href="../?q=P11C8" title="Индекс неисправности C8">P11C8</a>
+<a class="chip" href="../?q=P11C9" title="Индекс неисправности C9">P11C9</a>
+<a class="chip" href="../?q=P11CA" title="Индекс неисправности CA">P11CA</a>
+<a class="chip" href="../?q=P11CB" title="Индекс неисправности CB">P11CB</a>
+<a class="chip" href="../?q=P11CC" title="Индекс неисправности CC">P11CC</a>
+<a class="chip" href="../?q=P11CD" title="Индекс неисправности CD">P11CD</a>
+<a class="chip" href="../?q=P11CE" title="Индекс неисправности CE">P11CE</a>
+<a class="chip" href="../?q=P11CF" title="Индекс неисправности CF">P11CF</a>
+<a class="chip" href="../?q=P11D0" title="Индекс неисправности D0">P11D0</a>
+<a class="chip" href="../?q=P11D1" title="Индекс неисправности D1">P11D1</a>
+<a class="chip" href="../?q=P11D2" title="Индекс неисправности D2">P11D2</a>
+<a class="chip" href="../?q=P11D3" title="Индекс неисправности D3">P11D3</a>
+<a class="chip" href="../?q=P11D4" title="Индекс неисправности D4">P11D4</a>
+<a class="chip" href="../?q=P11D5" title="Индекс неисправности D5">P11D5</a>
+<a class="chip" href="../?q=P11D6" title="Индекс неисправности D6">P11D6</a>
+<a class="chip" href="../?q=P11D7" title="Индекс неисправности D7">P11D7</a>
+<a class="chip" href="../?q=P11D8" title="Индекс неисправности D8">P11D8</a>
+<a class="chip" href="../?q=P11D9" title="Индекс неисправности D9">P11D9</a>
+<a class="chip" href="../?q=P11DA" title="Индекс неисправности DA">P11DA</a>
+<a class="chip" href="../?q=P11DB" title="Индекс неисправности DB">P11DB</a>
+<a class="chip" href="../?q=P11DC" title="Индекс неисправности DC">P11DC</a>
+<a class="chip" href="../?q=P11DD" title="Индекс неисправности DD">P11DD</a>
+<a class="chip" href="../?q=P11DE" title="Индекс неисправности DE">P11DE</a>
+<a class="chip" href="../?q=P11DF" title="Индекс неисправности DF">P11DF</a>
+<a class="chip" href="../?q=P11E0" title="Индекс неисправности E0">P11E0</a>
+<a class="chip" href="../?q=P11E1" title="Индекс неисправности E1">P11E1</a>
+<a class="chip" href="../?q=P11E2" title="Индекс неисправности E2">P11E2</a>
+<a class="chip" href="../?q=P11E3" title="Индекс неисправности E3">P11E3</a>
+<a class="chip" href="../?q=P11E4" title="Индекс неисправности E4">P11E4</a>
+<a class="chip" href="../?q=P11E5" title="Индекс неисправности E5">P11E5</a>
+<a class="chip" href="../?q=P11E6" title="Индекс неисправности E6">P11E6</a>
+<a class="chip" href="../?q=P11E7" title="Индекс неисправности E7">P11E7</a>
+<a class="chip" href="../?q=P11E8" title="Индекс неисправности E8">P11E8</a>
+<a class="chip" href="../?q=P11E9" title="Индекс неисправности E9">P11E9</a>
+<a class="chip" href="../?q=P11EA" title="Индекс неисправности EA">P11EA</a>
+<a class="chip" href="../?q=P11EB" title="Индекс неисправности EB">P11EB</a>
+<a class="chip" href="../?q=P11EC" title="Индекс неисправности EC">P11EC</a>
+<a class="chip" href="../?q=P11ED" title="Индекс неисправности ED">P11ED</a>
+<a class="chip" href="../?q=P11EE" title="Индекс неисправности EE">P11EE</a>
+<a class="chip" href="../?q=P11EF" title="Индекс неисправности EF">P11EF</a>
+<a class="chip" href="../?q=P11F0" title="Индекс неисправности F0">P11F0</a>
+<a class="chip" href="../?q=P11F1" title="Индекс неисправности F1">P11F1</a>
+<a class="chip" href="../?q=P11F2" title="Индекс неисправности F2">P11F2</a>
+<a class="chip" href="../?q=P11F3" title="Индекс неисправности F3">P11F3</a>
+<a class="chip" href="../?q=P11F4" title="Индекс неисправности F4">P11F4</a>
+<a class="chip" href="../?q=P11F5" title="Индекс неисправности F5">P11F5</a>
+<a class="chip" href="../?q=P11F6" title="Индекс неисправности F6">P11F6</a>
+<a class="chip" href="../?q=P11F7" title="Индекс неисправности F7">P11F7</a>
+<a class="chip" href="../?q=P11F8" title="Индекс неисправности F8">P11F8</a>
+<a class="chip" href="../?q=P11F9" title="Индекс неисправности F9">P11F9</a>
+<a class="chip" href="../?q=P11FA" title="Индекс неисправности FA">P11FA</a>
+<a class="chip" href="../?q=P11FB" title="Индекс неисправности FB">P11FB</a>
+<a class="chip" href="../?q=P11FC" title="Индекс неисправности FC">P11FC</a>
+<a class="chip" href="../?q=P11FD" title="Индекс неисправности FD">P11FD</a>
+<a class="chip" href="../?q=P11FE" title="Индекс неисправности FE">P11FE</a>
+<a class="chip" href="../?q=P11FF" title="Индекс неисправности FF">P11FF</a>
+</div>
+<section class="cta">
+<div><h2>Прочитайте этот код со своей машины</h2>
+<p>Подключите адаптер ELM327 к разъёму OBD-II под приборной панелью. Pin16 прочитает подтверждённые, разовые и постоянные коды, объяснит каждый так же, как эта страница, — без интернета и без учётной записи — и покажет, что машина записала в момент ошибки.</p></div>
+<a class="button" href="https://play.google.com/store/apps/details?id=com.amaldavanau.pin16&amp;hl=ru&amp;referrer=utm_source%3Dpin16_site%26utm_medium%3Dcode_page%26utm_campaign%3Dcode_pages_ru%26utm_content%3Dblock_P11xx">Скачать Pin16 в Google Play</a>
+</section>
+</main>
+<footer class="site"><div><p>Текст написан для Pin16 и ещё не проверен квалифицированным механиком. Это помощь в диагностике, а не инструкция по ремонту; для вашего автомобиля она может быть неполной или неточной. Если сомневаетесь, обратитесь в автосервис.</p><p><a href="../../../">Pin16</a> · <a href="../../../privacy/#ru">Политика конфиденциальности</a></p></div></footer>
+</body>
+</html>

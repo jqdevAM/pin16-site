@@ -10,51 +10,57 @@
 <link rel="alternate" hreflang="ru" href="https://jqdevam.github.io/pin16-site/ru/codes/P0A00/">
 <link rel="alternate" hreflang="x-default" href="https://jqdevam.github.io/pin16-site/codes/P0A00/">
 <link rel="icon" href="../../pin16.png">
-<link rel="stylesheet" href="../../assets/codes.css">
+<link rel="stylesheet" href="../../assets/codes.css?v=220cb5ea6d">
 </head>
 <body>
+<header class="site"><div class="bar"><a class="brand" href="../../"><img src="../../pin16.png" alt="" width="30" height="30"><span>Pin16</span></a><nav><a href="../../codes/">All codes</a><a href="../../codes/tree/">Code tree</a><a class="lang" hreflang="ru" href="../../ru/codes/P0A00/">По-русски</a></nav></div></header>
 <main>
-<nav class="top"><a class="brand" href="../../"><img src="../../pin16.png" alt="" width="28" height="28">Pin16</a><a href="../../codes/">All codes</a><a hreflang="ru" href="../../ru/codes/P0A00/">По-русски</a></nav>
-<nav class="trail"><a href="../../codes/">All systems</a><span aria-hidden="true">›</span><a href="../../codes/P/">P · Powertrain</a><span aria-hidden="true">›</span><a href="../../codes/P0Axx/">P0Axx · Hybrid propulsion</a></nav>
-<header class="code-head">
-<p class="code">P0A00</p>
+<nav class="crumbs" aria-label="breadcrumb"><ol><li><a href="../../codes/">All systems</a></li><li><a href="../../codes/P/">P · Powertrain</a></li><li><a href="../../codes/P0Axx/">P0Axx · Hybrid propulsion</a></li></ol></nav>
+<header class="hero">
+<p class="code-pill">P0A00</p>
 <h1>Motor Electronics Coolant Temperature Sensor Circuit</h1>
-<dl class="facts"><div class="sev-medium"><dt>Severity</dt><dd>Medium</dd></div><div><dt>Driving</dt><dd>Drive only to a garage</dd></div><div><dt>System</dt><dd>Powertrain</dd></div><div><dt>Group</dt><dd>Hybrid propulsion</dd></div></dl>
+<dl class="facts"><div class="sev-medium"><dt>Severity</dt><dd>Medium</dd></div><div class="drive-limp_home"><dt>Driving</dt><dd>Drive only to a garage</dd></div></dl>
 </header>
 <aside class="note"><strong>Important.</strong> High-voltage hazard nearby. The transaxle on a hybrid contains high-voltage components and orange cabling. Reading codes and checking connectors on low-voltage circuits is safe; do not disturb anything orange.</aside>
 <p class="lead">A fault in the motor electronics coolant temperature sensor circuit. Hybrids and electric vehicles have a second cooling loop, separate from the engine&#x27;s, that cools the inverter and the motor electronics. It has its own pump, its own radiator and often its own reservoir - and topping up the engine coolant does nothing for it. The module uses this sensor to know whether the inverter is within its safe temperature range; without a reading it cannot confirm that, so it reduces power rather than risk cooking electronics it cannot see the temperature of.</p>
-<h2>Possible causes</h2>
+<section class="block"><h2>Possible causes</h2>
 <ul class="causes">
-<li><span class="lik lik-common">Common</span>Failed coolant temperature sensor</li>
-<li><span class="lik lik-common">Common</span>Corroded or damaged connector</li>
-<li><span class="lik lik-common">Common</span>Wiring fault between the sensor and the module</li>
-<li><span class="lik lik-common">Common</span>Low coolant level in the motor electronics loop - a reservoir people forget exists</li>
-<li><span class="lik lik-possible">Possible</span>Loss of reference voltage or earth</li>
-<li><span class="lik lik-possible">Possible</span>Low 12 volt battery voltage</li>
-</ul>
-<h2>What you might notice</h2>
-<ul>
+<li><span class="pill lik-common">Common</span><span>Failed coolant temperature sensor</span></li>
+<li><span class="pill lik-common">Common</span><span>Corroded or damaged connector</span></li>
+<li><span class="pill lik-common">Common</span><span>Wiring fault between the sensor and the module</span></li>
+<li><span class="pill lik-common">Common</span><span>Low coolant level in the motor electronics loop - a reservoir people forget exists</span></li>
+<li><span class="pill lik-possible">Possible</span><span>Loss of reference voltage or earth</span></li>
+<li><span class="pill lik-possible">Possible</span><span>Low 12 volt battery voltage</span></li>
+</ul></section>
+<section class="block"><h2>What you might notice</h2>
+<ul class="dots">
 <li>Reduced power, especially after sustained hard driving or a long climb</li>
 <li>Hybrid or electric drive system warning message</li>
 <li>Cooling fans running constantly</li>
 <li>Reduced charging rate</li>
 <li>Check engine light on</li>
-</ul>
-<h2>What to check, in order</h2>
-<ol class="checks">
+</ul></section>
+<section class="block"><h2>What to check, in order</h2>
+<ol class="steps">
 <li>Check the level in the motor electronics coolant reservoir, which is separate from the engine&#x27;s. This is the single most missed check on these vehicles - people top up the engine coolant, see a full bottle and move on.</li>
 <li>Check the 12 volt battery first - it is the most common cause of scattered hybrid system codes.</li>
 <li>Compare this reading against the other temperatures the module has after the vehicle has stood overnight. They should agree within a few degrees, and the odd one out is the faulty one.</li>
 <li>Inspect the connector for corrosion and check the reference voltage and earth at the sensor.</li>
 <li>Do not disturb anything orange.</li>
-</ol>
+</ol></section>
 <section class="cta">
-<h2>Read this code from your own car</h2>
-<p>Plug an ELM327 adapter into the OBD-II port under the dashboard. Pin16 reads every stored, pending and permanent code, explains each one like this page does — offline, with no account — and shows what the car recorded when the fault was set.</p>
+<div><h2>Read this code from your own car</h2>
+<p>Plug an ELM327 adapter into the OBD-II port under the dashboard. Pin16 reads every stored, pending and permanent code, explains each one like this page does — offline, with no account — and shows what the car recorded when the fault was set.</p></div>
 <a class="button" href="https://play.google.com/store/apps/details?id=com.amaldavanau.pin16&amp;hl=en&amp;referrer=utm_source%3Dpin16_site%26utm_medium%3Dcode_page%26utm_campaign%3Dcode_pages_en%26utm_content%3DP0A00">Get Pin16 on Google Play</a>
 </section>
-<nav class="pager"><a rel="prev" href="../P0999/">← P0999</a><a href="../">All codes</a><a rel="next" href="../P0A01/">P0A01 →</a></nav>
-<footer><p>Written for Pin16 and not yet reviewed by a qualified technician. This is guidance for diagnosis, not repair instructions, and it may be incomplete or wrong for your vehicle. If in doubt, ask a mechanic.</p><p><a href="../../">Pin16</a> · <a href="../../privacy/">Privacy policy</a></p></footer>
+<section class="where"><h2>Where this code sits</h2>
+<div class="levels">
+<div class="level"><div class="chips"><a class="chip" href="../B/">B · Body</a><a class="chip" href="../C/">C · Chassis</a><a class="chip" href="../P/" aria-current="true">P · Powertrain</a><a class="chip" href="../U/">U · Network and communication</a></div></div>
+<div class="level"><div class="chips mono"><a class="chip" href="../P00xx/" title="Fuel, air metering and auxiliary emission controls">P00xx</a><a class="chip" href="../P01xx/" title="Fuel and air metering">P01xx</a><a class="chip" href="../P02xx/" title="Fuel and air metering - injector circuits">P02xx</a><a class="chip" href="../P03xx/" title="Ignition system or misfire">P03xx</a><a class="chip" href="../P04xx/" title="Auxiliary emission controls">P04xx</a><a class="chip" href="../P05xx/" title="Vehicle speed control, idle control and auxiliary inputs">P05xx</a><a class="chip" href="../P06xx/" title="Computer output circuits and control module">P06xx</a><a class="chip" href="../P07xx/" title="Transmission">P07xx</a><a class="chip" href="../P08xx/" title="Transmission">P08xx</a><a class="chip" href="../P09xx/" title="Transmission and control modules">P09xx</a><a class="chip" href="../P0Axx/" aria-current="true" title="Hybrid propulsion">P0Axx</a><a class="chip dim" href="../P0Bxx/" title="Hybrid propulsion">P0Bxx</a><a class="chip dim" href="../P0Cxx/" title="Hybrid propulsion">P0Cxx</a><a class="chip dim" href="../P0Dxx/" title="Powertrain">P0Dxx</a><a class="chip dim" href="../P0Exx/" title="Powertrain">P0Exx</a><a class="chip dim" href="../P0Fxx/" title="Powertrain">P0Fxx</a><a class="chip dim" href="../P10xx/" title="Fuel, air metering and auxiliary emission controls">P10xx</a><a class="chip dim" href="../P11xx/" title="Fuel and air metering">P11xx</a><a class="chip dim" href="../P12xx/" title="Fuel and air metering - injector circuits">P12xx</a><a class="chip dim" href="../P13xx/" title="Ignition system or misfire">P13xx</a><a class="chip dim" href="../P14xx/" title="Auxiliary emission controls">P14xx</a><a class="chip dim" href="../P15xx/" title="Vehicle speed control, idle control and auxiliary inputs">P15xx</a><a class="chip dim" href="../P16xx/" title="Computer output circuits and control module">P16xx</a><a class="chip dim" href="../P17xx/" title="Transmission">P17xx</a><a class="chip dim" href="../P18xx/" title="Transmission">P18xx</a><a class="chip dim" href="../P19xx/" title="Transmission and control modules">P19xx</a><a class="chip dim" href="../P1Axx/" title="Hybrid propulsion">P1Axx</a><a class="chip dim" href="../P1Bxx/" title="Hybrid propulsion">P1Bxx</a><a class="chip dim" href="../P1Cxx/" title="Hybrid propulsion">P1Cxx</a><a class="chip dim" href="../P1Dxx/" title="Powertrain">P1Dxx</a><a class="chip dim" href="../P1Exx/" title="Powertrain">P1Exx</a><a class="chip dim" href="../P1Fxx/" title="Powertrain">P1Fxx</a><a class="chip" href="../P20xx/" title="Fuel, air metering and auxiliary emission controls">P20xx</a><a class="chip" href="../P21xx/" title="Fuel and air metering">P21xx</a><a class="chip" href="../P22xx/" title="Fuel and air metering - injector circuits">P22xx</a><a class="chip" href="../P23xx/" title="Ignition system or misfire">P23xx</a><a class="chip" href="../P24xx/" title="Auxiliary emission controls">P24xx</a><a class="chip" href="../P25xx/" title="Vehicle speed control, idle control and auxiliary inputs">P25xx</a><a class="chip" href="../P26xx/" title="Computer output circuits and control module">P26xx</a><a class="chip" href="../P27xx/" title="Transmission">P27xx</a><a class="chip dim" href="../P28xx/" title="Transmission">P28xx</a><a class="chip dim" href="../P29xx/" title="Transmission and control modules">P29xx</a><a class="chip" href="../P2Axx/" title="Hybrid propulsion">P2Axx</a><a class="chip dim" href="../P2Bxx/" title="Hybrid propulsion">P2Bxx</a><a class="chip dim" href="../P2Cxx/" title="Hybrid propulsion">P2Cxx</a><a class="chip dim" href="../P2Dxx/" title="Powertrain">P2Dxx</a><a class="chip dim" href="../P2Exx/" title="Powertrain">P2Exx</a><a class="chip dim" href="../P2Fxx/" title="Powertrain">P2Fxx</a><a class="chip dim" href="../P30xx/" title="Fuel, air metering and auxiliary emission controls">P30xx</a><a class="chip dim" href="../P31xx/" title="Fuel and air metering">P31xx</a><a class="chip dim" href="../P32xx/" title="Fuel and air metering - injector circuits">P32xx</a><a class="chip dim" href="../P33xx/" title="Ignition system or misfire">P33xx</a><a class="chip" href="../P34xx/" title="Auxiliary emission controls">P34xx</a><a class="chip dim" href="../P35xx/" title="Vehicle speed control, idle control and auxiliary inputs">P35xx</a><a class="chip dim" href="../P36xx/" title="Computer output circuits and control module">P36xx</a><a class="chip dim" href="../P37xx/" title="Transmission">P37xx</a><a class="chip dim" href="../P38xx/" title="Transmission">P38xx</a><a class="chip dim" href="../P39xx/" title="Transmission and control modules">P39xx</a><a class="chip dim" href="../P3Axx/" title="Hybrid propulsion">P3Axx</a><a class="chip dim" href="../P3Bxx/" title="Hybrid propulsion">P3Bxx</a><a class="chip dim" href="../P3Cxx/" title="Hybrid propulsion">P3Cxx</a><a class="chip dim" href="../P3Dxx/" title="Powertrain">P3Dxx</a><a class="chip dim" href="../P3Exx/" title="Powertrain">P3Exx</a><a class="chip dim" href="../P3Fxx/" title="Powertrain">P3Fxx</a></div></div>
+<div class="level"><p class="level-name">Hybrid propulsion</p><div class="chips mono"><a class="chip" href="../P0A00/" aria-current="true" title="Motor Electronics Coolant Temperature Sensor Circuit">P0A00</a><a class="chip" href="../P0A01/" title="Motor Electronics Coolant Temperature Sensor Circuit Range/Performance">P0A01</a><a class="chip" href="../P0A02/" title="Motor Electronics Coolant Temperature Sensor Circuit Low">P0A02</a><a class="chip" href="../P0A03/" title="Motor Electronics Coolant Temperature Sensor Circuit High">P0A03</a><a class="chip" href="../P0A04/" title="Motor Electronics Coolant Temperature Sensor Circuit Intermittent">P0A04</a><a class="chip" href="../P0A05/" title="Motor Electronics Coolant Pump Control Circuit/Open">P0A05</a><a class="chip" href="../P0A06/" title="Motor Electronics Coolant Pump Control Circuit Low">P0A06</a><a class="chip" href="../P0A07/" title="Motor Electronics Coolant Pump Control Circuit High">P0A07</a><a class="chip" href="../P0A08/" title="DC/DC Converter Status Circuit">P0A08</a><a class="chip" href="../P0A09/" title="DC/DC Converter Status Circuit Low Input">P0A09</a><a class="chip" href="../P0A10/" title="DC/DC Converter Status Circuit High Input">P0A10</a><a class="chip" href="../P0A11/" title="DC/DC Converter Enable Circuit/Open">P0A11</a><a class="chip" href="../P0A12/" title="DC/DC Converter Enable Circuit Low">P0A12</a><a class="chip" href="../P0A13/" title="DC/DC Converter Enable Circuit High">P0A13</a><a class="chip" href="../P0A14/" title="Engine Mount Control Circuit/Open">P0A14</a><a class="chip" href="../P0A15/" title="Engine Mount Control Circuit Low">P0A15</a><a class="chip" href="../P0A16/" title="Engine Mount Control Circuit High">P0A16</a><a class="chip" href="../P0A17/" title="Motor Torque Sensor Circuit">P0A17</a><a class="chip" href="../P0A18/" title="Motor Torque Sensor Circuit Range/Performance">P0A18</a><a class="chip" href="../P0A19/" title="Motor Torque Sensor Circuit Low">P0A19</a><a class="chip" href="../P0A20/" title="Motor Torque Sensor Circuit High">P0A20</a><a class="chip" href="../P0A21/" title="Motor Torque Sensor Circuit Intermittent">P0A21</a><a class="chip" href="../P0A22/" title="Generator Torque Sensor Circuit">P0A22</a><a class="chip" href="../P0A23/" title="Generator Torque Sensor Circuit Range/Performance">P0A23</a><a class="chip" href="../P0A24/" title="Generator Torque Sensor Circuit Low">P0A24</a><a class="chip" href="../P0A25/" title="Generator Torque Sensor Circuit High">P0A25</a><a class="chip" href="../P0A26/" title="Generator Torque Sensor Circuit Intermittent">P0A26</a><a class="chip" href="../P0A27/" title="Battery Power Off Circuit">P0A27</a><a class="chip" href="../P0A28/" title="Battery Power Off Circuit Low">P0A28</a><a class="chip" href="../P0A29/" title="Battery Power Off Circuit High">P0A29</a></div></div>
+</div></section>
+<nav class="pager"><a rel="prev" href="../P0999/">← P0999</a><a href="../P0Axx/">P0Axx</a><a rel="next" href="../P0A01/">P0A01 →</a></nav>
 </main>
+<footer class="site"><div><p>Written for Pin16 and not yet reviewed by a qualified technician. This is guidance for diagnosis, not repair instructions, and it may be incomplete or wrong for your vehicle. If in doubt, ask a mechanic.</p><p><a href="../../">Pin16</a> · <a href="../../privacy/">Privacy policy</a></p></div></footer>
 </body>
 </html>

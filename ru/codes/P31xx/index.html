@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>P31xx — Подача топлива и воздуха: коды ошибок OBD-II</title>
+<meta name="description" content="Сколько воздуха и топлива получает двигатель и датчики, которые это измеряют: массовый расход воздуха, давление во впускном коллекторе, температура впускного…">
+<meta name="robots" content="noindex,follow">
+<link rel="canonical" href="https://jqdevam.github.io/pin16-site/ru/codes/P31xx/">
+<link rel="alternate" hreflang="en" href="https://jqdevam.github.io/pin16-site/codes/P31xx/">
+<link rel="alternate" hreflang="ru" href="https://jqdevam.github.io/pin16-site/ru/codes/P31xx/">
+<link rel="alternate" hreflang="x-default" href="https://jqdevam.github.io/pin16-site/codes/P31xx/">
+<link rel="icon" href="../../../pin16.png">
+<link rel="stylesheet" href="../../../assets/codes.css?v=220cb5ea6d">
+</head>
+<body>
+<header class="site"><div class="bar"><a class="brand" href="../../../"><img src="../../../pin16.png" alt="" width="30" height="30"><span>Pin16</span></a><nav><a href="../../../ru/codes/">Все коды</a><a href="../../../ru/codes/tree/">Дерево кодов</a><a class="lang" hreflang="en" href="../../../codes/P31xx/">In English</a></nav></div></header>
+<main>
+<nav class="crumbs" aria-label="breadcrumb"><ol><li><a href="../../../ru/codes/">Все системы</a></li><li><a href="../../../ru/codes/P/">P · Двигатель и трансмиссия</a></li></ol></nav>
+<header class="hero"><p class="code-pill">P31xx</p><h1>Подача топлива и воздуха</h1></header>
+<p class="lead">Сколько воздуха и топлива получает двигатель и датчики, которые это измеряют: массовый расход воздуха, давление во впускном коллекторе, температура впускного воздуха, лямбда-зонды и топливная коррекция.</p>
+<p class="note info">Для этой системы нет описаний из открытых источников, поэтому коды разобраны по их структуре.</p>
+<p class="scope-note"><b>Смешанный: и заводской, и стандартизованный.</b> Считайте кодом производителя, пока не найдётся конкретное описание.</p>
+<div class="chips mono wide">
+<a class="chip" href="../?q=P3100" title="Индекс неисправности 00">P3100</a>
+<a class="chip" href="../?q=P3101" title="Индекс неисправности 01">P3101</a>
+<a class="chip" href="../?q=P3102" title="Индекс неисправности 02">P3102</a>
+<a class="chip" href="../?q=P3103" title="Индекс неисправности 03">P3103</a>
+<a class="chip" href="../?q=P3104" title="Индекс неисправности 04">P3104</a>
+<a class="chip" href="../?q=P3105" title="Индекс неисправности 05">P3105</a>
+<a class="chip" href="../?q=P3106" title="Индекс неисправности 06">P3106</a>
+<a class="chip" href="../?q=P3107" title="Индекс неисправности 07">P3107</a>
+<a class="chip" href="../?q=P3108" title="Индекс неисправности 08">P3108</a>
+<a class="chip" href="../?q=P3109" title="Индекс неисправности 09">P3109</a>
+<a class="chip" href="../?q=P310A" title="Индекс неисправности 0A">P310A</a>
+<a class="chip" href="../?q=P310B" title="Индекс неисправности 0B">P310B</a>
+<a class="chip" href="../?q=P310C" title="Индекс неисправности 0C">P310C</a>
+<a class="chip" href="../?q=P310D" title="Индекс неисправности 0D">P310D</a>
+<a class="chip" href="../?q=P310E" title="Индекс неисправности 0E">P310E</a>
+<a class="chip" href="../?q=P310F" title="Индекс неисправности 0F">P310F</a>
+<a class="chip" href="../?q=P3110" title="Индекс неисправности 10">P3110</a>
+<a class="chip" href="../?q=P3111" title="Индекс неисправности 11">P3111</a>
+<a class="chip" href="../?q=P3112" title="Индекс неисправности 12">P3112</a>
+<a class="chip" href="../?q=P3113" title="Индекс неисправности 13">P3113</a>
+<a class="chip" href="../?q=P3114" title="Индекс неисправности 14">P3114</a>
+<a class="chip" href="../?q=P3115" title="Индекс неисправности 15">P3115</a>
+<a class="chip" href="../?q=P3116" title="Индекс неисправности 16">P3116</a>
+<a class="chip" href="../?q=P3117" title="Индекс неисправности 17">P3117</a>
+<a class="chip" href="../?q=P3118" title="Индекс неисправности 18">P3118</a>
+<a class="chip" href="../?q=P3119" title="Индекс неисправности 19">P3119</a>
+<a class="chip" href="../?q=P311A" title="Индекс неисправности 1A">P311A</a>
+<a class="chip" href="../?q=P311B" title="Индекс неисправности 1B">P311B</a>
+<a class="chip" href="../?q=P311C" title="Индекс неисправности 1C">P311C</a>
+<a class="chip" href="../?q=P311D" title="Индекс неисправности 1D">P311D</a>
+<a class="chip" href="../?q=P311E" title="Индекс неисправности 1E">P311E</a>
+<a class="chip" href="../?q=P311F" title="Индекс неисправности 1F">P311F</a>
+<a class="chip" href="../?q=P3120" title="Индекс неисправности 20">P3120</a>
+<a class="chip" href="../?q=P3121" title="Индекс неисправности 21">P3121</a>
+<a class="chip" href="../?q=P3122" title="Индекс неисправности 22">P3122</a>
+<a class="chip" href="../?q=P3123" title="Индекс неисправности 23">P3123</a>
+<a class="chip" href="../?q=P3124" title="Индекс неисправности 24">P3124</a>
+<a class="chip" href="../?q=P3125" title="Индекс неисправности 25">P3125</a>
+<a class="chip" href="../?q=P3126" title="Индекс неисправности 26">P3126</a>
+<a class="chip" href="../?q=P3127" title="Индекс неисправности 27">P3127</a>
+<a class="chip" href="../?q=P3128" title="Индекс неисправности 28">P3128</a>
+<a class="chip" href="../?q=P3129" title="Индекс неисправности 29">P3129</a>
+<a class="chip" href="../?q=P312A" title="Индекс неисправности 2A">P312A</a>
+<a class="chip" href="../?q=P312B" title="Индекс неисправности 2B">P312B</a>
+<a class="chip" href="../?q=P312C" title="Индекс неисправности 2C">P312C</a>
+<a class="chip" href="../?q=P312D" title="Индекс неисправности 2D">P312D</a>
+<a class="chip" href="../?q=P312E" title="Индекс неисправности 2E">P312E</a>
+<a class="chip" href="../?q=P312F" title="Индекс неисправности 2F">P312F</a>
+<a class="chip" href="../?q=P3130" title="Индекс неисправности 30">P3130</a>
+<a class="chip" href="../?q=P3131" title="Индекс неисправности 31">P3131</a>
+<a class="chip" href="../?q=P3132" title="Индекс неисправности 32">P3132</a>
+<a class="chip" href="../?q=P3133" title="Индекс неисправности 33">P3133</a>
+<a class="chip" href="../?q=P3134" title="Индекс неисправности 34">P3134</a>
+<a class="chip" href="../?q=P3135" title="Индекс неисправности 35">P3135</a>
+<a class="chip" href="../?q=P3136" title="Индекс неисправности 36">P3136</a>
+<a class="chip" href="../?q=P3137" title="Индекс неисправности 37">P3137</a>
+<a class="chip" href="../?q=P3138" title="Индекс неисправности 38">P3138</a>
+<a class="chip" href="../?q=P3139" title="Индекс неисправности 39">P3139</a>
+<a class="chip" href="../?q=P313A" title="Индекс неисправности 3A">P313A</a>
+<a class="chip" href="../?q=P313B" title="Индекс неисправности 3B">P313B</a>
+<a class="chip" href="../?q=P313C" title="Индекс неисправности 3C">P313C</a>
+<a class="chip" href="../?q=P313D" title="Индекс неисправности 3D">P313D</a>
+<a class="chip" href="../?q=P313E" title="Индекс неисправности 3E">P313E</a>
+<a class="chip" href="../?q=P313F" title="Индекс неисправности 3F">P313F</a>
+<a class="chip" href="../?q=P3140" title="Индекс неисправности 40">P3140</a>
+<a class="chip" href="../?q=P3141" title="Индекс неисправности 41">P3141</a>
+<a class="chip" href="../?q=P3142" title="Индекс неисправности 42">P3142</a>
+<a class="chip" href="../?q=P3143" title="Индекс неисправности 43">P3143</a>
+<a class="chip" href="../?q=P3144" title="Индекс неисправности 44">P3144</a>
+<a class="chip" href="../?q=P3145" title="Индекс неисправности 45">P3145</a>
+<a class="chip" href="../?q=P3146" title="Индекс неисправности 46">P3146</a>
+<a class="chip" href="../?q=P3147" title="Индекс неисправности 47">P3147</a>
+<a class="chip" href="../?q=P3148" title="Индекс неисправности 48">P3148</a>
+<a class="chip" href="../?q=P3149" title="Индекс неисправности 49">P3149</a>
+<a class="chip" href="../?q=P314A" title="Индекс неисправности 4A">P314A</a>
+<a class="chip" href="../?q=P314B" title="Индекс неисправности 4B">P314B</a>
+<a class="chip" href="../?q=P314C" title="Индекс неисправности 4C">P314C</a>
+<a class="chip" href="../?q=P314D" title="Индекс неисправности 4D">P314D</a>
+<a class="chip" href="../?q=P314E" title="Индекс неисправности 4E">P314E</a>
+<a class="chip" href="../?q=P314F" title="Индекс неисправности 4F">P314F</a>
+<a class="chip" href="../?q=P3150" title="Индекс неисправности 50">P3150</a>
+<a class="chip" href="../?q=P3151" title="Индекс неисправности 51">P3151</a>
+<a class="chip" href="../?q=P3152" title="Индекс неисправности 52">P3152</a>
+<a class="chip" href="../?q=P3153" title="Индекс неисправности 53">P3153</a>
+<a class="chip" href="../?q=P3154" title="Индекс неисправности 54">P3154</a>
+<a class="chip" href="../?q=P3155" title="Индекс неисправности 55">P3155</a>
+<a class="chip" href="../?q=P3156" title="Индекс неисправности 56">P3156</a>
+<a class="chip" href="../?q=P3157" title="Индекс неисправности 57">P3157</a>
+<a class="chip" href="../?q=P3158" title="Индекс неисправности 58">P3158</a>
+<a class="chip" href="../?q=P3159" title="Индекс неисправности 59">P3159</a>
+<a class="chip" href="../?q=P315A" title="Индекс неисправности 5A">P315A</a>
+<a class="chip" href="../?q=P315B" title="Индекс неисправности 5B">P315B</a>
+<a class="chip" href="../?q=P315C" title="Индекс неисправности 5C">P315C</a>
+<a class="chip" href="../?q=P315D" title="Индекс неисправности 5D">P315D</a>
+<a class="chip" href="../?q=P315E" title="Индекс неисправности 5E">P315E</a>
+<a class="chip" href="../?q=P315F" title="Индекс неисправности 5F">P315F</a>
+<a class="chip" href="../?q=P3160" title="Индекс неисправности 60">P3160</a>
+<a class="chip" href="../?q=P3161" title="Индекс неисправности 61">P3161</a>
+<a class="chip" href="../?q=P3162" title="Индекс неисправности 62">P3162</a>
+<a class="chip" href="../?q=P3163" title="Индекс неисправности 63">P3163</a>
+<a class="chip" href="../?q=P3164" title="Индекс неисправности 64">P3164</a>
+<a class="chip" href="../?q=P3165" title="Индекс неисправности 65">P3165</a>
+<a class="chip" href="../?q=P3166" title="Индекс неисправности 66">P3166</a>
+<a class="chip" href="../?q=P3167" title="Индекс неисправности 67">P3167</a>
+<a class="chip" href="../?q=P3168" title="Индекс неисправности 68">P3168</a>
+<a class="chip" href="../?q=P3169" title="Индекс неисправности 69">P3169</a>
+<a class="chip" href="../?q=P316A" title="Индекс неисправности 6A">P316A</a>
+<a class="chip" href="../?q=P316B" title="Индекс неисправности 6B">P316B</a>
+<a class="chip" href="../?q=P316C" title="Индекс неисправности 6C">P316C</a>
+<a class="chip" href="../?q=P316D" title="Индекс неисправности 6D">P316D</a>
+<a class="chip" href="../?q=P316E" title="Индекс неисправности 6E">P316E</a>
+<a class="chip" href="../?q=P316F" title="Индекс неисправности 6F">P316F</a>
+<a class="chip" href="../?q=P3170" title="Индекс неисправности 70">P3170</a>
+<a class="chip" href="../?q=P3171" title="Индекс неисправности 71">P3171</a>
+<a class="chip" href="../?q=P3172" title="Индекс неисправности 72">P3172</a>
+<a class="chip" href="../?q=P3173" title="Индекс неисправности 73">P3173</a>
+<a class="chip" href="../?q=P3174" title="Индекс неисправности 74">P3174</a>
+<a class="chip" href="../?q=P3175" title="Индекс неисправности 75">P3175</a>
+<a class="chip" href="../?q=P3176" title="Индекс неисправности 76">P3176</a>
+<a class="chip" href="../?q=P3177" title="Индекс неисправности 77">P3177</a>
+<a class="chip" href="../?q=P3178" title="Индекс неисправности 78">P3178</a>
+<a class="chip" href="../?q=P3179" title="Индекс неисправности 79">P3179</a>
+<a class="chip" href="../?q=P317A" title="Индекс неисправности 7A">P317A</a>
+<a class="chip" href="../?q=P317B" title="Индекс неисправности 7B">P317B</a>
+<a class="chip" href="../?q=P317C" title="Индекс неисправности 7C">P317C</a>
+<a class="chip" href="../?q=P317D" title="Индекс неисправности 7D">P317D</a>
+<a class="chip" href="../?q=P317E" title="Индекс неисправности 7E">P317E</a>
+<a class="chip" href="../?q=P317F" title="Индекс неисправности 7F">P317F</a>
+<a class="chip" href="../?q=P3180" title="Индекс неисправности 80">P3180</a>
+<a class="chip" href="../?q=P3181" title="Индекс неисправности 81">P3181</a>
+<a class="chip" href="../?q=P3182" title="Индекс неисправности 82">P3182</a>
+<a class="chip" href="../?q=P3183" title="Индекс неисправности 83">P3183</a>
+<a class="chip" href="../?q=P3184" title="Индекс неисправности 84">P3184</a>
+<a class="chip" href="../?q=P3185" title="Индекс неисправности 85">P3185</a>
+<a class="chip" href="../?q=P3186" title="Индекс неисправности 86">P3186</a>
+<a class="chip" href="../?q=P3187" title="Индекс неисправности 87">P3187</a>
+<a class="chip" href="../?q=P3188" title="Индекс неисправности 88">P3188</a>
+<a class="chip" href="../?q=P3189" title="Индекс неисправности 89">P3189</a>
+<a class="chip" href="../?q=P318A" title="Индекс неисправности 8A">P318A</a>
+<a class="chip" href="../?q=P318B" title="Индекс неисправности 8B">P318B</a>
+<a class="chip" href="../?q=P318C" title="Индекс неисправности 8C">P318C</a>
+<a class="chip" href="../?q=P318D" title="Индекс неисправности 8D">P318D</a>
+<a class="chip" href="../?q=P318E" title="Индекс неисправности 8E">P318E</a>
+<a class="chip" href="../?q=P318F" title="Индекс неисправности 8F">P318F</a>
+<a class="chip" href="../?q=P3190" title="Индекс неисправности 90">P3190</a>
+<a class="chip" href="../?q=P3191" title="Индекс неисправности 91">P3191</a>
+<a class="chip" href="../?q=P3192" title="Индекс неисправности 92">P3192</a>
+<a class="chip" href="../?q=P3193" title="Индекс неисправности 93">P3193</a>
+<a class="chip" href="../?q=P3194" title="Индекс неисправности 94">P3194</a>
+<a class="chip" href="../?q=P3195" title="Индекс неисправности 95">P3195</a>
+<a class="chip" href="../?q=P3196" title="Индекс неисправности 96">P3196</a>
+<a class="chip" href="../?q=P3197" title="Индекс неисправности 97">P3197</a>
+<a class="chip" href="../?q=P3198" title="Индекс неисправности 98">P3198</a>
+<a class="chip" href="../?q=P3199" title="Индекс неисправности 99">P3199</a>
+<a class="chip" href="../?q=P319A" title="Индекс неисправности 9A">P319A</a>
+<a class="chip" href="../?q=P319B" title="Индекс неисправности 9B">P319B</a>
+<a class="chip" href="../?q=P319C" title="Индекс неисправности 9C">P319C</a>
+<a class="chip" href="../?q=P319D" title="Индекс неисправности 9D">P319D</a>
+<a class="chip" href="../?q=P319E" title="Индекс неисправности 9E">P319E</a>
+<a class="chip" href="../?q=P319F" title="Индекс неисправности 9F">P319F</a>
+<a class="chip" href="../?q=P31A0" title="Индекс неисправности A0">P31A0</a>
+<a class="chip" href="../?q=P31A1" title="Индекс неисправности A1">P31A1</a>
+<a class="chip" href="../?q=P31A2" title="Индекс неисправности A2">P31A2</a>
+<a class="chip" href="../?q=P31A3" title="Индекс неисправности A3">P31A3</a>
+<a class="chip" href="../?q=P31A4" title="Индекс неисправности A4">P31A4</a>
+<a class="chip" href="../?q=P31A5" title="Индекс неисправности A5">P31A5</a>
+<a class="chip" href="../?q=P31A6" title="Индекс неисправности A6">P31A6</a>
+<a class="chip" href="../?q=P31A7" title="Индекс неисправности A7">P31A7</a>
+<a class="chip" href="../?q=P31A8" title="Индекс неисправности A8">P31A8</a>
+<a class="chip" href="../?q=P31A9" title="Индекс неисправности A9">P31A9</a>
+<a class="chip" href="../?q=P31AA" title="Индекс неисправности AA">P31AA</a>
+<a class="chip" href="../?q=P31AB" title="Индекс неисправности AB">P31AB</a>
+<a class="chip" href="../?q=P31AC" title="Индекс неисправности AC">P31AC</a>
+<a class="chip" href="../?q=P31AD" title="Индекс неисправности AD">P31AD</a>
+<a class="chip" href="../?q=P31AE" title="Индекс неисправности AE">P31AE</a>
+<a class="chip" href="../?q=P31AF" title="Индекс неисправности AF">P31AF</a>
+<a class="chip" href="../?q=P31B0" title="Индекс неисправности B0">P31B0</a>
+<a class="chip" href="../?q=P31B1" title="Индекс неисправности B1">P31B1</a>
+<a class="chip" href="../?q=P31B2" title="Индекс неисправности B2">P31B2</a>
+<a class="chip" href="../?q=P31B3" title="Индекс неисправности B3">P31B3</a>
+<a class="chip" href="../?q=P31B4" title="Индекс неисправности B4">P31B4</a>
+<a class="chip" href="../?q=P31B5" title="Индекс неисправности B5">P31B5</a>
+<a class="chip" href="../?q=P31B6" title="Индекс неисправности B6">P31B6</a>
+<a class="chip" href="../?q=P31B7" title="Индекс неисправности B7">P31B7</a>
+<a class="chip" href="../?q=P31B8" title="Индекс неисправности B8">P31B8</a>
+<a class="chip" href="../?q=P31B9" title="Индекс неисправности B9">P31B9</a>
+<a class="chip" href="../?q=P31BA" title="Индекс неисправности BA">P31BA</a>
+<a class="chip" href="../?q=P31BB" title="Индекс неисправности BB">P31BB</a>
+<a class="chip" href="../?q=P31BC" title="Индекс неисправности BC">P31BC</a>
+<a class="chip" href="../?q=P31BD" title="Индекс неисправности BD">P31BD</a>
+<a class="chip" href="../?q=P31BE" title="Индекс неисправности BE">P31BE</a>
+<a class="chip" href="../?q=P31BF" title="Индекс неисправности BF">P31BF</a>
+<a class="chip" href="../?q=P31C0" title="Индекс неисправности C0">P31C0</a>
+<a class="chip" href="../?q=P31C1" title="Индекс неисправности C1">P31C1</a>
+<a class="chip" href="../?q=P31C2" title="Индекс неисправности C2">P31C2</a>
+<a class="chip" href="../?q=P31C3" title="Индекс неисправности C3">P31C3</a>
+<a class="chip" href="../?q=P31C4" title="Индекс неисправности C4">P31C4</a>
+<a class="chip" href="../?q=P31C5" title="Индекс неисправности C5">P31C5</a>
+<a class="chip" href="../?q=P31C6" title="Индекс неисправности C6">P31C6</a>
+<a class="chip" href="../?q=P31C7" title="Индекс неисправности C7">P31C7</a>
+<a class="chip" href="../?q=P31C8" title="Индекс неисправности C8">P31C8</a>
+<a class="chip" href="../?q=P31C9" title="Индекс неисправности C9">P31C9</a>
+<a class="chip" href="../?q=P31CA" title="Индекс неисправности CA">P31CA</a>
+<a class="chip" href="../?q=P31CB" title="Индекс неисправности CB">P31CB</a>
+<a class="chip" href="../?q=P31CC" title="Индекс неисправности CC">P31CC</a>
+<a class="chip" href="../?q=P31CD" title="Индекс неисправности CD">P31CD</a>
+<a class="chip" href="../?q=P31CE" title="Индекс неисправности CE">P31CE</a>
+<a class="chip" href="../?q=P31CF" title="Индекс неисправности CF">P31CF</a>
+<a class="chip" href="../?q=P31D0" title="Индекс неисправности D0">P31D0</a>
+<a class="chip" href="../?q=P31D1" title="Индекс неисправности D1">P31D1</a>
+<a class="chip" href="../?q=P31D2" title="Индекс неисправности D2">P31D2</a>
+<a class="chip" href="../?q=P31D3" title="Индекс неисправности D3">P31D3</a>
+<a class="chip" href="../?q=P31D4" title="Индекс неисправности D4">P31D4</a>
+<a class="chip" href="../?q=P31D5" title="Индекс неисправности D5">P31D5</a>
+<a class="chip" href="../?q=P31D6" title="Индекс неисправности D6">P31D6</a>
+<a class="chip" href="../?q=P31D7" title="Индекс неисправности D7">P31D7</a>
+<a class="chip" href="../?q=P31D8" title="Индекс неисправности D8">P31D8</a>
+<a class="chip" href="../?q=P31D9" title="Индекс неисправности D9">P31D9</a>
+<a class="chip" href="../?q=P31DA" title="Индекс неисправности DA">P31DA</a>
+<a class="chip" href="../?q=P31DB" title="Индекс неисправности DB">P31DB</a>
+<a class="chip" href="../?q=P31DC" title="Индекс неисправности DC">P31DC</a>
+<a class="chip" href="../?q=P31DD" title="Индекс неисправности DD">P31DD</a>
+<a class="chip" href="../?q=P31DE" title="Индекс неисправности DE">P31DE</a>
+<a class="chip" href="../?q=P31DF" title="Индекс неисправности DF">P31DF</a>
+<a class="chip" href="../?q=P31E0" title="Индекс неисправности E0">P31E0</a>
+<a class="chip" href="../?q=P31E1" title="Индекс неисправности E1">P31E1</a>
+<a class="chip" href="../?q=P31E2" title="Индекс неисправности E2">P31E2</a>
+<a class="chip" href="../?q=P31E3" title="Индекс неисправности E3">P31E3</a>
+<a class="chip" href="../?q=P31E4" title="Индекс неисправности E4">P31E4</a>
+<a class="chip" href="../?q=P31E5" title="Индекс неисправности E5">P31E5</a>
+<a class="chip" href="../?q=P31E6" title="Индекс неисправности E6">P31E6</a>
+<a class="chip" href="../?q=P31E7" title="Индекс неисправности E7">P31E7</a>
+<a class="chip" href="../?q=P31E8" title="Индекс неисправности E8">P31E8</a>
+<a class="chip" href="../?q=P31E9" title="Индекс неисправности E9">P31E9</a>
+<a class="chip" href="../?q=P31EA" title="Индекс неисправности EA">P31EA</a>
+<a class="chip" href="../?q=P31EB" title="Индекс неисправности EB">P31EB</a>
+<a class="chip" href="../?q=P31EC" title="Индекс неисправности EC">P31EC</a>
+<a class="chip" href="../?q=P31ED" title="Индекс неисправности ED">P31ED</a>
+<a class="chip" href="../?q=P31EE" title="Индекс неисправности EE">P31EE</a>
+<a class="chip" href="../?q=P31EF" title="Индекс неисправности EF">P31EF</a>
+<a class="chip" href="../?q=P31F0" title="Индекс неисправности F0">P31F0</a>
+<a class="chip" href="../?q=P31F1" title="Индекс неисправности F1">P31F1</a>
+<a class="chip" href="../?q=P31F2" title="Индекс неисправности F2">P31F2</a>
+<a class="chip" href="../?q=P31F3" title="Индекс неисправности F3">P31F3</a>
+<a class="chip" href="../?q=P31F4" title="Индекс неисправности F4">P31F4</a>
+<a class="chip" href="../?q=P31F5" title="Индекс неисправности F5">P31F5</a>
+<a class="chip" href="../?q=P31F6" title="Индекс неисправности F6">P31F6</a>
+<a class="chip" href="../?q=P31F7" title="Индекс неисправности F7">P31F7</a>
+<a class="chip" href="../?q=P31F8" title="Индекс неисправности F8">P31F8</a>
+<a class="chip" href="../?q=P31F9" title="Индекс неисправности F9">P31F9</a>
+<a class="chip" href="../?q=P31FA" title="Индекс неисправности FA">P31FA</a>
+<a class="chip" href="../?q=P31FB" title="Индекс неисправности FB">P31FB</a>
+<a class="chip" href="../?q=P31FC" title="Индекс неисправности FC">P31FC</a>
+<a class="chip" href="../?q=P31FD" title="Индекс неисправности FD">P31FD</a>
+<a class="chip" href="../?q=P31FE" title="Индекс неисправности FE">P31FE</a>
+<a class="chip" href="../?q=P31FF" title="Индекс неисправности FF">P31FF</a>
+</div>
+<section class="cta">
+<div><h2>Прочитайте этот код со своей машины</h2>
+<p>Подключите адаптер ELM327 к разъёму OBD-II под приборной панелью. Pin16 прочитает подтверждённые, разовые и постоянные коды, объяснит каждый так же, как эта страница, — без интернета и без учётной записи — и покажет, что машина записала в момент ошибки.</p></div>
+<a class="button" href="https://play.google.com/store/apps/details?id=com.amaldavanau.pin16&amp;hl=ru&amp;referrer=utm_source%3Dpin16_site%26utm_medium%3Dcode_page%26utm_campaign%3Dcode_pages_ru%26utm_content%3Dblock_P31xx">Скачать Pin16 в Google Play</a>
+</section>
+</main>
+<footer class="site"><div><p>Текст написан для Pin16 и ещё не проверен квалифицированным механиком. Это помощь в диагностике, а не инструкция по ремонту; для вашего автомобиля она может быть неполной или неточной. Если сомневаетесь, обратитесь в автосервис.</p><p><a href="../../../">Pin16</a> · <a href="../../../privacy/#ru">Политика конфиденциальности</a></p></div></footer>
+</body>
+</html>

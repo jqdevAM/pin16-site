@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>P16xx — Выходные цепи и блок управления: коды ошибок OBD-II</title>
+<meta name="description" content="Сам блок управления и цепи, которыми он управляет, — реле, клапаны и исполнительные механизмы, — а также сбои внутренней памяти и процессора.">
+<meta name="robots" content="noindex,follow">
+<link rel="canonical" href="https://jqdevam.github.io/pin16-site/ru/codes/P16xx/">
+<link rel="alternate" hreflang="en" href="https://jqdevam.github.io/pin16-site/codes/P16xx/">
+<link rel="alternate" hreflang="ru" href="https://jqdevam.github.io/pin16-site/ru/codes/P16xx/">
+<link rel="alternate" hreflang="x-default" href="https://jqdevam.github.io/pin16-site/codes/P16xx/">
+<link rel="icon" href="../../../pin16.png">
+<link rel="stylesheet" href="../../../assets/codes.css?v=220cb5ea6d">
+</head>
+<body>
+<header class="site"><div class="bar"><a class="brand" href="../../../"><img src="../../../pin16.png" alt="" width="30" height="30"><span>Pin16</span></a><nav><a href="../../../ru/codes/">Все коды</a><a href="../../../ru/codes/tree/">Дерево кодов</a><a class="lang" hreflang="en" href="../../../codes/P16xx/">In English</a></nav></div></header>
+<main>
+<nav class="crumbs" aria-label="breadcrumb"><ol><li><a href="../../../ru/codes/">Все системы</a></li><li><a href="../../../ru/codes/P/">P · Двигатель и трансмиссия</a></li></ol></nav>
+<header class="hero"><p class="code-pill">P16xx</p><h1>Выходные цепи и блок управления</h1></header>
+<p class="lead">Сам блок управления и цепи, которыми он управляет, — реле, клапаны и исполнительные механизмы, — а также сбои внутренней памяти и процессора.</p>
+<p class="note info">Для этой системы нет описаний из открытых источников, поэтому коды разобраны по их структуре.</p>
+<p class="scope-note"><b>Специфичный для производителя.</b> Обратитесь к источнику для вашей марки и года выпуска. Цифра подсистемы при этом остаётся надёжной подсказкой.</p>
+<div class="chips mono wide">
+<a class="chip" href="../?q=P1600" title="Индекс неисправности 00">P1600</a>
+<a class="chip" href="../?q=P1601" title="Индекс неисправности 01">P1601</a>
+<a class="chip" href="../?q=P1602" title="Индекс неисправности 02">P1602</a>
+<a class="chip" href="../?q=P1603" title="Индекс неисправности 03">P1603</a>
+<a class="chip" href="../?q=P1604" title="Индекс неисправности 04">P1604</a>
+<a class="chip" href="../?q=P1605" title="Индекс неисправности 05">P1605</a>
+<a class="chip" href="../?q=P1606" title="Индекс неисправности 06">P1606</a>
+<a class="chip" href="../?q=P1607" title="Индекс неисправности 07">P1607</a>
+<a class="chip" href="../?q=P1608" title="Индекс неисправности 08">P1608</a>
+<a class="chip" href="../?q=P1609" title="Индекс неисправности 09">P1609</a>
+<a class="chip" href="../?q=P160A" title="Индекс неисправности 0A">P160A</a>
+<a class="chip" href="../?q=P160B" title="Индекс неисправности 0B">P160B</a>
+<a class="chip" href="../?q=P160C" title="Индекс неисправности 0C">P160C</a>
+<a class="chip" href="../?q=P160D" title="Индекс неисправности 0D">P160D</a>
+<a class="chip" href="../?q=P160E" title="Индекс неисправности 0E">P160E</a>
+<a class="chip" href="../?q=P160F" title="Индекс неисправности 0F">P160F</a>
+<a class="chip" href="../?q=P1610" title="Индекс неисправности 10">P1610</a>
+<a class="chip" href="../?q=P1611" title="Индекс неисправности 11">P1611</a>
+<a class="chip" href="../?q=P1612" title="Индекс неисправности 12">P1612</a>
+<a class="chip" href="../?q=P1613" title="Индекс неисправности 13">P1613</a>
+<a class="chip" href="../?q=P1614" title="Индекс неисправности 14">P1614</a>
+<a class="chip" href="../?q=P1615" title="Индекс неисправности 15">P1615</a>
+<a class="chip" href="../?q=P1616" title="Индекс неисправности 16">P1616</a>
+<a class="chip" href="../?q=P1617" title="Индекс неисправности 17">P1617</a>
+<a class="chip" href="../?q=P1618" title="Индекс неисправности 18">P1618</a>
+<a class="chip" href="../?q=P1619" title="Индекс неисправности 19">P1619</a>
+<a class="chip" href="../?q=P161A" title="Индекс неисправности 1A">P161A</a>
+<a class="chip" href="../?q=P161B" title="Индекс неисправности 1B">P161B</a>
+<a class="chip" href="../?q=P161C" title="Индекс неисправности 1C">P161C</a>
+<a class="chip" href="../?q=P161D" title="Индекс неисправности 1D">P161D</a>
+<a class="chip" href="../?q=P161E" title="Индекс неисправности 1E">P161E</a>
+<a class="chip" href="../?q=P161F" title="Индекс неисправности 1F">P161F</a>
+<a class="chip" href="../?q=P1620" title="Индекс неисправности 20">P1620</a>
+<a class="chip" href="../?q=P1621" title="Индекс неисправности 21">P1621</a>
+<a class="chip" href="../?q=P1622" title="Индекс неисправности 22">P1622</a>
+<a class="chip" href="../?q=P1623" title="Индекс неисправности 23">P1623</a>
+<a class="chip" href="../?q=P1624" title="Индекс неисправности 24">P1624</a>
+<a class="chip" href="../?q=P1625" title="Индекс неисправности 25">P1625</a>
+<a class="chip" href="../?q=P1626" title="Индекс неисправности 26">P1626</a>
+<a class="chip" href="../?q=P1627" title="Индекс неисправности 27">P1627</a>
+<a class="chip" href="../?q=P1628" title="Индекс неисправности 28">P1628</a>
+<a class="chip" href="../?q=P1629" title="Индекс неисправности 29">P1629</a>
+<a class="chip" href="../?q=P162A" title="Индекс неисправности 2A">P162A</a>
+<a class="chip" href="../?q=P162B" title="Индекс неисправности 2B">P162B</a>
+<a class="chip" href="../?q=P162C" title="Индекс неисправности 2C">P162C</a>
+<a class="chip" href="../?q=P162D" title="Индекс неисправности 2D">P162D</a>
+<a class="chip" href="../?q=P162E" title="Индекс неисправности 2E">P162E</a>
+<a class="chip" href="../?q=P162F" title="Индекс неисправности 2F">P162F</a>
+<a class="chip" href="../?q=P1630" title="Индекс неисправности 30">P1630</a>
+<a class="chip" href="../?q=P1631" title="Индекс неисправности 31">P1631</a>
+<a class="chip" href="../?q=P1632" title="Индекс неисправности 32">P1632</a>
+<a class="chip" href="../?q=P1633" title="Индекс неисправности 33">P1633</a>
+<a class="chip" href="../?q=P1634" title="Индекс неисправности 34">P1634</a>
+<a class="chip" href="../?q=P1635" title="Индекс неисправности 35">P1635</a>
+<a class="chip" href="../?q=P1636" title="Индекс неисправности 36">P1636</a>
+<a class="chip" href="../?q=P1637" title="Индекс неисправности 37">P1637</a>
+<a class="chip" href="../?q=P1638" title="Индекс неисправности 38">P1638</a>
+<a class="chip" href="../?q=P1639" title="Индекс неисправности 39">P1639</a>
+<a class="chip" href="../?q=P163A" title="Индекс неисправности 3A">P163A</a>
+<a class="chip" href="../?q=P163B" title="Индекс неисправности 3B">P163B</a>
+<a class="chip" href="../?q=P163C" title="Индекс неисправности 3C">P163C</a>
+<a class="chip" href="../?q=P163D" title="Индекс неисправности 3D">P163D</a>
+<a class="chip" href="../?q=P163E" title="Индекс неисправности 3E">P163E</a>
+<a class="chip" href="../?q=P163F" title="Индекс неисправности 3F">P163F</a>
+<a class="chip" href="../?q=P1640" title="Индекс неисправности 40">P1640</a>
+<a class="chip" href="../?q=P1641" title="Индекс неисправности 41">P1641</a>
+<a class="chip" href="../?q=P1642" title="Индекс неисправности 42">P1642</a>
+<a class="chip" href="../?q=P1643" title="Индекс неисправности 43">P1643</a>
+<a class="chip" href="../?q=P1644" title="Индекс неисправности 44">P1644</a>
+<a class="chip" href="../?q=P1645" title="Индекс неисправности 45">P1645</a>
+<a class="chip" href="../?q=P1646" title="Индекс неисправности 46">P1646</a>
+<a class="chip" href="../?q=P1647" title="Индекс неисправности 47">P1647</a>
+<a class="chip" href="../?q=P1648" title="Индекс неисправности 48">P1648</a>
+<a class="chip" href="../?q=P1649" title="Индекс неисправности 49">P1649</a>
+<a class="chip" href="../?q=P164A" title="Индекс неисправности 4A">P164A</a>
+<a class="chip" href="../?q=P164B" title="Индекс неисправности 4B">P164B</a>
+<a class="chip" href="../?q=P164C" title="Индекс неисправности 4C">P164C</a>
+<a class="chip" href="../?q=P164D" title="Индекс неисправности 4D">P164D</a>
+<a class="chip" href="../?q=P164E" title="Индекс неисправности 4E">P164E</a>
+<a class="chip" href="../?q=P164F" title="Индекс неисправности 4F">P164F</a>
+<a class="chip" href="../?q=P1650" title="Индекс неисправности 50">P1650</a>
+<a class="chip" href="../?q=P1651" title="Индекс неисправности 51">P1651</a>
+<a class="chip" href="../?q=P1652" title="Индекс неисправности 52">P1652</a>
+<a class="chip" href="../?q=P1653" title="Индекс неисправности 53">P1653</a>
+<a class="chip" href="../?q=P1654" title="Индекс неисправности 54">P1654</a>
+<a class="chip" href="../?q=P1655" title="Индекс неисправности 55">P1655</a>
+<a class="chip" href="../?q=P1656" title="Индекс неисправности 56">P1656</a>
+<a class="chip" href="../?q=P1657" title="Индекс неисправности 57">P1657</a>
+<a class="chip" href="../?q=P1658" title="Индекс неисправности 58">P1658</a>
+<a class="chip" href="../?q=P1659" title="Индекс неисправности 59">P1659</a>
+<a class="chip" href="../?q=P165A" title="Индекс неисправности 5A">P165A</a>
+<a class="chip" href="../?q=P165B" title="Индекс неисправности 5B">P165B</a>
+<a class="chip" href="../?q=P165C" title="Индекс неисправности 5C">P165C</a>
+<a class="chip" href="../?q=P165D" title="Индекс неисправности 5D">P165D</a>
+<a class="chip" href="../?q=P165E" title="Индекс неисправности 5E">P165E</a>
+<a class="chip" href="../?q=P165F" title="Индекс неисправности 5F">P165F</a>
+<a class="chip" href="../?q=P1660" title="Индекс неисправности 60">P1660</a>
+<a class="chip" href="../?q=P1661" title="Индекс неисправности 61">P1661</a>
+<a class="chip" href="../?q=P1662" title="Индекс неисправности 62">P1662</a>
+<a class="chip" href="../?q=P1663" title="Индекс неисправности 63">P1663</a>
+<a class="chip" href="../?q=P1664" title="Индекс неисправности 64">P1664</a>
+<a class="chip" href="../?q=P1665" title="Индекс неисправности 65">P1665</a>
+<a class="chip" href="../?q=P1666" title="Индекс неисправности 66">P1666</a>
+<a class="chip" href="../?q=P1667" title="Индекс неисправности 67">P1667</a>
+<a class="chip" href="../?q=P1668" title="Индекс неисправности 68">P1668</a>
+<a class="chip" href="../?q=P1669" title="Индекс неисправности 69">P1669</a>
+<a class="chip" href="../?q=P166A" title="Индекс неисправности 6A">P166A</a>
+<a class="chip" href="../?q=P166B" title="Индекс неисправности 6B">P166B</a>
+<a class="chip" href="../?q=P166C" title="Индекс неисправности 6C">P166C</a>
+<a class="chip" href="../?q=P166D" title="Индекс неисправности 6D">P166D</a>
+<a class="chip" href="../?q=P166E" title="Индекс неисправности 6E">P166E</a>
+<a class="chip" href="../?q=P166F" title="Индекс неисправности 6F">P166F</a>
+<a class="chip" href="../?q=P1670" title="Индекс неисправности 70">P1670</a>
+<a class="chip" href="../?q=P1671" title="Индекс неисправности 71">P1671</a>
+<a class="chip" href="../?q=P1672" title="Индекс неисправности 72">P1672</a>
+<a class="chip" href="../?q=P1673" title="Индекс неисправности 73">P1673</a>
+<a class="chip" href="../?q=P1674" title="Индекс неисправности 74">P1674</a>
+<a class="chip" href="../?q=P1675" title="Индекс неисправности 75">P1675</a>
+<a class="chip" href="../?q=P1676" title="Индекс неисправности 76">P1676</a>
+<a class="chip" href="../?q=P1677" title="Индекс неисправности 77">P1677</a>
+<a class="chip" href="../?q=P1678" title="Индекс неисправности 78">P1678</a>
+<a class="chip" href="../?q=P1679" title="Индекс неисправности 79">P1679</a>
+<a class="chip" href="../?q=P167A" title="Индекс неисправности 7A">P167A</a>
+<a class="chip" href="../?q=P167B" title="Индекс неисправности 7B">P167B</a>
+<a class="chip" href="../?q=P167C" title="Индекс неисправности 7C">P167C</a>
+<a class="chip" href="../?q=P167D" title="Индекс неисправности 7D">P167D</a>
+<a class="chip" href="../?q=P167E" title="Индекс неисправности 7E">P167E</a>
+<a class="chip" href="../?q=P167F" title="Индекс неисправности 7F">P167F</a>
+<a class="chip" href="../?q=P1680" title="Индекс неисправности 80">P1680</a>
+<a class="chip" href="../?q=P1681" title="Индекс неисправности 81">P1681</a>
+<a class="chip" href="../?q=P1682" title="Индекс неисправности 82">P1682</a>
+<a class="chip" href="../?q=P1683" title="Индекс неисправности 83">P1683</a>
+<a class="chip" href="../?q=P1684" title="Индекс неисправности 84">P1684</a>
+<a class="chip" href="../?q=P1685" title="Индекс неисправности 85">P1685</a>
+<a class="chip" href="../?q=P1686" title="Индекс неисправности 86">P1686</a>
+<a class="chip" href="../?q=P1687" title="Индекс неисправности 87">P1687</a>
+<a class="chip" href="../?q=P1688" title="Индекс неисправности 88">P1688</a>
+<a class="chip" href="../?q=P1689" title="Индекс неисправности 89">P1689</a>
+<a class="chip" href="../?q=P168A" title="Индекс неисправности 8A">P168A</a>
+<a class="chip" href="../?q=P168B" title="Индекс неисправности 8B">P168B</a>
+<a class="chip" href="../?q=P168C" title="Индекс неисправности 8C">P168C</a>
+<a class="chip" href="../?q=P168D" title="Индекс неисправности 8D">P168D</a>
+<a class="chip" href="../?q=P168E" title="Индекс неисправности 8E">P168E</a>
+<a class="chip" href="../?q=P168F" title="Индекс неисправности 8F">P168F</a>
+<a class="chip" href="../?q=P1690" title="Индекс неисправности 90">P1690</a>
+<a class="chip" href="../?q=P1691" title="Индекс неисправности 91">P1691</a>
+<a class="chip" href="../?q=P1692" title="Индекс неисправности 92">P1692</a>
+<a class="chip" href="../?q=P1693" title="Индекс неисправности 93">P1693</a>
+<a class="chip" href="../?q=P1694" title="Индекс неисправности 94">P1694</a>
+<a class="chip" href="../?q=P1695" title="Индекс неисправности 95">P1695</a>
+<a class="chip" href="../?q=P1696" title="Индекс неисправности 96">P1696</a>
+<a class="chip" href="../?q=P1697" title="Индекс неисправности 97">P1697</a>
+<a class="chip" href="../?q=P1698" title="Индекс неисправности 98">P1698</a>
+<a class="chip" href="../?q=P1699" title="Индекс неисправности 99">P1699</a>
+<a class="chip" href="../?q=P169A" title="Индекс неисправности 9A">P169A</a>
+<a class="chip" href="../?q=P169B" title="Индекс неисправности 9B">P169B</a>
+<a class="chip" href="../?q=P169C" title="Индекс неисправности 9C">P169C</a>
+<a class="chip" href="../?q=P169D" title="Индекс неисправности 9D">P169D</a>
+<a class="chip" href="../?q=P169E" title="Индекс неисправности 9E">P169E</a>
+<a class="chip" href="../?q=P169F" title="Индекс неисправности 9F">P169F</a>
+<a class="chip" href="../?q=P16A0" title="Индекс неисправности A0">P16A0</a>
+<a class="chip" href="../?q=P16A1" title="Индекс неисправности A1">P16A1</a>
+<a class="chip" href="../?q=P16A2" title="Индекс неисправности A2">P16A2</a>
+<a class="chip" href="../?q=P16A3" title="Индекс неисправности A3">P16A3</a>
+<a class="chip" href="../?q=P16A4" title="Индекс неисправности A4">P16A4</a>
+<a class="chip" href="../?q=P16A5" title="Индекс неисправности A5">P16A5</a>
+<a class="chip" href="../?q=P16A6" title="Индекс неисправности A6">P16A6</a>
+<a class="chip" href="../?q=P16A7" title="Индекс неисправности A7">P16A7</a>
+<a class="chip" href="../?q=P16A8" title="Индекс неисправности A8">P16A8</a>
+<a class="chip" href="../?q=P16A9" title="Индекс неисправности A9">P16A9</a>
+<a class="chip" href="../?q=P16AA" title="Индекс неисправности AA">P16AA</a>
+<a class="chip" href="../?q=P16AB" title="Индекс неисправности AB">P16AB</a>
+<a class="chip" href="../?q=P16AC" title="Индекс неисправности AC">P16AC</a>
+<a class="chip" href="../?q=P16AD" title="Индекс неисправности AD">P16AD</a>
+<a class="chip" href="../?q=P16AE" title="Индекс неисправности AE">P16AE</a>
+<a class="chip" href="../?q=P16AF" title="Индекс неисправности AF">P16AF</a>
+<a class="chip" href="../?q=P16B0" title="Индекс неисправности B0">P16B0</a>
+<a class="chip" href="../?q=P16B1" title="Индекс неисправности B1">P16B1</a>
+<a class="chip" href="../?q=P16B2" title="Индекс неисправности B2">P16B2</a>
+<a class="chip" href="../?q=P16B3" title="Индекс неисправности B3">P16B3</a>
+<a class="chip" href="../?q=P16B4" title="Индекс неисправности B4">P16B4</a>
+<a class="chip" href="../?q=P16B5" title="Индекс неисправности B5">P16B5</a>
+<a class="chip" href="../?q=P16B6" title="Индекс неисправности B6">P16B6</a>
+<a class="chip" href="../?q=P16B7" title="Индекс неисправности B7">P16B7</a>
+<a class="chip" href="../?q=P16B8" title="Индекс неисправности B8">P16B8</a>
+<a class="chip" href="../?q=P16B9" title="Индекс неисправности B9">P16B9</a>
+<a class="chip" href="../?q=P16BA" title="Индекс неисправности BA">P16BA</a>
+<a class="chip" href="../?q=P16BB" title="Индекс неисправности BB">P16BB</a>
+<a class="chip" href="../?q=P16BC" title="Индекс неисправности BC">P16BC</a>
+<a class="chip" href="../?q=P16BD" title="Индекс неисправности BD">P16BD</a>
+<a class="chip" href="../?q=P16BE" title="Индекс неисправности BE">P16BE</a>
+<a class="chip" href="../?q=P16BF" title="Индекс неисправности BF">P16BF</a>
+<a class="chip" href="../?q=P16C0" title="Индекс неисправности C0">P16C0</a>
+<a class="chip" href="../?q=P16C1" title="Индекс неисправности C1">P16C1</a>
+<a class="chip" href="../?q=P16C2" title="Индекс неисправности C2">P16C2</a>
+<a class="chip" href="../?q=P16C3" title="Индекс неисправности C3">P16C3</a>
+<a class="chip" href="../?q=P16C4" title="Индекс неисправности C4">P16C4</a>
+<a class="chip" href="../?q=P16C5" title="Индекс неисправности C5">P16C5</a>
+<a class="chip" href="../?q=P16C6" title="Индекс неисправности C6">P16C6</a>
+<a class="chip" href="../?q=P16C7" title="Индекс неисправности C7">P16C7</a>
+<a class="chip" href="../?q=P16C8" title="Индекс неисправности C8">P16C8</a>
+<a class="chip" href="../?q=P16C9" title="Индекс неисправности C9">P16C9</a>
+<a class="chip" href="../?q=P16CA" title="Индекс неисправности CA">P16CA</a>
+<a class="chip" href="../?q=P16CB" title="Индекс неисправности CB">P16CB</a>
+<a class="chip" href="../?q=P16CC" title="Индекс неисправности CC">P16CC</a>
+<a class="chip" href="../?q=P16CD" title="Индекс неисправности CD">P16CD</a>
+<a class="chip" href="../?q=P16CE" title="Индекс неисправности CE">P16CE</a>
+<a class="chip" href="../?q=P16CF" title="Индекс неисправности CF">P16CF</a>
+<a class="chip" href="../?q=P16D0" title="Индекс неисправности D0">P16D0</a>
+<a class="chip" href="../?q=P16D1" title="Индекс неисправности D1">P16D1</a>
+<a class="chip" href="../?q=P16D2" title="Индекс неисправности D2">P16D2</a>
+<a class="chip" href="../?q=P16D3" title="Индекс неисправности D3">P16D3</a>
+<a class="chip" href="../?q=P16D4" title="Индекс неисправности D4">P16D4</a>
+<a class="chip" href="../?q=P16D5" title="Индекс неисправности D5">P16D5</a>
+<a class="chip" href="../?q=P16D6" title="Индекс неисправности D6">P16D6</a>
+<a class="chip" href="../?q=P16D7" title="Индекс неисправности D7">P16D7</a>
+<a class="chip" href="../?q=P16D8" title="Индекс неисправности D8">P16D8</a>
+<a class="chip" href="../?q=P16D9" title="Индекс неисправности D9">P16D9</a>
+<a class="chip" href="../?q=P16DA" title="Индекс неисправности DA">P16DA</a>
+<a class="chip" href="../?q=P16DB" title="Индекс неисправности DB">P16DB</a>
+<a class="chip" href="../?q=P16DC" title="Индекс неисправности DC">P16DC</a>
+<a class="chip" href="../?q=P16DD" title="Индекс неисправности DD">P16DD</a>
+<a class="chip" href="../?q=P16DE" title="Индекс неисправности DE">P16DE</a>
+<a class="chip" href="../?q=P16DF" title="Индекс неисправности DF">P16DF</a>
+<a class="chip" href="../?q=P16E0" title="Индекс неисправности E0">P16E0</a>
+<a class="chip" href="../?q=P16E1" title="Индекс неисправности E1">P16E1</a>
+<a class="chip" href="../?q=P16E2" title="Индекс неисправности E2">P16E2</a>
+<a class="chip" href="../?q=P16E3" title="Индекс неисправности E3">P16E3</a>
+<a class="chip" href="../?q=P16E4" title="Индекс неисправности E4">P16E4</a>
+<a class="chip" href="../?q=P16E5" title="Индекс неисправности E5">P16E5</a>
+<a class="chip" href="../?q=P16E6" title="Индекс неисправности E6">P16E6</a>
+<a class="chip" href="../?q=P16E7" title="Индекс неисправности E7">P16E7</a>
+<a class="chip" href="../?q=P16E8" title="Индекс неисправности E8">P16E8</a>
+<a class="chip" href="../?q=P16E9" title="Индекс неисправности E9">P16E9</a>
+<a class="chip" href="../?q=P16EA" title="Индекс неисправности EA">P16EA</a>
+<a class="chip" href="../?q=P16EB" title="Индекс неисправности EB">P16EB</a>
+<a class="chip" href="../?q=P16EC" title="Индекс неисправности EC">P16EC</a>
+<a class="chip" href="../?q=P16ED" title="Индекс неисправности ED">P16ED</a>
+<a class="chip" href="../?q=P16EE" title="Индекс неисправности EE">P16EE</a>
+<a class="chip" href="../?q=P16EF" title="Индекс неисправности EF">P16EF</a>
+<a class="chip" href="../?q=P16F0" title="Индекс неисправности F0">P16F0</a>
+<a class="chip" href="../?q=P16F1" title="Индекс неисправности F1">P16F1</a>
+<a class="chip" href="../?q=P16F2" title="Индекс неисправности F2">P16F2</a>
+<a class="chip" href="../?q=P16F3" title="Индекс неисправности F3">P16F3</a>
+<a class="chip" href="../?q=P16F4" title="Индекс неисправности F4">P16F4</a>
+<a class="chip" href="../?q=P16F5" title="Индекс неисправности F5">P16F5</a>
+<a class="chip" href="../?q=P16F6" title="Индекс неисправности F6">P16F6</a>
+<a class="chip" href="../?q=P16F7" title="Индекс неисправности F7">P16F7</a>
+<a class="chip" href="../?q=P16F8" title="Индекс неисправности F8">P16F8</a>
+<a class="chip" href="../?q=P16F9" title="Индекс неисправности F9">P16F9</a>
+<a class="chip" href="../?q=P16FA" title="Индекс неисправности FA">P16FA</a>
+<a class="chip" href="../?q=P16FB" title="Индекс неисправности FB">P16FB</a>
+<a class="chip" href="../?q=P16FC" title="Индекс неисправности FC">P16FC</a>
+<a class="chip" href="../?q=P16FD" title="Индекс неисправности FD">P16FD</a>
+<a class="chip" href="../?q=P16FE" title="Индекс неисправности FE">P16FE</a>
+<a class="chip" href="../?q=P16FF" title="Индекс неисправности FF">P16FF</a>
+</div>
+<section class="cta">
+<div><h2>Прочитайте этот код со своей машины</h2>
+<p>Подключите адаптер ELM327 к разъёму OBD-II под приборной панелью. Pin16 прочитает подтверждённые, разовые и постоянные коды, объяснит каждый так же, как эта страница, — без интернета и без учётной записи — и покажет, что машина записала в момент ошибки.</p></div>
+<a class="button" href="https://play.google.com/store/apps/details?id=com.amaldavanau.pin16&amp;hl=ru&amp;referrer=utm_source%3Dpin16_site%26utm_medium%3Dcode_page%26utm_campaign%3Dcode_pages_ru%26utm_content%3Dblock_P16xx">Скачать Pin16 в Google Play</a>
+</section>
+</main>
+<footer class="site"><div><p>Текст написан для Pin16 и ещё не проверен квалифицированным механиком. Это помощь в диагностике, а не инструкция по ремонту; для вашего автомобиля она может быть неполной или неточной. Если сомневаетесь, обратитесь в автосервис.</p><p><a href="../../../">Pin16</a> · <a href="../../../privacy/#ru">Политика конфиденциальности</a></p></div></footer>
+</body>
+</html>

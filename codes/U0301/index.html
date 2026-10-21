@@ -10,53 +10,59 @@
 <link rel="alternate" hreflang="ru" href="https://jqdevam.github.io/pin16-site/ru/codes/U0301/">
 <link rel="alternate" hreflang="x-default" href="https://jqdevam.github.io/pin16-site/codes/U0301/">
 <link rel="icon" href="../../pin16.png">
-<link rel="stylesheet" href="../../assets/codes.css">
+<link rel="stylesheet" href="../../assets/codes.css?v=220cb5ea6d">
 </head>
 <body>
+<header class="site"><div class="bar"><a class="brand" href="../../"><img src="../../pin16.png" alt="" width="30" height="30"><span>Pin16</span></a><nav><a href="../../codes/">All codes</a><a href="../../codes/tree/">Code tree</a><a class="lang" hreflang="ru" href="../../ru/codes/U0301/">По-русски</a></nav></div></header>
 <main>
-<nav class="top"><a class="brand" href="../../"><img src="../../pin16.png" alt="" width="28" height="28">Pin16</a><a href="../../codes/">All codes</a><a hreflang="ru" href="../../ru/codes/U0301/">По-русски</a></nav>
-<nav class="trail"><a href="../../codes/">All systems</a><span aria-hidden="true">›</span><a href="../../codes/U/">U · Network and communication</a><span aria-hidden="true">›</span><a href="../../codes/U03xx/">U03xx · Network software</a></nav>
-<header class="code-head">
-<p class="code">U0301</p>
+<nav class="crumbs" aria-label="breadcrumb"><ol><li><a href="../../codes/">All systems</a></li><li><a href="../../codes/U/">U · Network and communication</a></li><li><a href="../../codes/U03xx/">U03xx · Network software</a></li></ol></nav>
+<header class="hero">
+<p class="code-pill">U0301</p>
 <h1>Software Incompatibility with ECM/PCM</h1>
-<dl class="facts"><div class="sev-high"><dt>Severity</dt><dd>High</dd></div><div><dt>Driving</dt><dd>Drive only to a garage</dd></div><div><dt>System</dt><dd>Network and communication</dd></div><div><dt>Group</dt><dd>Network software</dd></div></dl>
+<dl class="facts"><div class="sev-high"><dt>Severity</dt><dd>High</dd></div><div class="drive-limp_home"><dt>Driving</dt><dd>Drive only to a garage</dd></div></dl>
 </header>
 <p class="lead">The software in the engine control module is not compatible with the rest of the vehicle. Whatever that module runs is no longer being coordinated correctly, so expect a limp-home mode, a fixed gear, a refusal to start, or the loss of the function it controls. The module itself is working - it is the version of its software, or its configuration for this particular vehicle, that is wrong.</p>
-<h2>Possible causes</h2>
+<section class="block"><h2>Possible causes</h2>
 <ul class="causes">
-<li><span class="lik lik-common">Common</span>The engine control module replaced but never programmed or coded to this vehicle</li>
-<li><span class="lik lik-common">Common</span>Used module fitted from a different vehicle, model year or engine variant</li>
-<li><span class="lik lik-common">Common</span>Software update interrupted, often by battery voltage falling during programming</li>
-<li><span class="lik lik-common">Common</span>One module updated while others were left at their old versions</li>
-<li><span class="lik lik-common">Common</span>Wrong part number - physically identical, electronically different</li>
-<li><span class="lik lik-possible">Possible</span>Aftermarket remap or tuning device</li>
-<li><span class="lik lik-rare">Rare</span>Corrupted module software</li>
-</ul>
-<h2>What you might notice</h2>
-<ul>
+<li><span class="pill lik-common">Common</span><span>The engine control module replaced but never programmed or coded to this vehicle</span></li>
+<li><span class="pill lik-common">Common</span><span>Used module fitted from a different vehicle, model year or engine variant</span></li>
+<li><span class="pill lik-common">Common</span><span>Software update interrupted, often by battery voltage falling during programming</span></li>
+<li><span class="pill lik-common">Common</span><span>One module updated while others were left at their old versions</span></li>
+<li><span class="pill lik-common">Common</span><span>Wrong part number - physically identical, electronically different</span></li>
+<li><span class="pill lik-possible">Possible</span><span>Aftermarket remap or tuning device</span></li>
+<li><span class="pill lik-rare">Rare</span><span>Corrupted module software</span></li>
+</ul></section>
+<section class="block"><h2>What you might notice</h2>
+<ul class="dots">
 <li>Limp-home mode or reduced power</li>
 <li>Transmission stuck in one gear</li>
 <li>Engine will not start</li>
 <li>Several warning lights at once</li>
 <li>Function controlled by that module unavailable</li>
 <li>Fault present since a repair or service visit</li>
-</ul>
-<h2>What to check, in order</h2>
-<ol class="checks">
+</ul></section>
+<section class="block"><h2>What to check, in order</h2>
+<ol class="steps">
 <li>Ask what was done to the vehicle recently, and by whom. This code follows work; it does not appear on its own.</li>
 <li>Read the software and part numbers of the engine control module and compare them against the vehicle&#x27;s build specification - not just the model, but the engine variant, market and model year.</li>
 <li>If a used module was fitted, check whether it is locked to its original vehicle. Many are, and it is better to find that out before paying for programming.</li>
 <li>If a programming session was interrupted, it can usually be re-run with a battery support unit connected so voltage cannot fall again.</li>
 <li>Do not replace the module. It is almost always the right hardware carrying the wrong software.</li>
 <li>Expect manufacturer-level programming. A generic scan tool can read this code but cannot fix it, and neither can Pin16&#x27;s coding lane, which writes documented parameters rather than module software.</li>
-</ol>
+</ol></section>
 <section class="cta">
-<h2>Read this code from your own car</h2>
-<p>Plug an ELM327 adapter into the OBD-II port under the dashboard. Pin16 reads every stored, pending and permanent code, explains each one like this page does — offline, with no account — and shows what the car recorded when the fault was set.</p>
+<div><h2>Read this code from your own car</h2>
+<p>Plug an ELM327 adapter into the OBD-II port under the dashboard. Pin16 reads every stored, pending and permanent code, explains each one like this page does — offline, with no account — and shows what the car recorded when the fault was set.</p></div>
 <a class="button" href="https://play.google.com/store/apps/details?id=com.amaldavanau.pin16&amp;hl=en&amp;referrer=utm_source%3Dpin16_site%26utm_medium%3Dcode_page%26utm_campaign%3Dcode_pages_en%26utm_content%3DU0301">Get Pin16 on Google Play</a>
 </section>
-<nav class="pager"><a rel="prev" href="../U0300/">← U0300</a><a href="../">All codes</a><a rel="next" href="../U0302/">U0302 →</a></nav>
-<footer><p>Written for Pin16 and not yet reviewed by a qualified technician. This is guidance for diagnosis, not repair instructions, and it may be incomplete or wrong for your vehicle. If in doubt, ask a mechanic.</p><p><a href="../../">Pin16</a> · <a href="../../privacy/">Privacy policy</a></p></footer>
+<section class="where"><h2>Where this code sits</h2>
+<div class="levels">
+<div class="level"><div class="chips"><a class="chip" href="../B/">B · Body</a><a class="chip" href="../C/">C · Chassis</a><a class="chip" href="../P/">P · Powertrain</a><a class="chip" href="../U/" aria-current="true">U · Network and communication</a></div></div>
+<div class="level"><div class="chips mono"><a class="chip" href="../U00xx/" title="Network electrical">U00xx</a><a class="chip" href="../U01xx/" title="Network communication">U01xx</a><a class="chip" href="../U02xx/" title="Network communication">U02xx</a><a class="chip" href="../U03xx/" aria-current="true" title="Network software">U03xx</a><a class="chip" href="../U04xx/" title="Network data">U04xx</a><a class="chip dim" href="../U05xx/" title="Network and communication">U05xx</a><a class="chip dim" href="../U06xx/" title="Network and communication">U06xx</a><a class="chip dim" href="../U07xx/" title="Network and communication">U07xx</a><a class="chip dim" href="../U08xx/" title="Network and communication">U08xx</a><a class="chip dim" href="../U09xx/" title="Network and communication">U09xx</a><a class="chip dim" href="../U0Axx/" title="Network and communication">U0Axx</a><a class="chip dim" href="../U0Bxx/" title="Network and communication">U0Bxx</a><a class="chip dim" href="../U0Cxx/" title="Network and communication">U0Cxx</a><a class="chip dim" href="../U0Dxx/" title="Network and communication">U0Dxx</a><a class="chip dim" href="../U0Exx/" title="Network and communication">U0Exx</a><a class="chip dim" href="../U0Fxx/" title="Network and communication">U0Fxx</a><a class="chip dim" href="../U10xx/" title="Network electrical">U10xx</a><a class="chip dim" href="../U11xx/" title="Network communication">U11xx</a><a class="chip dim" href="../U12xx/" title="Network communication">U12xx</a><a class="chip dim" href="../U13xx/" title="Network software">U13xx</a><a class="chip dim" href="../U14xx/" title="Network data">U14xx</a><a class="chip dim" href="../U15xx/" title="Network and communication">U15xx</a><a class="chip dim" href="../U16xx/" title="Network and communication">U16xx</a><a class="chip dim" href="../U17xx/" title="Network and communication">U17xx</a><a class="chip dim" href="../U18xx/" title="Network and communication">U18xx</a><a class="chip dim" href="../U19xx/" title="Network and communication">U19xx</a><a class="chip dim" href="../U1Axx/" title="Network and communication">U1Axx</a><a class="chip dim" href="../U1Bxx/" title="Network and communication">U1Bxx</a><a class="chip dim" href="../U1Cxx/" title="Network and communication">U1Cxx</a><a class="chip dim" href="../U1Dxx/" title="Network and communication">U1Dxx</a><a class="chip dim" href="../U1Exx/" title="Network and communication">U1Exx</a><a class="chip dim" href="../U1Fxx/" title="Network and communication">U1Fxx</a><a class="chip dim" href="../U20xx/" title="Network electrical">U20xx</a><a class="chip dim" href="../U21xx/" title="Network communication">U21xx</a><a class="chip dim" href="../U22xx/" title="Network communication">U22xx</a><a class="chip dim" href="../U23xx/" title="Network software">U23xx</a><a class="chip dim" href="../U24xx/" title="Network data">U24xx</a><a class="chip dim" href="../U25xx/" title="Network and communication">U25xx</a><a class="chip dim" href="../U26xx/" title="Network and communication">U26xx</a><a class="chip dim" href="../U27xx/" title="Network and communication">U27xx</a><a class="chip dim" href="../U28xx/" title="Network and communication">U28xx</a><a class="chip dim" href="../U29xx/" title="Network and communication">U29xx</a><a class="chip dim" href="../U2Axx/" title="Network and communication">U2Axx</a><a class="chip dim" href="../U2Bxx/" title="Network and communication">U2Bxx</a><a class="chip dim" href="../U2Cxx/" title="Network and communication">U2Cxx</a><a class="chip dim" href="../U2Dxx/" title="Network and communication">U2Dxx</a><a class="chip dim" href="../U2Exx/" title="Network and communication">U2Exx</a><a class="chip dim" href="../U2Fxx/" title="Network and communication">U2Fxx</a><a class="chip dim" href="../U30xx/" title="Network electrical">U30xx</a><a class="chip dim" href="../U31xx/" title="Network communication">U31xx</a><a class="chip dim" href="../U32xx/" title="Network communication">U32xx</a><a class="chip dim" href="../U33xx/" title="Network software">U33xx</a><a class="chip dim" href="../U34xx/" title="Network data">U34xx</a><a class="chip dim" href="../U35xx/" title="Network and communication">U35xx</a><a class="chip dim" href="../U36xx/" title="Network and communication">U36xx</a><a class="chip dim" href="../U37xx/" title="Network and communication">U37xx</a><a class="chip dim" href="../U38xx/" title="Network and communication">U38xx</a><a class="chip dim" href="../U39xx/" title="Network and communication">U39xx</a><a class="chip dim" href="../U3Axx/" title="Network and communication">U3Axx</a><a class="chip dim" href="../U3Bxx/" title="Network and communication">U3Bxx</a><a class="chip dim" href="../U3Cxx/" title="Network and communication">U3Cxx</a><a class="chip dim" href="../U3Dxx/" title="Network and communication">U3Dxx</a><a class="chip dim" href="../U3Exx/" title="Network and communication">U3Exx</a><a class="chip dim" href="../U3Fxx/" title="Network and communication">U3Fxx</a></div></div>
+<div class="level"><p class="level-name">Network software</p><div class="chips mono"><a class="chip" href="../U0300/" title="Internal Control Module Software Incompatibility">U0300</a><a class="chip" href="../U0301/" aria-current="true" title="Software Incompatibility with ECM/PCM">U0301</a><a class="chip" href="../U0302/" title="Software Incompatibility with Transmission Control Module">U0302</a><a class="chip" href="../U0303/" title="Software Incompatibility with Transfer Case Control Module">U0303</a><a class="chip" href="../U0304/" title="Software Incompatibility with Gear Shift Control Module">U0304</a><a class="chip" href="../U0305/" title="Software Incompatibility with Cruise Control Module">U0305</a><a class="chip" href="../U0306/" title="Software Incompatibility with Fuel Injector Control Module">U0306</a><a class="chip" href="../U0307/" title="Software Incompatibility with Glow Plug Control Module">U0307</a><a class="chip" href="../U0308/" title="Software Incompatibility with Throttle Actuator Control Module">U0308</a><a class="chip" href="../U0309/" title="Software Incompatibility with Alternative Fuel Control Module">U0309</a><a class="chip" href="../U0310/" title="Software Incompatibility with Fuel Pump Control Module">U0310</a><a class="chip" href="../U0311/" title="Software Incompatibility with Drive Motor Control Module">U0311</a><a class="chip" href="../U0312/" title="Software Incompatibility with Battery Energy Control Module A">U0312</a><a class="chip" href="../U0313/" title="Software Incompatibility with Battery Energy Control Module B">U0313</a><a class="chip" href="../U0314/" title="Software Incompatibility with Four-Wheel Drive Clutch Control Module">U0314</a><a class="chip" href="../U0315/" title="Software Incompatibility with Anti-Lock Brake System Control Module">U0315</a><a class="chip" href="../U0316/" title="Software Incompatibility with Vehicle Dynamics Control Module">U0316</a><a class="chip" href="../U0317/" title="Software Incompatibility with Park Brake Control Module">U0317</a><a class="chip" href="../U0318/" title="Software Incompatibility with Brake System Control Module">U0318</a><a class="chip" href="../U0319/" title="Software Incompatibility with Steering Effort Control Module">U0319</a><a class="chip" href="../U0320/" title="Software Incompatibility with Power Steering Control Module">U0320</a><a class="chip" href="../U0321/" title="Software Incompatibility with Ride Level Control Module">U0321</a><a class="chip" href="../U0322/" title="Software Incompatibility with Body Control Module">U0322</a><a class="chip" href="../U0323/" title="Software Incompatibility with Instrument Panel Control Module">U0323</a><a class="chip" href="../U0324/" title="Software Incompatibility with HVAC Control Module">U0324</a><a class="chip" href="../U0325/" title="Software Incompatibility with Auxiliary Heater Control Module">U0325</a><a class="chip" href="../U0326/" title="Software Incompatibility with Vehicle Immobilizer Control Module">U0326</a><a class="chip" href="../U0327/" title="Software Incompatibility with Vehicle Security Control Module">U0327</a><a class="chip" href="../U0328/" title="Software Incompatibility with Steering Angle Sensor Module">U0328</a><a class="chip" href="../U0329/" title="Software Incompatibility with Steering Column Control Module">U0329</a><a class="chip" href="../U0330/" title="Software Incompatibility with Tire Pressure Monitor Module">U0330</a><a class="chip" href="../U0331/" title="Software Incompatibility with Body Control Module &quot;A&quot;">U0331</a></div></div>
+</div></section>
+<nav class="pager"><a rel="prev" href="../U0300/">← U0300</a><a href="../U03xx/">U03xx</a><a rel="next" href="../U0302/">U0302 →</a></nav>
 </main>
+<footer class="site"><div><p>Written for Pin16 and not yet reviewed by a qualified technician. This is guidance for diagnosis, not repair instructions, and it may be incomplete or wrong for your vehicle. If in doubt, ask a mechanic.</p><p><a href="../../">Pin16</a> · <a href="../../privacy/">Privacy policy</a></p></div></footer>
 </body>
 </html>

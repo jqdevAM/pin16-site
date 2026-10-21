@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>P36xx — Выходные цепи и блок управления: коды ошибок OBD-II</title>
+<meta name="description" content="Сам блок управления и цепи, которыми он управляет, — реле, клапаны и исполнительные механизмы, — а также сбои внутренней памяти и процессора.">
+<meta name="robots" content="noindex,follow">
+<link rel="canonical" href="https://jqdevam.github.io/pin16-site/ru/codes/P36xx/">
+<link rel="alternate" hreflang="en" href="https://jqdevam.github.io/pin16-site/codes/P36xx/">
+<link rel="alternate" hreflang="ru" href="https://jqdevam.github.io/pin16-site/ru/codes/P36xx/">
+<link rel="alternate" hreflang="x-default" href="https://jqdevam.github.io/pin16-site/codes/P36xx/">
+<link rel="icon" href="../../../pin16.png">
+<link rel="stylesheet" href="../../../assets/codes.css?v=220cb5ea6d">
+</head>
+<body>
+<header class="site"><div class="bar"><a class="brand" href="../../../"><img src="../../../pin16.png" alt="" width="30" height="30"><span>Pin16</span></a><nav><a href="../../../ru/codes/">Все коды</a><a href="../../../ru/codes/tree/">Дерево кодов</a><a class="lang" hreflang="en" href="../../../codes/P36xx/">In English</a></nav></div></header>
+<main>
+<nav class="crumbs" aria-label="breadcrumb"><ol><li><a href="../../../ru/codes/">Все системы</a></li><li><a href="../../../ru/codes/P/">P · Двигатель и трансмиссия</a></li></ol></nav>
+<header class="hero"><p class="code-pill">P36xx</p><h1>Выходные цепи и блок управления</h1></header>
+<p class="lead">Сам блок управления и цепи, которыми он управляет, — реле, клапаны и исполнительные механизмы, — а также сбои внутренней памяти и процессора.</p>
+<p class="note info">Для этой системы нет описаний из открытых источников, поэтому коды разобраны по их структуре.</p>
+<p class="scope-note"><b>Смешанный: и заводской, и стандартизованный.</b> Считайте кодом производителя, пока не найдётся конкретное описание.</p>
+<div class="chips mono wide">
+<a class="chip" href="../?q=P3600" title="Индекс неисправности 00">P3600</a>
+<a class="chip" href="../?q=P3601" title="Индекс неисправности 01">P3601</a>
+<a class="chip" href="../?q=P3602" title="Индекс неисправности 02">P3602</a>
+<a class="chip" href="../?q=P3603" title="Индекс неисправности 03">P3603</a>
+<a class="chip" href="../?q=P3604" title="Индекс неисправности 04">P3604</a>
+<a class="chip" href="../?q=P3605" title="Индекс неисправности 05">P3605</a>
+<a class="chip" href="../?q=P3606" title="Индекс неисправности 06">P3606</a>
+<a class="chip" href="../?q=P3607" title="Индекс неисправности 07">P3607</a>
+<a class="chip" href="../?q=P3608" title="Индекс неисправности 08">P3608</a>
+<a class="chip" href="../?q=P3609" title="Индекс неисправности 09">P3609</a>
+<a class="chip" href="../?q=P360A" title="Индекс неисправности 0A">P360A</a>
+<a class="chip" href="../?q=P360B" title="Индекс неисправности 0B">P360B</a>
+<a class="chip" href="../?q=P360C" title="Индекс неисправности 0C">P360C</a>
+<a class="chip" href="../?q=P360D" title="Индекс неисправности 0D">P360D</a>
+<a class="chip" href="../?q=P360E" title="Индекс неисправности 0E">P360E</a>
+<a class="chip" href="../?q=P360F" title="Индекс неисправности 0F">P360F</a>
+<a class="chip" href="../?q=P3610" title="Индекс неисправности 10">P3610</a>
+<a class="chip" href="../?q=P3611" title="Индекс неисправности 11">P3611</a>
+<a class="chip" href="../?q=P3612" title="Индекс неисправности 12">P3612</a>
+<a class="chip" href="../?q=P3613" title="Индекс неисправности 13">P3613</a>
+<a class="chip" href="../?q=P3614" title="Индекс неисправности 14">P3614</a>
+<a class="chip" href="../?q=P3615" title="Индекс неисправности 15">P3615</a>
+<a class="chip" href="../?q=P3616" title="Индекс неисправности 16">P3616</a>
+<a class="chip" href="../?q=P3617" title="Индекс неисправности 17">P3617</a>
+<a class="chip" href="../?q=P3618" title="Индекс неисправности 18">P3618</a>
+<a class="chip" href="../?q=P3619" title="Индекс неисправности 19">P3619</a>
+<a class="chip" href="../?q=P361A" title="Индекс неисправности 1A">P361A</a>
+<a class="chip" href="../?q=P361B" title="Индекс неисправности 1B">P361B</a>
+<a class="chip" href="../?q=P361C" title="Индекс неисправности 1C">P361C</a>
+<a class="chip" href="../?q=P361D" title="Индекс неисправности 1D">P361D</a>
+<a class="chip" href="../?q=P361E" title="Индекс неисправности 1E">P361E</a>
+<a class="chip" href="../?q=P361F" title="Индекс неисправности 1F">P361F</a>
+<a class="chip" href="../?q=P3620" title="Индекс неисправности 20">P3620</a>
+<a class="chip" href="../?q=P3621" title="Индекс неисправности 21">P3621</a>
+<a class="chip" href="../?q=P3622" title="Индекс неисправности 22">P3622</a>
+<a class="chip" href="../?q=P3623" title="Индекс неисправности 23">P3623</a>
+<a class="chip" href="../?q=P3624" title="Индекс неисправности 24">P3624</a>
+<a class="chip" href="../?q=P3625" title="Индекс неисправности 25">P3625</a>
+<a class="chip" href="../?q=P3626" title="Индекс неисправности 26">P3626</a>
+<a class="chip" href="../?q=P3627" title="Индекс неисправности 27">P3627</a>
+<a class="chip" href="../?q=P3628" title="Индекс неисправности 28">P3628</a>
+<a class="chip" href="../?q=P3629" title="Индекс неисправности 29">P3629</a>
+<a class="chip" href="../?q=P362A" title="Индекс неисправности 2A">P362A</a>
+<a class="chip" href="../?q=P362B" title="Индекс неисправности 2B">P362B</a>
+<a class="chip" href="../?q=P362C" title="Индекс неисправности 2C">P362C</a>
+<a class="chip" href="../?q=P362D" title="Индекс неисправности 2D">P362D</a>
+<a class="chip" href="../?q=P362E" title="Индекс неисправности 2E">P362E</a>
+<a class="chip" href="../?q=P362F" title="Индекс неисправности 2F">P362F</a>
+<a class="chip" href="../?q=P3630" title="Индекс неисправности 30">P3630</a>
+<a class="chip" href="../?q=P3631" title="Индекс неисправности 31">P3631</a>
+<a class="chip" href="../?q=P3632" title="Индекс неисправности 32">P3632</a>
+<a class="chip" href="../?q=P3633" title="Индекс неисправности 33">P3633</a>
+<a class="chip" href="../?q=P3634" title="Индекс неисправности 34">P3634</a>
+<a class="chip" href="../?q=P3635" title="Индекс неисправности 35">P3635</a>
+<a class="chip" href="../?q=P3636" title="Индекс неисправности 36">P3636</a>
+<a class="chip" href="../?q=P3637" title="Индекс неисправности 37">P3637</a>
+<a class="chip" href="../?q=P3638" title="Индекс неисправности 38">P3638</a>
+<a class="chip" href="../?q=P3639" title="Индекс неисправности 39">P3639</a>
+<a class="chip" href="../?q=P363A" title="Индекс неисправности 3A">P363A</a>
+<a class="chip" href="../?q=P363B" title="Индекс неисправности 3B">P363B</a>
+<a class="chip" href="../?q=P363C" title="Индекс неисправности 3C">P363C</a>
+<a class="chip" href="../?q=P363D" title="Индекс неисправности 3D">P363D</a>
+<a class="chip" href="../?q=P363E" title="Индекс неисправности 3E">P363E</a>
+<a class="chip" href="../?q=P363F" title="Индекс неисправности 3F">P363F</a>
+<a class="chip" href="../?q=P3640" title="Индекс неисправности 40">P3640</a>
+<a class="chip" href="../?q=P3641" title="Индекс неисправности 41">P3641</a>
+<a class="chip" href="../?q=P3642" title="Индекс неисправности 42">P3642</a>
+<a class="chip" href="../?q=P3643" title="Индекс неисправности 43">P3643</a>
+<a class="chip" href="../?q=P3644" title="Индекс неисправности 44">P3644</a>
+<a class="chip" href="../?q=P3645" title="Индекс неисправности 45">P3645</a>
+<a class="chip" href="../?q=P3646" title="Индекс неисправности 46">P3646</a>
+<a class="chip" href="../?q=P3647" title="Индекс неисправности 47">P3647</a>
+<a class="chip" href="../?q=P3648" title="Индекс неисправности 48">P3648</a>
+<a class="chip" href="../?q=P3649" title="Индекс неисправности 49">P3649</a>
+<a class="chip" href="../?q=P364A" title="Индекс неисправности 4A">P364A</a>
+<a class="chip" href="../?q=P364B" title="Индекс неисправности 4B">P364B</a>
+<a class="chip" href="../?q=P364C" title="Индекс неисправности 4C">P364C</a>
+<a class="chip" href="../?q=P364D" title="Индекс неисправности 4D">P364D</a>
+<a class="chip" href="../?q=P364E" title="Индекс неисправности 4E">P364E</a>
+<a class="chip" href="../?q=P364F" title="Индекс неисправности 4F">P364F</a>
+<a class="chip" href="../?q=P3650" title="Индекс неисправности 50">P3650</a>
+<a class="chip" href="../?q=P3651" title="Индекс неисправности 51">P3651</a>
+<a class="chip" href="../?q=P3652" title="Индекс неисправности 52">P3652</a>
+<a class="chip" href="../?q=P3653" title="Индекс неисправности 53">P3653</a>
+<a class="chip" href="../?q=P3654" title="Индекс неисправности 54">P3654</a>
+<a class="chip" href="../?q=P3655" title="Индекс неисправности 55">P3655</a>
+<a class="chip" href="../?q=P3656" title="Индекс неисправности 56">P3656</a>
+<a class="chip" href="../?q=P3657" title="Индекс неисправности 57">P3657</a>
+<a class="chip" href="../?q=P3658" title="Индекс неисправности 58">P3658</a>
+<a class="chip" href="../?q=P3659" title="Индекс неисправности 59">P3659</a>
+<a class="chip" href="../?q=P365A" title="Индекс неисправности 5A">P365A</a>
+<a class="chip" href="../?q=P365B" title="Индекс неисправности 5B">P365B</a>
+<a class="chip" href="../?q=P365C" title="Индекс неисправности 5C">P365C</a>
+<a class="chip" href="../?q=P365D" title="Индекс неисправности 5D">P365D</a>
+<a class="chip" href="../?q=P365E" title="Индекс неисправности 5E">P365E</a>
+<a class="chip" href="../?q=P365F" title="Индекс неисправности 5F">P365F</a>
+<a class="chip" href="../?q=P3660" title="Индекс неисправности 60">P3660</a>
+<a class="chip" href="../?q=P3661" title="Индекс неисправности 61">P3661</a>
+<a class="chip" href="../?q=P3662" title="Индекс неисправности 62">P3662</a>
+<a class="chip" href="../?q=P3663" title="Индекс неисправности 63">P3663</a>
+<a class="chip" href="../?q=P3664" title="Индекс неисправности 64">P3664</a>
+<a class="chip" href="../?q=P3665" title="Индекс неисправности 65">P3665</a>
+<a class="chip" href="../?q=P3666" title="Индекс неисправности 66">P3666</a>
+<a class="chip" href="../?q=P3667" title="Индекс неисправности 67">P3667</a>
+<a class="chip" href="../?q=P3668" title="Индекс неисправности 68">P3668</a>
+<a class="chip" href="../?q=P3669" title="Индекс неисправности 69">P3669</a>
+<a class="chip" href="../?q=P366A" title="Индекс неисправности 6A">P366A</a>
+<a class="chip" href="../?q=P366B" title="Индекс неисправности 6B">P366B</a>
+<a class="chip" href="../?q=P366C" title="Индекс неисправности 6C">P366C</a>
+<a class="chip" href="../?q=P366D" title="Индекс неисправности 6D">P366D</a>
+<a class="chip" href="../?q=P366E" title="Индекс неисправности 6E">P366E</a>
+<a class="chip" href="../?q=P366F" title="Индекс неисправности 6F">P366F</a>
+<a class="chip" href="../?q=P3670" title="Индекс неисправности 70">P3670</a>
+<a class="chip" href="../?q=P3671" title="Индекс неисправности 71">P3671</a>
+<a class="chip" href="../?q=P3672" title="Индекс неисправности 72">P3672</a>
+<a class="chip" href="../?q=P3673" title="Индекс неисправности 73">P3673</a>
+<a class="chip" href="../?q=P3674" title="Индекс неисправности 74">P3674</a>
+<a class="chip" href="../?q=P3675" title="Индекс неисправности 75">P3675</a>
+<a class="chip" href="../?q=P3676" title="Индекс неисправности 76">P3676</a>
+<a class="chip" href="../?q=P3677" title="Индекс неисправности 77">P3677</a>
+<a class="chip" href="../?q=P3678" title="Индекс неисправности 78">P3678</a>
+<a class="chip" href="../?q=P3679" title="Индекс неисправности 79">P3679</a>
+<a class="chip" href="../?q=P367A" title="Индекс неисправности 7A">P367A</a>
+<a class="chip" href="../?q=P367B" title="Индекс неисправности 7B">P367B</a>
+<a class="chip" href="../?q=P367C" title="Индекс неисправности 7C">P367C</a>
+<a class="chip" href="../?q=P367D" title="Индекс неисправности 7D">P367D</a>
+<a class="chip" href="../?q=P367E" title="Индекс неисправности 7E">P367E</a>
+<a class="chip" href="../?q=P367F" title="Индекс неисправности 7F">P367F</a>
+<a class="chip" href="../?q=P3680" title="Индекс неисправности 80">P3680</a>
+<a class="chip" href="../?q=P3681" title="Индекс неисправности 81">P3681</a>
+<a class="chip" href="../?q=P3682" title="Индекс неисправности 82">P3682</a>
+<a class="chip" href="../?q=P3683" title="Индекс неисправности 83">P3683</a>
+<a class="chip" href="../?q=P3684" title="Индекс неисправности 84">P3684</a>
+<a class="chip" href="../?q=P3685" title="Индекс неисправности 85">P3685</a>
+<a class="chip" href="../?q=P3686" title="Индекс неисправности 86">P3686</a>
+<a class="chip" href="../?q=P3687" title="Индекс неисправности 87">P3687</a>
+<a class="chip" href="../?q=P3688" title="Индекс неисправности 88">P3688</a>
+<a class="chip" href="../?q=P3689" title="Индекс неисправности 89">P3689</a>
+<a class="chip" href="../?q=P368A" title="Индекс неисправности 8A">P368A</a>
+<a class="chip" href="../?q=P368B" title="Индекс неисправности 8B">P368B</a>
+<a class="chip" href="../?q=P368C" title="Индекс неисправности 8C">P368C</a>
+<a class="chip" href="../?q=P368D" title="Индекс неисправности 8D">P368D</a>
+<a class="chip" href="../?q=P368E" title="Индекс неисправности 8E">P368E</a>
+<a class="chip" href="../?q=P368F" title="Индекс неисправности 8F">P368F</a>
+<a class="chip" href="../?q=P3690" title="Индекс неисправности 90">P3690</a>
+<a class="chip" href="../?q=P3691" title="Индекс неисправности 91">P3691</a>
+<a class="chip" href="../?q=P3692" title="Индекс неисправности 92">P3692</a>
+<a class="chip" href="../?q=P3693" title="Индекс неисправности 93">P3693</a>
+<a class="chip" href="../?q=P3694" title="Индекс неисправности 94">P3694</a>
+<a class="chip" href="../?q=P3695" title="Индекс неисправности 95">P3695</a>
+<a class="chip" href="../?q=P3696" title="Индекс неисправности 96">P3696</a>
+<a class="chip" href="../?q=P3697" title="Индекс неисправности 97">P3697</a>
+<a class="chip" href="../?q=P3698" title="Индекс неисправности 98">P3698</a>
+<a class="chip" href="../?q=P3699" title="Индекс неисправности 99">P3699</a>
+<a class="chip" href="../?q=P369A" title="Индекс неисправности 9A">P369A</a>
+<a class="chip" href="../?q=P369B" title="Индекс неисправности 9B">P369B</a>
+<a class="chip" href="../?q=P369C" title="Индекс неисправности 9C">P369C</a>
+<a class="chip" href="../?q=P369D" title="Индекс неисправности 9D">P369D</a>
+<a class="chip" href="../?q=P369E" title="Индекс неисправности 9E">P369E</a>
+<a class="chip" href="../?q=P369F" title="Индекс неисправности 9F">P369F</a>
+<a class="chip" href="../?q=P36A0" title="Индекс неисправности A0">P36A0</a>
+<a class="chip" href="../?q=P36A1" title="Индекс неисправности A1">P36A1</a>
+<a class="chip" href="../?q=P36A2" title="Индекс неисправности A2">P36A2</a>
+<a class="chip" href="../?q=P36A3" title="Индекс неисправности A3">P36A3</a>
+<a class="chip" href="../?q=P36A4" title="Индекс неисправности A4">P36A4</a>
+<a class="chip" href="../?q=P36A5" title="Индекс неисправности A5">P36A5</a>
+<a class="chip" href="../?q=P36A6" title="Индекс неисправности A6">P36A6</a>
+<a class="chip" href="../?q=P36A7" title="Индекс неисправности A7">P36A7</a>
+<a class="chip" href="../?q=P36A8" title="Индекс неисправности A8">P36A8</a>
+<a class="chip" href="../?q=P36A9" title="Индекс неисправности A9">P36A9</a>
+<a class="chip" href="../?q=P36AA" title="Индекс неисправности AA">P36AA</a>
+<a class="chip" href="../?q=P36AB" title="Индекс неисправности AB">P36AB</a>
+<a class="chip" href="../?q=P36AC" title="Индекс неисправности AC">P36AC</a>
+<a class="chip" href="../?q=P36AD" title="Индекс неисправности AD">P36AD</a>
+<a class="chip" href="../?q=P36AE" title="Индекс неисправности AE">P36AE</a>
+<a class="chip" href="../?q=P36AF" title="Индекс неисправности AF">P36AF</a>
+<a class="chip" href="../?q=P36B0" title="Индекс неисправности B0">P36B0</a>
+<a class="chip" href="../?q=P36B1" title="Индекс неисправности B1">P36B1</a>
+<a class="chip" href="../?q=P36B2" title="Индекс неисправности B2">P36B2</a>
+<a class="chip" href="../?q=P36B3" title="Индекс неисправности B3">P36B3</a>
+<a class="chip" href="../?q=P36B4" title="Индекс неисправности B4">P36B4</a>
+<a class="chip" href="../?q=P36B5" title="Индекс неисправности B5">P36B5</a>
+<a class="chip" href="../?q=P36B6" title="Индекс неисправности B6">P36B6</a>
+<a class="chip" href="../?q=P36B7" title="Индекс неисправности B7">P36B7</a>
+<a class="chip" href="../?q=P36B8" title="Индекс неисправности B8">P36B8</a>
+<a class="chip" href="../?q=P36B9" title="Индекс неисправности B9">P36B9</a>
+<a class="chip" href="../?q=P36BA" title="Индекс неисправности BA">P36BA</a>
+<a class="chip" href="../?q=P36BB" title="Индекс неисправности BB">P36BB</a>
+<a class="chip" href="../?q=P36BC" title="Индекс неисправности BC">P36BC</a>
+<a class="chip" href="../?q=P36BD" title="Индекс неисправности BD">P36BD</a>
+<a class="chip" href="../?q=P36BE" title="Индекс неисправности BE">P36BE</a>
+<a class="chip" href="../?q=P36BF" title="Индекс неисправности BF">P36BF</a>
+<a class="chip" href="../?q=P36C0" title="Индекс неисправности C0">P36C0</a>
+<a class="chip" href="../?q=P36C1" title="Индекс неисправности C1">P36C1</a>
+<a class="chip" href="../?q=P36C2" title="Индекс неисправности C2">P36C2</a>
+<a class="chip" href="../?q=P36C3" title="Индекс неисправности C3">P36C3</a>
+<a class="chip" href="../?q=P36C4" title="Индекс неисправности C4">P36C4</a>
+<a class="chip" href="../?q=P36C5" title="Индекс неисправности C5">P36C5</a>
+<a class="chip" href="../?q=P36C6" title="Индекс неисправности C6">P36C6</a>
+<a class="chip" href="../?q=P36C7" title="Индекс неисправности C7">P36C7</a>
+<a class="chip" href="../?q=P36C8" title="Индекс неисправности C8">P36C8</a>
+<a class="chip" href="../?q=P36C9" title="Индекс неисправности C9">P36C9</a>
+<a class="chip" href="../?q=P36CA" title="Индекс неисправности CA">P36CA</a>
+<a class="chip" href="../?q=P36CB" title="Индекс неисправности CB">P36CB</a>
+<a class="chip" href="../?q=P36CC" title="Индекс неисправности CC">P36CC</a>
+<a class="chip" href="../?q=P36CD" title="Индекс неисправности CD">P36CD</a>
+<a class="chip" href="../?q=P36CE" title="Индекс неисправности CE">P36CE</a>
+<a class="chip" href="../?q=P36CF" title="Индекс неисправности CF">P36CF</a>
+<a class="chip" href="../?q=P36D0" title="Индекс неисправности D0">P36D0</a>
+<a class="chip" href="../?q=P36D1" title="Индекс неисправности D1">P36D1</a>
+<a class="chip" href="../?q=P36D2" title="Индекс неисправности D2">P36D2</a>
+<a class="chip" href="../?q=P36D3" title="Индекс неисправности D3">P36D3</a>
+<a class="chip" href="../?q=P36D4" title="Индекс неисправности D4">P36D4</a>
+<a class="chip" href="../?q=P36D5" title="Индекс неисправности D5">P36D5</a>
+<a class="chip" href="../?q=P36D6" title="Индекс неисправности D6">P36D6</a>
+<a class="chip" href="../?q=P36D7" title="Индекс неисправности D7">P36D7</a>
+<a class="chip" href="../?q=P36D8" title="Индекс неисправности D8">P36D8</a>
+<a class="chip" href="../?q=P36D9" title="Индекс неисправности D9">P36D9</a>
+<a class="chip" href="../?q=P36DA" title="Индекс неисправности DA">P36DA</a>
+<a class="chip" href="../?q=P36DB" title="Индекс неисправности DB">P36DB</a>
+<a class="chip" href="../?q=P36DC" title="Индекс неисправности DC">P36DC</a>
+<a class="chip" href="../?q=P36DD" title="Индекс неисправности DD">P36DD</a>
+<a class="chip" href="../?q=P36DE" title="Индекс неисправности DE">P36DE</a>
+<a class="chip" href="../?q=P36DF" title="Индекс неисправности DF">P36DF</a>
+<a class="chip" href="../?q=P36E0" title="Индекс неисправности E0">P36E0</a>
+<a class="chip" href="../?q=P36E1" title="Индекс неисправности E1">P36E1</a>
+<a class="chip" href="../?q=P36E2" title="Индекс неисправности E2">P36E2</a>
+<a class="chip" href="../?q=P36E3" title="Индекс неисправности E3">P36E3</a>
+<a class="chip" href="../?q=P36E4" title="Индекс неисправности E4">P36E4</a>
+<a class="chip" href="../?q=P36E5" title="Индекс неисправности E5">P36E5</a>
+<a class="chip" href="../?q=P36E6" title="Индекс неисправности E6">P36E6</a>
+<a class="chip" href="../?q=P36E7" title="Индекс неисправности E7">P36E7</a>
+<a class="chip" href="../?q=P36E8" title="Индекс неисправности E8">P36E8</a>
+<a class="chip" href="../?q=P36E9" title="Индекс неисправности E9">P36E9</a>
+<a class="chip" href="../?q=P36EA" title="Индекс неисправности EA">P36EA</a>
+<a class="chip" href="../?q=P36EB" title="Индекс неисправности EB">P36EB</a>
+<a class="chip" href="../?q=P36EC" title="Индекс неисправности EC">P36EC</a>
+<a class="chip" href="../?q=P36ED" title="Индекс неисправности ED">P36ED</a>
+<a class="chip" href="../?q=P36EE" title="Индекс неисправности EE">P36EE</a>
+<a class="chip" href="../?q=P36EF" title="Индекс неисправности EF">P36EF</a>
+<a class="chip" href="../?q=P36F0" title="Индекс неисправности F0">P36F0</a>
+<a class="chip" href="../?q=P36F1" title="Индекс неисправности F1">P36F1</a>
+<a class="chip" href="../?q=P36F2" title="Индекс неисправности F2">P36F2</a>
+<a class="chip" href="../?q=P36F3" title="Индекс неисправности F3">P36F3</a>
+<a class="chip" href="../?q=P36F4" title="Индекс неисправности F4">P36F4</a>
+<a class="chip" href="../?q=P36F5" title="Индекс неисправности F5">P36F5</a>
+<a class="chip" href="../?q=P36F6" title="Индекс неисправности F6">P36F6</a>
+<a class="chip" href="../?q=P36F7" title="Индекс неисправности F7">P36F7</a>
+<a class="chip" href="../?q=P36F8" title="Индекс неисправности F8">P36F8</a>
+<a class="chip" href="../?q=P36F9" title="Индекс неисправности F9">P36F9</a>
+<a class="chip" href="../?q=P36FA" title="Индекс неисправности FA">P36FA</a>
+<a class="chip" href="../?q=P36FB" title="Индекс неисправности FB">P36FB</a>
+<a class="chip" href="../?q=P36FC" title="Индекс неисправности FC">P36FC</a>
+<a class="chip" href="../?q=P36FD" title="Индекс неисправности FD">P36FD</a>
+<a class="chip" href="../?q=P36FE" title="Индекс неисправности FE">P36FE</a>
+<a class="chip" href="../?q=P36FF" title="Индекс неисправности FF">P36FF</a>
+</div>
+<section class="cta">
+<div><h2>Прочитайте этот код со своей машины</h2>
+<p>Подключите адаптер ELM327 к разъёму OBD-II под приборной панелью. Pin16 прочитает подтверждённые, разовые и постоянные коды, объяснит каждый так же, как эта страница, — без интернета и без учётной записи — и покажет, что машина записала в момент ошибки.</p></div>
+<a class="button" href="https://play.google.com/store/apps/details?id=com.amaldavanau.pin16&amp;hl=ru&amp;referrer=utm_source%3Dpin16_site%26utm_medium%3Dcode_page%26utm_campaign%3Dcode_pages_ru%26utm_content%3Dblock_P36xx">Скачать Pin16 в Google Play</a>
+</section>
+</main>
+<footer class="site"><div><p>Текст написан для Pin16 и ещё не проверен квалифицированным механиком. Это помощь в диагностике, а не инструкция по ремонту; для вашего автомобиля она может быть неполной или неточной. Если сомневаетесь, обратитесь в автосервис.</p><p><a href="../../../">Pin16</a> · <a href="../../../privacy/#ru">Политика конфиденциальности</a></p></div></footer>
+</body>
+</html>

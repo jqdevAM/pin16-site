@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>P32xx — Fuel and air metering - injector circuits: OBD-II fault codes</title>
+<meta name="description" content="The electrical circuits driving the fuel injectors, and injector performance itself.">
+<meta name="robots" content="noindex,follow">
+<link rel="canonical" href="https://jqdevam.github.io/pin16-site/codes/P32xx/">
+<link rel="alternate" hreflang="en" href="https://jqdevam.github.io/pin16-site/codes/P32xx/">
+<link rel="alternate" hreflang="ru" href="https://jqdevam.github.io/pin16-site/ru/codes/P32xx/">
+<link rel="alternate" hreflang="x-default" href="https://jqdevam.github.io/pin16-site/codes/P32xx/">
+<link rel="icon" href="../../pin16.png">
+<link rel="stylesheet" href="../../assets/codes.css?v=220cb5ea6d">
+</head>
+<body>
+<header class="site"><div class="bar"><a class="brand" href="../../"><img src="../../pin16.png" alt="" width="30" height="30"><span>Pin16</span></a><nav><a href="../../codes/">All codes</a><a href="../../codes/tree/">Code tree</a><a class="lang" hreflang="ru" href="../../ru/codes/P32xx/">По-русски</a></nav></div></header>
+<main>
+<nav class="crumbs" aria-label="breadcrumb"><ol><li><a href="../../codes/">All systems</a></li><li><a href="../../codes/P/">P · Powertrain</a></li></ol></nav>
+<header class="hero"><p class="code-pill">P32xx</p><h1>Fuel and air metering - injector circuits</h1></header>
+<p class="lead">The electrical circuits driving the fuel injectors, and injector performance itself.</p>
+<p class="note info">No open-source descriptions exist for this system, so its codes are read from their structure.</p>
+<p class="scope-note"><b>Mixed: manufacturer-specific and standardised.</b> Treat as manufacturer-specific unless a specific explanation is available.</p>
+<div class="chips mono wide">
+<a class="chip" href="../?q=P3200" title="Fault index 00">P3200</a>
+<a class="chip" href="../?q=P3201" title="Fault index 01">P3201</a>
+<a class="chip" href="../?q=P3202" title="Fault index 02">P3202</a>
+<a class="chip" href="../?q=P3203" title="Fault index 03">P3203</a>
+<a class="chip" href="../?q=P3204" title="Fault index 04">P3204</a>
+<a class="chip" href="../?q=P3205" title="Fault index 05">P3205</a>
+<a class="chip" href="../?q=P3206" title="Fault index 06">P3206</a>
+<a class="chip" href="../?q=P3207" title="Fault index 07">P3207</a>
+<a class="chip" href="../?q=P3208" title="Fault index 08">P3208</a>
+<a class="chip" href="../?q=P3209" title="Fault index 09">P3209</a>
+<a class="chip" href="../?q=P320A" title="Fault index 0A">P320A</a>
+<a class="chip" href="../?q=P320B" title="Fault index 0B">P320B</a>
+<a class="chip" href="../?q=P320C" title="Fault index 0C">P320C</a>
+<a class="chip" href="../?q=P320D" title="Fault index 0D">P320D</a>
+<a class="chip" href="../?q=P320E" title="Fault index 0E">P320E</a>
+<a class="chip" href="../?q=P320F" title="Fault index 0F">P320F</a>
+<a class="chip" href="../?q=P3210" title="Fault index 10">P3210</a>
+<a class="chip" href="../?q=P3211" title="Fault index 11">P3211</a>
+<a class="chip" href="../?q=P3212" title="Fault index 12">P3212</a>
+<a class="chip" href="../?q=P3213" title="Fault index 13">P3213</a>
+<a class="chip" href="../?q=P3214" title="Fault index 14">P3214</a>
+<a class="chip" href="../?q=P3215" title="Fault index 15">P3215</a>
+<a class="chip" href="../?q=P3216" title="Fault index 16">P3216</a>
+<a class="chip" href="../?q=P3217" title="Fault index 17">P3217</a>
+<a class="chip" href="../?q=P3218" title="Fault index 18">P3218</a>
+<a class="chip" href="../?q=P3219" title="Fault index 19">P3219</a>
+<a class="chip" href="../?q=P321A" title="Fault index 1A">P321A</a>
+<a class="chip" href="../?q=P321B" title="Fault index 1B">P321B</a>
+<a class="chip" href="../?q=P321C" title="Fault index 1C">P321C</a>
+<a class="chip" href="../?q=P321D" title="Fault index 1D">P321D</a>
+<a class="chip" href="../?q=P321E" title="Fault index 1E">P321E</a>
+<a class="chip" href="../?q=P321F" title="Fault index 1F">P321F</a>
+<a class="chip" href="../?q=P3220" title="Fault index 20">P3220</a>
+<a class="chip" href="../?q=P3221" title="Fault index 21">P3221</a>
+<a class="chip" href="../?q=P3222" title="Fault index 22">P3222</a>
+<a class="chip" href="../?q=P3223" title="Fault index 23">P3223</a>
+<a class="chip" href="../?q=P3224" title="Fault index 24">P3224</a>
+<a class="chip" href="../?q=P3225" title="Fault index 25">P3225</a>
+<a class="chip" href="../?q=P3226" title="Fault index 26">P3226</a>
+<a class="chip" href="../?q=P3227" title="Fault index 27">P3227</a>
+<a class="chip" href="../?q=P3228" title="Fault index 28">P3228</a>
+<a class="chip" href="../?q=P3229" title="Fault index 29">P3229</a>
+<a class="chip" href="../?q=P322A" title="Fault index 2A">P322A</a>
+<a class="chip" href="../?q=P322B" title="Fault index 2B">P322B</a>
+<a class="chip" href="../?q=P322C" title="Fault index 2C">P322C</a>
+<a class="chip" href="../?q=P322D" title="Fault index 2D">P322D</a>
+<a class="chip" href="../?q=P322E" title="Fault index 2E">P322E</a>
+<a class="chip" href="../?q=P322F" title="Fault index 2F">P322F</a>
+<a class="chip" href="../?q=P3230" title="Fault index 30">P3230</a>
+<a class="chip" href="../?q=P3231" title="Fault index 31">P3231</a>
+<a class="chip" href="../?q=P3232" title="Fault index 32">P3232</a>
+<a class="chip" href="../?q=P3233" title="Fault index 33">P3233</a>
+<a class="chip" href="../?q=P3234" title="Fault index 34">P3234</a>
+<a class="chip" href="../?q=P3235" title="Fault index 35">P3235</a>
+<a class="chip" href="../?q=P3236" title="Fault index 36">P3236</a>
+<a class="chip" href="../?q=P3237" title="Fault index 37">P3237</a>
+<a class="chip" href="../?q=P3238" title="Fault index 38">P3238</a>
+<a class="chip" href="../?q=P3239" title="Fault index 39">P3239</a>
+<a class="chip" href="../?q=P323A" title="Fault index 3A">P323A</a>
+<a class="chip" href="../?q=P323B" title="Fault index 3B">P323B</a>
+<a class="chip" href="../?q=P323C" title="Fault index 3C">P323C</a>
+<a class="chip" href="../?q=P323D" title="Fault index 3D">P323D</a>
+<a class="chip" href="../?q=P323E" title="Fault index 3E">P323E</a>
+<a class="chip" href="../?q=P323F" title="Fault index 3F">P323F</a>
+<a class="chip" href="../?q=P3240" title="Fault index 40">P3240</a>
+<a class="chip" href="../?q=P3241" title="Fault index 41">P3241</a>
+<a class="chip" href="../?q=P3242" title="Fault index 42">P3242</a>
+<a class="chip" href="../?q=P3243" title="Fault index 43">P3243</a>
+<a class="chip" href="../?q=P3244" title="Fault index 44">P3244</a>
+<a class="chip" href="../?q=P3245" title="Fault index 45">P3245</a>
+<a class="chip" href="../?q=P3246" title="Fault index 46">P3246</a>
+<a class="chip" href="../?q=P3247" title="Fault index 47">P3247</a>
+<a class="chip" href="../?q=P3248" title="Fault index 48">P3248</a>
+<a class="chip" href="../?q=P3249" title="Fault index 49">P3249</a>
+<a class="chip" href="../?q=P324A" title="Fault index 4A">P324A</a>
+<a class="chip" href="../?q=P324B" title="Fault index 4B">P324B</a>
+<a class="chip" href="../?q=P324C" title="Fault index 4C">P324C</a>
+<a class="chip" href="../?q=P324D" title="Fault index 4D">P324D</a>
+<a class="chip" href="../?q=P324E" title="Fault index 4E">P324E</a>
+<a class="chip" href="../?q=P324F" title="Fault index 4F">P324F</a>
+<a class="chip" href="../?q=P3250" title="Fault index 50">P3250</a>
+<a class="chip" href="../?q=P3251" title="Fault index 51">P3251</a>
+<a class="chip" href="../?q=P3252" title="Fault index 52">P3252</a>
+<a class="chip" href="../?q=P3253" title="Fault index 53">P3253</a>
+<a class="chip" href="../?q=P3254" title="Fault index 54">P3254</a>
+<a class="chip" href="../?q=P3255" title="Fault index 55">P3255</a>
+<a class="chip" href="../?q=P3256" title="Fault index 56">P3256</a>
+<a class="chip" href="../?q=P3257" title="Fault index 57">P3257</a>
+<a class="chip" href="../?q=P3258" title="Fault index 58">P3258</a>
+<a class="chip" href="../?q=P3259" title="Fault index 59">P3259</a>
+<a class="chip" href="../?q=P325A" title="Fault index 5A">P325A</a>
+<a class="chip" href="../?q=P325B" title="Fault index 5B">P325B</a>
+<a class="chip" href="../?q=P325C" title="Fault index 5C">P325C</a>
+<a class="chip" href="../?q=P325D" title="Fault index 5D">P325D</a>
+<a class="chip" href="../?q=P325E" title="Fault index 5E">P325E</a>
+<a class="chip" href="../?q=P325F" title="Fault index 5F">P325F</a>
+<a class="chip" href="../?q=P3260" title="Fault index 60">P3260</a>
+<a class="chip" href="../?q=P3261" title="Fault index 61">P3261</a>
+<a class="chip" href="../?q=P3262" title="Fault index 62">P3262</a>
+<a class="chip" href="../?q=P3263" title="Fault index 63">P3263</a>
+<a class="chip" href="../?q=P3264" title="Fault index 64">P3264</a>
+<a class="chip" href="../?q=P3265" title="Fault index 65">P3265</a>
+<a class="chip" href="../?q=P3266" title="Fault index 66">P3266</a>
+<a class="chip" href="../?q=P3267" title="Fault index 67">P3267</a>
+<a class="chip" href="../?q=P3268" title="Fault index 68">P3268</a>
+<a class="chip" href="../?q=P3269" title="Fault index 69">P3269</a>
+<a class="chip" href="../?q=P326A" title="Fault index 6A">P326A</a>
+<a class="chip" href="../?q=P326B" title="Fault index 6B">P326B</a>
+<a class="chip" href="../?q=P326C" title="Fault index 6C">P326C</a>
+<a class="chip" href="../?q=P326D" title="Fault index 6D">P326D</a>
+<a class="chip" href="../?q=P326E" title="Fault index 6E">P326E</a>
+<a class="chip" href="../?q=P326F" title="Fault index 6F">P326F</a>
+<a class="chip" href="../?q=P3270" title="Fault index 70">P3270</a>
+<a class="chip" href="../?q=P3271" title="Fault index 71">P3271</a>
+<a class="chip" href="../?q=P3272" title="Fault index 72">P3272</a>
+<a class="chip" href="../?q=P3273" title="Fault index 73">P3273</a>
+<a class="chip" href="../?q=P3274" title="Fault index 74">P3274</a>
+<a class="chip" href="../?q=P3275" title="Fault index 75">P3275</a>
+<a class="chip" href="../?q=P3276" title="Fault index 76">P3276</a>
+<a class="chip" href="../?q=P3277" title="Fault index 77">P3277</a>
+<a class="chip" href="../?q=P3278" title="Fault index 78">P3278</a>
+<a class="chip" href="../?q=P3279" title="Fault index 79">P3279</a>
+<a class="chip" href="../?q=P327A" title="Fault index 7A">P327A</a>
+<a class="chip" href="../?q=P327B" title="Fault index 7B">P327B</a>
+<a class="chip" href="../?q=P327C" title="Fault index 7C">P327C</a>
+<a class="chip" href="../?q=P327D" title="Fault index 7D">P327D</a>
+<a class="chip" href="../?q=P327E" title="Fault index 7E">P327E</a>
+<a class="chip" href="../?q=P327F" title="Fault index 7F">P327F</a>
+<a class="chip" href="../?q=P3280" title="Fault index 80">P3280</a>
+<a class="chip" href="../?q=P3281" title="Fault index 81">P3281</a>
+<a class="chip" href="../?q=P3282" title="Fault index 82">P3282</a>
+<a class="chip" href="../?q=P3283" title="Fault index 83">P3283</a>
+<a class="chip" href="../?q=P3284" title="Fault index 84">P3284</a>
+<a class="chip" href="../?q=P3285" title="Fault index 85">P3285</a>
+<a class="chip" href="../?q=P3286" title="Fault index 86">P3286</a>
+<a class="chip" href="../?q=P3287" title="Fault index 87">P3287</a>
+<a class="chip" href="../?q=P3288" title="Fault index 88">P3288</a>
+<a class="chip" href="../?q=P3289" title="Fault index 89">P3289</a>
+<a class="chip" href="../?q=P328A" title="Fault index 8A">P328A</a>
+<a class="chip" href="../?q=P328B" title="Fault index 8B">P328B</a>
+<a class="chip" href="../?q=P328C" title="Fault index 8C">P328C</a>
+<a class="chip" href="../?q=P328D" title="Fault index 8D">P328D</a>
+<a class="chip" href="../?q=P328E" title="Fault index 8E">P328E</a>
+<a class="chip" href="../?q=P328F" title="Fault index 8F">P328F</a>
+<a class="chip" href="../?q=P3290" title="Fault index 90">P3290</a>
+<a class="chip" href="../?q=P3291" title="Fault index 91">P3291</a>
+<a class="chip" href="../?q=P3292" title="Fault index 92">P3292</a>
+<a class="chip" href="../?q=P3293" title="Fault index 93">P3293</a>
+<a class="chip" href="../?q=P3294" title="Fault index 94">P3294</a>
+<a class="chip" href="../?q=P3295" title="Fault index 95">P3295</a>
+<a class="chip" href="../?q=P3296" title="Fault index 96">P3296</a>
+<a class="chip" href="../?q=P3297" title="Fault index 97">P3297</a>
+<a class="chip" href="../?q=P3298" title="Fault index 98">P3298</a>
+<a class="chip" href="../?q=P3299" title="Fault index 99">P3299</a>
+<a class="chip" href="../?q=P329A" title="Fault index 9A">P329A</a>
+<a class="chip" href="../?q=P329B" title="Fault index 9B">P329B</a>
+<a class="chip" href="../?q=P329C" title="Fault index 9C">P329C</a>
+<a class="chip" href="../?q=P329D" title="Fault index 9D">P329D</a>
+<a class="chip" href="../?q=P329E" title="Fault index 9E">P329E</a>
+<a class="chip" href="../?q=P329F" title="Fault index 9F">P329F</a>
+<a class="chip" href="../?q=P32A0" title="Fault index A0">P32A0</a>
+<a class="chip" href="../?q=P32A1" title="Fault index A1">P32A1</a>
+<a class="chip" href="../?q=P32A2" title="Fault index A2">P32A2</a>
+<a class="chip" href="../?q=P32A3" title="Fault index A3">P32A3</a>
+<a class="chip" href="../?q=P32A4" title="Fault index A4">P32A4</a>
+<a class="chip" href="../?q=P32A5" title="Fault index A5">P32A5</a>
+<a class="chip" href="../?q=P32A6" title="Fault index A6">P32A6</a>
+<a class="chip" href="../?q=P32A7" title="Fault index A7">P32A7</a>
+<a class="chip" href="../?q=P32A8" title="Fault index A8">P32A8</a>
+<a class="chip" href="../?q=P32A9" title="Fault index A9">P32A9</a>
+<a class="chip" href="../?q=P32AA" title="Fault index AA">P32AA</a>
+<a class="chip" href="../?q=P32AB" title="Fault index AB">P32AB</a>
+<a class="chip" href="../?q=P32AC" title="Fault index AC">P32AC</a>
+<a class="chip" href="../?q=P32AD" title="Fault index AD">P32AD</a>
+<a class="chip" href="../?q=P32AE" title="Fault index AE">P32AE</a>
+<a class="chip" href="../?q=P32AF" title="Fault index AF">P32AF</a>
+<a class="chip" href="../?q=P32B0" title="Fault index B0">P32B0</a>
+<a class="chip" href="../?q=P32B1" title="Fault index B1">P32B1</a>
+<a class="chip" href="../?q=P32B2" title="Fault index B2">P32B2</a>
+<a class="chip" href="../?q=P32B3" title="Fault index B3">P32B3</a>
+<a class="chip" href="../?q=P32B4" title="Fault index B4">P32B4</a>
+<a class="chip" href="../?q=P32B5" title="Fault index B5">P32B5</a>
+<a class="chip" href="../?q=P32B6" title="Fault index B6">P32B6</a>
+<a class="chip" href="../?q=P32B7" title="Fault index B7">P32B7</a>
+<a class="chip" href="../?q=P32B8" title="Fault index B8">P32B8</a>
+<a class="chip" href="../?q=P32B9" title="Fault index B9">P32B9</a>
+<a class="chip" href="../?q=P32BA" title="Fault index BA">P32BA</a>
+<a class="chip" href="../?q=P32BB" title="Fault index BB">P32BB</a>
+<a class="chip" href="../?q=P32BC" title="Fault index BC">P32BC</a>
+<a class="chip" href="../?q=P32BD" title="Fault index BD">P32BD</a>
+<a class="chip" href="../?q=P32BE" title="Fault index BE">P32BE</a>
+<a class="chip" href="../?q=P32BF" title="Fault index BF">P32BF</a>
+<a class="chip" href="../?q=P32C0" title="Fault index C0">P32C0</a>
+<a class="chip" href="../?q=P32C1" title="Fault index C1">P32C1</a>
+<a class="chip" href="../?q=P32C2" title="Fault index C2">P32C2</a>
+<a class="chip" href="../?q=P32C3" title="Fault index C3">P32C3</a>
+<a class="chip" href="../?q=P32C4" title="Fault index C4">P32C4</a>
+<a class="chip" href="../?q=P32C5" title="Fault index C5">P32C5</a>
+<a class="chip" href="../?q=P32C6" title="Fault index C6">P32C6</a>
+<a class="chip" href="../?q=P32C7" title="Fault index C7">P32C7</a>
+<a class="chip" href="../?q=P32C8" title="Fault index C8">P32C8</a>
+<a class="chip" href="../?q=P32C9" title="Fault index C9">P32C9</a>
+<a class="chip" href="../?q=P32CA" title="Fault index CA">P32CA</a>
+<a class="chip" href="../?q=P32CB" title="Fault index CB">P32CB</a>
+<a class="chip" href="../?q=P32CC" title="Fault index CC">P32CC</a>
+<a class="chip" href="../?q=P32CD" title="Fault index CD">P32CD</a>
+<a class="chip" href="../?q=P32CE" title="Fault index CE">P32CE</a>
+<a class="chip" href="../?q=P32CF" title="Fault index CF">P32CF</a>
+<a class="chip" href="../?q=P32D0" title="Fault index D0">P32D0</a>
+<a class="chip" href="../?q=P32D1" title="Fault index D1">P32D1</a>
+<a class="chip" href="../?q=P32D2" title="Fault index D2">P32D2</a>
+<a class="chip" href="../?q=P32D3" title="Fault index D3">P32D3</a>
+<a class="chip" href="../?q=P32D4" title="Fault index D4">P32D4</a>
+<a class="chip" href="../?q=P32D5" title="Fault index D5">P32D5</a>
+<a class="chip" href="../?q=P32D6" title="Fault index D6">P32D6</a>
+<a class="chip" href="../?q=P32D7" title="Fault index D7">P32D7</a>
+<a class="chip" href="../?q=P32D8" title="Fault index D8">P32D8</a>
+<a class="chip" href="../?q=P32D9" title="Fault index D9">P32D9</a>
+<a class="chip" href="../?q=P32DA" title="Fault index DA">P32DA</a>
+<a class="chip" href="../?q=P32DB" title="Fault index DB">P32DB</a>
+<a class="chip" href="../?q=P32DC" title="Fault index DC">P32DC</a>
+<a class="chip" href="../?q=P32DD" title="Fault index DD">P32DD</a>
+<a class="chip" href="../?q=P32DE" title="Fault index DE">P32DE</a>
+<a class="chip" href="../?q=P32DF" title="Fault index DF">P32DF</a>
+<a class="chip" href="../?q=P32E0" title="Fault index E0">P32E0</a>
+<a class="chip" href="../?q=P32E1" title="Fault index E1">P32E1</a>
+<a class="chip" href="../?q=P32E2" title="Fault index E2">P32E2</a>
+<a class="chip" href="../?q=P32E3" title="Fault index E3">P32E3</a>
+<a class="chip" href="../?q=P32E4" title="Fault index E4">P32E4</a>
+<a class="chip" href="../?q=P32E5" title="Fault index E5">P32E5</a>
+<a class="chip" href="../?q=P32E6" title="Fault index E6">P32E6</a>
+<a class="chip" href="../?q=P32E7" title="Fault index E7">P32E7</a>
+<a class="chip" href="../?q=P32E8" title="Fault index E8">P32E8</a>
+<a class="chip" href="../?q=P32E9" title="Fault index E9">P32E9</a>
+<a class="chip" href="../?q=P32EA" title="Fault index EA">P32EA</a>
+<a class="chip" href="../?q=P32EB" title="Fault index EB">P32EB</a>
+<a class="chip" href="../?q=P32EC" title="Fault index EC">P32EC</a>
+<a class="chip" href="../?q=P32ED" title="Fault index ED">P32ED</a>
+<a class="chip" href="../?q=P32EE" title="Fault index EE">P32EE</a>
+<a class="chip" href="../?q=P32EF" title="Fault index EF">P32EF</a>
+<a class="chip" href="../?q=P32F0" title="Fault index F0">P32F0</a>
+<a class="chip" href="../?q=P32F1" title="Fault index F1">P32F1</a>
+<a class="chip" href="../?q=P32F2" title="Fault index F2">P32F2</a>
+<a class="chip" href="../?q=P32F3" title="Fault index F3">P32F3</a>
+<a class="chip" href="../?q=P32F4" title="Fault index F4">P32F4</a>
+<a class="chip" href="../?q=P32F5" title="Fault index F5">P32F5</a>
+<a class="chip" href="../?q=P32F6" title="Fault index F6">P32F6</a>
+<a class="chip" href="../?q=P32F7" title="Fault index F7">P32F7</a>
+<a class="chip" href="../?q=P32F8" title="Fault index F8">P32F8</a>
+<a class="chip" href="../?q=P32F9" title="Fault index F9">P32F9</a>
+<a class="chip" href="../?q=P32FA" title="Fault index FA">P32FA</a>
+<a class="chip" href="../?q=P32FB" title="Fault index FB">P32FB</a>
+<a class="chip" href="../?q=P32FC" title="Fault index FC">P32FC</a>
+<a class="chip" href="../?q=P32FD" title="Fault index FD">P32FD</a>
+<a class="chip" href="../?q=P32FE" title="Fault index FE">P32FE</a>
+<a class="chip" href="../?q=P32FF" title="Fault index FF">P32FF</a>
+</div>
+<section class="cta">
+<div><h2>Read this code from your own car</h2>
+<p>Plug an ELM327 adapter into the OBD-II port under the dashboard. Pin16 reads every stored, pending and permanent code, explains each one like this page does — offline, with no account — and shows what the car recorded when the fault was set.</p></div>
+<a class="button" href="https://play.google.com/store/apps/details?id=com.amaldavanau.pin16&amp;hl=en&amp;referrer=utm_source%3Dpin16_site%26utm_medium%3Dcode_page%26utm_campaign%3Dcode_pages_en%26utm_content%3Dblock_P32xx">Get Pin16 on Google Play</a>
+</section>
+</main>
+<footer class="site"><div><p>Written for Pin16 and not yet reviewed by a qualified technician. This is guidance for diagnosis, not repair instructions, and it may be incomplete or wrong for your vehicle. If in doubt, ask a mechanic.</p><p><a href="../../">Pin16</a> · <a href="../../privacy/">Privacy policy</a></p></div></footer>
+</body>
+</html>
