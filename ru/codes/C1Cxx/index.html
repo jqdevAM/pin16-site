@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>C1Cxx — Шасси: коды ошибок OBD-II</title>
+<meta name="description" content="Механические системы вне силового агрегата: тормоза, ABS, антипробуксовочная система и стабилизация, датчики скорости колёс, рулевое управление и подвеска.">
+<meta name="robots" content="noindex,follow">
+<link rel="canonical" href="https://jqdevam.github.io/pin16-site/ru/codes/C1Cxx/">
+<link rel="alternate" hreflang="en" href="https://jqdevam.github.io/pin16-site/codes/C1Cxx/">
+<link rel="alternate" hreflang="ru" href="https://jqdevam.github.io/pin16-site/ru/codes/C1Cxx/">
+<link rel="alternate" hreflang="x-default" href="https://jqdevam.github.io/pin16-site/codes/C1Cxx/">
+<link rel="icon" href="../../../pin16.png">
+<link rel="stylesheet" href="../../../assets/codes.css">
+</head>
+<body>
+<main>
+<nav class="top"><a class="brand" href="../../../"><img src="../../../pin16.png" alt="" width="28" height="28">Pin16</a><a href="../../../ru/codes/">Все коды</a><a hreflang="en" href="../../../codes/C1Cxx/">In English</a></nav>
+<nav class="trail"><a href="../../../ru/codes/">Все системы</a><span aria-hidden="true">›</span><a href="../../../ru/codes/C/">C · Шасси</a></nav>
+<h1><span class="badge">C1Cxx</span> Шасси</h1>
+<p class="lead">Механические системы вне силового агрегата: тормоза, ABS, антипробуксовочная система и стабилизация, датчики скорости колёс, рулевое управление и подвеска. Сузить код шасси дальше этот массив данных не может: группы за третьим символом не стандартизованы между марками, и ни один свободный источник их не описывает.</p>
+<p class="derived-note">Для этой системы нет описаний из открытых источников, поэтому коды разобраны по их структуре.</p>
+<p class="scope-note">Специфичный для производителя. Обратитесь к источнику для вашей марки и года выпуска.</p>
+<div class="chips">
+<a href="../?q=C1C00" title="Индекс неисправности 00">C1C00</a>
+<a href="../?q=C1C01" title="Индекс неисправности 01">C1C01</a>
+<a href="../?q=C1C02" title="Индекс неисправности 02">C1C02</a>
+<a href="../?q=C1C03" title="Индекс неисправности 03">C1C03</a>
+<a href="../?q=C1C04" title="Индекс неисправности 04">C1C04</a>
+<a href="../?q=C1C05" title="Индекс неисправности 05">C1C05</a>
+<a href="../?q=C1C06" title="Индекс неисправности 06">C1C06</a>
+<a href="../?q=C1C07" title="Индекс неисправности 07">C1C07</a>
+<a href="../?q=C1C08" title="Индекс неисправности 08">C1C08</a>
+<a href="../?q=C1C09" title="Индекс неисправности 09">C1C09</a>
+<a href="../?q=C1C0A" title="Индекс неисправности 0A">C1C0A</a>
+<a href="../?q=C1C0B" title="Индекс неисправности 0B">C1C0B</a>
+<a href="../?q=C1C0C" title="Индекс неисправности 0C">C1C0C</a>
+<a href="../?q=C1C0D" title="Индекс неисправности 0D">C1C0D</a>
+<a href="../?q=C1C0E" title="Индекс неисправности 0E">C1C0E</a>
+<a href="../?q=C1C0F" title="Индекс неисправности 0F">C1C0F</a>
+<a href="../?q=C1C10" title="Индекс неисправности 10">C1C10</a>
+<a href="../?q=C1C11" title="Индекс неисправности 11">C1C11</a>
+<a href="../?q=C1C12" title="Индекс неисправности 12">C1C12</a>
+<a href="../?q=C1C13" title="Индекс неисправности 13">C1C13</a>
+<a href="../?q=C1C14" title="Индекс неисправности 14">C1C14</a>
+<a href="../?q=C1C15" title="Индекс неисправности 15">C1C15</a>
+<a href="../?q=C1C16" title="Индекс неисправности 16">C1C16</a>
+<a href="../?q=C1C17" title="Индекс неисправности 17">C1C17</a>
+<a href="../?q=C1C18" title="Индекс неисправности 18">C1C18</a>
+<a href="../?q=C1C19" title="Индекс неисправности 19">C1C19</a>
+<a href="../?q=C1C1A" title="Индекс неисправности 1A">C1C1A</a>
+<a href="../?q=C1C1B" title="Индекс неисправности 1B">C1C1B</a>
+<a href="../?q=C1C1C" title="Индекс неисправности 1C">C1C1C</a>
+<a href="../?q=C1C1D" title="Индекс неисправности 1D">C1C1D</a>
+<a href="../?q=C1C1E" title="Индекс неисправности 1E">C1C1E</a>
+<a href="../?q=C1C1F" title="Индекс неисправности 1F">C1C1F</a>
+<a href="../?q=C1C20" title="Индекс неисправности 20">C1C20</a>
+<a href="../?q=C1C21" title="Индекс неисправности 21">C1C21</a>
+<a href="../?q=C1C22" title="Индекс неисправности 22">C1C22</a>
+<a href="../?q=C1C23" title="Индекс неисправности 23">C1C23</a>
+<a href="../?q=C1C24" title="Индекс неисправности 24">C1C24</a>
+<a href="../?q=C1C25" title="Индекс неисправности 25">C1C25</a>
+<a href="../?q=C1C26" title="Индекс неисправности 26">C1C26</a>
+<a href="../?q=C1C27" title="Индекс неисправности 27">C1C27</a>
+<a href="../?q=C1C28" title="Индекс неисправности 28">C1C28</a>
+<a href="../?q=C1C29" title="Индекс неисправности 29">C1C29</a>
+<a href="../?q=C1C2A" title="Индекс неисправности 2A">C1C2A</a>
+<a href="../?q=C1C2B" title="Индекс неисправности 2B">C1C2B</a>
+<a href="../?q=C1C2C" title="Индекс неисправности 2C">C1C2C</a>
+<a href="../?q=C1C2D" title="Индекс неисправности 2D">C1C2D</a>
+<a href="../?q=C1C2E" title="Индекс неисправности 2E">C1C2E</a>
+<a href="../?q=C1C2F" title="Индекс неисправности 2F">C1C2F</a>
+<a href="../?q=C1C30" title="Индекс неисправности 30">C1C30</a>
+<a href="../?q=C1C31" title="Индекс неисправности 31">C1C31</a>
+<a href="../?q=C1C32" title="Индекс неисправности 32">C1C32</a>
+<a href="../?q=C1C33" title="Индекс неисправности 33">C1C33</a>
+<a href="../?q=C1C34" title="Индекс неисправности 34">C1C34</a>
+<a href="../?q=C1C35" title="Индекс неисправности 35">C1C35</a>
+<a href="../?q=C1C36" title="Индекс неисправности 36">C1C36</a>
+<a href="../?q=C1C37" title="Индекс неисправности 37">C1C37</a>
+<a href="../?q=C1C38" title="Индекс неисправности 38">C1C38</a>
+<a href="../?q=C1C39" title="Индекс неисправности 39">C1C39</a>
+<a href="../?q=C1C3A" title="Индекс неисправности 3A">C1C3A</a>
+<a href="../?q=C1C3B" title="Индекс неисправности 3B">C1C3B</a>
+<a href="../?q=C1C3C" title="Индекс неисправности 3C">C1C3C</a>
+<a href="../?q=C1C3D" title="Индекс неисправности 3D">C1C3D</a>
+<a href="../?q=C1C3E" title="Индекс неисправности 3E">C1C3E</a>
+<a href="../?q=C1C3F" title="Индекс неисправности 3F">C1C3F</a>
+<a href="../?q=C1C40" title="Индекс неисправности 40">C1C40</a>
+<a href="../?q=C1C41" title="Индекс неисправности 41">C1C41</a>
+<a href="../?q=C1C42" title="Индекс неисправности 42">C1C42</a>
+<a href="../?q=C1C43" title="Индекс неисправности 43">C1C43</a>
+<a href="../?q=C1C44" title="Индекс неисправности 44">C1C44</a>
+<a href="../?q=C1C45" title="Индекс неисправности 45">C1C45</a>
+<a href="../?q=C1C46" title="Индекс неисправности 46">C1C46</a>
+<a href="../?q=C1C47" title="Индекс неисправности 47">C1C47</a>
+<a href="../?q=C1C48" title="Индекс неисправности 48">C1C48</a>
+<a href="../?q=C1C49" title="Индекс неисправности 49">C1C49</a>
+<a href="../?q=C1C4A" title="Индекс неисправности 4A">C1C4A</a>
+<a href="../?q=C1C4B" title="Индекс неисправности 4B">C1C4B</a>
+<a href="../?q=C1C4C" title="Индекс неисправности 4C">C1C4C</a>
+<a href="../?q=C1C4D" title="Индекс неисправности 4D">C1C4D</a>
+<a href="../?q=C1C4E" title="Индекс неисправности 4E">C1C4E</a>
+<a href="../?q=C1C4F" title="Индекс неисправности 4F">C1C4F</a>
+<a href="../?q=C1C50" title="Индекс неисправности 50">C1C50</a>
+<a href="../?q=C1C51" title="Индекс неисправности 51">C1C51</a>
+<a href="../?q=C1C52" title="Индекс неисправности 52">C1C52</a>
+<a href="../?q=C1C53" title="Индекс неисправности 53">C1C53</a>
+<a href="../?q=C1C54" title="Индекс неисправности 54">C1C54</a>
+<a href="../?q=C1C55" title="Индекс неисправности 55">C1C55</a>
+<a href="../?q=C1C56" title="Индекс неисправности 56">C1C56</a>
+<a href="../?q=C1C57" title="Индекс неисправности 57">C1C57</a>
+<a href="../?q=C1C58" title="Индекс неисправности 58">C1C58</a>
+<a href="../?q=C1C59" title="Индекс неисправности 59">C1C59</a>
+<a href="../?q=C1C5A" title="Индекс неисправности 5A">C1C5A</a>
+<a href="../?q=C1C5B" title="Индекс неисправности 5B">C1C5B</a>
+<a href="../?q=C1C5C" title="Индекс неисправности 5C">C1C5C</a>
+<a href="../?q=C1C5D" title="Индекс неисправности 5D">C1C5D</a>
+<a href="../?q=C1C5E" title="Индекс неисправности 5E">C1C5E</a>
+<a href="../?q=C1C5F" title="Индекс неисправности 5F">C1C5F</a>
+<a href="../?q=C1C60" title="Индекс неисправности 60">C1C60</a>
+<a href="../?q=C1C61" title="Индекс неисправности 61">C1C61</a>
+<a href="../?q=C1C62" title="Индекс неисправности 62">C1C62</a>
+<a href="../?q=C1C63" title="Индекс неисправности 63">C1C63</a>
+<a href="../?q=C1C64" title="Индекс неисправности 64">C1C64</a>
+<a href="../?q=C1C65" title="Индекс неисправности 65">C1C65</a>
+<a href="../?q=C1C66" title="Индекс неисправности 66">C1C66</a>
+<a href="../?q=C1C67" title="Индекс неисправности 67">C1C67</a>
+<a href="../?q=C1C68" title="Индекс неисправности 68">C1C68</a>
+<a href="../?q=C1C69" title="Индекс неисправности 69">C1C69</a>
+<a href="../?q=C1C6A" title="Индекс неисправности 6A">C1C6A</a>
+<a href="../?q=C1C6B" title="Индекс неисправности 6B">C1C6B</a>
+<a href="../?q=C1C6C" title="Индекс неисправности 6C">C1C6C</a>
+<a href="../?q=C1C6D" title="Индекс неисправности 6D">C1C6D</a>
+<a href="../?q=C1C6E" title="Индекс неисправности 6E">C1C6E</a>
+<a href="../?q=C1C6F" title="Индекс неисправности 6F">C1C6F</a>
+<a href="../?q=C1C70" title="Индекс неисправности 70">C1C70</a>
+<a href="../?q=C1C71" title="Индекс неисправности 71">C1C71</a>
+<a href="../?q=C1C72" title="Индекс неисправности 72">C1C72</a>
+<a href="../?q=C1C73" title="Индекс неисправности 73">C1C73</a>
+<a href="../?q=C1C74" title="Индекс неисправности 74">C1C74</a>
+<a href="../?q=C1C75" title="Индекс неисправности 75">C1C75</a>
+<a href="../?q=C1C76" title="Индекс неисправности 76">C1C76</a>
+<a href="../?q=C1C77" title="Индекс неисправности 77">C1C77</a>
+<a href="../?q=C1C78" title="Индекс неисправности 78">C1C78</a>
+<a href="../?q=C1C79" title="Индекс неисправности 79">C1C79</a>
+<a href="../?q=C1C7A" title="Индекс неисправности 7A">C1C7A</a>
+<a href="../?q=C1C7B" title="Индекс неисправности 7B">C1C7B</a>
+<a href="../?q=C1C7C" title="Индекс неисправности 7C">C1C7C</a>
+<a href="../?q=C1C7D" title="Индекс неисправности 7D">C1C7D</a>
+<a href="../?q=C1C7E" title="Индекс неисправности 7E">C1C7E</a>
+<a href="../?q=C1C7F" title="Индекс неисправности 7F">C1C7F</a>
+<a href="../?q=C1C80" title="Индекс неисправности 80">C1C80</a>
+<a href="../?q=C1C81" title="Индекс неисправности 81">C1C81</a>
+<a href="../?q=C1C82" title="Индекс неисправности 82">C1C82</a>
+<a href="../?q=C1C83" title="Индекс неисправности 83">C1C83</a>
+<a href="../?q=C1C84" title="Индекс неисправности 84">C1C84</a>
+<a href="../?q=C1C85" title="Индекс неисправности 85">C1C85</a>
+<a href="../?q=C1C86" title="Индекс неисправности 86">C1C86</a>
+<a href="../?q=C1C87" title="Индекс неисправности 87">C1C87</a>
+<a href="../?q=C1C88" title="Индекс неисправности 88">C1C88</a>
+<a href="../?q=C1C89" title="Индекс неисправности 89">C1C89</a>
+<a href="../?q=C1C8A" title="Индекс неисправности 8A">C1C8A</a>
+<a href="../?q=C1C8B" title="Индекс неисправности 8B">C1C8B</a>
+<a href="../?q=C1C8C" title="Индекс неисправности 8C">C1C8C</a>
+<a href="../?q=C1C8D" title="Индекс неисправности 8D">C1C8D</a>
+<a href="../?q=C1C8E" title="Индекс неисправности 8E">C1C8E</a>
+<a href="../?q=C1C8F" title="Индекс неисправности 8F">C1C8F</a>
+<a href="../?q=C1C90" title="Индекс неисправности 90">C1C90</a>
+<a href="../?q=C1C91" title="Индекс неисправности 91">C1C91</a>
+<a href="../?q=C1C92" title="Индекс неисправности 92">C1C92</a>
+<a href="../?q=C1C93" title="Индекс неисправности 93">C1C93</a>
+<a href="../?q=C1C94" title="Индекс неисправности 94">C1C94</a>
+<a href="../?q=C1C95" title="Индекс неисправности 95">C1C95</a>
+<a href="../?q=C1C96" title="Индекс неисправности 96">C1C96</a>
+<a href="../?q=C1C97" title="Индекс неисправности 97">C1C97</a>
+<a href="../?q=C1C98" title="Индекс неисправности 98">C1C98</a>
+<a href="../?q=C1C99" title="Индекс неисправности 99">C1C99</a>
+<a href="../?q=C1C9A" title="Индекс неисправности 9A">C1C9A</a>
+<a href="../?q=C1C9B" title="Индекс неисправности 9B">C1C9B</a>
+<a href="../?q=C1C9C" title="Индекс неисправности 9C">C1C9C</a>
+<a href="../?q=C1C9D" title="Индекс неисправности 9D">C1C9D</a>
+<a href="../?q=C1C9E" title="Индекс неисправности 9E">C1C9E</a>
+<a href="../?q=C1C9F" title="Индекс неисправности 9F">C1C9F</a>
+<a href="../?q=C1CA0" title="Индекс неисправности A0">C1CA0</a>
+<a href="../?q=C1CA1" title="Индекс неисправности A1">C1CA1</a>
+<a href="../?q=C1CA2" title="Индекс неисправности A2">C1CA2</a>
+<a href="../?q=C1CA3" title="Индекс неисправности A3">C1CA3</a>
+<a href="../?q=C1CA4" title="Индекс неисправности A4">C1CA4</a>
+<a href="../?q=C1CA5" title="Индекс неисправности A5">C1CA5</a>
+<a href="../?q=C1CA6" title="Индекс неисправности A6">C1CA6</a>
+<a href="../?q=C1CA7" title="Индекс неисправности A7">C1CA7</a>
+<a href="../?q=C1CA8" title="Индекс неисправности A8">C1CA8</a>
+<a href="../?q=C1CA9" title="Индекс неисправности A9">C1CA9</a>
+<a href="../?q=C1CAA" title="Индекс неисправности AA">C1CAA</a>
+<a href="../?q=C1CAB" title="Индекс неисправности AB">C1CAB</a>
+<a href="../?q=C1CAC" title="Индекс неисправности AC">C1CAC</a>
+<a href="../?q=C1CAD" title="Индекс неисправности AD">C1CAD</a>
+<a href="../?q=C1CAE" title="Индекс неисправности AE">C1CAE</a>
+<a href="../?q=C1CAF" title="Индекс неисправности AF">C1CAF</a>
+<a href="../?q=C1CB0" title="Индекс неисправности B0">C1CB0</a>
+<a href="../?q=C1CB1" title="Индекс неисправности B1">C1CB1</a>
+<a href="../?q=C1CB2" title="Индекс неисправности B2">C1CB2</a>
+<a href="../?q=C1CB3" title="Индекс неисправности B3">C1CB3</a>
+<a href="../?q=C1CB4" title="Индекс неисправности B4">C1CB4</a>
+<a href="../?q=C1CB5" title="Индекс неисправности B5">C1CB5</a>
+<a href="../?q=C1CB6" title="Индекс неисправности B6">C1CB6</a>
+<a href="../?q=C1CB7" title="Индекс неисправности B7">C1CB7</a>
+<a href="../?q=C1CB8" title="Индекс неисправности B8">C1CB8</a>
+<a href="../?q=C1CB9" title="Индекс неисправности B9">C1CB9</a>
+<a href="../?q=C1CBA" title="Индекс неисправности BA">C1CBA</a>
+<a href="../?q=C1CBB" title="Индекс неисправности BB">C1CBB</a>
+<a href="../?q=C1CBC" title="Индекс неисправности BC">C1CBC</a>
+<a href="../?q=C1CBD" title="Индекс неисправности BD">C1CBD</a>
+<a href="../?q=C1CBE" title="Индекс неисправности BE">C1CBE</a>
+<a href="../?q=C1CBF" title="Индекс неисправности BF">C1CBF</a>
+<a href="../?q=C1CC0" title="Индекс неисправности C0">C1CC0</a>
+<a href="../?q=C1CC1" title="Индекс неисправности C1">C1CC1</a>
+<a href="../?q=C1CC2" title="Индекс неисправности C2">C1CC2</a>
+<a href="../?q=C1CC3" title="Индекс неисправности C3">C1CC3</a>
+<a href="../?q=C1CC4" title="Индекс неисправности C4">C1CC4</a>
+<a href="../?q=C1CC5" title="Индекс неисправности C5">C1CC5</a>
+<a href="../?q=C1CC6" title="Индекс неисправности C6">C1CC6</a>
+<a href="../?q=C1CC7" title="Индекс неисправности C7">C1CC7</a>
+<a href="../?q=C1CC8" title="Индекс неисправности C8">C1CC8</a>
+<a href="../?q=C1CC9" title="Индекс неисправности C9">C1CC9</a>
+<a href="../?q=C1CCA" title="Индекс неисправности CA">C1CCA</a>
+<a href="../?q=C1CCB" title="Индекс неисправности CB">C1CCB</a>
+<a href="../?q=C1CCC" title="Индекс неисправности CC">C1CCC</a>
+<a href="../?q=C1CCD" title="Индекс неисправности CD">C1CCD</a>
+<a href="../?q=C1CCE" title="Индекс неисправности CE">C1CCE</a>
+<a href="../?q=C1CCF" title="Индекс неисправности CF">C1CCF</a>
+<a href="../?q=C1CD0" title="Индекс неисправности D0">C1CD0</a>
+<a href="../?q=C1CD1" title="Индекс неисправности D1">C1CD1</a>
+<a href="../?q=C1CD2" title="Индекс неисправности D2">C1CD2</a>
+<a href="../?q=C1CD3" title="Индекс неисправности D3">C1CD3</a>
+<a href="../?q=C1CD4" title="Индекс неисправности D4">C1CD4</a>
+<a href="../?q=C1CD5" title="Индекс неисправности D5">C1CD5</a>
+<a href="../?q=C1CD6" title="Индекс неисправности D6">C1CD6</a>
+<a href="../?q=C1CD7" title="Индекс неисправности D7">C1CD7</a>
+<a href="../?q=C1CD8" title="Индекс неисправности D8">C1CD8</a>
+<a href="../?q=C1CD9" title="Индекс неисправности D9">C1CD9</a>
+<a href="../?q=C1CDA" title="Индекс неисправности DA">C1CDA</a>
+<a href="../?q=C1CDB" title="Индекс неисправности DB">C1CDB</a>
+<a href="../?q=C1CDC" title="Индекс неисправности DC">C1CDC</a>
+<a href="../?q=C1CDD" title="Индекс неисправности DD">C1CDD</a>
+<a href="../?q=C1CDE" title="Индекс неисправности DE">C1CDE</a>
+<a href="../?q=C1CDF" title="Индекс неисправности DF">C1CDF</a>
+<a href="../?q=C1CE0" title="Индекс неисправности E0">C1CE0</a>
+<a href="../?q=C1CE1" title="Индекс неисправности E1">C1CE1</a>
+<a href="../?q=C1CE2" title="Индекс неисправности E2">C1CE2</a>
+<a href="../?q=C1CE3" title="Индекс неисправности E3">C1CE3</a>
+<a href="../?q=C1CE4" title="Индекс неисправности E4">C1CE4</a>
+<a href="../?q=C1CE5" title="Индекс неисправности E5">C1CE5</a>
+<a href="../?q=C1CE6" title="Индекс неисправности E6">C1CE6</a>
+<a href="../?q=C1CE7" title="Индекс неисправности E7">C1CE7</a>
+<a href="../?q=C1CE8" title="Индекс неисправности E8">C1CE8</a>
+<a href="../?q=C1CE9" title="Индекс неисправности E9">C1CE9</a>
+<a href="../?q=C1CEA" title="Индекс неисправности EA">C1CEA</a>
+<a href="../?q=C1CEB" title="Индекс неисправности EB">C1CEB</a>
+<a href="../?q=C1CEC" title="Индекс неисправности EC">C1CEC</a>
+<a href="../?q=C1CED" title="Индекс неисправности ED">C1CED</a>
+<a href="../?q=C1CEE" title="Индекс неисправности EE">C1CEE</a>
+<a href="../?q=C1CEF" title="Индекс неисправности EF">C1CEF</a>
+<a href="../?q=C1CF0" title="Индекс неисправности F0">C1CF0</a>
+<a href="../?q=C1CF1" title="Индекс неисправности F1">C1CF1</a>
+<a href="../?q=C1CF2" title="Индекс неисправности F2">C1CF2</a>
+<a href="../?q=C1CF3" title="Индекс неисправности F3">C1CF3</a>
+<a href="../?q=C1CF4" title="Индекс неисправности F4">C1CF4</a>
+<a href="../?q=C1CF5" title="Индекс неисправности F5">C1CF5</a>
+<a href="../?q=C1CF6" title="Индекс неисправности F6">C1CF6</a>
+<a href="../?q=C1CF7" title="Индекс неисправности F7">C1CF7</a>
+<a href="../?q=C1CF8" title="Индекс неисправности F8">C1CF8</a>
+<a href="../?q=C1CF9" title="Индекс неисправности F9">C1CF9</a>
+<a href="../?q=C1CFA" title="Индекс неисправности FA">C1CFA</a>
+<a href="../?q=C1CFB" title="Индекс неисправности FB">C1CFB</a>
+<a href="../?q=C1CFC" title="Индекс неисправности FC">C1CFC</a>
+<a href="../?q=C1CFD" title="Индекс неисправности FD">C1CFD</a>
+<a href="../?q=C1CFE" title="Индекс неисправности FE">C1CFE</a>
+<a href="../?q=C1CFF" title="Индекс неисправности FF">C1CFF</a>
+</div>
+<section class="cta">
+<h2>Прочитайте этот код со своей машины</h2>
+<p>Подключите адаптер ELM327 к разъёму OBD-II под приборной панелью. Pin16 прочитает подтверждённые, разовые и постоянные коды, объяснит каждый так же, как эта страница, — без интернета и без учётной записи — и покажет, что машина записала в момент ошибки.</p>
+<a class="button" href="https://play.google.com/store/apps/details?id=com.amaldavanau.pin16&amp;hl=ru&amp;referrer=utm_source%3Dpin16_site%26utm_medium%3Dcode_page%26utm_campaign%3Dcode_pages_ru%26utm_content%3Dblock_C1Cxx">Скачать Pin16 в Google Play</a>
+</section>
+<footer><p>Текст написан для Pin16 и ещё не проверен квалифицированным механиком. Это помощь в диагностике, а не инструкция по ремонту; для вашего автомобиля она может быть неполной или неточной. Если сомневаетесь, обратитесь в автосервис.</p><p><a href="../../../">Pin16</a> · <a href="../../../privacy/#ru">Политика конфиденциальности</a></p></footer>
+</main>
+</body>
+</html>

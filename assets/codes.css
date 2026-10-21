@@ -145,3 +145,37 @@ footer {
 .derived h3 { font-size: 1rem; margin: 16px 0 6px; }
 .derived .source { color: var(--muted); font-size: .92rem; }
 .derived .links { display: flex; flex-wrap: wrap; align-items: center; gap: 10px 18px; margin: 16px 0 0; }
+
+/* The tree: system, block, code — the app's "Browse by system". */
+.trail { display: flex; flex-wrap: wrap; gap: 4px 8px; font-size: .9rem; color: var(--muted); margin: -12px 0 18px; }
+.trail a { text-decoration: none; }
+.badge {
+  color: var(--accent);
+  font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace; font-weight: 600;
+}
+h1 .badge { margin-right: 6px; }
+.mono { font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace; }
+ul.tree, ul.codes { list-style: none; padding: 0; margin: 0 0 8px; }
+ul.tree li, ul.codes li { margin: 0; border-top: 1px solid var(--line); }
+ul.tree li:last-child, ul.codes li:last-child { border-bottom: 1px solid var(--line); }
+ul.tree a, ul.codes a {
+  display: grid; grid-template-columns: 4.6rem 1fr auto; gap: 12px; align-items: baseline;
+  padding: 10px 0; text-decoration: none; color: var(--ink);
+}
+ul.tree .label b { display: block; font-weight: 600; }
+ul.tree .label small { display: block; color: var(--muted); font-size: .9rem; line-height: 1.45; }
+.count { color: var(--muted); font-size: .88rem; white-space: nowrap; font-variant-numeric: tabular-nums; }
+ul.codes b { color: var(--accent); font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace; }
+ul.codes .sev { font-size: .78rem; font-weight: 600; text-transform: uppercase; letter-spacing: .04em; white-space: nowrap; }
+.sev.sev-critical { color: var(--critical); } .sev.sev-high { color: var(--high); }
+.sev.sev-medium { color: var(--medium); } .sev.sev-low { color: var(--low); }
+h2.scope { font-size: 1rem; margin: 26px 0 4px; }
+h2.scope code { color: var(--accent); margin-right: 6px; }
+.scope-note, .derived-note { color: var(--muted); font-size: .92rem; }
+.derived-note { border-left: 3px solid var(--line); padding-left: 10px; }
+.chips { display: flex; flex-wrap: wrap; gap: 6px; margin: 12px 0 8px; }
+.chips a {
+  padding: 4px 10px; border-radius: 8px; border: 1px solid var(--line); background: var(--panel);
+  font: 500 .92rem/1.4 ui-monospace, "SF Mono", Menlo, Consolas, monospace; text-decoration: none;
+}
+#browse h2 { margin-top: 8px; }
