@@ -133,3 +133,15 @@ footer {
   margin-top: 40px; padding-top: 18px; border-top: 1px solid var(--line);
   color: var(--muted); font-size: .9rem;
 }
+
+/* A code the dictionary does not hold, explained from its structure the way
+   the app explains it. */
+.derived-intro { color: var(--muted); }
+.derived {
+  margin: 0 0 18px; padding: 18px 20px; border-radius: 16px;
+  background: var(--panel); border: 1px solid var(--line);
+}
+.derived h2 { margin: 0 0 8px; }
+.derived h3 { font-size: 1rem; margin: 16px 0 6px; }
+.derived .source { color: var(--muted); font-size: .92rem; }
+.derived .links { display: flex; flex-wrap: wrap; align-items: center; gap: 10px 18px; margin: 16px 0 0; }
